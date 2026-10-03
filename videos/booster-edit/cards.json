@@ -1,0 +1,25 @@
+{
+  "currency": "€",
+  "boosterPrice": 6.00,
+  "packPriceShow": { "start": 1.0, "end": 2.9 },
+  "finalAt": 30.2,
+  "cards": [
+    { "n": 1,  "t": 5.0,  "name": "Unliving Legionnaire",      "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 2,  "t": 8.0,  "name": "Web Up",                    "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 3,  "t": 8.9,  "name": "Red Room Recruit",          "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 4,  "t": 9.7,  "name": "Volcanic Villain",          "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 5,  "t": 10.5, "name": "Restorative Technique",     "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 6,  "t": 12.2, "name": "Vision of Love",            "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 7,  "t": 13.3, "name": "Ultron Drone",              "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 8,  "t": 13.9, "name": "She-Hulk, Jade Defender",   "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 9,  "t": 14.9, "name": "Ghost, Spectral Saboteur",  "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 10, "t": 16.0, "name": "Dark Deed",                 "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 11, "t": 17.1, "name": "White Widow, Free Agent",   "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 12, "t": 18.3, "name": "Thunderbolts Conspiracy",   "set": "MSH", "foil": false, "price": 0.02 },
+    { "n": 13, "t": 24.0, "name": "Super Suit",                "set": "MSH", "foil": false, "price": 0.02 }
+  ],
+  "skipped": [
+    { "t": 28.8, "name": "Island", "reason": "basic land" },
+    { "t": 30.0, "name": "Insect token", "reason": "token" }
+  ]
+}

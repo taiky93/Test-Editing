@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=576, height=1024" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: Anton;
+        font-weight: 400;
+        font-display: block;
+        src: url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");
+      }
+      :root {
+        --green: #2bff2b;
+        --red: #ff2020;
+        --ink: #000000;
+        --white: #ffffff;
+        --outline-ink: 1.75px 0.00px 0 #000, 1.24px 1.24px 0 #000, 0.00px 1.75px 0 #000, -1.24px 1.24px 0 #000, -1.75px 0.00px 0 #000, -1.24px -1.24px 0 #000, -0.00px -1.75px 0 #000, 1.24px -1.24px 0 #000, 3.50px 0.00px 0 #000, 3.23px 1.34px 0 #000, 2.47px 2.47px 0 #000, 1.34px 3.23px 0 #000, 0.00px 3.50px 0 #000, -1.34px 3.23px 0 #000, -2.47px 2.47px 0 #000, -3.23px 1.34px 0 #000, -3.50px 0.00px 0 #000, -3.23px -1.34px 0 #000, -2.47px -2.47px 0 #000, -1.34px -3.23px 0 #000, -0.00px -3.50px 0 #000, 1.34px -3.23px 0 #000, 2.47px -2.47px 0 #000, 3.23px -1.34px 0 #000, 0 5px 4px rgba(0,0,0,0.5);
+        --outline-white: 1.75px 0.00px 0 #fff, 1.24px 1.24px 0 #fff, 0.00px 1.75px 0 #fff, -1.24px 1.24px 0 #fff, -1.75px 0.00px 0 #fff, -1.24px -1.24px 0 #fff, -0.00px -1.75px 0 #fff, 1.24px -1.24px 0 #fff, 3.50px 0.00px 0 #fff, 3.23px 1.34px 0 #fff, 2.47px 2.47px 0 #fff, 1.34px 3.23px 0 #fff, 0.00px 3.50px 0 #fff, -1.34px 3.23px 0 #fff, -2.47px 2.47px 0 #fff, -3.23px 1.34px 0 #fff, -3.50px 0.00px 0 #fff, -3.23px -1.34px 0 #fff, -2.47px -2.47px 0 #fff, -1.34px -3.23px 0 #fff, -0.00px -3.50px 0 #fff, 1.34px -3.23px 0 #fff, 2.47px -2.47px 0 #fff, 3.23px -1.34px 0 #fff, 0 5px 4px rgba(0,0,0,0.35);
+        --outline-ink-sm: 1.25px 0.00px 0 #000, 0.88px 0.88px 0 #000, 0.00px 1.25px 0 #000, -0.88px 0.88px 0 #000, -1.25px 0.00px 0 #000, -0.88px -0.88px 0 #000, -0.00px -1.25px 0 #000, 0.88px -0.88px 0 #000, 2.50px 0.00px 0 #000, 2.31px 0.96px 0 #000, 1.77px 1.77px 0 #000, 0.96px 2.31px 0 #000, 0.00px 2.50px 0 #000, -0.96px 2.31px 0 #000, -1.77px 1.77px 0 #000, -2.31px 0.96px 0 #000, -2.50px 0.00px 0 #000, -2.31px -0.96px 0 #000, -1.77px -1.77px 0 #000, -0.96px -2.31px 0 #000, -0.00px -2.50px 0 #000, 0.96px -2.31px 0 #000, 1.77px -1.77px 0 #000, 2.31px -0.96px 0 #000, 0 3px 3px rgba(0,0,0,0.5);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 576px;
+        height: 1024px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 576px;
+        height: 1024px;
+        font-family: Anton, sans-serif;
+      }
+      #footage {
+        position: absolute;
+        inset: 0;
+        width: 576px;
+        height: 1024px;
+        object-fit: cover;
+      }
+      #overlay {
+        position: absolute;
+        inset: 0;
+      }
+      /* Reference: centred top line, neon green fill, thick black outline, soft drop shadow, no badge */
+      .price,
+      .final-line,
+      #counter {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        white-space: nowrap;
+        line-height: 1;
+        word-spacing: -0.04em;
+        letter-spacing: 0.03em;
+      }
+      /* Hidden until their beat; the timeline reveals them */
+      .price,
+      #counter,
+      #final {
+        opacity: 0;
+        visibility: hidden;
+      }
+      .price {
+        top: 116px;
+        font-size: 64px;
+        color: var(--green);
+        text-shadow: var(--outline-ink);
+      }
+      #counter {
+        top: 196px;
+        font-size: 34px;
+        color: var(--green);
+        text-shadow: var(--outline-ink-sm);
+      }
+      #final {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 86px;
+        height: 150px;
+      }
+      .final-line {
+        font-size: 64px;
+      }
+      #final-total {
+        top: 0;
+        color: var(--green);
+        text-shadow: var(--outline-ink);
+      }
+      #final-lost {
+        top: 82px;
+        color: var(--red);
+        text-shadow: var(--outline-white);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="34.27"
+      data-width="576"
+      data-height="1024"
+    >
+      <video
+        id="footage"
+        class="clip"
+        src="assets/opening.mp4"
+        playsinline
+        data-has-audio="true"
+        data-start="0"
+        data-duration="34.27"
+        data-track-index="0"
+      ></video>
+      <div id="overlay" class="clip" data-start="0" data-duration="34.27" data-track-index="1">
+        <div id="prices"></div>
+        <div id="counter">TOTAL : 0,00 €</div>
+        <div id="final">
+          <div class="final-line" id="final-total">TOTAL : 0,00 €</div>
+          <div class="final-line" id="final-lost">LOST : 0,00 €</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Prices live in cards.json (edit prices there, not here). Loaded synchronously from the project folder.
+      const req = new XMLHttpRequest();
+      req.open("GET", "cards.json", false);
+      req.send(null);
+      const data = JSON.parse(req.responseText);
+
+      const cur = data.currency || "€";
+      const fmt = (v) => v.toFixed(2).replace(".", ",") + " " + cur;
+      const cents = (v) => Math.round(v * 100);
+
+      const cards = data.cards.slice().sort((a, b) => a.t - b.t);
+      const total = cards.reduce((s, c) => s + cents(c.price), 0) / 100;
+      const diff = Math.round((total - data.boosterPrice) * 100) / 100;
+
+      // Build one price line per card (plus the booster price at the start)
+      const pricesEl = document.getElementById("prices");
+      const beats = [{ id: "price-pack", t: data.packPriceShow.start, end: data.packPriceShow.end, value: data.boosterPrice }];
+      cards.forEach((c, i) => {
+        const next = i + 1 < cards.length ? cards[i + 1].t : data.finalAt;
+        beats.push({ id: "price-" + c.n, t: c.t, end: Math.min(next, c.t + 2.8), value: c.price });
+      });
+      beats.forEach((b) => {
+        const el = document.createElement("div");
+        el.className = "price";
+        el.id = b.id;
+        el.textContent = fmt(b.value);
+        pricesEl.appendChild(el);
+      });
+
+      document.getElementById("final-total").textContent = "TOTAL : " + fmt(total);
+      const lost = document.getElementById("final-lost");
+      if (diff < 0) {
+        lost.textContent = "LOST : " + fmt(-diff);
+      } else {
+        lost.textContent = "GAIN : " + fmt(diff);
+        lost.style.color = "var(--green)";
+        lost.style.textShadow = "var(--outline-ink)";
+      }
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Reference pop: slides up from below with vertical motion blur, overshoots, settles (~0.3s)
+      function pop(target, t) {
+        tl.fromTo(
+          target,
+          { autoAlpha: 0, y: 70, scaleX: 1.12, scaleY: 1.35, filter: "blur(6px)" },
+          { autoAlpha: 1, y: -10, scaleX: 1.12, scaleY: 1, filter: "blur(0px)", duration: 0.16, ease: "power2.out" },
+          t,
+        );
+        tl.to(target, { y: 0, duration: 0.14, ease: "power1.inOut" }, t + 0.16);
+      }
+
+      // Hidden by default (CSS), hard-cut out like the reference
+      beats.forEach((b) => {
+        pop("#" + b.id, b.t);
+        tl.set("#" + b.id, { autoAlpha: 0 }, b.end);
+      });
+
+      // Running total: appears with the first card, digits count up at each new card
+      const counter = document.getElementById("counter");
+      const proxy = { v: 0 };
+      const drawCounter = () => (counter.textContent = "TOTAL : " + fmt(Math.round(proxy.v) / 100));
+      tl.set(proxy, { v: 0, onUpdate: drawCounter }, 0);
+      pop("#counter", cards[0].t);
+      let running = 0;
+      cards.forEach((c) => {
+        running += cents(c.price);
+        tl.to(proxy, { v: running, duration: 0.4, ease: "power1.out", onUpdate: drawCounter }, c.t + 0.08);
+      });
+      tl.set("#counter", { autoAlpha: 0 }, data.finalAt);
+
+      // Final pack total: two stacked lines, same pop with a small up-down-up bounce, held to the end
+      tl.fromTo(
+        "#final",
+        { autoAlpha: 0, y: 80, scaleX: 1.12, scaleY: 1.4, filter: "blur(8px)" },
+        { autoAlpha: 1, y: -14, scaleX: 1.12, scaleY: 1, filter: "blur(0px)", duration: 0.16, ease: "power2.out" },
+        data.finalAt,
+      );
+      tl.to("#final", { y: 8, duration: 0.1, ease: "sine.inOut" }, data.finalAt + 0.16);
+      tl.to("#final", { y: 0, duration: 0.12, ease: "sine.out" }, data.finalAt + 0.26);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
