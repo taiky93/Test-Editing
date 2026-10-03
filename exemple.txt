@@ -1,0 +1,6 @@
+Ceci est un fichier d'exemple.
+Modifiez ce texte pour tester l'édition.
+
+- Ligne 1
+- Ligne 2
+- Ligne 3
