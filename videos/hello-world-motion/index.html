@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: Inter;
+        font-weight: 300;
+        font-display: block;
+        src: url("assets/fonts/inter-latin-300-normal.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: Inter;
+        font-weight: 800;
+        font-display: block;
+        src: url("assets/fonts/inter-latin-800-normal.woff2") format("woff2");
+      }
+      :root {
+        --bg: #0b0b10;
+        --bg-glow: #1a1640;
+        --ink: #f4f4f5;
+        --muted: #8b8b98;
+        --accent: #7c6cff;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--bg);
+      }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        font-family: Inter, "Liberation Sans", ui-sans-serif, system-ui, sans-serif;
+      }
+      #card {
+        position: absolute;
+        inset: 0;
+      }
+      .glow {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1400px;
+        height: 1400px;
+        margin: -700px 0 0 -700px;
+        border-radius: 50%;
+        background: radial-gradient(circle, var(--bg-glow) 0%, transparent 60%);
+      }
+      .scene-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 120px 160px;
+        gap: 40px;
+      }
+      .headline {
+        display: flex;
+        gap: 0.28em;
+        font-size: 200px;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        line-height: 1;
+        color: var(--ink);
+      }
+      .word {
+        display: inline-block;
+      }
+      .word.accent {
+        color: var(--accent);
+      }
+      .rule {
+        width: 520px;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--accent);
+        transform-origin: left center;
+      }
+      .kicker {
+        font-size: 36px;
+        font-weight: 300;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="5"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div id="card" class="clip" data-start="0" data-duration="5" data-track-index="0">
+        <div class="glow" id="glow" data-layout-allow-overflow="true"></div>
+        <div class="scene-content" id="content">
+          <h1 class="headline">
+            <span class="word" id="w-hello">Hello</span>
+            <span class="word accent" id="w-world">world</span>
+          </h1>
+          <div class="rule" id="rule"></div>
+          <p class="kicker" id="kicker">Test Editing</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Background breathes in
+      tl.fromTo("#glow", { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 1, scale: 1, duration: 1.6, ease: "sine.out" }, 0);
+
+      // Hook: "Hello" rises out of a blur
+      tl.fromTo(
+        "#w-hello",
+        { autoAlpha: 0, y: 80, filter: "blur(20px)" },
+        { autoAlpha: 1, y: 0, filter: "blur(0px)", duration: 0.8, ease: "power3.out" },
+        0.3,
+      );
+
+      // Punch: "world" lands with a small overshoot
+      tl.fromTo(
+        "#w-world",
+        { autoAlpha: 0, y: 80, scale: 0.9, filter: "blur(20px)" },
+        { autoAlpha: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "back.out(1.6)" },
+        0.65,
+      );
+
+      // Underline draws, then kicker fades up
+      tl.fromTo("#rule", { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: "power2.inOut" }, 1.4);
+      tl.fromTo("#kicker", { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.6, ease: "power2.out" }, 1.8);
+
+      // Hold, then resolve: everything fades out together
+      tl.to("#content", { autoAlpha: 0, y: -24, duration: 0.6, ease: "power2.in" }, 4.3);
+      tl.to("#glow", { autoAlpha: 0, duration: 0.6, ease: "power2.in" }, 4.3);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

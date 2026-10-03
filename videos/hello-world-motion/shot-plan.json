@@ -1,0 +1,8 @@
+{
+  "category": "kinetic-type",
+  "asset_needs": [],
+  "duration": 5,
+  "aspect": "16:9",
+  "brief": "Dark title card: 'Hello' rises from a blur, 'world' (accent violet) lands with a soft overshoot, an underline draws in, a small 'Test Editing' kicker fades up, hold, then everything fades out by 4.9s.",
+  "scenes": [{ "copy": "Hello world", "emphasis_words": ["world"], "beats": [0.3, 0.65, 1.4, 1.8, 4.3] }]
+}
