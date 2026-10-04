@@ -1,0 +1,159 @@
+{
+  "currency": "€",
+  "boosterPrice": 6.0,
+  "video": "source/edited.mp4",
+  "speedup": {
+    "from": 3.2,
+    "to": 10.6,
+    "factor": 3
+  },
+  "cards": [
+    {
+      "n": 1,
+      "t": 6.07,
+      "name": "Ascension académique",
+      "set": "FRA",
+      "collector": "0002",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 2,
+      "t": 10.07,
+      "name": "Forgemots cingleuse",
+      "set": "FRA",
+      "collector": "0164",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 3,
+      "t": 14.47,
+      "name": "Amphisbène ésotérique",
+      "set": "FRA",
+      "collector": "0097",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 4,
+      "t": 18.27,
+      "name": "Experte en cryothéorie",
+      "set": "FRA",
+      "collector": "0027",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 5,
+      "t": 21.67,
+      "name": "Nécromancienne théorique",
+      "set": "FRA",
+      "collector": "0069",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 6,
+      "t": 25.87,
+      "name": "Volume murmurant",
+      "set": "FRA",
+      "collector": "0174",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 7,
+      "t": 29.67,
+      "name": "Réanimation généreuse",
+      "set": "FRA",
+      "collector": "0008",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 8,
+      "t": 33.47,
+      "name": "Multiplier par zéro",
+      "set": "FRA",
+      "collector": "0058",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 9,
+      "t": 37.27,
+      "name": "Voie du sculpteur d'esprit",
+      "set": "FRA",
+      "collector": "0224",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 10,
+      "t": 41.67,
+      "name": "Voie du paradoxe",
+      "set": "FRA",
+      "collector": "0267",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 11,
+      "t": 45.47,
+      "name": "Titos, importun de poche",
+      "set": "FRA",
+      "collector": "0237",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 12,
+      "t": 49.87,
+      "name": "Cultivateur carnivore",
+      "set": "FRA",
+      "collector": "0100",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 13,
+      "t": 54.67,
+      "name": "Gardien de l'Heure de silence",
+      "set": "FRA",
+      "collector": "0171",
+      "foil": true,
+      "price": null,
+      "priceSource": null
+    },
+    {
+      "n": 14,
+      "t": 60.87,
+      "name": "Salle commune changeante",
+      "set": "FRA",
+      "collector": "0183",
+      "foil": false,
+      "price": null,
+      "priceSource": null
+    }
+  ],
+  "skipped": [
+    {
+      "t": 64.87,
+      "name": "Cadet (jeton)",
+      "reason": "token"
+    }
+  ]
+}
