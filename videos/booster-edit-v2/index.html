@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-display: block;
+        src: url("assets/fonts/montserrat-latin-600-normal.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-display: block;
+        src: url("assets/fonts/montserrat-latin-700-normal.woff2") format("woff2");
+      }
+      :root {
+        --green: #3cff3c;
+        --red: #ff1f1f;
+        --white: #ffffff;
+        --outline-lg: 3.5px 0.0px 0 #000, 2.5px 2.5px 0 #000, 0.0px 3.5px 0 #000, -2.5px 2.5px 0 #000, -3.5px 0.0px 0 #000, -2.5px -2.5px 0 #000, -0.0px -3.5px 0 #000, 2.5px -2.5px 0 #000, 7.0px 0.0px 0 #000, 6.5px 2.7px 0 #000, 4.9px 4.9px 0 #000, 2.7px 6.5px 0 #000, 0.0px 7.0px 0 #000, -2.7px 6.5px 0 #000, -4.9px 4.9px 0 #000, -6.5px 2.7px 0 #000, -7.0px 0.0px 0 #000, -6.5px -2.7px 0 #000, -4.9px -4.9px 0 #000, -2.7px -6.5px 0 #000, -0.0px -7.0px 0 #000, 2.7px -6.5px 0 #000, 4.9px -4.9px 0 #000, 6.5px -2.7px 0 #000, 0 4px 6px rgba(0,0,0,0.35);
+        --outline-md: 2.5px 0.0px 0 #000, 1.8px 1.8px 0 #000, 0.0px 2.5px 0 #000, -1.8px 1.8px 0 #000, -2.5px 0.0px 0 #000, -1.8px -1.8px 0 #000, -0.0px -2.5px 0 #000, 1.8px -1.8px 0 #000, 5.0px 0.0px 0 #000, 4.6px 1.9px 0 #000, 3.5px 3.5px 0 #000, 1.9px 4.6px 0 #000, 0.0px 5.0px 0 #000, -1.9px 4.6px 0 #000, -3.5px 3.5px 0 #000, -4.6px 1.9px 0 #000, -5.0px 0.0px 0 #000, -4.6px -1.9px 0 #000, -3.5px -3.5px 0 #000, -1.9px -4.6px 0 #000, -0.0px -5.0px 0 #000, 1.9px -4.6px 0 #000, 3.5px -3.5px 0 #000, 4.6px -1.9px 0 #000, 0 4px 6px rgba(0,0,0,0.35);
+        --outline-sm: 2.0px 0.0px 0 #000, 1.4px 1.4px 0 #000, 0.0px 2.0px 0 #000, -1.4px 1.4px 0 #000, -2.0px 0.0px 0 #000, -1.4px -1.4px 0 #000, -0.0px -2.0px 0 #000, 1.4px -1.4px 0 #000, 4.0px 0.0px 0 #000, 3.7px 1.5px 0 #000, 2.8px 2.8px 0 #000, 1.5px 3.7px 0 #000, 0.0px 4.0px 0 #000, -1.5px 3.7px 0 #000, -2.8px 2.8px 0 #000, -3.7px 1.5px 0 #000, -4.0px 0.0px 0 #000, -3.7px -1.5px 0 #000, -2.8px -2.8px 0 #000, -1.5px -3.7px 0 #000, -0.0px -4.0px 0 #000, 1.5px -3.7px 0 #000, 2.8px -2.8px 0 #000, 3.7px -1.5px 0 #000, 0 3px 4px rgba(0,0,0,0.35);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        font-family: Montserrat, sans-serif;
+      }
+      #footage {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+      }
+      #overlay {
+        position: absolute;
+        inset: 0;
+      }
+      .txt {
+        position: absolute;
+        white-space: nowrap;
+        line-height: 1;
+        letter-spacing: -0.01em;
+      }
+      /* Reference: label + running value, top left */
+      #hud {
+        position: absolute;
+        left: 84px;
+        top: 92px;
+        width: 700px;
+        height: 200px;
+        transform-origin: 0 0;
+      }
+      #hud-label {
+        left: 0;
+        top: 0;
+        font-size: 84px;
+        font-weight: 600;
+        color: var(--white);
+        text-shadow: var(--outline-md);
+      }
+      #counter {
+        left: 52px;
+        top: 100px;
+        font-size: 96px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-md);
+      }
+      #counter.pos {
+        color: var(--green);
+      }
+      /* Reference: card price, small, centred above the card, always green */
+      .price {
+        left: 0;
+        right: 0;
+        top: 352px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        color: var(--green);
+        text-shadow: var(--outline-sm);
+      }
+      /* Reference: big pack-cost intro in the middle */
+      #intro {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 760px;
+        height: 260px;
+      }
+      #intro-value {
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 160px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-lg);
+      }
+      #intro-sub {
+        left: 0;
+        right: 0;
+        top: 172px;
+        text-align: center;
+        padding-left: 220px;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-md);
+      }
+      /* Reference: final label + value, centred and larger */
+      #final {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1010px;
+        height: 290px;
+      }
+      #final-label {
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 120px;
+        font-weight: 600;
+        color: var(--white);
+        text-shadow: var(--outline-lg);
+      }
+      #final-value {
+        left: 0;
+        right: 0;
+        top: 146px;
+        text-align: center;
+        font-size: 168px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-lg);
+      }
+      #final-value.pos {
+        color: var(--green);
+      }
+      /* Hidden until their beat; the timeline reveals them */
+      #hud-label,
+      #counter,
+      #intro,
+      #final,
+      .price {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-ql3n" id="root" data-composition-id="main" data-start="0" data-duration="71.27" data-width="1080" data-height="1920">
+      <video data-hf-id="hf-yezi" id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-duration="71.27" data-track-index="0"></video>
+      <audio data-hf-id="hf-mszu" id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="71.27" data-track-index="2"></audio>
+      <div data-hf-id="hf-uyp2" id="overlay" class="clip" data-start="0" data-duration="71.27" data-track-index="1">
+        <div data-hf-id="hf-yw03" id="prices"></div>
+        <div data-hf-id="hf-i9xo" id="hud">
+          <div data-hf-id="hf-z10c" class="txt" id="hud-label">Gain/Perte</div>
+          <div data-hf-id="hf-45o9" class="txt" id="counter">-0,00 €</div>
+        </div>
+        <div data-hf-id="hf-j6bt" id="intro">
+          <div data-hf-id="hf-im13" class="txt" id="intro-value">-0,00 €</div>
+          <div data-hf-id="hf-0idy" class="txt" id="intro-sub">le booster</div>
+        </div>
+        <div data-hf-id="hf-r6lr" id="final">
+          <div data-hf-id="hf-2ypv" class="txt" id="final-label">Gain/Perte</div>
+          <div data-hf-id="hf-wk9u" class="txt" id="final-value">0,00 €</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Prices and timecodes come from cards.json — edit them there, never here.
+      const req = new XMLHttpRequest();
+      req.open("GET", "cards.json", false);
+      req.send(null);
+      const data = JSON.parse(req.responseText);
+
+      const cents = (v) => Math.round(v * 100);
+      const fmt = (c) => (c < 0 ? "-" : "") + (Math.abs(c) / 100).toFixed(2).replace(".", ",") + " €";
+      const delay = data.popDelay ?? 0.3;
+      const cards = data.cards.filter((c) => c.price != null).sort((a, b) => a.t - b.t);
+      const start = -cents(data.boosterPrice);
+      const end = start + cards.reduce((s, c) => s + cents(c.price), 0);
+
+      document.getElementById("intro-value").textContent = fmt(start);
+      const counter = document.getElementById("counter");
+      const finalValue = document.getElementById("final-value");
+      finalValue.textContent = fmt(end);
+      finalValue.classList.toggle("pos", end >= 0);
+
+      const pricesEl = document.getElementById("prices");
+      cards.forEach((c, i) => {
+        const el = document.createElement("div");
+        el.className = "txt price";
+        el.id = "price-" + i;
+        el.textContent = fmt(cents(c.price));
+        pricesEl.appendChild(el);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Label, then the big pack-cost intro (fade in + small drop), then the running value
+      tl.fromTo("#hud-label", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.2, ease: "power1.out" }, 0.5);
+      tl.fromTo("#intro", { autoAlpha: 0, y: -30 }, { autoAlpha: 1, y: 0, duration: 0.2, ease: "power2.out" }, data.intro.start);
+      tl.set("#intro", { autoAlpha: 0 }, data.intro.end);
+      tl.fromTo("#counter", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.2, ease: "power1.out" }, data.intro.start + 0.4);
+
+      // Running value: counts to the new total at each card, red below zero, green from zero up
+      const proxy = { v: start };
+      const draw = () => {
+        const v = Math.round(proxy.v);
+        counter.textContent = fmt(v);
+        counter.classList.toggle("pos", v >= 0);
+      };
+      tl.set(proxy, { v: start, onUpdate: draw }, 0);
+
+      let running = start;
+      cards.forEach((c, i) => {
+        const at = c.t + delay;
+        const until = i + 1 < cards.length ? cards[i + 1].t + delay : data.finalAt;
+        // Reference: quick fade in while rising slightly (~0.2 s), held until the next price replaces it
+        tl.fromTo("#price-" + i, { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.2, ease: "power2.out" }, at);
+        tl.set("#price-" + i, { autoAlpha: 0 }, until);
+        running += cents(c.price);
+        tl.to(proxy, { v: running, duration: 0.3, ease: "power1.out", onUpdate: draw }, at);
+      });
+
+      // Final: the corner HUD flies toward the centre while the big centred version grows in
+      tl.to("#hud", { x: 150, y: 820, scale: 1.3, autoAlpha: 0, duration: 0.35, ease: "power2.in" }, data.finalAt);
+      tl.fromTo(
+        "#final",
+        { autoAlpha: 0, scale: 0.5, x: -200, y: -520 },
+        { autoAlpha: 1, scale: 1, x: 0, y: 0, duration: 0.4, ease: "power2.out" },
+        data.finalAt + 0.05,
+      );
+      tl.to("#final", { scale: 1.06, duration: 0.15, ease: "sine.out" }, data.finalAt + 0.45);
+      tl.to("#final", { scale: 1, duration: 0.2, ease: "sine.inOut" }, data.finalAt + 0.6);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

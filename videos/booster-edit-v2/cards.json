@@ -15,8 +15,8 @@
       "set": "FRA",
       "collector": "0002",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 2,
@@ -25,8 +25,8 @@
       "set": "FRA",
       "collector": "0164",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 3,
@@ -35,8 +35,8 @@
       "set": "FRA",
       "collector": "0097",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 4,
@@ -45,8 +45,8 @@
       "set": "FRA",
       "collector": "0027",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 5,
@@ -55,8 +55,8 @@
       "set": "FRA",
       "collector": "0069",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 6,
@@ -65,8 +65,8 @@
       "set": "FRA",
       "collector": "0174",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 7,
@@ -75,8 +75,8 @@
       "set": "FRA",
       "collector": "0008",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 8,
@@ -85,8 +85,8 @@
       "set": "FRA",
       "collector": "0058",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.05,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 9,
@@ -95,8 +95,8 @@
       "set": "FRA",
       "collector": "0224",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 10,
@@ -105,8 +105,8 @@
       "set": "FRA",
       "collector": "0267",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 11,
@@ -115,18 +115,18 @@
       "set": "FRA",
       "collector": "0237",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 12,
       "t": 49.87,
-      "name": "Cultivateur carnivore",
+      "name": "Cultivateur carnivore // Enraciner",
       "set": "FRA",
       "collector": "0100",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.1,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 13,
@@ -135,8 +135,8 @@
       "set": "FRA",
       "collector": "0171",
       "foil": true,
-      "price": null,
-      "priceSource": null
+      "price": 0.03,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     },
     {
       "n": 14,
@@ -145,8 +145,8 @@
       "set": "FRA",
       "collector": "0183",
       "foil": false,
-      "price": null,
-      "priceSource": null
+      "price": 0.02,
+      "priceSource": "manuel (fourni par l'utilisateur, Cardmarket non joignable depuis l'environnement)"
     }
   ],
   "skipped": [
@@ -155,5 +155,12 @@
       "name": "Cadet (jeton)",
       "reason": "token"
     }
-  ]
+  ],
+  "popDelay": 0.3,
+  "intro": {
+    "start": 0.8,
+    "end": 2.6
+  },
+  "finalAt": 66.2,
+  "duration": 71.27
 }
