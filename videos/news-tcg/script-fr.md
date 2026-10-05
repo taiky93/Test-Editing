@@ -1,4 +1,4 @@
-# Script FR — Zeta Set (brouillon v1)
+# Script FR — Zeta Set (validé v2)
 
 **Accroche**
 Wizards vient de faire un truc qu'ils ne font quasiment jamais : le Zeta Set revient en vente. Oui, LE Secret Lair dont le drop a viré au fiasco.
@@ -11,6 +11,7 @@ Et si tu avais déjà réussi à le précommander et que tu ne le veux plus parc
 
 **Avis / conclusion**
 Pour ceux qui l'ont raté, c'est clairement une bonne nouvelle. Mais pour les collectionneurs qui font la queue à chaque drop pour compléter leur classeur, ça pique un peu : l'exclusivité, c'est tout l'ADN de Secret Lair. Et ça crée un précédent bizarre pour les prochains drops.
+Au passage, si tu veux pas rater les prochaines news Secret Lair, abonne-toi, j'en parle à chaque drop.
 
 **Appel à commenter**
 Et toi, t'en penses quoi ? Bonne idée de remettre le Zeta Set en vente, ou ça casse l'esprit Secret Lair ? Dis-le-moi en commentaire !
