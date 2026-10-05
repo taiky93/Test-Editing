@@ -1,0 +1,106 @@
+{
+ "duration": 112.52,
+ "imageHeight": 6300,
+ "foci": [
+  {
+   "t": 0.0,
+   "box": "title",
+   "label": "accroche",
+   "y": 120,
+   "h": 89,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 9.68,
+   "box": "queue",
+   "label": "le chaos de la vente",
+   "y": 1821,
+   "h": 410,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 35.04,
+   "box": "disruption",
+   "label": "panne externe",
+   "y": 974,
+   "h": 307,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 38.61,
+   "box": "pause",
+   "label": "pause de la file",
+   "y": 2490,
+   "h": 461,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 43.88,
+   "box": "wait",
+   "label": "1 h 30 d'attente",
+   "y": 2991,
+   "h": 205,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 47.68,
+   "box": "rerun",
+   "label": "9 décembre, 24 h",
+   "y": 5259,
+   "h": 358,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 67.0,
+   "box": "cancel",
+   "label": "annulation avant le 9 octobre",
+   "y": 5657,
+   "h": 461,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 79.77,
+   "box": "shipping",
+   "label": "envois Europe 8 décembre",
+   "y": 4331,
+   "h": 205,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 81.72,
+   "box": "end",
+   "label": "avis",
+   "highlight": false,
+   "y": 6158,
+   "h": 51,
+   "x": 27,
+   "w": 1026
+  },
+  {
+   "t": 104.36,
+   "box": "title",
+   "label": "question finale",
+   "highlight": false,
+   "y": 120,
+   "h": 89,
+   "x": 27,
+   "w": 1026
+  }
+ ]
+}

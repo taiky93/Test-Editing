@@ -1,0 +1,1892 @@
+[
+ {
+  "text": "Wizards",
+  "start": 0.04,
+  "end": 0.33,
+  "line": 0
+ },
+ {
+  "text": "vient",
+  "start": 0.33,
+  "end": 0.57,
+  "line": 0
+ },
+ {
+  "text": "de",
+  "start": 0.57,
+  "end": 0.66,
+  "line": 0
+ },
+ {
+  "text": "faire",
+  "start": 0.66,
+  "end": 0.9,
+  "line": 0
+ },
+ {
+  "text": "un",
+  "start": 0.9,
+  "end": 1.0,
+  "line": 0
+ },
+ {
+  "text": "truc",
+  "start": 1.0,
+  "end": 1.19,
+  "line": 0
+ },
+ {
+  "text": "qu'ils",
+  "start": 1.19,
+  "end": 1.52,
+  "line": 0
+ },
+ {
+  "text": "ne",
+  "start": 1.52,
+  "end": 1.627,
+  "line": 0
+ },
+ {
+  "text": "font",
+  "start": 1.627,
+  "end": 1.84,
+  "line": 0
+ },
+ {
+  "text": "quasiment",
+  "start": 1.84,
+  "end": 2.16,
+  "line": 0
+ },
+ {
+  "text": "jamais :",
+  "start": 2.16,
+  "end": 2.72,
+  "line": 0
+ },
+ {
+  "text": "le",
+  "start": 3.03,
+  "end": 3.181,
+  "line": 0
+ },
+ {
+  "text": "Zeta",
+  "start": 3.181,
+  "end": 3.483,
+  "line": 0
+ },
+ {
+  "text": "Set",
+  "start": 3.483,
+  "end": 3.71,
+  "line": 0
+ },
+ {
+  "text": "revient",
+  "start": 3.71,
+  "end": 4.41,
+  "line": 0
+ },
+ {
+  "text": "en",
+  "start": 4.41,
+  "end": 4.72,
+  "line": 0
+ },
+ {
+  "text": "vente.",
+  "start": 4.72,
+  "end": 5.52,
+  "line": 0
+ },
+ {
+  "text": "Oui,",
+  "start": 6.12,
+  "end": 6.56,
+  "line": 0
+ },
+ {
+  "text": "LE",
+  "start": 6.56,
+  "end": 6.69,
+  "line": 0
+ },
+ {
+  "text": "Secret",
+  "start": 6.69,
+  "end": 7.08,
+  "line": 0
+ },
+ {
+  "text": "Lair",
+  "start": 7.08,
+  "end": 7.61,
+  "line": 0
+ },
+ {
+  "text": "dont",
+  "start": 7.61,
+  "end": 7.802,
+  "line": 0
+ },
+ {
+  "text": "le",
+  "start": 7.802,
+  "end": 7.898,
+  "line": 0
+ },
+ {
+  "text": "drop",
+  "start": 7.898,
+  "end": 8.09,
+  "line": 0
+ },
+ {
+  "text": "a",
+  "start": 8.09,
+  "end": 8.2,
+  "line": 0
+ },
+ {
+  "text": "viré",
+  "start": 8.2,
+  "end": 8.42,
+  "line": 0
+ },
+ {
+  "text": "au",
+  "start": 8.42,
+  "end": 8.56,
+  "line": 0
+ },
+ {
+  "text": "fiasco.",
+  "start": 8.56,
+  "end": 9.2,
+  "line": 0
+ },
+ {
+  "text": "Petit",
+  "start": 9.43,
+  "end": 9.816,
+  "line": 1
+ },
+ {
+  "text": "rappel :",
+  "start": 9.816,
+  "end": 10.28,
+  "line": 1
+ },
+ {
+  "text": "Secret",
+  "start": 10.28,
+  "end": 11.06,
+  "line": 1
+ },
+ {
+  "text": "Lair",
+  "start": 11.06,
+  "end": 11.52,
+  "line": 1
+ },
+ {
+  "text": "x",
+  "start": 11.52,
+  "end": 12.333,
+  "line": 1
+ },
+ {
+  "text": "MSCHF,",
+  "start": 12.333,
+  "end": 13.147,
+  "line": 1
+ },
+ {
+  "text": "The",
+  "start": 13.147,
+  "end": 13.96,
+  "line": 1
+ },
+ {
+  "text": "Zeta",
+  "start": 13.96,
+  "end": 14.34,
+  "line": 1
+ },
+ {
+  "text": "Set,",
+  "start": 14.34,
+  "end": 15.44,
+  "line": 1
+ },
+ {
+  "text": "une",
+  "start": 15.44,
+  "end": 15.539,
+  "line": 1
+ },
+ {
+  "text": "collection",
+  "start": 15.539,
+  "end": 15.87,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 15.87,
+  "end": 15.99,
+  "line": 1
+ },
+ {
+  "text": "cartes",
+  "start": 15.99,
+  "end": 16.51,
+  "line": 1
+ },
+ {
+  "text": "au",
+  "start": 16.51,
+  "end": 16.63,
+  "line": 1
+ },
+ {
+  "text": "look",
+  "start": 16.63,
+  "end": 16.96,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 16.96,
+  "end": 17.086,
+  "line": 1
+ },
+ {
+  "text": "vieux",
+  "start": 17.086,
+  "end": 17.4,
+  "line": 1
+ },
+ {
+  "text": "prototypes",
+  "start": 17.4,
+  "end": 17.99,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 17.99,
+  "end": 18.38,
+  "line": 1
+ },
+ {
+  "text": "playtest.",
+  "start": 18.38,
+  "end": 18.88,
+  "line": 1
+ },
+ {
+  "text": "Le",
+  "start": 19.15,
+  "end": 19.273,
+  "line": 1
+ },
+ {
+  "text": "jour",
+  "start": 19.273,
+  "end": 19.518,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 19.518,
+  "end": 19.641,
+  "line": 1
+ },
+ {
+  "text": "la",
+  "start": 19.641,
+  "end": 19.763,
+  "line": 1
+ },
+ {
+  "text": "vente,",
+  "start": 19.763,
+  "end": 20.07,
+  "line": 1
+ },
+ {
+  "text": "c'était",
+  "start": 20.07,
+  "end": 20.59,
+  "line": 1
+ },
+ {
+  "text": "le",
+  "start": 20.59,
+  "end": 20.92,
+  "line": 1
+ },
+ {
+  "text": "chaos :",
+  "start": 20.92,
+  "end": 21.12,
+  "line": 1
+ },
+ {
+  "text": "file",
+  "start": 21.23,
+  "end": 21.53,
+  "line": 1
+ },
+ {
+  "text": "d'attente",
+  "start": 21.53,
+  "end": 22.13,
+  "line": 1
+ },
+ {
+  "text": "bloquée,",
+  "start": 22.13,
+  "end": 23.0,
+  "line": 1
+ },
+ {
+  "text": "erreurs",
+  "start": 23.0,
+  "end": 23.44,
+  "line": 1
+ },
+ {
+  "text": "au",
+  "start": 23.44,
+  "end": 23.59,
+  "line": 1
+ },
+ {
+  "text": "paiement,",
+  "start": 23.59,
+  "end": 24.24,
+  "line": 1
+ },
+ {
+  "text": "mails",
+  "start": 24.24,
+  "end": 24.6,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 24.6,
+  "end": 24.713,
+  "line": 1
+ },
+ {
+  "text": "confirmation",
+  "start": 24.713,
+  "end": 25.39,
+  "line": 1
+ },
+ {
+  "text": "qui",
+  "start": 25.39,
+  "end": 25.63,
+  "line": 1
+ },
+ {
+  "text": "n'arrivaient",
+  "start": 25.63,
+  "end": 26.2,
+  "line": 1
+ },
+ {
+  "text": "jamais…",
+  "start": 26.2,
+  "end": 26.64,
+  "line": 1
+ },
+ {
+  "text": "et",
+  "start": 26.75,
+  "end": 26.977,
+  "line": 1
+ },
+ {
+  "text": "au",
+  "start": 26.977,
+  "end": 27.203,
+  "line": 1
+ },
+ {
+  "text": "final,",
+  "start": 27.203,
+  "end": 27.77,
+  "line": 1
+ },
+ {
+  "text": "sold",
+  "start": 27.77,
+  "end": 28.09,
+  "line": 1
+ },
+ {
+  "text": "out.",
+  "start": 28.09,
+  "end": 28.72,
+  "line": 1
+ },
+ {
+  "text": "Matthew",
+  "start": 29.64,
+  "end": 30.03,
+  "line": 2
+ },
+ {
+  "text": "Hodgins,",
+  "start": 30.03,
+  "end": 30.6,
+  "line": 2
+ },
+ {
+  "text": "le",
+  "start": 30.6,
+  "end": 30.71,
+  "line": 2
+ },
+ {
+  "text": "responsable",
+  "start": 30.71,
+  "end": 31.4,
+  "line": 2
+ },
+ {
+  "text": "de",
+  "start": 31.4,
+  "end": 31.492,
+  "line": 2
+ },
+ {
+  "text": "Secret",
+  "start": 31.492,
+  "end": 31.77,
+  "line": 2
+ },
+ {
+  "text": "Lair,",
+  "start": 31.77,
+  "end": 32.2,
+  "line": 2
+ },
+ {
+  "text": "a",
+  "start": 32.27,
+  "end": 32.448,
+  "line": 2
+ },
+ {
+  "text": "publié",
+  "start": 32.448,
+  "end": 32.98,
+  "line": 2
+ },
+ {
+  "text": "un",
+  "start": 32.98,
+  "end": 33.29,
+  "line": 2
+ },
+ {
+  "text": "mea",
+  "start": 33.29,
+  "end": 33.56,
+  "line": 2
+ },
+ {
+  "text": "culpa.",
+  "start": 33.56,
+  "end": 34.52,
+  "line": 2
+ },
+ {
+  "text": "Une",
+  "start": 34.79,
+  "end": 34.962,
+  "line": 2
+ },
+ {
+  "text": "panne",
+  "start": 34.962,
+  "end": 35.248,
+  "line": 2
+ },
+ {
+  "text": "d'un",
+  "start": 35.248,
+  "end": 35.42,
+  "line": 2
+ },
+ {
+  "text": "service",
+  "start": 35.42,
+  "end": 35.95,
+  "line": 2
+ },
+ {
+  "text": "externe",
+  "start": 35.95,
+  "end": 36.56,
+  "line": 2
+ },
+ {
+  "text": "a",
+  "start": 36.56,
+  "end": 36.667,
+  "line": 2
+ },
+ {
+  "text": "fait",
+  "start": 36.667,
+  "end": 36.88,
+  "line": 2
+ },
+ {
+  "text": "tomber",
+  "start": 36.88,
+  "end": 37.22,
+  "line": 2
+ },
+ {
+  "text": "le",
+  "start": 37.22,
+  "end": 37.35,
+  "line": 2
+ },
+ {
+  "text": "système,",
+  "start": 37.35,
+  "end": 37.84,
+  "line": 2
+ },
+ {
+  "text": "et",
+  "start": 38.03,
+  "end": 38.126,
+  "line": 2
+ },
+ {
+  "text": "c'est",
+  "start": 38.126,
+  "end": 38.318,
+  "line": 2
+ },
+ {
+  "text": "lui",
+  "start": 38.318,
+  "end": 38.462,
+  "line": 2
+ },
+ {
+  "text": "qui",
+  "start": 38.462,
+  "end": 38.606,
+  "line": 2
+ },
+ {
+  "text": "a",
+  "start": 38.606,
+  "end": 38.702,
+  "line": 2
+ },
+ {
+  "text": "décidé",
+  "start": 38.702,
+  "end": 38.99,
+  "line": 2
+ },
+ {
+  "text": "de",
+  "start": 38.99,
+  "end": 39.092,
+  "line": 2
+ },
+ {
+  "text": "mettre",
+  "start": 39.092,
+  "end": 39.4,
+  "line": 2
+ },
+ {
+  "text": "la",
+  "start": 39.4,
+  "end": 39.74,
+  "line": 2
+ },
+ {
+  "text": "file",
+  "start": 39.74,
+  "end": 39.98,
+  "line": 2
+ },
+ {
+  "text": "en",
+  "start": 39.98,
+  "end": 40.1,
+  "line": 2
+ },
+ {
+  "text": "pause.",
+  "start": 40.1,
+  "end": 40.4,
+  "line": 2
+ },
+ {
+  "text": "Résultat :",
+  "start": 40.96,
+  "end": 41.6,
+  "line": 2
+ },
+ {
+  "text": "des",
+  "start": 41.6,
+  "end": 41.75,
+  "line": 2
+ },
+ {
+  "text": "milliers",
+  "start": 41.75,
+  "end": 42.15,
+  "line": 2
+ },
+ {
+  "text": "de",
+  "start": 42.15,
+  "end": 42.39,
+  "line": 2
+ },
+ {
+  "text": "joueurs",
+  "start": 42.39,
+  "end": 42.6,
+  "line": 2
+ },
+ {
+  "text": "ont",
+  "start": 42.6,
+  "end": 42.76,
+  "line": 2
+ },
+ {
+  "text": "attendu",
+  "start": 42.76,
+  "end": 43.16,
+  "line": 2
+ },
+ {
+  "text": "environ",
+  "start": 43.16,
+  "end": 43.55,
+  "line": 2
+ },
+ {
+  "text": "une",
+  "start": 43.55,
+  "end": 43.88,
+  "line": 2
+ },
+ {
+  "text": "heure",
+  "start": 43.88,
+  "end": 44.144,
+  "line": 2
+ },
+ {
+  "text": "et",
+  "start": 44.144,
+  "end": 44.25,
+  "line": 2
+ },
+ {
+  "text": "demie",
+  "start": 44.25,
+  "end": 44.37,
+  "line": 2
+ },
+ {
+  "text": "de",
+  "start": 44.37,
+  "end": 44.53,
+  "line": 2
+ },
+ {
+  "text": "plus…",
+  "start": 44.53,
+  "end": 44.88,
+  "line": 2
+ },
+ {
+  "text": "pour",
+  "start": 45.23,
+  "end": 45.393,
+  "line": 2
+ },
+ {
+  "text": "repartir",
+  "start": 45.393,
+  "end": 45.72,
+  "line": 2
+ },
+ {
+  "text": "les",
+  "start": 45.72,
+  "end": 45.92,
+  "line": 2
+ },
+ {
+  "text": "mains",
+  "start": 45.92,
+  "end": 46.28,
+  "line": 2
+ },
+ {
+  "text": "vides.",
+  "start": 46.28,
+  "end": 46.88,
+  "line": 2
+ },
+ {
+  "text": "Alors",
+  "start": 47.43,
+  "end": 47.661,
+  "line": 3
+ },
+ {
+  "text": "ils",
+  "start": 47.661,
+  "end": 47.799,
+  "line": 3
+ },
+ {
+  "text": "ont",
+  "start": 47.799,
+  "end": 47.937,
+  "line": 3
+ },
+ {
+  "text": "pris",
+  "start": 47.937,
+  "end": 48.122,
+  "line": 3
+ },
+ {
+  "text": "une",
+  "start": 48.122,
+  "end": 48.26,
+  "line": 3
+ },
+ {
+  "text": "décision",
+  "start": 48.26,
+  "end": 48.87,
+  "line": 3
+ },
+ {
+  "text": "rare :",
+  "start": 48.87,
+  "end": 49.44,
+  "line": 3
+ },
+ {
+  "text": "le",
+  "start": 49.91,
+  "end": 50.118,
+  "line": 3
+ },
+ {
+  "text": "9",
+  "start": 50.118,
+  "end": 50.327,
+  "line": 3
+ },
+ {
+  "text": "décembre,",
+  "start": 50.327,
+  "end": 51.16,
+  "line": 3
+ },
+ {
+  "text": "le",
+  "start": 51.16,
+  "end": 51.32,
+  "line": 3
+ },
+ {
+  "text": "Zeta",
+  "start": 51.32,
+  "end": 51.68,
+  "line": 3
+ },
+ {
+  "text": "Set",
+  "start": 51.68,
+  "end": 51.96,
+  "line": 3
+ },
+ {
+  "text": "rouvre",
+  "start": 51.96,
+  "end": 52.36,
+  "line": 3
+ },
+ {
+  "text": "pendant",
+  "start": 52.36,
+  "end": 53.4,
+  "line": 3
+ },
+ {
+  "text": "24",
+  "start": 53.4,
+  "end": 53.53,
+  "line": 3
+ },
+ {
+  "text": "heures,",
+  "start": 53.53,
+  "end": 53.92,
+  "line": 3
+ },
+ {
+  "text": "en",
+  "start": 54.03,
+  "end": 54.133,
+  "line": 3
+ },
+ {
+  "text": "impression",
+  "start": 54.133,
+  "end": 54.65,
+  "line": 3
+ },
+ {
+  "text": "à",
+  "start": 54.65,
+  "end": 54.81,
+  "line": 3
+ },
+ {
+  "text": "la",
+  "start": 54.81,
+  "end": 54.97,
+  "line": 3
+ },
+ {
+  "text": "demande.",
+  "start": 54.97,
+  "end": 55.48,
+  "line": 3
+ },
+ {
+  "text": "Tout",
+  "start": 55.99,
+  "end": 56.135,
+  "line": 3
+ },
+ {
+  "text": "le",
+  "start": 56.135,
+  "end": 56.208,
+  "line": 3
+ },
+ {
+  "text": "monde",
+  "start": 56.208,
+  "end": 56.39,
+  "line": 3
+ },
+ {
+  "text": "qui",
+  "start": 56.39,
+  "end": 56.499,
+  "line": 3
+ },
+ {
+  "text": "commande",
+  "start": 56.499,
+  "end": 56.79,
+  "line": 3
+ },
+ {
+  "text": "pendant",
+  "start": 56.79,
+  "end": 57.15,
+  "line": 3
+ },
+ {
+  "text": "cette",
+  "start": 57.15,
+  "end": 57.43,
+  "line": 3
+ },
+ {
+  "text": "fenêtre",
+  "start": 57.43,
+  "end": 57.84,
+  "line": 3
+ },
+ {
+  "text": "sera",
+  "start": 57.84,
+  "end": 58.07,
+  "line": 3
+ },
+ {
+  "text": "servi.",
+  "start": 58.07,
+  "end": 58.64,
+  "line": 3
+ },
+ {
+  "text": "Pas",
+  "start": 59.49,
+  "end": 59.63,
+  "line": 3
+ },
+ {
+  "text": "de",
+  "start": 59.63,
+  "end": 59.75,
+  "line": 3
+ },
+ {
+  "text": "course,",
+  "start": 59.75,
+  "end": 60.28,
+  "line": 3
+ },
+ {
+  "text": "pas",
+  "start": 60.28,
+  "end": 60.51,
+  "line": 3
+ },
+ {
+  "text": "de",
+  "start": 60.51,
+  "end": 60.63,
+  "line": 3
+ },
+ {
+  "text": "réveil",
+  "start": 60.63,
+  "end": 61.0,
+  "line": 3
+ },
+ {
+  "text": "à",
+  "start": 61.0,
+  "end": 61.16,
+  "line": 3
+ },
+ {
+  "text": "la",
+  "start": 61.16,
+  "end": 61.32,
+  "line": 3
+ },
+ {
+  "text": "minute",
+  "start": 61.32,
+  "end": 61.61,
+  "line": 3
+ },
+ {
+  "text": "près.",
+  "start": 61.61,
+  "end": 62.16,
+  "line": 3
+ },
+ {
+  "text": "Par",
+  "start": 62.47,
+  "end": 62.633,
+  "line": 3
+ },
+ {
+  "text": "contre,",
+  "start": 62.633,
+  "end": 62.96,
+  "line": 3
+ },
+ {
+  "text": "les",
+  "start": 62.96,
+  "end": 63.18,
+  "line": 3
+ },
+ {
+  "text": "envois",
+  "start": 63.18,
+  "end": 63.62,
+  "line": 3
+ },
+ {
+  "text": "sont",
+  "start": 63.62,
+  "end": 63.91,
+  "line": 3
+ },
+ {
+  "text": "prévus",
+  "start": 63.91,
+  "end": 64.4,
+  "line": 3
+ },
+ {
+  "text": "pour",
+  "start": 64.4,
+  "end": 64.68,
+  "line": 3
+ },
+ {
+  "text": "le",
+  "start": 64.68,
+  "end": 64.798,
+  "line": 3
+ },
+ {
+  "text": "second",
+  "start": 64.798,
+  "end": 65.15,
+  "line": 3
+ },
+ {
+  "text": "semestre",
+  "start": 65.15,
+  "end": 66.0,
+  "line": 3
+ },
+ {
+  "text": "2027.",
+  "start": 66.0,
+  "end": 66.36,
+  "line": 3
+ },
+ {
+  "text": "Et",
+  "start": 66.75,
+  "end": 66.853,
+  "line": 4
+ },
+ {
+  "text": "si",
+  "start": 66.853,
+  "end": 66.956,
+  "line": 4
+ },
+ {
+  "text": "tu",
+  "start": 66.956,
+  "end": 67.059,
+  "line": 4
+ },
+ {
+  "text": "avais",
+  "start": 67.059,
+  "end": 67.316,
+  "line": 4
+ },
+ {
+  "text": "déjà",
+  "start": 67.316,
+  "end": 67.521,
+  "line": 4
+ },
+ {
+  "text": "réussi",
+  "start": 67.521,
+  "end": 67.83,
+  "line": 4
+ },
+ {
+  "text": "à",
+  "start": 67.83,
+  "end": 67.99,
+  "line": 4
+ },
+ {
+  "text": "le",
+  "start": 67.99,
+  "end": 68.15,
+  "line": 4
+ },
+ {
+  "text": "précommander",
+  "start": 68.15,
+  "end": 68.92,
+  "line": 4
+ },
+ {
+  "text": "et",
+  "start": 68.99,
+  "end": 69.118,
+  "line": 4
+ },
+ {
+  "text": "que",
+  "start": 69.118,
+  "end": 69.31,
+  "line": 4
+ },
+ {
+  "text": "tu",
+  "start": 69.31,
+  "end": 69.438,
+  "line": 4
+ },
+ {
+  "text": "ne",
+  "start": 69.438,
+  "end": 69.566,
+  "line": 4
+ },
+ {
+  "text": "le",
+  "start": 69.566,
+  "end": 69.694,
+  "line": 4
+ },
+ {
+  "text": "veux",
+  "start": 69.694,
+  "end": 69.95,
+  "line": 4
+ },
+ {
+  "text": "plus",
+  "start": 69.95,
+  "end": 70.04,
+  "line": 4
+ },
+ {
+  "text": "parce",
+  "start": 70.04,
+  "end": 70.33,
+  "line": 4
+ },
+ {
+  "text": "qu'il",
+  "start": 70.33,
+  "end": 70.76,
+  "line": 4
+ },
+ {
+  "text": "sera",
+  "start": 70.76,
+  "end": 70.956,
+  "line": 4
+ },
+ {
+  "text": "moins",
+  "start": 70.956,
+  "end": 71.2,
+  "line": 4
+ },
+ {
+  "text": "rare,",
+  "start": 71.2,
+  "end": 71.44,
+  "line": 4
+ },
+ {
+  "text": "tu",
+  "start": 71.59,
+  "end": 71.699,
+  "line": 4
+ },
+ {
+  "text": "peux",
+  "start": 71.699,
+  "end": 71.918,
+  "line": 4
+ },
+ {
+  "text": "annuler",
+  "start": 71.918,
+  "end": 72.3,
+  "line": 4
+ },
+ {
+  "text": "jusqu'au",
+  "start": 72.3,
+  "end": 72.83,
+  "line": 4
+ },
+ {
+  "text": "9",
+  "start": 72.83,
+  "end": 73.03,
+  "line": 4
+ },
+ {
+  "text": "octobre,",
+  "start": 73.03,
+  "end": 73.7,
+  "line": 4
+ },
+ {
+  "text": "sans",
+  "start": 73.7,
+  "end": 73.99,
+  "line": 4
+ },
+ {
+  "text": "te",
+  "start": 73.99,
+  "end": 74.13,
+  "line": 4
+ },
+ {
+  "text": "justifier.",
+  "start": 74.13,
+  "end": 75.04,
+  "line": 4
+ },
+ {
+  "text": "Sinon",
+  "start": 75.51,
+  "end": 75.742,
+  "line": 4
+ },
+ {
+  "text": "tu",
+  "start": 75.742,
+  "end": 75.835,
+  "line": 4
+ },
+ {
+  "text": "n'as",
+  "start": 75.835,
+  "end": 75.974,
+  "line": 4
+ },
+ {
+  "text": "rien",
+  "start": 75.974,
+  "end": 76.16,
+  "line": 4
+ },
+ {
+  "text": "à",
+  "start": 76.16,
+  "end": 76.366,
+  "line": 4
+ },
+ {
+  "text": "faire :",
+  "start": 76.366,
+  "end": 76.88,
+  "line": 4
+ },
+ {
+  "text": "tu",
+  "start": 77.23,
+  "end": 77.32,
+  "line": 4
+ },
+ {
+  "text": "le",
+  "start": 77.32,
+  "end": 77.41,
+  "line": 4
+ },
+ {
+  "text": "recevras",
+  "start": 77.41,
+  "end": 77.77,
+  "line": 4
+ },
+ {
+  "text": "parmi",
+  "start": 77.77,
+  "end": 78.14,
+  "line": 4
+ },
+ {
+  "text": "les",
+  "start": 78.14,
+  "end": 78.36,
+  "line": 4
+ },
+ {
+  "text": "premiers,",
+  "start": 78.36,
+  "end": 79.0,
+  "line": 4
+ },
+ {
+  "text": "à",
+  "start": 79.0,
+  "end": 79.112,
+  "line": 4
+ },
+ {
+  "text": "partir",
+  "start": 79.112,
+  "end": 79.45,
+  "line": 4
+ },
+ {
+  "text": "du",
+  "start": 79.45,
+  "end": 79.58,
+  "line": 4
+ },
+ {
+  "text": "8",
+  "start": 79.58,
+  "end": 79.77,
+  "line": 4
+ },
+ {
+  "text": "décembre",
+  "start": 79.77,
+  "end": 80.2,
+  "line": 4
+ },
+ {
+  "text": "en",
+  "start": 80.2,
+  "end": 80.77,
+  "line": 4
+ },
+ {
+  "text": "Europe.",
+  "start": 80.77,
+  "end": 81.04,
+  "line": 4
+ },
+ {
+  "text": "Pour",
+  "start": 81.47,
+  "end": 81.665,
+  "line": 5
+ },
+ {
+  "text": "ceux",
+  "start": 81.665,
+  "end": 81.859,
+  "line": 5
+ },
+ {
+  "text": "qui",
+  "start": 81.859,
+  "end": 82.005,
+  "line": 5
+ },
+ {
+  "text": "l'ont",
+  "start": 82.005,
+  "end": 82.2,
+  "line": 5
+ },
+ {
+  "text": "raté,",
+  "start": 82.2,
+  "end": 82.68,
+  "line": 5
+ },
+ {
+  "text": "c'est",
+  "start": 82.68,
+  "end": 83.24,
+  "line": 5
+ },
+ {
+  "text": "clairement",
+  "start": 83.24,
+  "end": 83.43,
+  "line": 5
+ },
+ {
+  "text": "une",
+  "start": 83.43,
+  "end": 83.57,
+  "line": 5
+ },
+ {
+  "text": "bonne",
+  "start": 83.57,
+  "end": 83.83,
+  "line": 5
+ },
+ {
+  "text": "nouvelle.",
+  "start": 83.83,
+  "end": 84.4,
+  "line": 5
+ },
+ {
+  "text": "Mais",
+  "start": 84.83,
+  "end": 85.033,
+  "line": 5
+ },
+ {
+  "text": "pour",
+  "start": 85.033,
+  "end": 85.236,
+  "line": 5
+ },
+ {
+  "text": "les",
+  "start": 85.236,
+  "end": 85.388,
+  "line": 5
+ },
+ {
+  "text": "collectionneurs",
+  "start": 85.388,
+  "end": 86.15,
+  "line": 5
+ },
+ {
+  "text": "qui",
+  "start": 86.15,
+  "end": 86.27,
+  "line": 5
+ },
+ {
+  "text": "font",
+  "start": 86.27,
+  "end": 86.57,
+  "line": 5
+ },
+ {
+  "text": "la",
+  "start": 86.57,
+  "end": 86.65,
+  "line": 5
+ },
+ {
+  "text": "queue",
+  "start": 86.65,
+  "end": 86.85,
+  "line": 5
+ },
+ {
+  "text": "à",
+  "start": 86.85,
+  "end": 86.977,
+  "line": 5
+ },
+ {
+  "text": "chaque",
+  "start": 86.977,
+  "end": 87.36,
+  "line": 5
+ },
+ {
+  "text": "drop",
+  "start": 87.36,
+  "end": 87.68,
+  "line": 5
+ },
+ {
+  "text": "pour",
+  "start": 87.93,
+  "end": 88.11,
+  "line": 5
+ },
+ {
+  "text": "compléter",
+  "start": 88.11,
+  "end": 88.65,
+  "line": 5
+ },
+ {
+  "text": "leur",
+  "start": 88.65,
+  "end": 88.84,
+  "line": 5
+ },
+ {
+  "text": "classeur,",
+  "start": 88.84,
+  "end": 89.44,
+  "line": 5
+ },
+ {
+  "text": "ça",
+  "start": 89.44,
+  "end": 89.68,
+  "line": 5
+ },
+ {
+  "text": "pique",
+  "start": 89.68,
+  "end": 89.99,
+  "line": 5
+ },
+ {
+  "text": "un",
+  "start": 89.99,
+  "end": 90.15,
+  "line": 5
+ },
+ {
+  "text": "peu :",
+  "start": 90.15,
+  "end": 90.64,
+  "line": 5
+ },
+ {
+  "text": "l'exclusivité,",
+  "start": 91.36,
+  "end": 91.84,
+  "line": 5
+ },
+ {
+  "text": "c'est",
+  "start": 91.84,
+  "end": 92.24,
+  "line": 5
+ },
+ {
+  "text": "tout",
+  "start": 92.24,
+  "end": 92.56,
+  "line": 5
+ },
+ {
+  "text": "l'ADN",
+  "start": 92.56,
+  "end": 92.96,
+  "line": 5
+ },
+ {
+  "text": "de",
+  "start": 92.96,
+  "end": 93.16,
+  "line": 5
+ },
+ {
+  "text": "Secret",
+  "start": 93.16,
+  "end": 93.6,
+  "line": 5
+ },
+ {
+  "text": "Lair.",
+  "start": 93.6,
+  "end": 94.72,
+  "line": 5
+ },
+ {
+  "text": "Et",
+  "start": 94.72,
+  "end": 94.804,
+  "line": 5
+ },
+ {
+  "text": "ça",
+  "start": 94.804,
+  "end": 94.888,
+  "line": 5
+ },
+ {
+  "text": "crée",
+  "start": 94.888,
+  "end": 95.057,
+  "line": 5
+ },
+ {
+  "text": "un",
+  "start": 95.057,
+  "end": 95.141,
+  "line": 5
+ },
+ {
+  "text": "précédent",
+  "start": 95.141,
+  "end": 95.52,
+  "line": 5
+ },
+ {
+  "text": "bizarre",
+  "start": 95.52,
+  "end": 95.65,
+  "line": 5
+ },
+ {
+  "text": "pour",
+  "start": 95.65,
+  "end": 95.91,
+  "line": 5
+ },
+ {
+  "text": "les",
+  "start": 95.91,
+  "end": 96.24,
+  "line": 5
+ },
+ {
+  "text": "prochains",
+  "start": 96.24,
+  "end": 96.68,
+  "line": 5
+ },
+ {
+  "text": "drops.",
+  "start": 96.68,
+  "end": 97.24,
+  "line": 5
+ },
+ {
+  "text": "Au",
+  "start": 97.71,
+  "end": 97.899,
+  "line": 6
+ },
+ {
+  "text": "passage,",
+  "start": 97.899,
+  "end": 98.56,
+  "line": 6
+ },
+ {
+  "text": "si",
+  "start": 98.56,
+  "end": 98.73,
+  "line": 6
+ },
+ {
+  "text": "tu",
+  "start": 98.73,
+  "end": 98.857,
+  "line": 6
+ },
+ {
+  "text": "veux",
+  "start": 98.857,
+  "end": 99.11,
+  "line": 6
+ },
+ {
+  "text": "pas",
+  "start": 99.11,
+  "end": 99.26,
+  "line": 6
+ },
+ {
+  "text": "rater",
+  "start": 99.26,
+  "end": 99.56,
+  "line": 6
+ },
+ {
+  "text": "les",
+  "start": 99.56,
+  "end": 99.76,
+  "line": 6
+ },
+ {
+  "text": "prochaines",
+  "start": 99.76,
+  "end": 100.42,
+  "line": 6
+ },
+ {
+  "text": "news",
+  "start": 100.42,
+  "end": 101.08,
+  "line": 6
+ },
+ {
+  "text": "Secret",
+  "start": 101.08,
+  "end": 101.21,
+  "line": 6
+ },
+ {
+  "text": "Lair,",
+  "start": 101.21,
+  "end": 101.8,
+  "line": 6
+ },
+ {
+  "text": "abonne-toi,",
+  "start": 101.8,
+  "end": 102.17,
+  "line": 6
+ },
+ {
+  "text": "j'en",
+  "start": 102.17,
+  "end": 102.41,
+  "line": 6
+ },
+ {
+  "text": "parle",
+  "start": 102.41,
+  "end": 102.72,
+  "line": 6
+ },
+ {
+  "text": "à",
+  "start": 102.72,
+  "end": 102.87,
+  "line": 6
+ },
+ {
+  "text": "chaque",
+  "start": 102.87,
+  "end": 103.32,
+  "line": 6
+ },
+ {
+  "text": "drop.",
+  "start": 103.32,
+  "end": 103.64,
+  "line": 6
+ },
+ {
+  "text": "Et",
+  "start": 104.11,
+  "end": 104.211,
+  "line": 7
+ },
+ {
+  "text": "toi,",
+  "start": 104.211,
+  "end": 104.364,
+  "line": 7
+ },
+ {
+  "text": "t'en",
+  "start": 104.364,
+  "end": 104.516,
+  "line": 7
+ },
+ {
+  "text": "penses",
+  "start": 104.516,
+  "end": 104.82,
+  "line": 7
+ },
+ {
+  "text": "quoi ?",
+  "start": 104.82,
+  "end": 105.13,
+  "line": 7
+ },
+ {
+  "text": "Bonne",
+  "start": 105.59,
+  "end": 105.858,
+  "line": 7
+ },
+ {
+  "text": "idée",
+  "start": 105.858,
+  "end": 106.073,
+  "line": 7
+ },
+ {
+  "text": "de",
+  "start": 106.073,
+  "end": 106.181,
+  "line": 7
+ },
+ {
+  "text": "remettre",
+  "start": 106.181,
+  "end": 106.61,
+  "line": 7
+ },
+ {
+  "text": "le",
+  "start": 106.61,
+  "end": 106.72,
+  "line": 7
+ },
+ {
+  "text": "Zeta",
+  "start": 106.72,
+  "end": 106.97,
+  "line": 7
+ },
+ {
+  "text": "Set",
+  "start": 106.97,
+  "end": 107.29,
+  "line": 7
+ },
+ {
+  "text": "en",
+  "start": 107.29,
+  "end": 107.401,
+  "line": 7
+ },
+ {
+  "text": "vente,",
+  "start": 107.401,
+  "end": 107.68,
+  "line": 7
+ },
+ {
+  "text": "ou",
+  "start": 107.79,
+  "end": 107.894,
+  "line": 7
+ },
+ {
+  "text": "ça",
+  "start": 107.894,
+  "end": 107.998,
+  "line": 7
+ },
+ {
+  "text": "casse",
+  "start": 107.998,
+  "end": 108.257,
+  "line": 7
+ },
+ {
+  "text": "l'esprit",
+  "start": 108.257,
+  "end": 108.62,
+  "line": 7
+ },
+ {
+  "text": "Secret",
+  "start": 108.62,
+  "end": 108.96,
+  "line": 7
+ },
+ {
+  "text": "Lair ?",
+  "start": 108.96,
+  "end": 109.8,
+  "line": 7
+ },
+ {
+  "text": "Dis-le-moi",
+  "start": 109.8,
+  "end": 110.01,
+  "line": 7
+ },
+ {
+  "text": "en",
+  "start": 110.01,
+  "end": 110.12,
+  "line": 7
+ },
+ {
+  "text": "commentaire !",
+  "start": 110.12,
+  "end": 110.92,
+  "line": 7
+ }
+]
