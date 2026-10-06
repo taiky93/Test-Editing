@@ -1,0 +1,19 @@
+{
+  "provider": "elevenlabs",
+  "voice_id": "iP95p4xoKVk53GoZ742B",
+  "voice_name": "Chris - Charming, Down-to-Earth",
+  "source": "ElevenLabs premade library voice (not cloned, not designed)",
+  "model_id": "eleven_multilingual_v2",
+  "language_code": "fr",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.38,
+    "similarity_boost": 0.75,
+    "style": 0.35,
+    "use_speaker_boost": true,
+    "speed": 1.1
+  },
+  "style_description": "Créateur de contenu TCG, homme jeune adulte, débit rapide, ton complice et naturel, intonation expressive sur les mots clés, posé sur les passages d'avis. Inspiré du STYLE de la vidéo source, sans clonage.",
+  "api_key_env": "ELEVENLABS_API_KEY",
+  "notes": "Voice Design (création de voix par description) n'est pas disponible par l'API sur l'offre gratuite ; voix choisie dans la bibliothèque. Offre gratuite : pas de droits commerciaux, créditer ElevenLabs."
+}
