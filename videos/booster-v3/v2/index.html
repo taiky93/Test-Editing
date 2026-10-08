@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: Cinzel; font-weight: 500; font-display: block; src: url("assets/fonts/cinzel-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: Cinzel; font-weight: 700; font-display: block; src: url("assets/fonts/cinzel-latin-700-normal.woff2") format("woff2"); }
+      :root {
+        --white: #ffffff;
+        --gold: #f2c94c;
+        --loss: #ff7d9b;
+        --bar-loss: #d9b862;
+        --win: #3fd16b;
+        --lav: #ab9ee8;
+        --over: #e5384d;
+        --shadow: 0 0 4px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 0, 0, 0.75), 0 3px 10px rgba(0, 0, 0, 0.6);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1080px; height: 1920px; font-family: Cinzel, serif; overflow: hidden; }
+      #footage { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #overlay { position: absolute; inset: 0; }
+      /* Light tablecloth: soft dark falloff behind the price and the bar for readability */
+      #shade-top { position: absolute; left: 0; top: 0; width: 1080px; height: 620px; background: linear-gradient(to bottom, rgba(0,0,0,0.42), rgba(0,0,0,0)); }
+      #shade-bot { position: absolute; left: 0; bottom: 0; width: 1080px; height: 560px; background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0) 100%); }
+      .txt { position: absolute; white-space: nowrap; line-height: 1; }
+      /* Reference: small white serif price, top left, no currency, no badge */
+      .price { left: 150px; top: 330px; font-size: 84px; font-weight: 500; color: var(--white); text-shadow: var(--shadow); letter-spacing: 0.02em; }
+      /* Opening tag: booster price in gold */
+      #intro { left: 120px; top: 130px; font-size: 150px; font-weight: 700; color: var(--gold); text-shadow: 0 6px 0 #1a1206, 0 10px 24px rgba(0, 0, 0, 0.55); }
+      /* Bottom bar: total | progress | booster price (the only € on screen) */
+      #bar { position: absolute; left: 0; right: 0; top: 1600px; height: 120px; }
+      #total { left: 70px; top: 36px; font-size: 68px; font-weight: 500; color: var(--loss); text-shadow: var(--shadow); }
+      #track { position: absolute; left: 330px; top: 62px; width: 400px; height: 22px; border-radius: 11px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
+      #fill { position: absolute; left: 0; top: 0; bottom: 0; width: 400px; border-radius: 11px; background: var(--bar-loss); transform-origin: 0 50%; }
+      #pct { left: 330px; width: 400px; top: 0; text-align: center; font-size: 40px; font-weight: 500; color: var(--loss); text-shadow: var(--shadow); }
+      #pack { right: 70px; top: 36px; font-size: 68px; font-weight: 500; color: var(--lav); text-shadow: var(--shadow); }
+      .win #total, .win #pct { color: var(--win); }
+      .win #fill { background: var(--win); }
+      /* Ending */
+      #veil { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(20, 0, 4, 0.62) 0%, rgba(8, 0, 2, 0.88) 75%); }
+      #end { position: absolute; left: 0; right: 0; top: 760px; height: 360px; text-align: center; }
+      #end-title { left: 0; right: 0; top: 0; text-align: center; font-size: 150px; font-weight: 700; color: var(--over); text-shadow: 0 0 28px rgba(229, 56, 77, 0.55), 0 6px 0 #2a0408; }
+      #end-title .ch { display: inline-block; }
+      #end-sub { left: 0; right: 0; top: 200px; text-align: center; font-size: 96px; font-weight: 500; color: var(--over); text-shadow: var(--shadow); }
+      .won #end-title { color: var(--win); text-shadow: 0 0 28px rgba(63, 209, 107, 0.5), 0 6px 0 #062a12; }
+      .won #end-sub { color: var(--win); }
+      /* Hidden until their beat */
+      .price, #intro, #bar, #veil, #end, #shade-bot { opacity: 0; visibility: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="54.75" data-width="1080" data-height="1920">
+      <video id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-duration="54.75" data-track-index="0"></video>
+      <audio id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="54.75" data-track-index="2"></audio>
+      <div id="overlay" class="clip" data-start="0" data-duration="54.75" data-track-index="1">
+        <div id="shade-top"></div>
+        <div id="shade-bot"></div>
+        <div id="prices"></div>
+        <div class="txt" id="intro">0€</div>
+        <div id="bar">
+          <div class="txt" id="pct">0%</div>
+          <div class="txt" id="total">0.00</div>
+          <div id="track"><div id="fill"></div></div>
+          <div class="txt" id="pack">0.00 €</div>
+        </div>
+        <div id="veil"></div>
+        <div id="end">
+          <div class="txt" id="end-title">GAME OVER</div>
+          <div class="txt" id="end-sub">-0.00 €</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Everything below is driven by cards.json — prices and timecodes are never written here.
+      const req = new XMLHttpRequest();
+      req.open("GET", "cards.json", false);
+      req.send(null);
+      const data = JSON.parse(req.responseText);
+
+      const cents = (v) => Math.round(v * 100);
+      const num = (c) => (c / 100).toFixed(2); // card prices & total: no currency
+      const delay = data.popDelay ?? 0.3;
+      const TOTAL_DUR = data.duration;
+      const cards = data.cards.filter((c) => !c.skip && c.price != null).sort((a, b) => a.t - b.t);
+      const pack = cents(data.boosterPrice);
+      const sum = cards.reduce((s, c) => s + cents(c.price), 0);
+      const won = sum >= pack;
+      const finalAt = data.finalAt;
+
+      const root = document.getElementById("root");
+      document.getElementById("intro").textContent = Math.round(data.boosterPrice) + "€";
+      document.getElementById("pack").textContent = num(pack) + " €";
+      const totalEl = document.getElementById("total");
+      const pctEl = document.getElementById("pct");
+      const fillEl = document.getElementById("fill");
+      const title = document.getElementById("end-title");
+      const word = won ? "WIN !" : "GAME OVER";
+      title.innerHTML = "";
+      [...word].forEach((ch, i) => {
+        const s = document.createElement("span");
+        s.className = "ch";
+        s.id = "ch-" + i;
+        s.textContent = ch === " " ? " " : ch;
+        title.appendChild(s);
+      });
+      document.getElementById("end-sub").textContent = (won ? "+" : "-") + num(Math.abs(sum - pack)) + " €";
+      if (won) document.getElementById("end").classList.add("won");
+
+      const pricesEl = document.getElementById("prices");
+      cards.forEach((c, i) => {
+        const el = document.createElement("div");
+        el.className = "txt price";
+        el.id = "price-" + i;
+        el.textContent = num(cents(c.price));
+        pricesEl.appendChild(el);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Opening: booster price in gold
+      tl.fromTo("#intro", { autoAlpha: 0, y: -16 }, { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out" }, 0.3);
+      tl.to("#intro", { autoAlpha: 0, duration: 0.35, ease: "power1.in" }, data.introEnd);
+
+      // Bottom bar appears with the first card
+      tl.fromTo(["#bar", "#shade-bot"], { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.4, ease: "power1.out" }, Math.max(0.5, cards[0].t - 0.4));
+
+      // Running total, progress % and fill, counted up at each card
+      const proxy = { v: 0 };
+      const draw = () => {
+        const v = Math.round(proxy.v);
+        const p = Math.min(100, Math.round((v / pack) * 100));
+        totalEl.textContent = num(v);
+        pctEl.textContent = p + "%";
+        fillEl.style.transform = `scaleX(${Math.max(0.0001, p / 100)})`;
+        root.classList.toggle("win", v >= pack);
+      };
+      tl.set(proxy, { v: 0, onUpdate: draw }, 0);
+
+      let running = 0;
+      cards.forEach((c, i) => {
+        const at = c.t + delay;
+        const until = i + 1 < cards.length ? cards[i + 1].t + delay : finalAt;
+        // Reference: plain fade-in (~0.3 s), held until the next price replaces it
+        tl.fromTo("#price-" + i, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3, ease: "power1.out" }, at);
+        tl.to("#price-" + i, { autoAlpha: 0, duration: 0.15, ease: "power1.in" }, until - 0.15);
+        running += cents(c.price);
+        tl.to(proxy, { v: running, duration: 0.5, ease: "power1.out", onUpdate: draw }, at);
+      });
+
+      // Ending: veil, letters drop in one by one, amount underneath
+      tl.fromTo("#veil", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.8, ease: "power1.out" }, finalAt);
+      tl.fromTo("#end", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.01 }, finalAt + 0.2);
+      tl.set("#end-sub", { autoAlpha: 0 }, finalAt + 0.2);
+      [...word].forEach((_, i) => {
+        tl.fromTo("#ch-" + i, { autoAlpha: 0, y: -60, filter: "blur(10px)" }, { autoAlpha: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "back.out(2)" }, finalAt + 0.25 + i * 0.07);
+      });
+      const afterLetters = finalAt + 0.35 + word.length * 0.07;
+      tl.fromTo("#end-sub", { autoAlpha: 0, scale: 0.8 }, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, afterLetters);
+      if (!won) {
+        tl.to("#end-title", { x: -10, duration: 0.05, ease: "none" }, afterLetters + 0.45);
+        tl.to("#end-title", { x: 10, duration: 0.07, ease: "none" }, afterLetters + 0.5);
+        tl.to("#end-title", { x: -6, duration: 0.07, ease: "none" }, afterLetters + 0.57);
+        tl.to("#end-title", { x: 0, duration: 0.08, ease: "none" }, afterLetters + 0.64);
+      }
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
