@@ -1,0 +1,176 @@
+{
+ "set": "FIN (Final Fantasy, EN)",
+ "currency": "€",
+ "boosterPrice": null,
+ "popDelay": 0.3,
+ "speedup": {
+  "factor": 3
+ },
+ "cards": [
+  {
+   "n": 1,
+   "t": 9.05,
+   "tClean": 18.25,
+   "name": "Hero (jeton)",
+   "set": "FIN",
+   "foil": false,
+   "skip": true,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 2,
+   "t": 12.05,
+   "tClean": 21.25,
+   "name": "Island",
+   "set": "FIN",
+   "foil": false,
+   "skip": true,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 3,
+   "t": 14.55,
+   "tClean": 23.75,
+   "name": "Coeurl",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 4,
+   "t": 17.05,
+   "tClean": 26.25,
+   "name": "Endwalker // Brainstorm",
+   "set": "FCA",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 5,
+   "t": 19.8,
+   "tClean": 29.0,
+   "name": "Choco, Seeker of Paradise",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 6,
+   "t": 23.3,
+   "tClean": 32.5,
+   "name": "Crystal Fragments",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 7,
+   "t": 26.05,
+   "tClean": 35.25,
+   "name": "Clash of the Eikons",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 8,
+   "t": 29.05,
+   "tClean": 38.25,
+   "name": "Barret Wallace",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 9,
+   "t": 31.8,
+   "tClean": 41.0,
+   "name": "Il Mheg Pixie",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 10,
+   "t": 35.55,
+   "tClean": 44.75,
+   "name": "Adventurer's Airship",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 11,
+   "t": 38.8,
+   "tClean": 48.0,
+   "name": "Retrieve the Esper",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 12,
+   "t": 41.8,
+   "tClean": 51.0,
+   "name": "Paladin's Arms",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 13,
+   "t": 44.8,
+   "tClean": 54.0,
+   "name": "Thunder Magic",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 14,
+   "t": 47.8,
+   "tClean": 57.0,
+   "name": "Hecteyes",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 15,
+   "t": 50.55,
+   "tClean": 59.75,
+   "name": "Commune with Beavers",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  }
+ ]
+}

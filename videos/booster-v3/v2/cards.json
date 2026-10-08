@@ -1,0 +1,176 @@
+{
+ "set": "FIN (Final Fantasy, FR)",
+ "currency": "€",
+ "boosterPrice": null,
+ "popDelay": 0.3,
+ "speedup": {
+  "factor": 3
+ },
+ "cards": [
+  {
+   "n": 1,
+   "t": 6.33,
+   "tClean": 12.5,
+   "name": "Goobbue jardinier",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 2,
+   "t": 9.08,
+   "tClean": 15.25,
+   "name": "Tutoriel de combat",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 3,
+   "t": 11.33,
+   "tClean": 17.5,
+   "name": "Chocobo des montagnes",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 4,
+   "t": 14.08,
+   "tClean": 20.25,
+   "name": "Armes de paladin",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 5,
+   "t": 17.33,
+   "tClean": 23.5,
+   "name": "Rat-garou des égouts",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 6,
+   "t": 20.58,
+   "tClean": 26.75,
+   "name": "Lunatic Pandora",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 7,
+   "t": 23.58,
+   "tClean": 29.75,
+   "name": "Rire démentiel",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 8,
+   "t": 26.58,
+   "tClean": 32.75,
+   "name": "Rydia, invocatrice de Mist",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 9,
+   "t": 29.58,
+   "tClean": 35.75,
+   "name": "Ambroisie, dite Vaillante",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 10,
+   "t": 32.58,
+   "tClean": 38.75,
+   "name": "Pampa",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 11,
+   "t": 36.08,
+   "tClean": 42.25,
+   "name": "Pixie d'Il Mheg",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 12,
+   "t": 39.33,
+   "tClean": 45.5,
+   "name": "Ultima, être originel",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 13,
+   "t": 44.33,
+   "tClean": 50.5,
+   "name": "Marchand namazu",
+   "set": "FIN",
+   "foil": true,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 14,
+   "t": 47.08,
+   "tClean": 53.25,
+   "name": "Guadosalam, porte de l'Au-delà",
+   "set": "FIN",
+   "foil": false,
+   "skip": false,
+   "price": null,
+   "priceSource": null
+  },
+  {
+   "n": 15,
+   "t": 50.08,
+   "tClean": 56.25,
+   "name": "Héros (jeton)",
+   "set": "FIN",
+   "foil": false,
+   "skip": true,
+   "price": null,
+   "priceSource": null
+  }
+ ]
+}

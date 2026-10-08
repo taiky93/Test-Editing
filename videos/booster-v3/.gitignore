@@ -1,0 +1,5 @@
+v*/source/*.mp4
+v*/renders/
+v*/snapshots/
+v*/.hyperframes/
+.env
