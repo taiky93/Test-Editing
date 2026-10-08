@@ -1,0 +1,1610 @@
+[
+  {
+    "text": "Oh",
+    "start": 0.15,
+    "end": 0.16,
+    "id": "w0"
+  },
+  {
+    "text": "cool,",
+    "start": 0.16,
+    "end": 0.59,
+    "id": "w1"
+  },
+  {
+    "text": "a",
+    "start": 0.59,
+    "end": 0.66,
+    "id": "w2"
+  },
+  {
+    "text": "Wizards",
+    "start": 0.66,
+    "end": 0.9,
+    "id": "w3"
+  },
+  {
+    "text": "of",
+    "start": 1.18,
+    "end": 1.33,
+    "id": "w4"
+  },
+  {
+    "text": "the",
+    "start": 1.33,
+    "end": 1.55,
+    "id": "w5"
+  },
+  {
+    "text": "Coast",
+    "start": 1.55,
+    "end": 1.89,
+    "id": "w6"
+  },
+  {
+    "text": "article",
+    "start": 1.94,
+    "end": 2.48,
+    "id": "w7"
+  },
+  {
+    "text": "about",
+    "start": 2.48,
+    "end": 2.81,
+    "id": "w8"
+  },
+  {
+    "text": "changing",
+    "start": 2.97,
+    "end": 3.43,
+    "id": "w9"
+  },
+  {
+    "text": "booster",
+    "start": 3.43,
+    "end": 3.89,
+    "id": "w10"
+  },
+  {
+    "text": "packs",
+    "start": 3.94,
+    "end": 4.18,
+    "id": "w11"
+  },
+  {
+    "text": "in",
+    "start": 4.35,
+    "end": 4.4,
+    "id": "w12"
+  },
+  {
+    "text": "2027.",
+    "start": 4.4,
+    "end": 5.68,
+    "id": "w13"
+  },
+  {
+    "text": "I",
+    "start": 5.68,
+    "end": 5.84,
+    "id": "w14"
+  },
+  {
+    "text": "wonder",
+    "start": 5.84,
+    "end": 6.2,
+    "id": "w15"
+  },
+  {
+    "text": "what",
+    "start": 6.2,
+    "end": 6.5,
+    "id": "w16"
+  },
+  {
+    "text": "this",
+    "start": 6.5,
+    "end": 6.58,
+    "id": "w17"
+  },
+  {
+    "text": "is.",
+    "start": 6.86,
+    "end": 7.04,
+    "id": "w18"
+  },
+  {
+    "text": "God",
+    "start": 7.2,
+    "end": 7.32,
+    "id": "w19"
+  },
+  {
+    "text": "packs?",
+    "start": 7.32,
+    "end": 7.94,
+    "id": "w20"
+  },
+  {
+    "text": "What?",
+    "start": 11.92,
+    "end": 12.29,
+    "id": "w21"
+  },
+  {
+    "text": "With",
+    "start": 12.29,
+    "end": 13.04,
+    "id": "w22"
+  },
+  {
+    "text": "Noctis",
+    "start": 13.04,
+    "end": 13.57,
+    "id": "w23"
+  },
+  {
+    "text": "in",
+    "start": 13.57,
+    "end": 13.77,
+    "id": "w24"
+  },
+  {
+    "text": "2027,",
+    "start": 14.06,
+    "end": 15.6,
+    "id": "w25"
+  },
+  {
+    "text": "Magic",
+    "start": 15.6,
+    "end": 15.97,
+    "id": "w26"
+  },
+  {
+    "text": "the",
+    "start": 15.97,
+    "end": 16.16,
+    "id": "w27"
+  },
+  {
+    "text": "Gathering",
+    "start": 16.16,
+    "end": 16.75,
+    "id": "w28"
+  },
+  {
+    "text": "will",
+    "start": 16.84,
+    "end": 17.06,
+    "id": "w29"
+  },
+  {
+    "text": "now",
+    "start": 17.2,
+    "end": 17.36,
+    "id": "w30"
+  },
+  {
+    "text": "have",
+    "start": 17.36,
+    "end": 17.68,
+    "id": "w31"
+  },
+  {
+    "text": "god",
+    "start": 17.68,
+    "end": 17.96,
+    "id": "w32"
+  },
+  {
+    "text": "packs.",
+    "start": 17.96,
+    "end": 18.72,
+    "id": "w33"
+  },
+  {
+    "text": "One",
+    "start": 18.88,
+    "end": 18.96,
+    "id": "w34"
+  },
+  {
+    "text": "in",
+    "start": 18.96,
+    "end": 19.08,
+    "id": "w35"
+  },
+  {
+    "text": "every",
+    "start": 19.21,
+    "end": 19.53,
+    "id": "w36"
+  },
+  {
+    "text": "1000",
+    "start": 19.53,
+    "end": 20.51,
+    "id": "w37"
+  },
+  {
+    "text": "booster",
+    "start": 20.61,
+    "end": 21.1,
+    "id": "w38"
+  },
+  {
+    "text": "packs",
+    "start": 21.1,
+    "end": 21.51,
+    "id": "w39"
+  },
+  {
+    "text": "will",
+    "start": 21.51,
+    "end": 21.84,
+    "id": "w40"
+  },
+  {
+    "text": "be",
+    "start": 21.84,
+    "end": 22,
+    "id": "w41"
+  },
+  {
+    "text": "a",
+    "start": 22.03,
+    "end": 22.07,
+    "id": "w42"
+  },
+  {
+    "text": "god",
+    "start": 22.07,
+    "end": 22.32,
+    "id": "w43"
+  },
+  {
+    "text": "pack.",
+    "start": 22.32,
+    "end": 22.9,
+    "id": "w44"
+  },
+  {
+    "text": "The",
+    "start": 23.12,
+    "end": 23.15,
+    "id": "w45"
+  },
+  {
+    "text": "pack",
+    "start": 23.15,
+    "end": 23.4,
+    "id": "w46"
+  },
+  {
+    "text": "will",
+    "start": 23.45,
+    "end": 23.65,
+    "id": "w47"
+  },
+  {
+    "text": "look",
+    "start": 23.65,
+    "end": 23.85,
+    "id": "w48"
+  },
+  {
+    "text": "like",
+    "start": 23.85,
+    "end": 24.15,
+    "id": "w49"
+  },
+  {
+    "text": "this.",
+    "start": 24.15,
+    "end": 24.63,
+    "id": "w50"
+  },
+  {
+    "text": "A",
+    "start": 24.63,
+    "end": 24.8,
+    "id": "w51"
+  },
+  {
+    "text": "You",
+    "start": 24.8,
+    "end": 25,
+    "id": "w52"
+  },
+  {
+    "text": "Didn't",
+    "start": 25.13,
+    "end": 25.53,
+    "id": "w53"
+  },
+  {
+    "text": "Celebration",
+    "start": 25.82,
+    "end": 26.59,
+    "id": "w54"
+  },
+  {
+    "text": "card.",
+    "start": 26.59,
+    "end": 27.25,
+    "id": "w55"
+  },
+  {
+    "text": "Hey",
+    "start": 27.25,
+    "end": 28.08,
+    "id": "w56"
+  },
+  {
+    "text": "man,",
+    "start": 28.08,
+    "end": 28.27,
+    "id": "w57"
+  },
+  {
+    "text": "congrats.",
+    "start": 28.27,
+    "end": 29.68,
+    "id": "w58"
+  },
+  {
+    "text": "Ten",
+    "start": 29.84,
+    "end": 30,
+    "id": "w59"
+  },
+  {
+    "text": "non-foil",
+    "start": 30,
+    "end": 30.84,
+    "id": "w60"
+  },
+  {
+    "text": "rares",
+    "start": 30.86,
+    "end": 31.35,
+    "id": "w61"
+  },
+  {
+    "text": "and",
+    "start": 31.4,
+    "end": 31.69,
+    "id": "w62"
+  },
+  {
+    "text": "mythics.",
+    "start": 31.69,
+    "end": 32.8,
+    "id": "w63"
+  },
+  {
+    "text": "Two",
+    "start": 32.96,
+    "end": 33.08,
+    "id": "w64"
+  },
+  {
+    "text": "non-foil",
+    "start": 33.08,
+    "end": 33.7,
+    "id": "w65"
+  },
+  {
+    "text": "rare",
+    "start": 33.98,
+    "end": 34.19,
+    "id": "w66"
+  },
+  {
+    "text": "and",
+    "start": 34.19,
+    "end": 34.46,
+    "id": "w67"
+  },
+  {
+    "text": "mythic",
+    "start": 34.47,
+    "end": 35.03,
+    "id": "w68"
+  },
+  {
+    "text": "fun",
+    "start": 35.03,
+    "end": 35.31,
+    "id": "w69"
+  },
+  {
+    "text": "cards.",
+    "start": 35.31,
+    "end": 35.84,
+    "id": "w70"
+  },
+  {
+    "text": "And",
+    "start": 36,
+    "end": 36.14,
+    "id": "w71"
+  },
+  {
+    "text": "two",
+    "start": 36.14,
+    "end": 36.44,
+    "id": "w72"
+  },
+  {
+    "text": "traditional",
+    "start": 36.44,
+    "end": 37.51,
+    "id": "w73"
+  },
+  {
+    "text": "foil",
+    "start": 37.56,
+    "end": 37.93,
+    "id": "w74"
+  },
+  {
+    "text": "rares",
+    "start": 37.94,
+    "end": 38.43,
+    "id": "w75"
+  },
+  {
+    "text": "and",
+    "start": 38.43,
+    "end": 38.65,
+    "id": "w76"
+  },
+  {
+    "text": "mythics.",
+    "start": 38.81,
+    "end": 39.73,
+    "id": "w77"
+  },
+  {
+    "text": "Don't",
+    "start": 39.92,
+    "end": 40.02,
+    "id": "w78"
+  },
+  {
+    "text": "worry",
+    "start": 40.02,
+    "end": 40.29,
+    "id": "w79"
+  },
+  {
+    "text": "guys,",
+    "start": 40.29,
+    "end": 40.64,
+    "id": "w80"
+  },
+  {
+    "text": "collector",
+    "start": 40.64,
+    "end": 41.23,
+    "id": "w81"
+  },
+  {
+    "text": "boosters",
+    "start": 41.24,
+    "end": 41.78,
+    "id": "w82"
+  },
+  {
+    "text": "are",
+    "start": 41.78,
+    "end": 41.98,
+    "id": "w83"
+  },
+  {
+    "text": "also",
+    "start": 41.98,
+    "end": 42.25,
+    "id": "w84"
+  },
+  {
+    "text": "getting",
+    "start": 42.25,
+    "end": 42.71,
+    "id": "w85"
+  },
+  {
+    "text": "god",
+    "start": 42.75,
+    "end": 42.92,
+    "id": "w86"
+  },
+  {
+    "text": "packs,",
+    "start": 42.92,
+    "end": 43.28,
+    "id": "w87"
+  },
+  {
+    "text": "but",
+    "start": 43.44,
+    "end": 43.47,
+    "id": "w88"
+  },
+  {
+    "text": "they're",
+    "start": 43.47,
+    "end": 43.91,
+    "id": "w89"
+  },
+  {
+    "text": "only",
+    "start": 43.91,
+    "end": 44.16,
+    "id": "w90"
+  },
+  {
+    "text": "one",
+    "start": 44.16,
+    "end": 44.18,
+    "id": "w91"
+  },
+  {
+    "text": "in",
+    "start": 44.18,
+    "end": 44.47,
+    "id": "w92"
+  },
+  {
+    "text": "every",
+    "start": 44.47,
+    "end": 44.78,
+    "id": "w93"
+  },
+  {
+    "text": "300.",
+    "start": 44.79,
+    "end": 45.6,
+    "id": "w94"
+  },
+  {
+    "text": "And",
+    "start": 45.6,
+    "end": 45.76,
+    "id": "w95"
+  },
+  {
+    "text": "they",
+    "start": 45.76,
+    "end": 45.91,
+    "id": "w96"
+  },
+  {
+    "text": "look",
+    "start": 45.91,
+    "end": 45.96,
+    "id": "w97"
+  },
+  {
+    "text": "similar.",
+    "start": 46.09,
+    "end": 46.5,
+    "id": "w98"
+  },
+  {
+    "text": "They",
+    "start": 46.72,
+    "end": 46.74,
+    "id": "w99"
+  },
+  {
+    "text": "look",
+    "start": 46.74,
+    "end": 46.92,
+    "id": "w100"
+  },
+  {
+    "text": "similar",
+    "start": 46.92,
+    "end": 47.24,
+    "id": "w101"
+  },
+  {
+    "text": "to",
+    "start": 47.24,
+    "end": 47.33,
+    "id": "w102"
+  },
+  {
+    "text": "a",
+    "start": 47.33,
+    "end": 47.37,
+    "id": "w103"
+  },
+  {
+    "text": "normal",
+    "start": 47.37,
+    "end": 47.46,
+    "id": "w104"
+  },
+  {
+    "text": "collector",
+    "start": 47.74,
+    "end": 48.05,
+    "id": "w105"
+  },
+  {
+    "text": "booster,",
+    "start": 48.05,
+    "end": 48.4,
+    "id": "w106"
+  },
+  {
+    "text": "just",
+    "start": 48.56,
+    "end": 48.68,
+    "id": "w107"
+  },
+  {
+    "text": "minus",
+    "start": 48.68,
+    "end": 49.04,
+    "id": "w108"
+  },
+  {
+    "text": "all",
+    "start": 49.04,
+    "end": 49.25,
+    "id": "w109"
+  },
+  {
+    "text": "the",
+    "start": 49.25,
+    "end": 49.3,
+    "id": "w110"
+  },
+  {
+    "text": "lame",
+    "start": 49.58,
+    "end": 49.74,
+    "id": "w111"
+  },
+  {
+    "text": "commons",
+    "start": 49.74,
+    "end": 50.19,
+    "id": "w112"
+  },
+  {
+    "text": "and",
+    "start": 50.29,
+    "end": 50.45,
+    "id": "w113"
+  },
+  {
+    "text": "uncommons.",
+    "start": 50.45,
+    "end": 51.35,
+    "id": "w114"
+  },
+  {
+    "text": "There's",
+    "start": 51.52,
+    "end": 51.72,
+    "id": "w115"
+  },
+  {
+    "text": "also",
+    "start": 51.85,
+    "end": 52.07,
+    "id": "w116"
+  },
+  {
+    "text": "a",
+    "start": 52.07,
+    "end": 52.13,
+    "id": "w117"
+  },
+  {
+    "text": "wall",
+    "start": 52.13,
+    "end": 52.26,
+    "id": "w118"
+  },
+  {
+    "text": "of",
+    "start": 52.26,
+    "end": 52.54,
+    "id": "w119"
+  },
+  {
+    "text": "text",
+    "start": 52.54,
+    "end": 52.78,
+    "id": "w120"
+  },
+  {
+    "text": "at",
+    "start": 52.78,
+    "end": 52.91,
+    "id": "w121"
+  },
+  {
+    "text": "the",
+    "start": 52.91,
+    "end": 53.1,
+    "id": "w122"
+  },
+  {
+    "text": "end",
+    "start": 53.1,
+    "end": 53.26,
+    "id": "w123"
+  },
+  {
+    "text": "here",
+    "start": 53.3,
+    "end": 53.6,
+    "id": "w124"
+  },
+  {
+    "text": "saying",
+    "start": 53.76,
+    "end": 53.91,
+    "id": "w125"
+  },
+  {
+    "text": "that",
+    "start": 53.91,
+    "end": 54.12,
+    "id": "w126"
+  },
+  {
+    "text": "they're",
+    "start": 54.12,
+    "end": 54.48,
+    "id": "w127"
+  },
+  {
+    "text": "removing",
+    "start": 54.48,
+    "end": 54.9,
+    "id": "w128"
+  },
+  {
+    "text": "the",
+    "start": 54.9,
+    "end": 55.05,
+    "id": "w129"
+  },
+  {
+    "text": "guaranteed",
+    "start": 55.05,
+    "end": 55.6,
+    "id": "w130"
+  },
+  {
+    "text": "foil",
+    "start": 55.6,
+    "end": 56.08,
+    "id": "w131"
+  },
+  {
+    "text": "from",
+    "start": 56.08,
+    "end": 56.41,
+    "id": "w132"
+  },
+  {
+    "text": "play",
+    "start": 56.59,
+    "end": 56.84,
+    "id": "w133"
+  },
+  {
+    "text": "boosters",
+    "start": 56.84,
+    "end": 57.58,
+    "id": "w134"
+  },
+  {
+    "text": "and",
+    "start": 57.76,
+    "end": 57.8,
+    "id": "w135"
+  },
+  {
+    "text": "one",
+    "start": 57.8,
+    "end": 57.96,
+    "id": "w136"
+  },
+  {
+    "text": "common",
+    "start": 58.09,
+    "end": 58.41,
+    "id": "w137"
+  },
+  {
+    "text": "and",
+    "start": 58.41,
+    "end": 58.5,
+    "id": "w138"
+  },
+  {
+    "text": "uncommon",
+    "start": 58.78,
+    "end": 59.16,
+    "id": "w139"
+  },
+  {
+    "text": "from",
+    "start": 59.16,
+    "end": 59.39,
+    "id": "w140"
+  },
+  {
+    "text": "collector",
+    "start": 59.49,
+    "end": 60.02,
+    "id": "w141"
+  },
+  {
+    "text": "boosters,",
+    "start": 60.06,
+    "end": 60.64,
+    "id": "w142"
+  },
+  {
+    "text": "so",
+    "start": 60.64,
+    "end": 60.8,
+    "id": "w143"
+  },
+  {
+    "text": "there'll",
+    "start": 60.8,
+    "end": 61.25,
+    "id": "w144"
+  },
+  {
+    "text": "be",
+    "start": 61.25,
+    "end": 61.37,
+    "id": "w145"
+  },
+  {
+    "text": "generally",
+    "start": 61.37,
+    "end": 61.93,
+    "id": "w146"
+  },
+  {
+    "text": "less",
+    "start": 61.93,
+    "end": 62.13,
+    "id": "w147"
+  },
+  {
+    "text": "cards",
+    "start": 62.17,
+    "end": 62.43,
+    "id": "w148"
+  },
+  {
+    "text": "in",
+    "start": 62.58,
+    "end": 62.61,
+    "id": "w149"
+  },
+  {
+    "text": "packs",
+    "start": 62.61,
+    "end": 62.92,
+    "id": "w150"
+  },
+  {
+    "text": "going",
+    "start": 62.92,
+    "end": 63.23,
+    "id": "w151"
+  },
+  {
+    "text": "forward.",
+    "start": 63.23,
+    "end": 63.92,
+    "id": "w152"
+  },
+  {
+    "text": "They",
+    "start": 64.08,
+    "end": 64.18,
+    "id": "w153"
+  },
+  {
+    "text": "cite",
+    "start": 64.18,
+    "end": 64.44,
+    "id": "w154"
+  },
+  {
+    "text": "the",
+    "start": 64.44,
+    "end": 64.63,
+    "id": "w155"
+  },
+  {
+    "text": "lack",
+    "start": 64.63,
+    "end": 64.82,
+    "id": "w156"
+  },
+  {
+    "text": "of",
+    "start": 64.82,
+    "end": 65.1,
+    "id": "w157"
+  },
+  {
+    "text": "excitement",
+    "start": 65.1,
+    "end": 65.68,
+    "id": "w158"
+  },
+  {
+    "text": "in",
+    "start": 65.68,
+    "end": 66,
+    "id": "w159"
+  },
+  {
+    "text": "commons",
+    "start": 66,
+    "end": 66.4,
+    "id": "w160"
+  },
+  {
+    "text": "and",
+    "start": 66.4,
+    "end": 66.53,
+    "id": "w161"
+  },
+  {
+    "text": "uncommons,",
+    "start": 66.56,
+    "end": 67.04,
+    "id": "w162"
+  },
+  {
+    "text": "especially",
+    "start": 67.2,
+    "end": 67.5,
+    "id": "w163"
+  },
+  {
+    "text": "in",
+    "start": 67.53,
+    "end": 67.62,
+    "id": "w164"
+  },
+  {
+    "text": "collector",
+    "start": 67.62,
+    "end": 67.94,
+    "id": "w165"
+  },
+  {
+    "text": "boosters,",
+    "start": 68.22,
+    "end": 68.48,
+    "id": "w166"
+  },
+  {
+    "text": "which",
+    "start": 68.64,
+    "end": 68.83,
+    "id": "w167"
+  },
+  {
+    "text": "makes",
+    "start": 68.83,
+    "end": 69.18,
+    "id": "w168"
+  },
+  {
+    "text": "me",
+    "start": 69.18,
+    "end": 69.32,
+    "id": "w169"
+  },
+  {
+    "text": "sad",
+    "start": 69.32,
+    "end": 69.38,
+    "id": "w170"
+  },
+  {
+    "text": "because",
+    "start": 69.66,
+    "end": 70.03,
+    "id": "w171"
+  },
+  {
+    "text": "I",
+    "start": 70.03,
+    "end": 70.1,
+    "id": "w172"
+  },
+  {
+    "text": "like",
+    "start": 70.1,
+    "end": 70.38,
+    "id": "w173"
+  },
+  {
+    "text": "commons",
+    "start": 70.42,
+    "end": 70.87,
+    "id": "w174"
+  },
+  {
+    "text": "and",
+    "start": 70.88,
+    "end": 71.08,
+    "id": "w175"
+  },
+  {
+    "text": "uncommons.",
+    "start": 71.09,
+    "end": 71.97,
+    "id": "w176"
+  },
+  {
+    "text": "I",
+    "start": 71.97,
+    "end": 72.16,
+    "id": "w177"
+  },
+  {
+    "text": "don't",
+    "start": 72.16,
+    "end": 72.26,
+    "id": "w178"
+  },
+  {
+    "text": "really",
+    "start": 72.26,
+    "end": 72.53,
+    "id": "w179"
+  },
+  {
+    "text": "know",
+    "start": 72.53,
+    "end": 72.71,
+    "id": "w180"
+  },
+  {
+    "text": "how",
+    "start": 72.71,
+    "end": 72.84,
+    "id": "w181"
+  },
+  {
+    "text": "to",
+    "start": 72.84,
+    "end": 72.9,
+    "id": "w182"
+  },
+  {
+    "text": "feel",
+    "start": 72.9,
+    "end": 73.18,
+    "id": "w183"
+  },
+  {
+    "text": "about",
+    "start": 73.18,
+    "end": 73.33,
+    "id": "w184"
+  },
+  {
+    "text": "this.",
+    "start": 73.33,
+    "end": 73.67,
+    "id": "w185"
+  },
+  {
+    "text": "I",
+    "start": 73.67,
+    "end": 73.84,
+    "id": "w186"
+  },
+  {
+    "text": "feel",
+    "start": 73.84,
+    "end": 73.95,
+    "id": "w187"
+  },
+  {
+    "text": "like",
+    "start": 73.95,
+    "end": 74.04,
+    "id": "w188"
+  },
+  {
+    "text": "god",
+    "start": 74.17,
+    "end": 74.34,
+    "id": "w189"
+  },
+  {
+    "text": "packs",
+    "start": 74.34,
+    "end": 74.57,
+    "id": "w190"
+  },
+  {
+    "text": "were",
+    "start": 74.57,
+    "end": 74.86,
+    "id": "w191"
+  },
+  {
+    "text": "the",
+    "start": 74.86,
+    "end": 75.01,
+    "id": "w192"
+  },
+  {
+    "text": "one",
+    "start": 75.01,
+    "end": 75.16,
+    "id": "w193"
+  },
+  {
+    "text": "thing",
+    "start": 75.17,
+    "end": 75.47,
+    "id": "w194"
+  },
+  {
+    "text": "separating",
+    "start": 75.57,
+    "end": 76.47,
+    "id": "w195"
+  },
+  {
+    "text": "Magic",
+    "start": 76.48,
+    "end": 76.96,
+    "id": "w196"
+  },
+  {
+    "text": "and",
+    "start": 76.96,
+    "end": 77.14,
+    "id": "w197"
+  },
+  {
+    "text": "Pokemon",
+    "start": 77.14,
+    "end": 77.57,
+    "id": "w198"
+  },
+  {
+    "text": "from",
+    "start": 77.76,
+    "end": 77.84,
+    "id": "w199"
+  },
+  {
+    "text": "being",
+    "start": 77.84,
+    "end": 78.14,
+    "id": "w200"
+  },
+  {
+    "text": "a",
+    "start": 78.14,
+    "end": 78.2,
+    "id": "w201"
+  },
+  {
+    "text": "playable",
+    "start": 78.2,
+    "end": 78.5,
+    "id": "w202"
+  },
+  {
+    "text": "card",
+    "start": 78.78,
+    "end": 78.92,
+    "id": "w203"
+  },
+  {
+    "text": "game",
+    "start": 78.92,
+    "end": 79.16,
+    "id": "w204"
+  },
+  {
+    "text": "or",
+    "start": 79.16,
+    "end": 79.27,
+    "id": "w205"
+  },
+  {
+    "text": "a",
+    "start": 79.28,
+    "end": 79.34,
+    "id": "w206"
+  },
+  {
+    "text": "collectible",
+    "start": 79.34,
+    "end": 79.99,
+    "id": "w207"
+  },
+  {
+    "text": "card",
+    "start": 80,
+    "end": 80.21,
+    "id": "w208"
+  },
+  {
+    "text": "game.",
+    "start": 80.24,
+    "end": 80.72,
+    "id": "w209"
+  },
+  {
+    "text": "I'm",
+    "start": 80.79,
+    "end": 80.94,
+    "id": "w210"
+  },
+  {
+    "text": "not",
+    "start": 80.94,
+    "end": 81.08,
+    "id": "w211"
+  },
+  {
+    "text": "sure",
+    "start": 81.21,
+    "end": 81.48,
+    "id": "w212"
+  },
+  {
+    "text": "what",
+    "start": 81.48,
+    "end": 81.62,
+    "id": "w213"
+  },
+  {
+    "text": "this",
+    "start": 81.9,
+    "end": 82.1,
+    "id": "w214"
+  },
+  {
+    "text": "will",
+    "start": 82.1,
+    "end": 82.39,
+    "id": "w215"
+  },
+  {
+    "text": "do",
+    "start": 82.4,
+    "end": 82.51,
+    "id": "w216"
+  },
+  {
+    "text": "to",
+    "start": 82.66,
+    "end": 82.71,
+    "id": "w217"
+  },
+  {
+    "text": "the",
+    "start": 82.71,
+    "end": 82.94,
+    "id": "w218"
+  },
+  {
+    "text": "price",
+    "start": 82.94,
+    "end": 83.32,
+    "id": "w219"
+  },
+  {
+    "text": "of",
+    "start": 83.33,
+    "end": 83.48,
+    "id": "w220"
+  },
+  {
+    "text": "a",
+    "start": 83.48,
+    "end": 83.52,
+    "id": "w221"
+  },
+  {
+    "text": "play",
+    "start": 83.71,
+    "end": 83.86,
+    "id": "w222"
+  },
+  {
+    "text": "booster",
+    "start": 83.86,
+    "end": 84.38,
+    "id": "w223"
+  },
+  {
+    "text": "pack.",
+    "start": 84.49,
+    "end": 84.9,
+    "id": "w224"
+  },
+  {
+    "text": "They",
+    "start": 85.2,
+    "end": 85.31,
+    "id": "w225"
+  },
+  {
+    "text": "generally",
+    "start": 85.31,
+    "end": 85.92,
+    "id": "w226"
+  },
+  {
+    "text": "might",
+    "start": 85.92,
+    "end": 86.26,
+    "id": "w227"
+  },
+  {
+    "text": "go",
+    "start": 86.26,
+    "end": 86.39,
+    "id": "w228"
+  },
+  {
+    "text": "up",
+    "start": 86.39,
+    "end": 86.51,
+    "id": "w229"
+  },
+  {
+    "text": "because",
+    "start": 86.52,
+    "end": 86.99,
+    "id": "w230"
+  },
+  {
+    "text": "people",
+    "start": 86.99,
+    "end": 87.43,
+    "id": "w231"
+  },
+  {
+    "text": "want",
+    "start": 87.44,
+    "end": 87.65,
+    "id": "w232"
+  },
+  {
+    "text": "to",
+    "start": 87.68,
+    "end": 88.16,
+    "id": "w233"
+  },
+  {
+    "text": "have",
+    "start": 88.16,
+    "end": 88.39,
+    "id": "w234"
+  },
+  {
+    "text": "a",
+    "start": 88.39,
+    "end": 88.48,
+    "id": "w235"
+  },
+  {
+    "text": "higher",
+    "start": 88.48,
+    "end": 88.93,
+    "id": "w236"
+  },
+  {
+    "text": "chance",
+    "start": 88.98,
+    "end": 89.22,
+    "id": "w237"
+  },
+  {
+    "text": "at",
+    "start": 89.22,
+    "end": 89.44,
+    "id": "w238"
+  },
+  {
+    "text": "getting",
+    "start": 89.44,
+    "end": 90.02,
+    "id": "w239"
+  },
+  {
+    "text": "a",
+    "start": 90.02,
+    "end": 90.1,
+    "id": "w240"
+  },
+  {
+    "text": "god",
+    "start": 90.1,
+    "end": 90.18,
+    "id": "w241"
+  },
+  {
+    "text": "pack.",
+    "start": 90.46,
+    "end": 90.95,
+    "id": "w242"
+  },
+  {
+    "text": "The",
+    "start": 91.12,
+    "end": 91.18,
+    "id": "w243"
+  },
+  {
+    "text": "one",
+    "start": 91.18,
+    "end": 91.32,
+    "id": "w244"
+  },
+  {
+    "text": "in",
+    "start": 91.39,
+    "end": 91.55,
+    "id": "w245"
+  },
+  {
+    "text": "300",
+    "start": 91.55,
+    "end": 92.23,
+    "id": "w246"
+  },
+  {
+    "text": "collector",
+    "start": 92.23,
+    "end": 92.91,
+    "id": "w247"
+  },
+  {
+    "text": "booster",
+    "start": 92.91,
+    "end": 93.44,
+    "id": "w248"
+  },
+  {
+    "text": "god",
+    "start": 93.44,
+    "end": 93.66,
+    "id": "w249"
+  },
+  {
+    "text": "pack",
+    "start": 93.66,
+    "end": 93.95,
+    "id": "w250"
+  },
+  {
+    "text": "definitely",
+    "start": 94.02,
+    "end": 94.45,
+    "id": "w251"
+  },
+  {
+    "text": "makes",
+    "start": 94.64,
+    "end": 94.82,
+    "id": "w252"
+  },
+  {
+    "text": "those",
+    "start": 94.82,
+    "end": 95.16,
+    "id": "w253"
+  },
+  {
+    "text": "more",
+    "start": 95.16,
+    "end": 95.37,
+    "id": "w254"
+  },
+  {
+    "text": "enticing",
+    "start": 95.66,
+    "end": 95.97,
+    "id": "w255"
+  },
+  {
+    "text": "for",
+    "start": 95.97,
+    "end": 96.15,
+    "id": "w256"
+  },
+  {
+    "text": "collectors,",
+    "start": 96.2,
+    "end": 96.98,
+    "id": "w257"
+  },
+  {
+    "text": "item",
+    "start": 96.98,
+    "end": 97.25,
+    "id": "w258"
+  },
+  {
+    "text": "add.",
+    "start": 97.25,
+    "end": 97.68,
+    "id": "w259"
+  },
+  {
+    "text": "Anyway,",
+    "start": 97.84,
+    "end": 98.25,
+    "id": "w260"
+  },
+  {
+    "text": "what",
+    "start": 98.25,
+    "end": 98.54,
+    "id": "w261"
+  },
+  {
+    "text": "do",
+    "start": 98.54,
+    "end": 98.58,
+    "id": "w262"
+  },
+  {
+    "text": "you",
+    "start": 98.86,
+    "end": 98.89,
+    "id": "w263"
+  },
+  {
+    "text": "guys",
+    "start": 98.89,
+    "end": 99.17,
+    "id": "w264"
+  },
+  {
+    "text": "think",
+    "start": 99.17,
+    "end": 99.47,
+    "id": "w265"
+  },
+  {
+    "text": "of",
+    "start": 99.62,
+    "end": 99.68,
+    "id": "w266"
+  },
+  {
+    "text": "this?",
+    "start": 99.68,
+    "end": 100.24,
+    "id": "w267"
+  }
+]

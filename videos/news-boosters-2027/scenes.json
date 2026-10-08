@@ -1,0 +1,150 @@
+{
+ "duration": 116.42,
+ "imageHeight": 8160,
+ "foci": [
+  {
+   "t": 0.0,
+   "label": "accroche",
+   "y": 120,
+   "h": 89,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 8.88,
+   "label": "Nauctis",
+   "y": 999,
+   "h": 410,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 14.43,
+   "label": "God Packs",
+   "y": 1861,
+   "h": 205,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 16.42,
+   "label": "1 sur 1000",
+   "y": 2106,
+   "h": 205,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 20.34,
+   "label": "contenu du God Pack",
+   "y": 2106,
+   "h": 1091,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 27.71,
+   "label": "Collector 1 sur 300",
+   "y": 3379,
+   "h": 801,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 32.835,
+   "label": "5 Booster Fun foil",
+   "y": 4214,
+   "h": 512,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 35.66,
+   "label": "Japan Showcase",
+   "y": 4959,
+   "h": 512,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 48.62,
+   "label": "Booster Packs",
+   "y": 5511,
+   "h": 102,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 55.79,
+   "label": "fin des foils C/U",
+   "y": 5730,
+   "h": 461,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 69.07,
+   "label": "Collector -3 cartes",
+   "y": 6231,
+   "h": 358,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 76.43,
+   "label": "cartes zappées",
+   "y": 6629,
+   "h": 461,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 79.317,
+   "label": "capacité d'impression",
+   "y": 7130,
+   "h": 358,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 81.18,
+   "label": "prix inchangé",
+   "y": 1449,
+   "h": 205,
+   "x": 27,
+   "w": 1026,
+   "highlight": true
+  },
+  {
+   "t": 86.78,
+   "label": "avis",
+   "highlight": false,
+   "y": 7799,
+   "h": 256,
+   "x": 27,
+   "w": 1026
+  },
+  {
+   "t": 106.22,
+   "label": "question finale",
+   "highlight": false,
+   "y": 120,
+   "h": 89,
+   "x": 27,
+   "w": 1026
+  }
+ ]
+}

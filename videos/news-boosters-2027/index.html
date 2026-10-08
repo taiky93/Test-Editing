@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: Montserrat; font-weight: 600; font-display: block; src: url("assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 800; font-display: block; src: url("assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 900; font-display: block; src: url("assets/fonts/montserrat-latin-900-normal.woff2") format("woff2"); }
+      :root {
+        --accent: #ffd400;
+        --ink: #ffffff;
+        --red: #e8352b;
+        --marker: rgba(255, 212, 0, 0.42);
+        --outline: 3.0px 0.0px 0 #000, 2.1px 2.1px 0 #000, 0.0px 3.0px 0 #000, -2.1px 2.1px 0 #000, -3.0px 0.0px 0 #000, -2.1px -2.1px 0 #000, -0.0px -3.0px 0 #000, 2.1px -2.1px 0 #000, 6.0px 0.0px 0 #000, 5.5px 2.3px 0 #000, 4.2px 4.2px 0 #000, 2.3px 5.5px 0 #000, 0.0px 6.0px 0 #000, -2.3px 5.5px 0 #000, -4.2px 4.2px 0 #000, -5.5px 2.3px 0 #000, -6.0px 0.0px 0 #000, -5.5px -2.3px 0 #000, -4.2px -4.2px 0 #000, -2.3px -5.5px 0 #000, -0.0px -6.0px 0 #000, 2.3px -5.5px 0 #000, 4.2px -4.2px 0 #000, 5.5px -2.3px 0 #000, 0 6px 10px rgba(0,0,0,0.5);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #ffffff; }
+      #root { position: relative; width: 1080px; height: 1920px; font-family: Montserrat, sans-serif; overflow: hidden; }
+      #stage { position: absolute; inset: 0; }
+      #cam { position: absolute; inset: 0; transform-origin: 540px 640px; background: #ffffff; }
+      #page { position: absolute; left: 0; top: 0; width: 1080px; height: 8160px; }
+      #page img { display: block; width: 1080px; height: 8160px; }
+      .marker {
+        position: absolute;
+        background: var(--marker);
+        mix-blend-mode: multiply;
+        border-left: 12px solid var(--accent);
+        border-radius: 6px;
+        transform-origin: 0 50%;
+        opacity: 0;
+        visibility: hidden;
+      }
+      #shade {
+        position: absolute; left: 0; right: 0; bottom: 0; height: 980px;
+        background: linear-gradient(to bottom, rgba(10,10,14,0) 0%, rgba(10,10,14,0.55) 38%, rgba(10,10,14,0.82) 100%);
+      }
+      #badge {
+        position: absolute; left: 56px; top: 64px;
+        padding: 14px 26px 12px;
+        background: var(--red); color: #fff;
+        font-weight: 900; font-size: 40px; letter-spacing: 0.04em;
+        border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        opacity: 0; visibility: hidden;
+      }
+      #captions { position: absolute; left: 60px; right: 60px; top: 1190px; height: 330px; }
+      .chunk {
+        position: absolute; left: 0; right: 0; top: 0;
+        text-align: center;
+        font-weight: 900; font-size: 84px; line-height: 1.12;
+        color: var(--ink); text-shadow: var(--outline);
+        opacity: 0; visibility: hidden;
+      }
+      .w { display: inline-block; margin: 0 0.12em; }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-6lmr" id="root" data-composition-id="main" data-start="0" data-duration="116.42" data-width="1080" data-height="1920">
+      <audio data-hf-id="hf-09g2" id="voice" src="audio/voiceover.mp3" data-start="0" data-duration="115.07" data-track-index="3"></audio>
+      <audio data-hf-id="hf-xoyr" id="bed" src="audio/bed.wav" data-start="0" data-duration="116.42" data-volume="0.28" data-track-index="4"></audio>
+      <div data-hf-id="hf-p14r" id="stage" class="clip" data-start="0" data-duration="116.42" data-track-index="0">
+        <div data-hf-id="hf-ftaq" id="cam">
+          <div data-hf-id="hf-a74c" id="page">
+            <img data-hf-id="hf-t6lq" src="assets/post.jpg" alt="Article Wizards : Updating Our Boosters in 2027">
+          </div>
+        </div>
+        <div data-hf-id="hf-pwjg" id="shade"></div>
+        <div data-hf-id="hf-pqfe" id="badge">NEWS MAGIC</div>
+        <div data-hf-id="hf-iuvo" id="captions"></div>
+      </div>
+    </div>
+    <script>
+      // Timings come from audio/words.json (Whisper) and scenes.json — no timing is written here.
+      const load = (p) => { const r = new XMLHttpRequest(); r.open("GET", p, false); r.send(null); return JSON.parse(r.responseText); };
+      const words = load("audio/words.json");
+      const scenes = load("scenes.json");
+      const TOTAL = scenes.duration;
+      const FRAME_H = 1920, FOCUS_Y = 600, IMG_H = scenes.imageHeight;
+
+      // ---- Captions: group words into short TikTok-style chunks ----
+      const chunks = [];
+      let cur = [];
+      words.forEach((w, i) => {
+        cur.push(w);
+        const next = words[i + 1];
+        const strong = /[.:;!?…]$/.test(w.text);
+        const comma = /,$/.test(w.text) && w.end - cur[0].start > 0.6;
+        const punct = strong || comma;
+        const chars = cur.map((x) => x.text).join(" ").length;
+        if (!next || punct || cur.length >= 4 || chars > 16 || next.line !== w.line || next.start - w.end > 0.35) { chunks.push(cur); cur = []; }
+      });
+      const capEl = document.getElementById("captions");
+      chunks.forEach((c, ci) => {
+        const el = document.createElement("div");
+        el.className = "chunk";
+        el.id = "chunk-" + ci;
+        c.forEach((w, wi) => {
+          const s = document.createElement("span");
+          s.className = "w";
+          s.id = `w-${ci}-${wi}`;
+          s.textContent = w.text;
+          el.appendChild(s);
+        });
+        capEl.appendChild(el);
+      });
+
+      // ---- Highlight markers on the post ----
+      const page = document.getElementById("page");
+      scenes.foci.forEach((f, i) => {
+        if (!f.highlight) return;
+        const m = document.createElement("div");
+        m.className = "marker";
+        m.id = "mk-" + i;
+        Object.assign(m.style, { left: f.x - 14 + "px", top: f.y - 10 + "px", width: f.w + 28 + "px", height: f.h + 20 + "px" });
+        page.appendChild(m);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+      const clampY = (y) => Math.max(-(IMG_H - FRAME_H), Math.min(190, y));
+      const targetY = (f) => clampY(FOCUS_Y - (f.y + f.h / 2));
+
+      // Opening punch-in on the post title + badge
+      gsap.set("#page", { y: targetY(scenes.foci[0]) });
+      tl.fromTo("#cam", { scale: 1.18 }, { scale: 1, duration: 1.2, ease: "power3.out" }, 0);
+      tl.fromTo("#badge", { autoAlpha: 0, x: -40 }, { autoAlpha: 1, x: 0, duration: 0.4, ease: "back.out(2)" }, 0.2);
+
+      // ---- Camera: travel to each passage, light zoom + marker sweep, slow drift while the voice talks ----
+      scenes.foci.forEach((f, i) => {
+        const next = scenes.foci[i + 1];
+        const end = next ? next.t : TOTAL;
+        const y = targetY(f);
+        if (i > 0) {
+          tl.to("#page", { y, duration: 0.9, ease: "power3.inOut" }, Math.max(0, f.t - 0.35));
+          tl.to("#cam", { scale: f.highlight ? 1.05 : 1, duration: 0.9, ease: "power2.inOut" }, Math.max(0, f.t - 0.35));
+        }
+        // slow downward drift during the hold
+        const hold = Math.max(0, end - f.t - 0.9);
+        if (hold > 0.5) tl.to("#page", { y: clampY(y - Math.min(160, hold * 14)), duration: hold, ease: "none" }, f.t + 0.55);
+        if (f.highlight) {
+          const mk = "#mk-" + i;
+          tl.fromTo(mk, { autoAlpha: 0, scaleX: 0 }, { autoAlpha: 1, scaleX: 1, duration: 0.45, ease: "power2.out" }, f.t + 0.5);
+          tl.to(mk, { autoAlpha: 0, duration: 0.3, ease: "power1.in" }, Math.max(f.t + 1, end - 0.4));
+        }
+      });
+      tl.to("#cam", { scale: 1, duration: 1.2, ease: "power2.inOut" }, scenes.foci[scenes.foci.length - 1].t);
+
+      // ---- Captions timing: one chunk at a time, spoken word in yellow ----
+      chunks.forEach((c, ci) => {
+        const start = c[0].start - 0.04;
+        const nextStart = chunks[ci + 1] ? chunks[ci + 1][0].start - 0.04 : TOTAL;
+        const lastEnd = c[c.length - 1].end;
+        const end = nextStart - lastEnd < 0.7 ? nextStart : lastEnd + 0.35;
+        const id = "#chunk-" + ci;
+        tl.fromTo(id, { autoAlpha: 0, y: 14, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.12, ease: "power2.out" }, start);
+        tl.set(id, { autoAlpha: 0 }, end);
+        c.forEach((w, wi) => {
+          const s = `#w-${ci}-${wi}`;
+          const wEnd = c[wi + 1] ? c[wi + 1].start : Math.min(end, w.end + 0.25);
+          tl.to(s, { color: "#ffd400", scale: 1.1, duration: 0.06, ease: "none" }, w.start);
+          tl.to(s, { color: "#ffffff", scale: 1, duration: 0.06, ease: "none" }, Math.max(w.start + 0.07, wEnd));
+        });
+      });
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

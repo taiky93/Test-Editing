@@ -1,0 +1,1940 @@
+[
+ {
+  "text": "Wizards",
+  "start": 0.05,
+  "end": 0.36,
+  "line": 0
+ },
+ {
+  "text": "vient",
+  "start": 0.36,
+  "end": 0.55,
+  "line": 0
+ },
+ {
+  "text": "d'annoncer",
+  "start": 0.55,
+  "end": 1.0,
+  "line": 0
+ },
+ {
+  "text": "de",
+  "start": 1.0,
+  "end": 1.09,
+  "line": 0
+ },
+ {
+  "text": "gros",
+  "start": 1.09,
+  "end": 1.27,
+  "line": 0
+ },
+ {
+  "text": "changements",
+  "start": 1.27,
+  "end": 1.84,
+  "line": 0
+ },
+ {
+  "text": "dans",
+  "start": 1.84,
+  "end": 2.06,
+  "line": 0
+ },
+ {
+  "text": "les",
+  "start": 2.06,
+  "end": 2.22,
+  "line": 0
+ },
+ {
+  "text": "boosters",
+  "start": 2.22,
+  "end": 2.66,
+  "line": 0
+ },
+ {
+  "text": "Magic",
+  "start": 2.66,
+  "end": 3.17,
+  "line": 0
+ },
+ {
+  "text": "à",
+  "start": 3.17,
+  "end": 3.305,
+  "line": 0
+ },
+ {
+  "text": "partir",
+  "start": 3.305,
+  "end": 3.71,
+  "line": 0
+ },
+ {
+  "text": "de",
+  "start": 3.71,
+  "end": 3.9,
+  "line": 0
+ },
+ {
+  "text": "2027.",
+  "start": 3.9,
+  "end": 4.9,
+  "line": 0
+ },
+ {
+  "text": "Il",
+  "start": 4.9,
+  "end": 5.17,
+  "line": 0
+ },
+ {
+  "text": "y",
+  "start": 5.17,
+  "end": 5.3,
+  "line": 0
+ },
+ {
+  "text": "a",
+  "start": 5.3,
+  "end": 5.43,
+  "line": 0
+ },
+ {
+  "text": "du",
+  "start": 5.43,
+  "end": 5.7,
+  "line": 0
+ },
+ {
+  "text": "très",
+  "start": 5.7,
+  "end": 6.24,
+  "line": 0
+ },
+ {
+  "text": "bon…",
+  "start": 6.24,
+  "end": 6.64,
+  "line": 0
+ },
+ {
+  "text": "et",
+  "start": 6.64,
+  "end": 6.91,
+  "line": 0
+ },
+ {
+  "text": "un",
+  "start": 6.91,
+  "end": 7.18,
+  "line": 0
+ },
+ {
+  "text": "peu",
+  "start": 7.18,
+  "end": 7.58,
+  "line": 0
+ },
+ {
+  "text": "moins",
+  "start": 7.58,
+  "end": 8.26,
+  "line": 0
+ },
+ {
+  "text": "bon.",
+  "start": 8.26,
+  "end": 8.88,
+  "line": 0
+ },
+ {
+  "text": "Tout",
+  "start": 8.88,
+  "end": 9.09,
+  "line": 1
+ },
+ {
+  "text": "commence",
+  "start": 9.09,
+  "end": 9.82,
+  "line": 1
+ },
+ {
+  "text": "avec",
+  "start": 9.82,
+  "end": 10.29,
+  "line": 1
+ },
+ {
+  "text": "Nauctis,",
+  "start": 10.29,
+  "end": 10.89,
+  "line": 1
+ },
+ {
+  "text": "le",
+  "start": 10.89,
+  "end": 10.961,
+  "line": 1
+ },
+ {
+  "text": "premier",
+  "start": 10.961,
+  "end": 11.21,
+  "line": 1
+ },
+ {
+  "text": "set",
+  "start": 11.21,
+  "end": 11.34,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 11.34,
+  "end": 11.46,
+  "line": 1
+ },
+ {
+  "text": "2027.",
+  "start": 11.46,
+  "end": 12.46,
+  "line": 1
+ },
+ {
+  "text": "La",
+  "start": 12.46,
+  "end": 12.6,
+  "line": 1
+ },
+ {
+  "text": "grosse",
+  "start": 12.6,
+  "end": 13.03,
+  "line": 1
+ },
+ {
+  "text": "nouveauté,",
+  "start": 13.03,
+  "end": 13.8,
+  "line": 1
+ },
+ {
+  "text": "ce",
+  "start": 13.8,
+  "end": 13.94,
+  "line": 1
+ },
+ {
+  "text": "sont",
+  "start": 13.94,
+  "end": 14.22,
+  "line": 1
+ },
+ {
+  "text": "les",
+  "start": 14.22,
+  "end": 14.43,
+  "line": 1
+ },
+ {
+  "text": "God",
+  "start": 14.43,
+  "end": 14.845,
+  "line": 1
+ },
+ {
+  "text": "Packs.",
+  "start": 14.845,
+  "end": 15.26,
+  "line": 1
+ },
+ {
+  "text": "Un",
+  "start": 15.26,
+  "end": 15.4,
+  "line": 1
+ },
+ {
+  "text": "Booster",
+  "start": 15.4,
+  "end": 15.91,
+  "line": 1
+ },
+ {
+  "text": "Pack",
+  "start": 15.91,
+  "end": 16.2,
+  "line": 1
+ },
+ {
+  "text": "sur",
+  "start": 16.2,
+  "end": 16.42,
+  "line": 1
+ },
+ {
+  "text": "mille",
+  "start": 16.42,
+  "end": 16.78,
+  "line": 1
+ },
+ {
+  "text": "ne",
+  "start": 16.78,
+  "end": 16.92,
+  "line": 1
+ },
+ {
+  "text": "contiendra",
+  "start": 16.92,
+  "end": 17.66,
+  "line": 1
+ },
+ {
+  "text": "que",
+  "start": 17.66,
+  "end": 17.86,
+  "line": 1
+ },
+ {
+  "text": "des",
+  "start": 17.86,
+  "end": 18.08,
+  "line": 1
+ },
+ {
+  "text": "rares",
+  "start": 18.08,
+  "end": 18.45,
+  "line": 1
+ },
+ {
+  "text": "et",
+  "start": 18.45,
+  "end": 18.58,
+  "line": 1
+ },
+ {
+  "text": "des",
+  "start": 18.58,
+  "end": 18.8,
+  "line": 1
+ },
+ {
+  "text": "mythiques :",
+  "start": 18.8,
+  "end": 19.59,
+  "line": 1
+ },
+ {
+  "text": "une",
+  "start": 19.59,
+  "end": 19.81,
+  "line": 1
+ },
+ {
+  "text": "carte",
+  "start": 19.81,
+  "end": 19.91,
+  "line": 1
+ },
+ {
+  "text": "de",
+  "start": 19.91,
+  "end": 20.34,
+  "line": 1
+ },
+ {
+  "text": "célébration,",
+  "start": 20.34,
+  "end": 21.32,
+  "line": 1
+ },
+ {
+  "text": "dix",
+  "start": 21.32,
+  "end": 21.54,
+  "line": 1
+ },
+ {
+  "text": "rares",
+  "start": 21.54,
+  "end": 21.91,
+  "line": 1
+ },
+ {
+  "text": "ou",
+  "start": 21.91,
+  "end": 22.07,
+  "line": 1
+ },
+ {
+  "text": "mythiques",
+  "start": 22.07,
+  "end": 22.76,
+  "line": 1
+ },
+ {
+  "text": "classiques,",
+  "start": 22.76,
+  "end": 23.67,
+  "line": 1
+ },
+ {
+  "text": "deux",
+  "start": 23.67,
+  "end": 23.98,
+  "line": 1
+ },
+ {
+  "text": "en",
+  "start": 23.98,
+  "end": 24.13,
+  "line": 1
+ },
+ {
+  "text": "version",
+  "start": 24.13,
+  "end": 24.53,
+  "line": 1
+ },
+ {
+  "text": "Booster",
+  "start": 24.53,
+  "end": 24.94,
+  "line": 1
+ },
+ {
+  "text": "Fun,",
+  "start": 24.94,
+  "end": 25.44,
+  "line": 1
+ },
+ {
+  "text": "et",
+  "start": 25.44,
+  "end": 25.73,
+  "line": 1
+ },
+ {
+  "text": "deux",
+  "start": 25.73,
+  "end": 25.9,
+  "line": 1
+ },
+ {
+  "text": "autres",
+  "start": 25.9,
+  "end": 26.5,
+  "line": 1
+ },
+ {
+  "text": "en",
+  "start": 26.5,
+  "end": 26.62,
+  "line": 1
+ },
+ {
+  "text": "Booster",
+  "start": 26.62,
+  "end": 27.04,
+  "line": 1
+ },
+ {
+  "text": "Fun",
+  "start": 27.04,
+  "end": 27.375,
+  "line": 1
+ },
+ {
+  "text": "foil.",
+  "start": 27.375,
+  "end": 27.71,
+  "line": 1
+ },
+ {
+  "text": "Côté",
+  "start": 27.71,
+  "end": 27.95,
+  "line": 2
+ },
+ {
+  "text": "Collector,",
+  "start": 27.95,
+  "end": 28.8,
+  "line": 2
+ },
+ {
+  "text": "ce",
+  "start": 28.8,
+  "end": 28.95,
+  "line": 2
+ },
+ {
+  "text": "sera",
+  "start": 28.95,
+  "end": 29.31,
+  "line": 2
+ },
+ {
+  "text": "un",
+  "start": 29.31,
+  "end": 29.41,
+  "line": 2
+ },
+ {
+  "text": "sur",
+  "start": 29.41,
+  "end": 29.64,
+  "line": 2
+ },
+ {
+  "text": "trois",
+  "start": 29.64,
+  "end": 30.06,
+  "line": 2
+ },
+ {
+  "text": "cents,",
+  "start": 30.06,
+  "end": 30.61,
+  "line": 2
+ },
+ {
+  "text": "avec",
+  "start": 30.61,
+  "end": 30.86,
+  "line": 2
+ },
+ {
+  "text": "encore",
+  "start": 30.86,
+  "end": 31.32,
+  "line": 2
+ },
+ {
+  "text": "plus",
+  "start": 31.32,
+  "end": 31.63,
+  "line": 2
+ },
+ {
+  "text": "de",
+  "start": 31.63,
+  "end": 31.78,
+  "line": 2
+ },
+ {
+  "text": "foils,",
+  "start": 31.78,
+  "end": 32.62,
+  "line": 2
+ },
+ {
+  "text": "dont",
+  "start": 32.62,
+  "end": 32.835,
+  "line": 2
+ },
+ {
+  "text": "cinq",
+  "start": 32.835,
+  "end": 33.05,
+  "line": 2
+ },
+ {
+  "text": "cartes",
+  "start": 33.05,
+  "end": 33.5,
+  "line": 2
+ },
+ {
+  "text": "Booster",
+  "start": 33.5,
+  "end": 33.95,
+  "line": 2
+ },
+ {
+  "text": "Fun",
+  "start": 33.95,
+  "end": 34.175,
+  "line": 2
+ },
+ {
+  "text": "foil",
+  "start": 34.175,
+  "end": 34.4,
+  "line": 2
+ },
+ {
+  "text": "dans",
+  "start": 34.4,
+  "end": 34.66,
+  "line": 2
+ },
+ {
+  "text": "le",
+  "start": 34.66,
+  "end": 34.79,
+  "line": 2
+ },
+ {
+  "text": "même",
+  "start": 34.79,
+  "end": 35.05,
+  "line": 2
+ },
+ {
+  "text": "paquet.",
+  "start": 35.05,
+  "end": 35.66,
+  "line": 2
+ },
+ {
+  "text": "Autre",
+  "start": 35.66,
+  "end": 36.1,
+  "line": 3
+ },
+ {
+  "text": "bonne",
+  "start": 36.1,
+  "end": 36.59,
+  "line": 3
+ },
+ {
+  "text": "nouvelle :",
+  "start": 36.59,
+  "end": 37.49,
+  "line": 3
+ },
+ {
+  "text": "les",
+  "start": 37.49,
+  "end": 37.75,
+  "line": 3
+ },
+ {
+  "text": "cartes",
+  "start": 37.75,
+  "end": 38.31,
+  "line": 3
+ },
+ {
+  "text": "Japan",
+  "start": 38.31,
+  "end": 38.83,
+  "line": 3
+ },
+ {
+  "text": "Showcase,",
+  "start": 38.83,
+  "end": 39.69,
+  "line": 3
+ },
+ {
+  "text": "jusque-là",
+  "start": 39.69,
+  "end": 40.257,
+  "line": 3
+ },
+ {
+  "text": "réservées",
+  "start": 40.257,
+  "end": 40.823,
+  "line": 3
+ },
+ {
+  "text": "aux",
+  "start": 40.823,
+  "end": 41.39,
+  "line": 3
+ },
+ {
+  "text": "Collector,",
+  "start": 41.39,
+  "end": 42.42,
+  "line": 3
+ },
+ {
+  "text": "arrivent",
+  "start": 42.42,
+  "end": 42.62,
+  "line": 3
+ },
+ {
+  "text": "dans",
+  "start": 42.62,
+  "end": 42.9,
+  "line": 3
+ },
+ {
+  "text": "les",
+  "start": 42.9,
+  "end": 43.11,
+  "line": 3
+ },
+ {
+  "text": "Booster",
+  "start": 43.11,
+  "end": 43.58,
+  "line": 3
+ },
+ {
+  "text": "Packs,",
+  "start": 43.58,
+  "end": 43.93,
+  "line": 3
+ },
+ {
+  "text": "en",
+  "start": 43.93,
+  "end": 44.08,
+  "line": 3
+ },
+ {
+  "text": "foil.",
+  "start": 44.08,
+  "end": 44.58,
+  "line": 3
+ },
+ {
+  "text": "Et",
+  "start": 44.58,
+  "end": 44.71,
+  "line": 3
+ },
+ {
+  "text": "les",
+  "start": 44.71,
+  "end": 44.93,
+  "line": 3
+ },
+ {
+  "text": "chances",
+  "start": 44.93,
+  "end": 45.38,
+  "line": 3
+ },
+ {
+  "text": "de",
+  "start": 45.38,
+  "end": 45.51,
+  "line": 3
+ },
+ {
+  "text": "tomber",
+  "start": 45.51,
+  "end": 45.91,
+  "line": 3
+ },
+ {
+  "text": "sur",
+  "start": 45.91,
+  "end": 46.11,
+  "line": 3
+ },
+ {
+  "text": "une",
+  "start": 46.11,
+  "end": 46.31,
+  "line": 3
+ },
+ {
+  "text": "rare",
+  "start": 46.31,
+  "end": 46.57,
+  "line": 3
+ },
+ {
+  "text": "ou",
+  "start": 46.57,
+  "end": 46.7,
+  "line": 3
+ },
+ {
+  "text": "une",
+  "start": 46.7,
+  "end": 46.98,
+  "line": 3
+ },
+ {
+  "text": "mythique",
+  "start": 46.98,
+  "end": 47.42,
+  "line": 3
+ },
+ {
+  "text": "foil",
+  "start": 47.42,
+  "end": 47.75,
+  "line": 3
+ },
+ {
+  "text": "augmentent.",
+  "start": 47.75,
+  "end": 48.62,
+  "line": 3
+ },
+ {
+  "text": "Petit",
+  "start": 48.62,
+  "end": 49.04,
+  "line": 4
+ },
+ {
+  "text": "détail",
+  "start": 49.04,
+  "end": 49.46,
+  "line": 4
+ },
+ {
+  "text": "au",
+  "start": 49.46,
+  "end": 49.58,
+  "line": 4
+ },
+ {
+  "text": "passage :",
+  "start": 49.58,
+  "end": 50.26,
+  "line": 4
+ },
+ {
+  "text": "les",
+  "start": 50.26,
+  "end": 50.53,
+  "line": 4
+ },
+ {
+  "text": "Play",
+  "start": 50.53,
+  "end": 50.89,
+  "line": 4
+ },
+ {
+  "text": "Boosters",
+  "start": 50.89,
+  "end": 51.61,
+  "line": 4
+ },
+ {
+  "text": "changent",
+  "start": 51.61,
+  "end": 52.33,
+  "line": 4
+ },
+ {
+  "text": "de",
+  "start": 52.33,
+  "end": 52.51,
+  "line": 4
+ },
+ {
+  "text": "nom.",
+  "start": 52.51,
+  "end": 53.1,
+  "line": 4
+ },
+ {
+  "text": "On",
+  "start": 53.1,
+  "end": 53.21,
+  "line": 4
+ },
+ {
+  "text": "parlera",
+  "start": 53.21,
+  "end": 53.61,
+  "line": 4
+ },
+ {
+  "text": "désormais",
+  "start": 53.61,
+  "end": 54.12,
+  "line": 4
+ },
+ {
+  "text": "simplement",
+  "start": 54.12,
+  "end": 54.74,
+  "line": 4
+ },
+ {
+  "text": "de",
+  "start": 54.74,
+  "end": 54.847,
+  "line": 4
+ },
+ {
+  "text": "Booster",
+  "start": 54.847,
+  "end": 55.22,
+  "line": 4
+ },
+ {
+  "text": "Packs.",
+  "start": 55.22,
+  "end": 55.74,
+  "line": 4
+ },
+ {
+  "text": "Maintenant,",
+  "start": 55.79,
+  "end": 56.41,
+  "line": 5
+ },
+ {
+  "text": "ce",
+  "start": 56.41,
+  "end": 56.54,
+  "line": 5
+ },
+ {
+  "text": "qui",
+  "start": 56.54,
+  "end": 56.74,
+  "line": 5
+ },
+ {
+  "text": "disparaît.",
+  "start": 56.74,
+  "end": 57.46,
+  "line": 5
+ },
+ {
+  "text": "Fini",
+  "start": 57.46,
+  "end": 57.79,
+  "line": 5
+ },
+ {
+  "text": "les",
+  "start": 57.79,
+  "end": 57.99,
+  "line": 5
+ },
+ {
+  "text": "communes",
+  "start": 57.99,
+  "end": 58.52,
+  "line": 5
+ },
+ {
+  "text": "et",
+  "start": 58.52,
+  "end": 58.69,
+  "line": 5
+ },
+ {
+  "text": "les",
+  "start": 58.69,
+  "end": 58.91,
+  "line": 5
+ },
+ {
+  "text": "incos",
+  "start": 58.91,
+  "end": 59.2,
+  "line": 5
+ },
+ {
+  "text": "foil",
+  "start": 59.2,
+  "end": 59.51,
+  "line": 5
+ },
+ {
+  "text": "dans",
+  "start": 59.51,
+  "end": 59.77,
+  "line": 5
+ },
+ {
+  "text": "les",
+  "start": 59.77,
+  "end": 59.93,
+  "line": 5
+ },
+ {
+  "text": "Booster",
+  "start": 59.93,
+  "end": 60.77,
+  "line": 5
+ },
+ {
+  "text": "Packs,",
+  "start": 60.77,
+  "end": 61.06,
+  "line": 5
+ },
+ {
+  "text": "et",
+  "start": 61.06,
+  "end": 61.16,
+  "line": 5
+ },
+ {
+  "text": "le",
+  "start": 61.16,
+  "end": 61.26,
+  "line": 5
+ },
+ {
+  "text": "foil",
+  "start": 61.26,
+  "end": 61.46,
+  "line": 5
+ },
+ {
+  "text": "n'est",
+  "start": 61.46,
+  "end": 61.71,
+  "line": 5
+ },
+ {
+  "text": "plus",
+  "start": 61.71,
+  "end": 61.91,
+  "line": 5
+ },
+ {
+  "text": "garanti",
+  "start": 61.91,
+  "end": 62.33,
+  "line": 5
+ },
+ {
+  "text": "dans",
+  "start": 62.33,
+  "end": 62.54,
+  "line": 5
+ },
+ {
+  "text": "chaque",
+  "start": 62.54,
+  "end": 62.85,
+  "line": 5
+ },
+ {
+  "text": "paquet.",
+  "start": 62.85,
+  "end": 63.38,
+  "line": 5
+ },
+ {
+  "text": "Si",
+  "start": 63.38,
+  "end": 63.55,
+  "line": 5
+ },
+ {
+  "text": "tu",
+  "start": 63.55,
+  "end": 63.74,
+  "line": 5
+ },
+ {
+  "text": "ouvres",
+  "start": 63.74,
+  "end": 64.22,
+  "line": 5
+ },
+ {
+  "text": "un",
+  "start": 64.22,
+  "end": 64.39,
+  "line": 5
+ },
+ {
+  "text": "foil,",
+  "start": 64.39,
+  "end": 64.88,
+  "line": 5
+ },
+ {
+  "text": "ce",
+  "start": 64.88,
+  "end": 65.05,
+  "line": 5
+ },
+ {
+  "text": "sera",
+  "start": 65.05,
+  "end": 65.39,
+  "line": 5
+ },
+ {
+  "text": "forcément",
+  "start": 65.39,
+  "end": 66.15,
+  "line": 5
+ },
+ {
+  "text": "une",
+  "start": 66.15,
+  "end": 66.55,
+  "line": 5
+ },
+ {
+  "text": "rare",
+  "start": 66.55,
+  "end": 66.74,
+  "line": 5
+ },
+ {
+  "text": "ou",
+  "start": 66.74,
+  "end": 66.91,
+  "line": 5
+ },
+ {
+  "text": "une",
+  "start": 66.91,
+  "end": 67.16,
+  "line": 5
+ },
+ {
+  "text": "mythique.",
+  "start": 67.16,
+  "end": 68.14,
+  "line": 5
+ },
+ {
+  "text": "Les",
+  "start": 68.14,
+  "end": 68.35,
+  "line": 5
+ },
+ {
+  "text": "Collector",
+  "start": 68.35,
+  "end": 69.07,
+  "line": 5
+ },
+ {
+  "text": "perdent",
+  "start": 69.07,
+  "end": 69.56,
+  "line": 5
+ },
+ {
+  "text": "aussi",
+  "start": 69.56,
+  "end": 69.92,
+  "line": 5
+ },
+ {
+  "text": "deux",
+  "start": 69.92,
+  "end": 70.2,
+  "line": 5
+ },
+ {
+  "text": "communes",
+  "start": 70.2,
+  "end": 70.77,
+  "line": 5
+ },
+ {
+  "text": "et",
+  "start": 70.77,
+  "end": 70.91,
+  "line": 5
+ },
+ {
+  "text": "une",
+  "start": 70.91,
+  "end": 71.11,
+  "line": 5
+ },
+ {
+  "text": "inco",
+  "start": 71.11,
+  "end": 71.44,
+  "line": 5
+ },
+ {
+  "text": "foil,",
+  "start": 71.44,
+  "end": 71.82,
+  "line": 5
+ },
+ {
+  "text": "sans",
+  "start": 71.82,
+  "end": 72.1,
+  "line": 5
+ },
+ {
+  "text": "remplacement.",
+  "start": 72.1,
+  "end": 73.26,
+  "line": 5
+ },
+ {
+  "text": "Wizards",
+  "start": 73.26,
+  "end": 73.79,
+  "line": 5
+ },
+ {
+  "text": "explique",
+  "start": 73.79,
+  "end": 74.39,
+  "line": 5
+ },
+ {
+  "text": "que",
+  "start": 74.39,
+  "end": 74.62,
+  "line": 5
+ },
+ {
+  "text": "ces",
+  "start": 74.62,
+  "end": 74.91,
+  "line": 5
+ },
+ {
+  "text": "cartes",
+  "start": 74.91,
+  "end": 75.3,
+  "line": 5
+ },
+ {
+  "text": "étaient",
+  "start": 75.3,
+  "end": 75.82,
+  "line": 5
+ },
+ {
+  "text": "souvent",
+  "start": 75.82,
+  "end": 76.43,
+  "line": 5
+ },
+ {
+  "text": "zappées",
+  "start": 76.43,
+  "end": 76.81,
+  "line": 5
+ },
+ {
+  "text": "à",
+  "start": 76.81,
+  "end": 76.972,
+  "line": 5
+ },
+ {
+  "text": "l'ouverture,",
+  "start": 76.972,
+  "end": 77.78,
+  "line": 5
+ },
+ {
+  "text": "et",
+  "start": 77.78,
+  "end": 77.94,
+  "line": 5
+ },
+ {
+  "text": "que",
+  "start": 77.94,
+  "end": 78.18,
+  "line": 5
+ },
+ {
+  "text": "ça",
+  "start": 78.18,
+  "end": 78.34,
+  "line": 5
+ },
+ {
+  "text": "libère",
+  "start": 78.34,
+  "end": 78.66,
+  "line": 5
+ },
+ {
+  "text": "de",
+  "start": 78.66,
+  "end": 78.78,
+  "line": 5
+ },
+ {
+  "text": "la",
+  "start": 78.78,
+  "end": 78.9,
+  "line": 5
+ },
+ {
+  "text": "place",
+  "start": 78.9,
+  "end": 79.2,
+  "line": 5
+ },
+ {
+  "text": "à",
+  "start": 79.2,
+  "end": 79.317,
+  "line": 5
+ },
+ {
+  "text": "l'impression",
+  "start": 79.317,
+  "end": 79.96,
+  "line": 5
+ },
+ {
+  "text": "pour",
+  "start": 79.96,
+  "end": 80.2,
+  "line": 5
+ },
+ {
+  "text": "les",
+  "start": 80.2,
+  "end": 80.38,
+  "line": 5
+ },
+ {
+  "text": "nouveautés.",
+  "start": 80.38,
+  "end": 81.18,
+  "line": 5
+ },
+ {
+  "text": "Et",
+  "start": 81.18,
+  "end": 81.31,
+  "line": 6
+ },
+ {
+  "text": "pour",
+  "start": 81.31,
+  "end": 81.57,
+  "line": 6
+ },
+ {
+  "text": "ceux",
+  "start": 81.57,
+  "end": 81.83,
+  "line": 6
+ },
+ {
+  "text": "qui",
+  "start": 81.83,
+  "end": 82.02,
+  "line": 6
+ },
+ {
+  "text": "se",
+  "start": 82.02,
+  "end": 82.16,
+  "line": 6
+ },
+ {
+  "text": "posent",
+  "start": 82.16,
+  "end": 82.55,
+  "line": 6
+ },
+ {
+  "text": "la",
+  "start": 82.68,
+  "end": 82.82,
+  "line": 6
+ },
+ {
+  "text": "question :",
+  "start": 82.82,
+  "end": 83.47,
+  "line": 6
+ },
+ {
+  "text": "le",
+  "start": 83.47,
+  "end": 83.6,
+  "line": 6
+ },
+ {
+  "text": "prix",
+  "start": 83.6,
+  "end": 83.86,
+  "line": 6
+ },
+ {
+  "text": "conseillé",
+  "start": 83.86,
+  "end": 84.48,
+  "line": 6
+ },
+ {
+  "text": "des",
+  "start": 84.48,
+  "end": 84.64,
+  "line": 6
+ },
+ {
+  "text": "boosters",
+  "start": 84.64,
+  "end": 85.16,
+  "line": 6
+ },
+ {
+  "text": "ne",
+  "start": 85.16,
+  "end": 85.29,
+  "line": 6
+ },
+ {
+  "text": "change",
+  "start": 85.29,
+  "end": 85.78,
+  "line": 6
+ },
+ {
+  "text": "pas.",
+  "start": 85.78,
+  "end": 86.78,
+  "line": 6
+ },
+ {
+  "text": "Pour",
+  "start": 86.78,
+  "end": 86.99,
+  "line": 7
+ },
+ {
+  "text": "moi,",
+  "start": 86.99,
+  "end": 87.24,
+  "line": 7
+ },
+ {
+  "text": "les",
+  "start": 87.24,
+  "end": 87.39,
+  "line": 7
+ },
+ {
+  "text": "God",
+  "start": 87.39,
+  "end": 87.595,
+  "line": 7
+ },
+ {
+  "text": "Packs",
+  "start": 87.595,
+  "end": 87.8,
+  "line": 7
+ },
+ {
+  "text": "et",
+  "start": 87.8,
+  "end": 87.9,
+  "line": 7
+ },
+ {
+  "text": "les",
+  "start": 87.9,
+  "end": 88.05,
+  "line": 7
+ },
+ {
+  "text": "Japan",
+  "start": 88.05,
+  "end": 88.31,
+  "line": 7
+ },
+ {
+  "text": "Showcase",
+  "start": 88.31,
+  "end": 88.73,
+  "line": 7
+ },
+ {
+  "text": "vont",
+  "start": 88.73,
+  "end": 88.94,
+  "line": 7
+ },
+ {
+  "text": "clairement",
+  "start": 88.94,
+  "end": 89.46,
+  "line": 7
+ },
+ {
+  "text": "rendre",
+  "start": 89.46,
+  "end": 89.92,
+  "line": 7
+ },
+ {
+  "text": "les",
+  "start": 89.92,
+  "end": 90.04,
+  "line": 7
+ },
+ {
+  "text": "ouvertures",
+  "start": 90.04,
+  "end": 90.44,
+  "line": 7
+ },
+ {
+  "text": "plus",
+  "start": 90.44,
+  "end": 90.74,
+  "line": 7
+ },
+ {
+  "text": "excitantes.",
+  "start": 90.74,
+  "end": 91.74,
+  "line": 7
+ },
+ {
+  "text": "Par",
+  "start": 91.74,
+  "end": 91.94,
+  "line": 7
+ },
+ {
+  "text": "contre,",
+  "start": 91.94,
+  "end": 92.48,
+  "line": 7
+ },
+ {
+  "text": "moins",
+  "start": 92.48,
+  "end": 92.82,
+  "line": 7
+ },
+ {
+  "text": "de",
+  "start": 92.82,
+  "end": 92.95,
+  "line": 7
+ },
+ {
+  "text": "cartes",
+  "start": 92.95,
+  "end": 93.39,
+  "line": 7
+ },
+ {
+  "text": "par",
+  "start": 93.39,
+  "end": 93.55,
+  "line": 7
+ },
+ {
+  "text": "booster,",
+  "start": 93.55,
+  "end": 94.16,
+  "line": 7
+ },
+ {
+  "text": "ça",
+  "start": 94.16,
+  "end": 94.29,
+  "line": 7
+ },
+ {
+  "text": "reste",
+  "start": 94.29,
+  "end": 94.63,
+  "line": 7
+ },
+ {
+  "text": "une",
+  "start": 94.63,
+  "end": 94.91,
+  "line": 7
+ },
+ {
+  "text": "pilule",
+  "start": 94.91,
+  "end": 95.23,
+  "line": 7
+ },
+ {
+  "text": "à",
+  "start": 95.23,
+  "end": 95.377,
+  "line": 7
+ },
+ {
+  "text": "avaler,",
+  "start": 95.377,
+  "end": 95.82,
+  "line": 7
+ },
+ {
+  "text": "surtout",
+  "start": 95.82,
+  "end": 96.26,
+  "line": 7
+ },
+ {
+  "text": "si",
+  "start": 96.26,
+  "end": 96.38,
+  "line": 7
+ },
+ {
+  "text": "tu",
+  "start": 96.38,
+  "end": 96.76,
+  "line": 7
+ },
+ {
+  "text": "aimes",
+  "start": 96.76,
+  "end": 96.98,
+  "line": 7
+ },
+ {
+  "text": "les",
+  "start": 96.98,
+  "end": 97.11,
+  "line": 7
+ },
+ {
+  "text": "communes",
+  "start": 97.11,
+  "end": 97.47,
+  "line": 7
+ },
+ {
+  "text": "foil.",
+  "start": 97.47,
+  "end": 97.86,
+  "line": 7
+ },
+ {
+  "text": "Et",
+  "start": 97.86,
+  "end": 97.97,
+  "line": 7
+ },
+ {
+  "text": "on",
+  "start": 97.97,
+  "end": 98.08,
+  "line": 7
+ },
+ {
+  "text": "peut",
+  "start": 98.08,
+  "end": 98.31,
+  "line": 7
+ },
+ {
+  "text": "se",
+  "start": 98.31,
+  "end": 98.42,
+  "line": 7
+ },
+ {
+  "text": "demander",
+  "start": 98.42,
+  "end": 98.89,
+  "line": 7
+ },
+ {
+  "text": "si",
+  "start": 98.89,
+  "end": 99.0,
+  "line": 7
+ },
+ {
+  "text": "la",
+  "start": 99.0,
+  "end": 99.11,
+  "line": 7
+ },
+ {
+  "text": "chasse",
+  "start": 99.11,
+  "end": 99.5,
+  "line": 7
+ },
+ {
+  "text": "au",
+  "start": 99.5,
+  "end": 99.628,
+  "line": 7
+ },
+ {
+  "text": "God",
+  "start": 99.628,
+  "end": 99.82,
+  "line": 7
+ },
+ {
+  "text": "Pack",
+  "start": 99.82,
+  "end": 99.95,
+  "line": 7
+ },
+ {
+  "text": "ne",
+  "start": 99.95,
+  "end": 100.06,
+  "line": 7
+ },
+ {
+  "text": "va",
+  "start": 100.06,
+  "end": 100.17,
+  "line": 7
+ },
+ {
+  "text": "pas",
+  "start": 100.17,
+  "end": 100.34,
+  "line": 7
+ },
+ {
+  "text": "faire",
+  "start": 100.34,
+  "end": 100.63,
+  "line": 7
+ },
+ {
+  "text": "monter",
+  "start": 100.63,
+  "end": 101.03,
+  "line": 7
+ },
+ {
+  "text": "les",
+  "start": 101.03,
+  "end": 101.16,
+  "line": 7
+ },
+ {
+  "text": "prix",
+  "start": 101.16,
+  "end": 101.38,
+  "line": 7
+ },
+ {
+  "text": "en",
+  "start": 101.38,
+  "end": 101.49,
+  "line": 7
+ },
+ {
+  "text": "boutique.",
+  "start": 101.49,
+  "end": 102.34,
+  "line": 7
+ },
+ {
+  "text": "Si",
+  "start": 102.34,
+  "end": 102.47,
+  "line": 8
+ },
+ {
+  "text": "tu",
+  "start": 102.47,
+  "end": 102.6,
+  "line": 8
+ },
+ {
+  "text": "veux",
+  "start": 102.6,
+  "end": 102.86,
+  "line": 8
+ },
+ {
+  "text": "suivre",
+  "start": 102.86,
+  "end": 103.25,
+  "line": 8
+ },
+ {
+  "text": "les",
+  "start": 103.25,
+  "end": 103.44,
+  "line": 8
+ },
+ {
+  "text": "prochaines",
+  "start": 103.44,
+  "end": 104.09,
+  "line": 8
+ },
+ {
+  "text": "news",
+  "start": 104.09,
+  "end": 104.35,
+  "line": 8
+ },
+ {
+  "text": "Magic,",
+  "start": 104.35,
+  "end": 104.99,
+  "line": 8
+ },
+ {
+  "text": "pense",
+  "start": 104.99,
+  "end": 105.3,
+  "line": 8
+ },
+ {
+  "text": "à",
+  "start": 105.3,
+  "end": 105.43,
+  "line": 8
+ },
+ {
+  "text": "t'abonner.",
+  "start": 105.43,
+  "end": 106.22,
+  "line": 8
+ },
+ {
+  "text": "Et",
+  "start": 106.22,
+  "end": 106.36,
+  "line": 9
+ },
+ {
+  "text": "toi,",
+  "start": 106.36,
+  "end": 106.72,
+  "line": 9
+ },
+ {
+  "text": "t'en",
+  "start": 106.72,
+  "end": 107.0,
+  "line": 9
+ },
+ {
+  "text": "penses",
+  "start": 107.0,
+  "end": 107.43,
+  "line": 9
+ },
+ {
+  "text": "quoi ?",
+  "start": 107.72,
+  "end": 108.01,
+  "line": 9
+ },
+ {
+  "text": "Les",
+  "start": 108.35,
+  "end": 108.52,
+  "line": 9
+ },
+ {
+  "text": "God",
+  "start": 108.52,
+  "end": 108.89,
+  "line": 9
+ },
+ {
+  "text": "Packs,",
+  "start": 108.89,
+  "end": 109.26,
+  "line": 9
+ },
+ {
+  "text": "bonne",
+  "start": 109.26,
+  "end": 109.64,
+  "line": 9
+ },
+ {
+  "text": "idée,",
+  "start": 109.64,
+  "end": 109.95,
+  "line": 9
+ },
+ {
+  "text": "ou",
+  "start": 110.16,
+  "end": 110.31,
+  "line": 9
+ },
+ {
+  "text": "Magic",
+  "start": 110.31,
+  "end": 110.83,
+  "line": 9
+ },
+ {
+  "text": "se",
+  "start": 110.83,
+  "end": 110.98,
+  "line": 9
+ },
+ {
+  "text": "rapproche",
+  "start": 110.98,
+  "end": 111.65,
+  "line": 9
+ },
+ {
+  "text": "un",
+  "start": 111.65,
+  "end": 111.79,
+  "line": 9
+ },
+ {
+  "text": "peu",
+  "start": 111.79,
+  "end": 112.02,
+  "line": 9
+ },
+ {
+  "text": "trop",
+  "start": 112.02,
+  "end": 112.32,
+  "line": 9
+ },
+ {
+  "text": "de",
+  "start": 112.32,
+  "end": 112.47,
+  "line": 9
+ },
+ {
+  "text": "Pokémon ?",
+  "start": 112.47,
+  "end": 113.34,
+  "line": 9
+ },
+ {
+  "text": "Dis-le-moi",
+  "start": 113.69,
+  "end": 114.06,
+  "line": 9
+ },
+ {
+  "text": "en",
+  "start": 114.06,
+  "end": 114.17,
+  "line": 9
+ },
+ {
+  "text": "commentaire.",
+  "start": 114.17,
+  "end": 114.82,
+  "line": 9
+ }
+]
