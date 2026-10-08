@@ -1,7 +1,7 @@
 {
  "set": "FIN (Final Fantasy, EN)",
  "currency": "€",
- "boosterPrice": null,
+ "boosterPrice": 8.0,
  "popDelay": 0.3,
  "speedup": {
   "factor": 3
@@ -37,8 +37,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 825625,
+   "collector": "12",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=825625&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 4,
@@ -48,8 +51,10 @@
    "set": "FCA",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 1,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 825865,
+   "collector": "28"
   },
   {
    "n": 5,
@@ -59,8 +64,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.05,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 825776,
+   "collector": "215",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=825776&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 6,
@@ -70,8 +78,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 826596,
+   "collector": "13",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=826596&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 7,
@@ -81,8 +92,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 826823,
+   "collector": "180",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=826823&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 8,
@@ -92,8 +106,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 824948,
+   "collector": "129",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=824948&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 9,
@@ -103,8 +120,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 827722,
+   "collector": "57",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=827722&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 10,
@@ -114,8 +134,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 827784,
+   "collector": "252",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=827784&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 11,
@@ -125,8 +148,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 825641,
+   "collector": "68",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=825641&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 12,
@@ -136,8 +162,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 826130,
+   "collector": "28",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=826130&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 13,
@@ -147,8 +176,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 827759,
+   "collector": "165",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=827759&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 14,
@@ -158,8 +190,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 827739,
+   "collector": "103",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=827739&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   },
   {
    "n": 15,
@@ -169,8 +204,11 @@
    "set": "FIN",
    "foil": false,
    "skip": false,
-   "price": null,
-   "priceSource": null
+   "price": 0.02,
+   "priceSource": "Cardmarket price guide, « low » (1er prix référencé)",
+   "cardmarketId": 824148,
+   "collector": "182",
+   "cardmarketUrl": "https://www.cardmarket.com/en/Magic/Products?idProduct=824148&referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall"
   }
  ]
 }
