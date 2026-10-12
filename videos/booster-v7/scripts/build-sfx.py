@@ -41,7 +41,8 @@ if not bed:
         ff("-f", "lavfi", "-i", f"aevalsrc='{e}|{e}':s=44100:d=4", sfx / f"_c{i}.wav")
     (sfx / "_l.txt").write_text("".join(f"file '_c{i}.wav'\n" for i in range(4)))
     ff("-f", "concat", "-safe", "0", "-i", sfx / "_l.txt", "-c", "copy", sfx / "_loop.wav")
-    ff("-stream_loop", "-1", "-i", sfx / "_loop.wav", "-t", dur, "-af", f"lowpass=f=1600,afade=t=in:d=1.5,afade=t=out:st={dur-1.5}:d=1.5", sfx / "gen-bed.wav")
+    bdur = dur - (d["teaser"]["end"] if d.get("teaser") else 0)   # la nappe démarre après l'accroche
+    ff("-stream_loop", "-1", "-i", sfx / "_loop.wav", "-t", bdur, "-af", f"lowpass=f=1600,afade=t=in:d=1.5,afade=t=out:st={bdur-1.5}:d=1.5", sfx / "gen-bed.wav")
     for p in sfx.glob("_*"): p.unlink()
     bed = sfx / "gen-bed.wav"
 hit = d.get("hit")
@@ -50,7 +51,10 @@ bigc = round(d.get("bigPrice", 20) * 100)
 pop = lambda c: hit["start"] + 0.7 if (c.get("hit") and hit) else c["t"] + d.get("popDelay", 0.3)
 ev = [(pop(c), bigp if round(c["price"] * 100) >= bigc else price, 1.0 if round(c["price"] * 100) >= bigc else 0.9) for c in cards]
 ev.append((d["finalAt"] + 0.25, final, 1.0))
-ins = ["-i", bed]; ch = ["[0:a]aformat=sample_rates=44100:channel_layouts=stereo,volume=0.5[b]"]; lab = "[b]"
+tz = d.get("teaser"); shock = pick("shock")
+if tz and shock: ev.append((tz["freeze"], shock, 1.0))                # son de choc sur l'image figée de l'accroche
+bd = int((tz["end"] if tz else 0) * 1000)
+ins = ["-i", bed]; ch = [f"[0:a]aformat=sample_rates=44100:channel_layouts=stereo,volume=0.5,adelay={bd}|{bd}[b]"]; lab = "[b]"
 for i, (t, src, vol) in enumerate(ev, 1):
     ms = int(t * 1000); ins += ["-i", src]
     ch.append(f"[{i}:a]aformat=sample_rates=44100:channel_layouts=stereo,volume={vol},adelay={ms}|{ms}[e{i}]"); lab += f"[e{i}]"
