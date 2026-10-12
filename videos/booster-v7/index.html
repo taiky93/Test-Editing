@@ -195,15 +195,6 @@
       <video data-hf-id="hf-yezi" id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-duration="71.2" data-track-index="0"></video>
       <audio data-hf-id="hf-mszu" id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="71.2" data-track-index="2"></audio>
       <div data-hf-id="hf-uyp2" id="overlay" class="clip" data-start="0" data-duration="71.2" data-track-index="1">
-        <div data-hf-id="hf-yw03" id="prices"></div>
-        <div data-hf-id="hf-i9xo" id="hud">
-          <div data-hf-id="hf-z10c" class="txt" id="hud-label">Gain/Perte</div>
-          <div data-hf-id="hf-45o9" class="txt" id="counter">-0,00 €</div>
-        </div>
-        <div data-hf-id="hf-j6bt" id="intro">
-          <div data-hf-id="hf-im13" class="txt" id="intro-value">-0,00 €</div>
-          <div data-hf-id="hf-0idy" class="txt" id="intro-sub">le booster</div>
-        </div>
         <div id="hit">
           <div id="flash"></div>
           <div id="rays"></div>
@@ -213,6 +204,15 @@
           <div class="txt" id="hit-price">0,00 €</div>
         </div>
         <div id="veil"></div>
+        <div data-hf-id="hf-yw03" id="prices"></div>
+        <div data-hf-id="hf-i9xo" id="hud">
+          <div data-hf-id="hf-z10c" class="txt" id="hud-label">Gain/Perte</div>
+          <div data-hf-id="hf-45o9" class="txt" id="counter">-0,00 €</div>
+        </div>
+        <div data-hf-id="hf-j6bt" id="intro">
+          <div data-hf-id="hf-im13" class="txt" id="intro-value">-0,00 €</div>
+          <div data-hf-id="hf-0idy" class="txt" id="intro-sub">le booster</div>
+        </div>
         <div data-hf-id="hf-r6lr" id="final">
           <div data-hf-id="hf-2ypv" class="txt" id="final-label">Gain/Perte</div>
           <div data-hf-id="hf-wk9u" class="txt" id="final-value">0,00 €</div>
@@ -327,8 +327,8 @@
         const hpEl = document.getElementById("hit-price");
         const drawHp = () => (hpEl.textContent = fmt(Math.round(hp.v)));
         tl.set(hp, { v: 0, onUpdate: drawHp }, 0);
-        tl.fromTo("#flash", { autoAlpha: 0.95 }, { autoAlpha: 0, duration: 0.45, ease: "power2.out" }, h0);
-        tl.fromTo("#footage", { scale: 1.12 }, { scale: 1.0, duration: 0.6, ease: "power3.out" }, h0);
+        tl.fromTo("#flash", { autoAlpha: 0.95 }, { autoAlpha: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, h0);
+        tl.fromTo("#footage", { scale: 1.12 }, { scale: 1.0, duration: 0.6, ease: "power3.out", immediateRender: false }, h0);
         tl.to("#footage", { scale: 1.06, duration: h1 - h0 - 0.6, ease: "sine.inOut" }, h0 + 0.6);
         tl.set("#footage", { scale: 1 }, h1);
         tl.fromTo("#glow", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.4, ease: "power1.out" }, h0);
