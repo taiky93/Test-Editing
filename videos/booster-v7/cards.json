@@ -1,0 +1,204 @@
+{
+ "set": "FRA (Réalité Fracturée, booster collector, FR)",
+ "currency": "€",
+ "boosterPrice": 33.0,
+ "video": "source/edited.mp4",
+ "speedup": {
+  "from": 3.0,
+  "to": 12.5,
+  "factor": 3
+ },
+ "popDelay": 0.3,
+ "intro": {
+  "start": 0.8,
+  "end": 2.6
+ },
+ "hit": {
+  "start": 57.667,
+  "end": 65.667,
+  "source": "video 7 preview.mp4 (0.5–8.5 s)"
+ },
+ "finalAt": 68.3,
+ "duration": 71.2,
+ "cards": [
+  {
+   "n": 1,
+   "t": 7.1,
+   "name": "Volume murmurant",
+   "set": "FRA",
+   "collector": "C 0174",
+   "foil": true,
+   "price": 0.02,
+   "cardmarketId": 909245,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 2,
+   "t": 9.67,
+   "name": "Rat nauséabond",
+   "set": "FRA",
+   "collector": "C 0061",
+   "foil": true,
+   "price": 0.16,
+   "cardmarketId": 909894,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 3,
+   "t": 12.67,
+   "name": "Annexe de Fortefin",
+   "set": "FRA",
+   "collector": "L 0177",
+   "foil": true,
+   "price": 0.13,
+   "cardmarketId": 909916,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 4,
+   "t": 16.67,
+   "name": "Amphisbène ésotérique",
+   "set": "FRA",
+   "collector": "C 0097",
+   "foil": true,
+   "price": 0.1,
+   "cardmarketId": 907302,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 5,
+   "t": 20.17,
+   "name": "Brûlure d'essence",
+   "set": "FRA",
+   "collector": "U 0082",
+   "foil": true,
+   "price": 0.25,
+   "cardmarketId": 909547,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 6,
+   "t": 23.17,
+   "name": "Brûlure d'essence (sans bordure)",
+   "set": "FRA",
+   "collector": "U 0369",
+   "foil": true,
+   "price": 0.09,
+   "cardmarketId": 909581,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 7,
+   "t": 27.17,
+   "name": "Rapine, le nexus",
+   "set": "FRA",
+   "collector": "U 0262",
+   "foil": true,
+   "price": 0.21,
+   "cardmarketId": 909563,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 8,
+   "t": 30.17,
+   "name": "Rapine, l'anomalie",
+   "set": "FRA",
+   "collector": "U 0232",
+   "foil": true,
+   "price": 0.26,
+   "cardmarketId": 909930,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 9,
+   "t": 33.17,
+   "name": "Edgar, seigneur de sang ancestral",
+   "set": "FRA",
+   "collector": "U 0270",
+   "foil": true,
+   "price": 0.27,
+   "cardmarketId": 908846,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 10,
+   "t": 35.9,
+   "name": "Montagne",
+   "set": "FRA",
+   "collector": "L 0391",
+   "foil": true,
+   "price": null,
+   "cardmarketId": 907351,
+   "skip": true,
+   "reason": "terrain de base"
+  },
+  {
+   "n": 11,
+   "t": 40.17,
+   "name": "Maître des ardillons",
+   "set": "FRA",
+   "collector": "R 0088",
+   "foil": true,
+   "price": 0.39,
+   "cardmarketId": 908801,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 12,
+   "t": 44.17,
+   "name": "Sanctum du Théoricien (sans bordure)",
+   "set": "FRA",
+   "collector": "R 0381",
+   "foil": false,
+   "price": 0.09,
+   "cardmarketId": 907341,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend » (tendance)"
+  },
+  {
+   "n": 13,
+   "t": 48.17,
+   "name": "Invigorateur de Hexaven (sans bordure)",
+   "set": "FRA",
+   "collector": "M 0330",
+   "foil": false,
+   "price": 22.85,
+   "cardmarketId": 907330,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend » (tendance)"
+  },
+  {
+   "n": 14,
+   "t": 52.67,
+   "name": "Devineresse de la victoire (extended)",
+   "set": "FRA",
+   "collector": "R 0425",
+   "foil": true,
+   "price": 0.36,
+   "cardmarketId": 907437,
+   "priceSource": "Cardmarket price guide 12/10/2026, « trend-foil » (tendance foil)"
+  },
+  {
+   "n": 15,
+   "t": 56.17,
+   "name": "Loyal Tutor (showcase fracture foil, EN)",
+   "set": "FRA",
+   "collector": "M 0414",
+   "foil": true,
+   "price": 127.0,
+   "cardmarketId": 907406,
+   "priceSource": "manuel (tendance Cardmarket donnée par l'utilisateur ; le price guide public indiquait 91.14 en trend-foil, 128.67 en moyenne 30 j)",
+   "hit": true
+  },
+  {
+   "n": 16,
+   "t": 66.17,
+   "name": "Ange (jeton)",
+   "set": "FRA",
+   "collector": "T",
+   "foil": false,
+   "price": null,
+   "cardmarketId": null,
+   "skip": true,
+   "reason": "jeton"
+  }
+ ]
+}

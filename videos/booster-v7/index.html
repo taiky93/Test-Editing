@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-display: block;
+        src: url("assets/fonts/montserrat-latin-600-normal.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-display: block;
+        src: url("assets/fonts/montserrat-latin-700-normal.woff2") format("woff2");
+      }
+      :root {
+        --green: #3cff3c;
+        --red: #ff1f1f;
+        --white: #ffffff;
+        --gold: #ffcf3a;
+        --outline-lg: 3.5px 0.0px 0 #000, 2.5px 2.5px 0 #000, 0.0px 3.5px 0 #000, -2.5px 2.5px 0 #000, -3.5px 0.0px 0 #000, -2.5px -2.5px 0 #000, -0.0px -3.5px 0 #000, 2.5px -2.5px 0 #000, 7.0px 0.0px 0 #000, 6.5px 2.7px 0 #000, 4.9px 4.9px 0 #000, 2.7px 6.5px 0 #000, 0.0px 7.0px 0 #000, -2.7px 6.5px 0 #000, -4.9px 4.9px 0 #000, -6.5px 2.7px 0 #000, -7.0px 0.0px 0 #000, -6.5px -2.7px 0 #000, -4.9px -4.9px 0 #000, -2.7px -6.5px 0 #000, -0.0px -7.0px 0 #000, 2.7px -6.5px 0 #000, 4.9px -4.9px 0 #000, 6.5px -2.7px 0 #000, 0 4px 6px rgba(0,0,0,0.35);
+        --outline-md: 2.5px 0.0px 0 #000, 1.8px 1.8px 0 #000, 0.0px 2.5px 0 #000, -1.8px 1.8px 0 #000, -2.5px 0.0px 0 #000, -1.8px -1.8px 0 #000, -0.0px -2.5px 0 #000, 1.8px -1.8px 0 #000, 5.0px 0.0px 0 #000, 4.6px 1.9px 0 #000, 3.5px 3.5px 0 #000, 1.9px 4.6px 0 #000, 0.0px 5.0px 0 #000, -1.9px 4.6px 0 #000, -3.5px 3.5px 0 #000, -4.6px 1.9px 0 #000, -5.0px 0.0px 0 #000, -4.6px -1.9px 0 #000, -3.5px -3.5px 0 #000, -1.9px -4.6px 0 #000, -0.0px -5.0px 0 #000, 1.9px -4.6px 0 #000, 3.5px -3.5px 0 #000, 4.6px -1.9px 0 #000, 0 4px 6px rgba(0,0,0,0.35);
+        --outline-sm: 2.0px 0.0px 0 #000, 1.4px 1.4px 0 #000, 0.0px 2.0px 0 #000, -1.4px 1.4px 0 #000, -2.0px 0.0px 0 #000, -1.4px -1.4px 0 #000, -0.0px -2.0px 0 #000, 1.4px -1.4px 0 #000, 4.0px 0.0px 0 #000, 3.7px 1.5px 0 #000, 2.8px 2.8px 0 #000, 1.5px 3.7px 0 #000, 0.0px 4.0px 0 #000, -1.5px 3.7px 0 #000, -2.8px 2.8px 0 #000, -3.7px 1.5px 0 #000, -4.0px 0.0px 0 #000, -3.7px -1.5px 0 #000, -2.8px -2.8px 0 #000, -1.5px -3.7px 0 #000, -0.0px -4.0px 0 #000, 1.5px -3.7px 0 #000, 2.8px -2.8px 0 #000, 3.7px -1.5px 0 #000, 0 3px 4px rgba(0,0,0,0.35);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        font-family: Montserrat, sans-serif;
+      }
+      #footage {
+        position: absolute;
+        inset: 0;
+        width: 1080px;
+        height: 1920px;
+        object-fit: cover;
+      }
+      #overlay {
+        position: absolute;
+        inset: 0;
+      }
+      .txt {
+        position: absolute;
+        white-space: nowrap;
+        line-height: 1;
+        letter-spacing: -0.01em;
+      }
+      /* Reference: label + running value, top left */
+      #hud {
+        position: absolute;
+        left: 84px;
+        top: 92px;
+        width: 700px;
+        height: 200px;
+        transform-origin: 0 0;
+      }
+      #hud-label {
+        left: 0;
+        top: 0;
+        font-size: 84px;
+        font-weight: 600;
+        color: var(--white);
+        text-shadow: var(--outline-md);
+      }
+      #counter {
+        left: 52px;
+        top: 100px;
+        font-size: 96px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-md);
+      }
+      #counter.pos {
+        color: var(--green);
+      }
+      /* Reference: card price, small, centred above the card, always green */
+      .price {
+        left: 0;
+        right: 0;
+        top: 352px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        color: var(--green);
+        text-shadow: var(--outline-sm);
+      }
+      /* Reference: big pack-cost intro in the middle */
+      #intro {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 760px;
+        height: 260px;
+      }
+      #intro-value {
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 160px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-lg);
+      }
+      #intro-sub {
+        left: 0;
+        right: 0;
+        top: 172px;
+        text-align: center;
+        padding-left: 220px;
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-md);
+      }
+      /* Reference: final label + value, centred and larger */
+      #final {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 1010px;
+        height: 290px;
+      }
+      #final-label {
+        left: 0;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 700;
+        color: var(--white);
+        text-shadow: var(--outline-lg);
+      }
+      #final-value {
+        left: 0;
+        right: 0;
+        top: 200px;
+        text-align: center;
+        font-size: 150px;
+        font-weight: 700;
+        color: var(--red);
+        text-shadow: var(--outline-lg);
+      }
+      #final-value.pos {
+        color: var(--green);
+      }
+      /* Hit : flash, halo doré, rayons, étincelles, « HIT ! » et prix géant */
+      #flash { position: absolute; inset: 0; background: #fff; }
+      #glow { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 42%, rgba(255, 214, 90, 0.42) 0%, rgba(255, 170, 30, 0.16) 38%, rgba(0, 0, 0, 0) 70%); mix-blend-mode: screen; }
+      #rays { position: absolute; left: -420px; top: -100px; width: 1920px; height: 1920px; background: repeating-conic-gradient(from 0deg, rgba(255, 220, 120, 0.13) 0deg 6deg, rgba(255, 220, 120, 0) 6deg 18deg); mix-blend-mode: screen; -webkit-mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,0.6) 35%, transparent 62%); mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,0.6) 35%, transparent 62%); }
+      .spark { position: absolute; width: 34px; height: 34px; background: radial-gradient(circle, #fff 0%, #ffe9a8 30%, rgba(255, 210, 80, 0) 70%); clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%); }
+      #hit-title { left: 0; right: 0; top: 330px; text-align: center; font-size: 190px; font-weight: 700; color: var(--gold); text-shadow: var(--outline-lg), 0 0 40px rgba(255, 200, 60, 0.8); }
+      #hit-title .ch, #final-label .ch { display: inline-block; }
+      #hit-price { left: 0; right: 0; top: 1480px; text-align: center; font-size: 170px; font-weight: 700; color: var(--gold); text-shadow: var(--outline-lg), 0 0 36px rgba(255, 200, 60, 0.7); }
+      /* Fin : voile, WIN ! / GAME OVER lettre par lettre */
+      #veil { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.8) 75%); }
+      #final.won #final-label { color: var(--green); text-shadow: var(--outline-lg), 0 0 30px rgba(60, 255, 60, 0.55); }
+      #final.lost #final-label { color: var(--red); text-shadow: var(--outline-lg), 0 0 30px rgba(255, 31, 31, 0.55); }
+      /* Hidden until their beat; the timeline reveals them */
+      #hud-label,
+      #counter,
+      #intro,
+      #final,
+      .price,
+      #flash,
+      #glow,
+      #rays,
+      .spark,
+      #hit-title,
+      #hit-price,
+      #veil {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-ql3n" id="root" data-composition-id="main" data-start="0" data-duration="71.2" data-width="1080" data-height="1920">
+      <video data-hf-id="hf-yezi" id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-duration="71.2" data-track-index="0"></video>
+      <audio data-hf-id="hf-mszu" id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="71.2" data-track-index="2"></audio>
+      <div data-hf-id="hf-uyp2" id="overlay" class="clip" data-start="0" data-duration="71.2" data-track-index="1">
+        <div data-hf-id="hf-yw03" id="prices"></div>
+        <div data-hf-id="hf-i9xo" id="hud">
+          <div data-hf-id="hf-z10c" class="txt" id="hud-label">Gain/Perte</div>
+          <div data-hf-id="hf-45o9" class="txt" id="counter">-0,00 €</div>
+        </div>
+        <div data-hf-id="hf-j6bt" id="intro">
+          <div data-hf-id="hf-im13" class="txt" id="intro-value">-0,00 €</div>
+          <div data-hf-id="hf-0idy" class="txt" id="intro-sub">le booster</div>
+        </div>
+        <div id="hit">
+          <div id="flash"></div>
+          <div id="rays"></div>
+          <div id="glow"></div>
+          <div id="sparks"></div>
+          <div class="txt" id="hit-title">HIT !</div>
+          <div class="txt" id="hit-price">0,00 €</div>
+        </div>
+        <div id="veil"></div>
+        <div data-hf-id="hf-r6lr" id="final">
+          <div data-hf-id="hf-2ypv" class="txt" id="final-label">Gain/Perte</div>
+          <div data-hf-id="hf-wk9u" class="txt" id="final-value">0,00 €</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Prix, timecodes et moment du hit viennent de cards.json — on les modifie là, jamais ici.
+      const req = new XMLHttpRequest();
+      req.open("GET", "cards.json", false);
+      req.send(null);
+      const data = JSON.parse(req.responseText);
+
+      const cents = (v) => Math.round(v * 100);
+      const fmt = (c) => (c < 0 ? "-" : "") + (Math.abs(c) / 100).toFixed(2).replace(".", ",") + " €";
+      const signed = (c) => (c >= 0 ? "+" : "") + fmt(c);
+      const delay = data.popDelay ?? 0.3;
+      const hit = data.hit;
+      const cards = data.cards.filter((c) => !c.skip && c.price != null).sort((a, b) => a.t - b.t);
+      // Une carte « hit » ne montre son prix qu'au moment de la séquence hit
+      const popAt = (c) => (c.hit && hit ? hit.start + 0.7 : c.t + delay);
+      const start = -cents(data.boosterPrice);
+      const end = start + cards.reduce((s, c) => s + cents(c.price), 0);
+      const won = end >= 0;
+
+      document.getElementById("intro-value").textContent = fmt(start);
+      const counter = document.getElementById("counter");
+      const finalValue = document.getElementById("final-value");
+      finalValue.textContent = signed(end);
+      finalValue.classList.toggle("pos", won);
+
+      const splitLetters = (el, word, prefix) => {
+        el.innerHTML = "";
+        [...word].forEach((ch, i) => {
+          const s = document.createElement("span");
+          s.className = "ch";
+          s.id = prefix + i;
+          s.textContent = ch === " " ? " " : ch;
+          el.appendChild(s);
+        });
+      };
+      const endWord = won ? "WIN !" : "GAME OVER";
+      splitLetters(document.getElementById("final-label"), endWord, "fch-");
+      document.getElementById("final").classList.add(won ? "won" : "lost");
+      splitLetters(document.getElementById("hit-title"), "HIT !", "hch-");
+
+      const pricesEl = document.getElementById("prices");
+      cards.forEach((c, i) => {
+        if (c.hit) return;
+        const el = document.createElement("div");
+        el.className = "txt price";
+        el.id = "price-" + i;
+        el.textContent = fmt(cents(c.price));
+        pricesEl.appendChild(el);
+      });
+
+      // Étincelles : positions fixes (pseudo-aléatoire déterministe)
+      const sparksEl = document.getElementById("sparks");
+      let seed = 7;
+      const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+      const SPARKS = 26;
+      for (let i = 0; i < SPARKS; i++) {
+        const s = document.createElement("div");
+        s.className = "spark";
+        s.id = "spark-" + i;
+        s.style.left = Math.round(60 + rnd() * 920) + "px";
+        s.style.top = Math.round(180 + rnd() * 1300) + "px";
+        sparksEl.appendChild(s);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Libellé, puis le gros prix du booster au centre, puis le compteur
+      tl.fromTo("#hud-label", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.2, ease: "power1.out" }, 0.5);
+      tl.fromTo("#intro", { autoAlpha: 0, y: -30 }, { autoAlpha: 1, y: 0, duration: 0.2, ease: "power2.out" }, data.intro.start);
+      tl.set("#intro", { autoAlpha: 0 }, data.intro.end);
+      tl.fromTo("#counter", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.2, ease: "power1.out" }, data.intro.start + 0.4);
+
+      // Compteur : rouge sous zéro, vert à partir de zéro
+      const proxy = { v: start };
+      const draw = () => {
+        const v = Math.round(proxy.v);
+        counter.textContent = fmt(v);
+        counter.classList.toggle("pos", v >= 0);
+      };
+      tl.set(proxy, { v: start, onUpdate: draw }, 0);
+
+      let running = start;
+      const plain = cards.filter((c) => !c.hit);
+      cards.forEach((c, i) => {
+        const at = popAt(c);
+        running += cents(c.price);
+        if (c.hit) {
+          tl.to(proxy, { v: running, duration: 1.8, ease: "power2.out", onUpdate: draw }, at);
+          return;
+        }
+        const k = plain.indexOf(c);
+        const next = plain[k + 1];
+        let until = next ? next.t + delay : data.finalAt;
+        if (hit && until > hit.start && at < hit.start) until = hit.start;
+        tl.fromTo("#price-" + i, { autoAlpha: 0, y: 22 }, { autoAlpha: 1, y: 0, duration: 0.2, ease: "power2.out" }, at);
+        tl.set("#price-" + i, { autoAlpha: 0 }, until);
+        tl.to(proxy, { v: running, duration: 0.3, ease: "power1.out", onUpdate: draw }, at);
+      });
+
+      // Séquence HIT : flash, zoom, halo, rayons, « HIT ! », prix géant qui monte, étincelles
+      if (hit) {
+        const h0 = hit.start;
+        const h1 = hit.end;
+        const hc = cards.find((c) => c.hit);
+        const hp = { v: 0 };
+        const hpEl = document.getElementById("hit-price");
+        const drawHp = () => (hpEl.textContent = fmt(Math.round(hp.v)));
+        tl.set(hp, { v: 0, onUpdate: drawHp }, 0);
+        tl.fromTo("#flash", { autoAlpha: 0.95 }, { autoAlpha: 0, duration: 0.45, ease: "power2.out" }, h0);
+        tl.fromTo("#footage", { scale: 1.12 }, { scale: 1.0, duration: 0.6, ease: "power3.out" }, h0);
+        tl.to("#footage", { scale: 1.06, duration: h1 - h0 - 0.6, ease: "sine.inOut" }, h0 + 0.6);
+        tl.set("#footage", { scale: 1 }, h1);
+        tl.fromTo("#glow", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.4, ease: "power1.out" }, h0);
+        for (let k = 0; k < 6; k++) {
+          tl.to("#glow", { autoAlpha: 0.55, duration: 0.5, ease: "sine.inOut" }, h0 + 0.5 + k * 1.0);
+          tl.to("#glow", { autoAlpha: 1, duration: 0.5, ease: "sine.inOut" }, h0 + 1.0 + k * 1.0);
+        }
+        tl.fromTo("#rays", { autoAlpha: 0, rotation: 0 }, { autoAlpha: 1, rotation: 25, duration: 1.2, ease: "power1.out" }, h0);
+        tl.to("#rays", { rotation: 25 + (h1 - h0) * 6, duration: h1 - h0 - 1.2, ease: "none" }, h0 + 1.2);
+        [..."HIT !"].forEach((_, i) => {
+          tl.fromTo("#hch-" + i, { autoAlpha: 0, y: -90, scale: 1.6 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.3, ease: "back.out(2.5)" }, h0 + 0.1 + i * 0.06);
+        });
+        tl.set("#hit-title", { autoAlpha: 1 }, h0 + 0.1);
+        tl.to("#hit-title", { scale: 1.08, duration: 0.4, ease: "sine.inOut", yoyo: true, repeat: 7 }, h0 + 0.6);
+        tl.fromTo("#hit-price", { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, h0 + 0.6);
+        tl.to(hp, { v: cents(hc.price), duration: 1.8, ease: "power2.out", onUpdate: drawHp }, h0 + 0.7);
+        tl.to("#hit-price", { scale: 1.12, duration: 0.15, ease: "sine.out" }, h0 + 2.5);
+        tl.to("#hit-price", { scale: 1, duration: 0.25, ease: "sine.inOut" }, h0 + 2.65);
+        for (let i = 0; i < SPARKS; i++) {
+          const t0 = h0 + 0.3 + rnd() * (h1 - h0 - 1.6);
+          tl.fromTo("#spark-" + i, { autoAlpha: 0, scale: 0.2, rotation: 0 }, { autoAlpha: 1, scale: 1 + rnd() * 1.2, rotation: 90, duration: 0.35, ease: "power2.out" }, t0);
+          tl.to("#spark-" + i, { autoAlpha: 0, scale: 0.3, rotation: 180, duration: 0.45, ease: "power2.in" }, t0 + 0.35);
+        }
+        tl.to(["#hit-title", "#hit-price", "#glow", "#rays"], { autoAlpha: 0, duration: 0.35, ease: "power1.in" }, h1 - 0.35);
+      }
+
+      // Fin : le HUD part vers le centre, voile, WIN ! / GAME OVER lettre par lettre, montant dessous
+      const F = data.finalAt;
+      tl.to("#hud", { x: 150, y: 820, scale: 1.3, autoAlpha: 0, duration: 0.35, ease: "power2.in" }, F);
+      tl.fromTo("#veil", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.6, ease: "power1.out" }, F);
+      tl.fromTo("#final", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.01 }, F + 0.15);
+      tl.set("#final-value", { autoAlpha: 0 }, F + 0.15);
+      [...endWord].forEach((_, i) => {
+        tl.fromTo("#fch-" + i, { autoAlpha: 0, y: -70, filter: "blur(10px)" }, { autoAlpha: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "back.out(2)" }, F + 0.2 + i * 0.07);
+      });
+      const afterLetters = F + 0.3 + endWord.length * 0.07;
+      tl.fromTo("#final-value", { autoAlpha: 0, scale: 0.7 }, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, afterLetters);
+      if (!won) {
+        tl.to("#final-label", { x: -12, duration: 0.05, ease: "none" }, afterLetters + 0.45);
+        tl.to("#final-label", { x: 12, duration: 0.07, ease: "none" }, afterLetters + 0.5);
+        tl.to("#final-label", { x: -6, duration: 0.07, ease: "none" }, afterLetters + 0.57);
+        tl.to("#final-label", { x: 0, duration: 0.08, ease: "none" }, afterLetters + 0.64);
+      } else {
+        tl.to("#final", { scale: 1.06, duration: 0.18, ease: "sine.out" }, afterLetters + 0.4);
+        tl.to("#final", { scale: 1, duration: 0.25, ease: "sine.inOut" }, afterLetters + 0.58);
+      }
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
