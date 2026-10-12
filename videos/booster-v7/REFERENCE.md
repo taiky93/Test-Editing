@@ -15,22 +15,24 @@ Copier le dossier (sans `source/`, `renders/`, `snapshots/`), remplacer `cards.j
 5. **Sons** (`scripts/build-sfx.py`), **composition** (`index.html`), `check`, `snapshot`, `render`.
 6. **Livraison** : métadonnées retirées du rendu, morceaux de 25 Mo + SHA-256 (+ commande `copy /b`), aperçu 720p < 30 Mo.
 
-## Direction artistique
-- Style « Gain/Perte » de la V2 : Montserrat 600/700, contour noir épais.
-  - En haut à gauche : « Gain/Perte » blanc + compteur (rouge sous zéro, vert `#3cff3c` à partir de zéro), départ à -prix du booster.
-  - Intro : gros « -XX,XX € » rouge + « le booster » au centre.
-  - Prix de chaque carte : petit, vert, centré au-dessus de la carte, format `0,02 €`, apparaît 0,3 s après la carte.
-- **Séquence HIT** (carte `"hit": true` + bloc `"hit"` dans `cards.json`) : coupe vers la preview du hit,
-  flash blanc + zoom, halo doré, rayons, étincelles, « HIT ! » doré lettre par lettre, prix géant doré qui monte de 0 au prix,
-  son spécial (boum + arpège). Le compteur monte en même temps.
-- **Fin** : voile sombre, **WIN !** vert (rebond) si gain, **GAME OVER** rouge (secousse) si perte, montant ±XX,XX € dessous.
+## Direction artistique (v2 de la vidéo 7, après le strike)
+⚠️ Le style « Gain/Perte » (Montserrat, copié de la Référence 1) a valu **deux strikes** : ne plus l'utiliser.
+On utilise le style **V3** (`booster-v3`, sans strike), avec les ajustements validés :
+- **Accroche** (`"teaser"` dans `cards.json`) : 2,3 s tout au début — ralenti ×3 sur un moment où l'on ne voit
+  qu'une partie du gros hit (jamais la carte entière), puis image figée + flash, zoom, secousse, vignette, **son de choc**.
+- Ouverture : prix du booster en or (« 33€ ») en haut à gauche, Cinzel.
+- Prix de chaque carte : Cinzel, **vert**, en haut à gauche, **sans devise**.
+- **Gros prix** (≥ `bigPrice`, 20 €) : plus grand, gras, halo doré, rebond, pulsation, étincelles, **son cash**.
+- **Barre** à **1 320 px** (un peu sous les 2/3, juste sous les cartes) : total (rose → vert), progression %, prix du booster en lavande (seul €).
+- **Séquence HIT** (preview du hit) : flash, zoom, halo, rayons, « HIT ! » doré, prix géant vert qui monte sous la barre.
+- **Fin** : voile, **WIN !** vert ou **GAME OVER** rouge (secousse), montant ±XX.XX €.
 - **Lumière** : `colorlevels` (noirs 0,04, blancs 0,80) + `eq gamma 1.06 saturation 1.15` + `unsharp` léger.
 
-## Sons
-- Nappe douce de fond, carillon WIN / jingle GAME OVER, son spécial du hit.
-- ⚠️ **À changer dès la prochaine vidéo** : le son à chaque prix est trop synthétique.
-  Le remplacer par un son de **pièces de monnaie qui s'entrechoquent dans une bourse** (cliquetis métalliques courts + léger bruit de cuir/tissu).
-  Un fichier fourni par l'utilisateur dans `sfx/price.(wav|mp3|m4a|ogg)` est toujours prioritaire.
+## Sons (fournis par l'utilisateur, déclarés libres de droits — voir `sfx/sources/SOURCES.md`)
+- `sfx/price.wav` : pièce qui tombe (0,5 s) pour chaque carte.
+- `sfx/bigprice.wav` : cash (1,25 s) pour les prix ≥ 20 € et le hit.
+- `sfx/shock.wav` : choc de l'accroche.
+- Nappe douce (démarre après l'accroche) et carillon WIN / jingle GAME OVER générés par `scripts/build-sfx.py`.
 
 ## Musique
 - Pas de musique protégée incrustée dans le fichier (l'utilisateur a déjà reçu un strike) : les musiques connues
