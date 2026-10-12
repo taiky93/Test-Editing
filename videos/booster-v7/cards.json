@@ -9,10 +9,6 @@
   "factor": 3
  },
  "popDelay": 0.3,
- "intro": {
-  "start": 0.8,
-  "end": 2.6
- },
  "hit": {
   "start": 57.667,
   "end": 65.667,
@@ -200,5 +196,7 @@
    "skip": true,
    "reason": "jeton"
   }
- ]
+ ],
+ "bigPrice": 20.0,
+ "introEnd": 2.6
 }
