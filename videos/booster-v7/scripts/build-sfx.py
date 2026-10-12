@@ -3,7 +3,7 @@
 Tes sons sont prioritaires : sfx/price.(wav|mp3|m4a|ogg), sfx/final.(…), sfx/bed.(…).
 Sinon : tick doux pour chaque prix, jingle « game over » (ou carillon « win »), nappe douce.
 Usage : python3 scripts/build-sfx.py   (depuis videos/booster-v7)
-Version vidéo 7 : la carte « hit » sonne au moment de la séquence hit, avec un son spécial (sfx/hit.* prioritaire)."""
+Version vidéo 7 : sfx/price.* pour chaque carte, sfx/bigprice.* pour les prix ≥ bigPrice ; la carte « hit » sonne au moment de la séquence hit."""
 import json, subprocess, pathlib
 root = pathlib.Path.cwd(); sfx = root / "sfx"; sfx.mkdir(exist_ok=True)
 d = json.loads((root / "cards.json").read_text(encoding="utf-8"))
@@ -45,17 +45,11 @@ if not bed:
     for p in sfx.glob("_*"): p.unlink()
     bed = sfx / "gen-bed.wav"
 hit = d.get("hit")
-hitsnd = pick("hit")
-if hit and not hitsnd:
-    # boum grave + arpège brillant montant (do-mi-sol-do-mi) + scintillement
-    boom = "0.55*exp(-5*t)*sin(2*PI*(55+80*exp(-18*t))*t)"
-    arp = "+".join(f"gte(t,{0.08*i})*0.13*exp(-2.2*(t-{0.08*i}))*(sin(2*PI*{f}*t)+0.4*sin(2*PI*{2*f}*t))" for i, f in enumerate((523.25, 659.25, 783.99, 1046.5, 1318.5)))
-    shim = "0.05*exp(-1.4*t)*sin(2*PI*2637*t)*(0.5+0.5*sin(2*PI*14*t))"
-    e = f"{boom}+{arp}+{shim}"
-    ff("-f", "lavfi", "-i", f"aevalsrc='{e}|{e}':s=44100:d=2.8", sfx / "gen-hit.wav"); hitsnd = sfx / "gen-hit.wav"
+bigp = pick("bigprice") or price                              # son des gros prix (≥ bigPrice) : sfx/bigprice.*
+bigc = round(d.get("bigPrice", 20) * 100)
 pop = lambda c: hit["start"] + 0.7 if (c.get("hit") and hit) else c["t"] + d.get("popDelay", 0.3)
-ev = [(pop(c), price, 0.9) for c in cards] + [(d["finalAt"] + 0.25, final, 1.0)]
-if hit: ev.append((hit["start"], hitsnd, 1.0))
+ev = [(pop(c), bigp if round(c["price"] * 100) >= bigc else price, 1.0 if round(c["price"] * 100) >= bigc else 0.9) for c in cards]
+ev.append((d["finalAt"] + 0.25, final, 1.0))
 ins = ["-i", bed]; ch = ["[0:a]aformat=sample_rates=44100:channel_layouts=stereo,volume=0.5[b]"]; lab = "[b]"
 for i, (t, src, vol) in enumerate(ev, 1):
     ms = int(t * 1000); ins += ["-i", src]
