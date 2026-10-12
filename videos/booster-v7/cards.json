@@ -10,16 +10,16 @@
  },
  "popDelay": 0.3,
  "hit": {
-  "start": 57.667,
-  "end": 65.667,
+  "start": 59.967,
+  "end": 67.967,
   "source": "video 7 preview.mp4 (0.5–8.5 s)"
  },
- "finalAt": 68.3,
- "duration": 71.2,
+ "finalAt": 70.6,
+ "duration": 73.5,
  "cards": [
   {
    "n": 1,
-   "t": 7.1,
+   "t": 9.4,
    "name": "Volume murmurant",
    "set": "FRA",
    "collector": "C 0174",
@@ -30,7 +30,7 @@
   },
   {
    "n": 2,
-   "t": 9.67,
+   "t": 11.97,
    "name": "Rat nauséabond",
    "set": "FRA",
    "collector": "C 0061",
@@ -41,7 +41,7 @@
   },
   {
    "n": 3,
-   "t": 12.67,
+   "t": 14.97,
    "name": "Annexe de Fortefin",
    "set": "FRA",
    "collector": "L 0177",
@@ -52,7 +52,7 @@
   },
   {
    "n": 4,
-   "t": 16.67,
+   "t": 18.97,
    "name": "Amphisbène ésotérique",
    "set": "FRA",
    "collector": "C 0097",
@@ -63,7 +63,7 @@
   },
   {
    "n": 5,
-   "t": 20.17,
+   "t": 22.47,
    "name": "Brûlure d'essence",
    "set": "FRA",
    "collector": "U 0082",
@@ -74,7 +74,7 @@
   },
   {
    "n": 6,
-   "t": 23.17,
+   "t": 25.47,
    "name": "Brûlure d'essence (sans bordure)",
    "set": "FRA",
    "collector": "U 0369",
@@ -85,7 +85,7 @@
   },
   {
    "n": 7,
-   "t": 27.17,
+   "t": 29.47,
    "name": "Rapine, le nexus",
    "set": "FRA",
    "collector": "U 0262",
@@ -96,7 +96,7 @@
   },
   {
    "n": 8,
-   "t": 30.17,
+   "t": 32.47,
    "name": "Rapine, l'anomalie",
    "set": "FRA",
    "collector": "U 0232",
@@ -107,7 +107,7 @@
   },
   {
    "n": 9,
-   "t": 33.17,
+   "t": 35.47,
    "name": "Edgar, seigneur de sang ancestral",
    "set": "FRA",
    "collector": "U 0270",
@@ -118,7 +118,7 @@
   },
   {
    "n": 10,
-   "t": 35.9,
+   "t": 38.2,
    "name": "Montagne",
    "set": "FRA",
    "collector": "L 0391",
@@ -130,7 +130,7 @@
   },
   {
    "n": 11,
-   "t": 40.17,
+   "t": 42.47,
    "name": "Maître des ardillons",
    "set": "FRA",
    "collector": "R 0088",
@@ -141,7 +141,7 @@
   },
   {
    "n": 12,
-   "t": 44.17,
+   "t": 46.47,
    "name": "Sanctum du Théoricien (sans bordure)",
    "set": "FRA",
    "collector": "R 0381",
@@ -152,7 +152,7 @@
   },
   {
    "n": 13,
-   "t": 48.17,
+   "t": 50.47,
    "name": "Invigorateur de Hexaven (sans bordure)",
    "set": "FRA",
    "collector": "M 0330",
@@ -163,7 +163,7 @@
   },
   {
    "n": 14,
-   "t": 52.67,
+   "t": 54.97,
    "name": "Devineresse de la victoire (extended)",
    "set": "FRA",
    "collector": "R 0425",
@@ -174,7 +174,7 @@
   },
   {
    "n": 15,
-   "t": 56.17,
+   "t": 58.47,
    "name": "Loyal Tutor (showcase fracture foil, EN)",
    "set": "FRA",
    "collector": "M 0414",
@@ -186,7 +186,7 @@
   },
   {
    "n": 16,
-   "t": 66.17,
+   "t": 68.47,
    "name": "Ange (jeton)",
    "set": "FRA",
    "collector": "T",
@@ -198,5 +198,10 @@
   }
  ],
  "bigPrice": 20.0,
- "introEnd": 2.6
+ "introEnd": 4.9,
+ "teaser": {
+  "freeze": 0.867,
+  "end": 2.3,
+  "source": "video 7.mp4 62.05–62.38 s au ralenti ×3, puis image figée (bas du Loyal Tutor seulement)"
+ }
 }
