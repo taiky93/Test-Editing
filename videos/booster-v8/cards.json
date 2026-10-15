@@ -1,0 +1,192 @@
+{
+ "set": "FRA (Réalité Fracturée, booster collector, FR)",
+ "currency": "€",
+ "boosterPrice": 33.0,
+ "video": "source/edited.mp4",
+ "edit": "0–1,5 s normal ; 1,5–7 ×2 ; 7–10 ×3 ; coupe 10–26 (caméra touchée) ; 26–35 ×3 ; 35–91,3 normal",
+ "popDelay": 0.3,
+ "bigPrice": 20.0,
+ "introEnd": 2.6,
+ "finalAt": 61.0,
+ "duration": 64.55,
+ "cards": [
+  {
+   "n": 1,
+   "t": 8.75,
+   "tSource": 35.5,
+   "name": "Approche du sphinx",
+   "collector": "C 0041",
+   "foil": true,
+   "price": 0.59,
+   "cardmarketId": 909952,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 2,
+   "t": 12.75,
+   "tSource": 39.5,
+   "name": "Nécromancienne théorique",
+   "collector": "C 0069",
+   "foil": true,
+   "price": 0.05,
+   "cardmarketId": 909896,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 3,
+   "t": 15.75,
+   "tSource": 42.5,
+   "name": "Chronologue de Fortefin",
+   "collector": "C 0133",
+   "foil": true,
+   "price": 0.08,
+   "cardmarketId": 908361,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 4,
+   "t": 18.75,
+   "tSource": 45.5,
+   "name": "Devoirs infinis",
+   "collector": "C 0031",
+   "foil": true,
+   "price": 0.05,
+   "cardmarketId": 908419,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 5,
+   "t": 21.75,
+   "tSource": 48.5,
+   "name": "Lames du guerrier",
+   "collector": "U 0163",
+   "foil": true,
+   "price": 0.17,
+   "cardmarketId": 908362,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 6,
+   "t": 24.75,
+   "tSource": 51.5,
+   "name": "Multiplier par zéro",
+   "collector": "U 0058",
+   "foil": true,
+   "price": 0.49,
+   "cardmarketId": 909955,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 7,
+   "t": 27.25,
+   "tSource": 54.0,
+   "name": "Hapatra, le givre du désert",
+   "collector": "U 0215",
+   "foil": true,
+   "price": 0.15,
+   "cardmarketId": 909247,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 8,
+   "t": 30.75,
+   "tSource": 57.5,
+   "name": "Marwyn, la préservatrice",
+   "collector": "U 0263",
+   "foil": true,
+   "price": 0.24,
+   "cardmarketId": 909942,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 9,
+   "t": 34.25,
+   "tSource": 61.0,
+   "name": "Marwyn, la coupeclaire",
+   "collector": "U 0249",
+   "foil": true,
+   "price": 0.19,
+   "cardmarketId": 909941,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 10,
+   "t": 36.75,
+   "tSource": 63.5,
+   "name": "Marais (sans bordure)",
+   "collector": "L 0389",
+   "foil": true,
+   "price": null,
+   "cardmarketId": 907349,
+   "skip": true,
+   "reason": "terrain de base"
+  },
+  {
+   "n": 11,
+   "t": 40.75,
+   "tSource": 67.5,
+   "name": "Mémorial de Gideon",
+   "collector": "R 0198",
+   "foil": true,
+   "price": 0.19,
+   "cardmarketId": 908821,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 12,
+   "t": 43.75,
+   "tSource": 70.5,
+   "name": "Gingembre, reine des sucreries (FRC, extended)",
+   "collector": "R 0099",
+   "foil": false,
+   "price": 0.57,
+   "cardmarketId": 911587,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend »"
+  },
+  {
+   "n": 13,
+   "t": 47.25,
+   "tSource": 74.0,
+   "name": "Aerid Konstrari (showcase sans bordure)",
+   "collector": "M 0347",
+   "foil": false,
+   "price": 4.46,
+   "cardmarketId": 907334,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend »"
+  },
+  {
+   "n": 14,
+   "t": 51.25,
+   "tSource": 78.0,
+   "name": "Guetteur du Sanctum (showcase sans bordure)",
+   "collector": "R 0342",
+   "foil": false,
+   "price": 1.06,
+   "cardmarketId": 910003,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend »"
+  },
+  {
+   "n": 15,
+   "t": 54.75,
+   "tSource": 81.5,
+   "name": "Lyra, archange tolariane (sans bordure)",
+   "collector": "R 0301",
+   "foil": true,
+   "price": 2.8,
+   "cardmarketId": 908856,
+   "priceSource": "Cardmarket price guide 15/10/2026, « trend-foil »"
+  },
+  {
+   "n": 16,
+   "t": 59.75,
+   "tSource": 86.5,
+   "name": "Carte illustration (série illustrations 7/54)",
+   "collector": "A 7/54",
+   "foil": false,
+   "price": null,
+   "cardmarketId": null,
+   "skip": true,
+   "reason": "carte illustration"
+  }
+ ]
+}
