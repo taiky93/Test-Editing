@@ -5,14 +5,14 @@
  "video": "source/edited.mp4",
  "edit": "0–1,5 s normal ; 1,5–7 ×2 ; 7–10 ×3 ; coupe 10–26 (caméra touchée) ; 26–35 ×3 ; 35–91,3 normal",
  "popDelay": 0.3,
- "bigPrice": 20.0,
+ "bigPrice": 5.0,
  "introEnd": 2.6,
  "finalAt": 61.0,
  "duration": 64.55,
  "cards": [
   {
    "n": 1,
-   "t": 8.75,
+   "t": 8.3,
    "tSource": 35.5,
    "name": "Approche du sphinx",
    "collector": "C 0041",
@@ -23,7 +23,7 @@
   },
   {
    "n": 2,
-   "t": 12.75,
+   "t": 13.2,
    "tSource": 39.5,
    "name": "Nécromancienne théorique",
    "collector": "C 0069",
@@ -78,7 +78,7 @@
   },
   {
    "n": 7,
-   "t": 27.25,
+   "t": 27.5,
    "tSource": 54.0,
    "name": "Hapatra, le givre du désert",
    "collector": "U 0215",
@@ -89,7 +89,7 @@
   },
   {
    "n": 8,
-   "t": 30.75,
+   "t": 31.0,
    "tSource": 57.5,
    "name": "Marwyn, la préservatrice",
    "collector": "U 0263",
@@ -111,7 +111,7 @@
   },
   {
    "n": 10,
-   "t": 36.75,
+   "t": 37.0,
    "tSource": 63.5,
    "name": "Marais (sans bordure)",
    "collector": "L 0389",
@@ -178,7 +178,7 @@
   },
   {
    "n": 16,
-   "t": 59.75,
+   "t": 60.25,
    "tSource": 86.5,
    "name": "Carte illustration (série illustrations 7/54)",
    "collector": "A 7/54",

@@ -18,11 +18,11 @@ Copier le dossier (sans `source/`, `renders/`, `snapshots/`), remplacer `cards.j
 ## Direction artistique (v2 de la vidéo 7, après le strike)
 ⚠️ Le style « Gain/Perte » (Montserrat, copié de la Référence 1) a valu **deux strikes** : ne plus l'utiliser.
 On utilise le style **V3** (`booster-v3`, sans strike), avec les ajustements validés :
-- **Accroche** (`"teaser"` dans `cards.json`) : 2,3 s tout au début — ralenti ×3 sur un moment où l'on ne voit
+- **Accroche** (`"teaser"` dans `cards.json`) — **seulement si un hit dépasse 50 €** : 2,3 s tout au début — ralenti ×3 sur un moment où l'on ne voit
   qu'une partie du gros hit (jamais la carte entière), puis image figée + flash, zoom, secousse, vignette, **son de choc**.
 - Ouverture : prix du booster en or (« 33€ ») en haut à gauche, Cinzel.
 - Prix de chaque carte : Cinzel, **vert**, en haut à gauche, **sans devise**.
-- **Gros prix** (≥ `bigPrice`, 20 €) : plus grand, gras, halo doré, rebond, pulsation, étincelles, **son cash**.
+- **Gros prix** (≥ `bigPrice` = **5 €**) : plus grand, gras, halo doré, rebond, pulsation, étincelles, **son cash**.
 - **Barre** à **1 320 px** (un peu sous les 2/3, juste sous les cartes) : total (rose → vert), progression %, prix du booster en lavande (seul €).
 - **Séquence HIT** (preview du hit) : flash, zoom, halo, rayons, « HIT ! » doré, prix géant vert qui monte sous la barre.
 - **Fin** : voile, **WIN !** vert ou **GAME OVER** rouge (secousse), montant ±XX.XX €.
@@ -30,7 +30,7 @@ On utilise le style **V3** (`booster-v3`, sans strike), avec les ajustements val
 
 ## Sons (fournis par l'utilisateur, déclarés libres de droits — voir `sfx/sources/SOURCES.md`)
 - `sfx/price.wav` : pièce qui tombe (0,5 s) pour chaque carte.
-- `sfx/bigprice.wav` : cash (1,25 s) pour les prix ≥ 20 € et le hit.
+- `sfx/bigprice.wav` : cash (1,25 s) **seulement pour les prix ≥ 5 €** (et le hit).
 - `sfx/shock.wav` : choc de l'accroche.
 - Nappe douce (démarre après l'accroche) et carillon WIN / jingle GAME OVER générés par `scripts/build-sfx.py`.
 
