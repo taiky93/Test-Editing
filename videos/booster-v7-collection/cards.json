@@ -1,0 +1,140 @@
+{
+ "title": "Booster Collector",
+ "set": "Réalité Fracturée",
+ "mediaStart": 2.3,
+ "duration": 71.2,
+ "hit": {
+  "start": 57.67,
+  "end": 65.67
+ },
+ "recapAt": 68.3,
+ "valueSource": "Cote Cardmarket (tendance) du 12/10/2026",
+ "cards": [
+  {
+   "t": 7.1,
+   "name": "Volume murmurant",
+   "rarity": "Commune",
+   "finish": "Foil",
+   "collector": "C 0174",
+   "value": 0.02,
+   "hit": false
+  },
+  {
+   "t": 9.67,
+   "name": "Rat nauséabond",
+   "rarity": "Commune",
+   "finish": "Foil",
+   "collector": "C 0061",
+   "value": 0.16,
+   "hit": false
+  },
+  {
+   "t": 12.67,
+   "name": "Annexe de Fortefin",
+   "rarity": "Terrain",
+   "finish": "Foil",
+   "collector": "L 0177",
+   "value": 0.13,
+   "hit": false
+  },
+  {
+   "t": 16.67,
+   "name": "Amphisbène ésotérique",
+   "rarity": "Commune",
+   "finish": "Foil",
+   "collector": "C 0097",
+   "value": 0.1,
+   "hit": false
+  },
+  {
+   "t": 20.17,
+   "name": "Brûlure d'essence",
+   "rarity": "Peu commune",
+   "finish": "Foil",
+   "collector": "U 0082",
+   "value": 0.25,
+   "hit": false
+  },
+  {
+   "t": 23.17,
+   "name": "Brûlure d'essence",
+   "rarity": "Peu commune",
+   "finish": "Sans bordure · Foil",
+   "collector": "U 0369",
+   "value": 0.09,
+   "hit": false
+  },
+  {
+   "t": 27.17,
+   "name": "Rapine, le nexus",
+   "rarity": "Peu commune",
+   "finish": "Foil",
+   "collector": "U 0262",
+   "value": 0.21,
+   "hit": false
+  },
+  {
+   "t": 30.17,
+   "name": "Rapine, l'anomalie",
+   "rarity": "Peu commune",
+   "finish": "Foil",
+   "collector": "U 0232",
+   "value": 0.26,
+   "hit": false
+  },
+  {
+   "t": 33.17,
+   "name": "Edgar, seigneur de sang ancestral",
+   "rarity": "Peu commune",
+   "finish": "Foil",
+   "collector": "U 0270",
+   "value": 0.27,
+   "hit": false
+  },
+  {
+   "t": 40.17,
+   "name": "Maître des ardillons",
+   "rarity": "Rare",
+   "finish": "Foil",
+   "collector": "R 0088",
+   "value": 0.39,
+   "hit": false
+  },
+  {
+   "t": 44.17,
+   "name": "Sanctum du Théoricien",
+   "rarity": "Rare",
+   "finish": "Sans bordure",
+   "collector": "R 0381",
+   "value": 0.09,
+   "hit": false
+  },
+  {
+   "t": 48.17,
+   "name": "Invigorateur de Hexaven",
+   "rarity": "Mythique",
+   "finish": "Sans bordure",
+   "collector": "M 0330",
+   "value": 22.85,
+   "hit": false
+  },
+  {
+   "t": 52.67,
+   "name": "Devineresse de la victoire",
+   "rarity": "Rare",
+   "finish": "Extended · Foil",
+   "collector": "R 0425",
+   "value": 0.36,
+   "hit": false
+  },
+  {
+   "t": 56.17,
+   "name": "Loyal Tutor",
+   "rarity": "Mythique",
+   "finish": "Showcase · Fracture Foil",
+   "collector": "M 0414",
+   "value": 127.0,
+   "hit": true
+  }
+ ]
+}

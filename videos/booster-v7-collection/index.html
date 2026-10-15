@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: Cinzel; font-weight: 700; font-display: block; src: url("assets/fonts/cinzel-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 600; font-display: block; src: url("assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 700; font-display: block; src: url("assets/fonts/montserrat-latin-700-normal.woff2") format("woff2"); }
+      :root {
+        --ink: #f4f1ea;
+        --muted: #c9c3b6;
+        --panel: rgba(14, 14, 20, 0.72);
+        --c-common: #9aa3ad;
+        --c-uncommon: #b8d4e6;
+        --c-rare: #e2c26b;
+        --c-mythic: #f08a4b;
+        --c-land: #8fbf8a;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: Montserrat, sans-serif; color: var(--ink); }
+      #footage { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #overlay { position: absolute; inset: 0; }
+      .txt { position: absolute; white-space: nowrap; line-height: 1.1; }
+      /* Titre d'ouverture : sobre, en haut, sur une ombre douce */
+      #title-shade { position: absolute; left: 0; top: 0; width: 1080px; height: 520px; background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0)); }
+      #title { position: absolute; left: 70px; right: 70px; top: 120px; }
+      #title-kicker { position: relative; font-size: 34px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+      #title-main { position: relative; margin-top: 14px; font-family: Cinzel, serif; font-size: 78px; font-weight: 700; color: var(--ink); text-shadow: 0 3px 18px rgba(0,0,0,0.85); }
+      #title-line { position: relative; margin-top: 18px; width: 220px; height: 4px; border-radius: 2px; background: var(--ink); transform-origin: 0 50%; }
+      /* Fiche de la carte : bandeau en bas, une par carte */
+      .info { position: absolute; left: 50px; right: 50px; top: 1560px; height: 210px; border-radius: 26px; background: var(--panel); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.12); overflow: hidden; }
+      .info .accent { position: absolute; left: 0; top: 0; bottom: 0; width: 12px; }
+      .info .num { position: absolute; right: 34px; top: 26px; font-size: 26px; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; }
+      .info .name { position: absolute; left: 48px; right: 170px; top: 28px; font-family: Cinzel, serif; font-size: 50px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .info .meta { position: absolute; left: 48px; top: 104px; font-size: 30px; font-weight: 600; color: var(--muted); }
+      .info .value { position: absolute; left: 48px; top: 150px; font-size: 30px; font-weight: 600; color: var(--muted); }
+      .info .value b { color: var(--ink); font-weight: 700; }
+      .info.rare-highlight { border-color: rgba(226, 194, 107, 0.55); box-shadow: 0 0 40px rgba(226, 194, 107, 0.25) inset; }
+      /* Mise en avant de la carte la plus rare : bandeau doux, pas de flash */
+      #spot-vig { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 40%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.55) 100%); }
+      #spot-tag { position: absolute; left: 0; right: 0; top: 140px; text-align: center; }
+      #spot-tag span { display: inline-block; padding: 16px 34px; border-radius: 40px; background: rgba(14,14,20,0.6); border: 1px solid rgba(226,194,107,0.6); font-size: 34px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-rare); text-shadow: 0 2px 8px rgba(0,0,0,0.6); }
+      /* Récap de fin */
+      #recap-bg { position: absolute; inset: 0; background: rgba(8, 8, 12, 0.78); }
+      #recap { position: absolute; left: 80px; right: 80px; top: 330px; }
+      #recap-title { position: relative; font-family: Cinzel, serif; font-size: 72px; font-weight: 700; }
+      #recap-sub { position: relative; margin-top: 12px; font-size: 30px; font-weight: 600; color: var(--muted); }
+      #recap-list { position: relative; margin-top: 46px; }
+      .row { position: relative; display: flex; align-items: center; height: 62px; font-size: 32px; font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .row .dot { width: 16px; height: 16px; border-radius: 8px; margin-right: 22px; flex: none; }
+      .row .rn { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .row .rr { font-size: 24px; color: var(--muted); margin-left: 16px; }
+      #cta { position: absolute; left: 0; right: 0; top: 1640px; text-align: center; font-size: 40px; font-weight: 700; text-shadow: 0 2px 12px rgba(0,0,0,0.8); }
+      #source { position: absolute; left: 0; right: 0; top: 1740px; text-align: center; font-size: 22px; font-weight: 600; color: var(--muted); }
+      /* Cachés jusqu'à leur moment */
+      #title, #title-shade, .info, #spot-vig, #spot-tag, #recap-bg, #recap, .row, #cta, #source { opacity: 0; visibility: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="71.2" data-width="1080" data-height="1920">
+      <video id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-media-start="2.3" data-duration="71.2" data-track-index="0"></video>
+      <audio id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="71.2" data-track-index="2"></audio>
+      <div id="overlay" class="clip" data-start="0" data-duration="71.2" data-track-index="1">
+        <div id="spot-vig"></div>
+        <div id="title-shade"></div>
+        <div id="title">
+          <div id="title-kicker">On découvre</div>
+          <div id="title-main">Booster Collector</div>
+          <div id="title-line"></div>
+        </div>
+        <div id="infos"></div>
+        <div id="spot-tag"><span>La plus rare du paquet</span></div>
+        <div id="recap-bg"></div>
+        <div id="recap">
+          <div id="recap-title">Dans ce paquet</div>
+          <div id="recap-sub">Réalité Fracturée · booster collector</div>
+          <div id="recap-list"></div>
+        </div>
+        <div class="txt" id="cta">Ta préférée ? Dis-le en commentaire</div>
+        <div class="txt" id="source">Cotes indicatives Cardmarket</div>
+      </div>
+    </div>
+    <script>
+      // Tout vient de cards.json. Format « collection » : chaque carte a sa fiche (nom, rareté, finition, cote),
+      // sans prix du paquet, sans total, sans gagné/perdu, sans effet de choc.
+      const req = new XMLHttpRequest();
+      req.open("GET", "cards.json", false);
+      req.send(null);
+      const data = JSON.parse(req.responseText);
+      const cards = data.cards.slice().sort((a, b) => a.t - b.t);
+      const N = cards.length;
+      const color = { Commune: "--c-common", "Peu commune": "--c-uncommon", Rare: "--c-rare", Mythique: "--c-mythic", Terrain: "--c-land" };
+      const fmtValue = (v) => v.toFixed(2).replace(".", ",") + " €";
+      const delay = 0.35;
+
+      const infosEl = document.getElementById("infos");
+      cards.forEach((c, i) => {
+        const el = document.createElement("div");
+        el.className = "info" + (c.hit ? " rare-highlight" : "");
+        el.id = "info-" + i;
+        el.innerHTML =
+          `<div class="accent" style="background: var(${color[c.rarity]})"></div>` +
+          `<div class="num txt">${i + 1} / ${N}</div>` +
+          `<div class="name txt"></div>` +
+          `<div class="meta txt"></div>` +
+          `<div class="value txt">Cote Cardmarket <b></b></div>`;
+        el.querySelector(".name").textContent = c.name;
+        if (c.name.length > 24) el.querySelector(".name").style.fontSize = "40px"; // noms longs : plus petit, pas de chevauchement
+        el.querySelector(".meta").textContent = c.rarity + " · " + c.finish;
+        el.querySelector(".value b").textContent = fmtValue(c.value);
+        infosEl.appendChild(el);
+      });
+
+      const listEl = document.getElementById("recap-list");
+      cards.forEach((c, i) => {
+        const r = document.createElement("div");
+        r.className = "row";
+        r.id = "row-" + i;
+        r.innerHTML = `<div class="dot" style="background: var(${color[c.rarity]})"></div><div class="rn"></div><div class="rr"></div>`;
+        r.querySelector(".rn").textContent = c.name;
+        r.querySelector(".rr").textContent = c.rarity;
+        listEl.appendChild(r);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Titre d'ouverture
+      tl.fromTo("#title-shade", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.5 }, 0.2);
+      tl.to("#title-shade", { autoAlpha: 0, duration: 0.4 }, 3.0);
+      tl.fromTo("#title", { autoAlpha: 0, y: -14 }, { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" }, 0.3);
+      tl.fromTo("#title-line", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 0.5);
+      tl.to("#title", { autoAlpha: 0, duration: 0.4, ease: "power1.in" }, 3.0);
+
+      // Fiches : glissent depuis le bas, restent jusqu'à la carte suivante
+      const hit = data.hit;
+      cards.forEach((c, i) => {
+        const at = c.t + delay;
+        const next = cards[i + 1];
+        let until = next ? next.t + delay : data.recapAt;
+        if (hit && !c.hit && at < hit.start && until > hit.start) until = hit.start;
+        if (c.hit && hit) until = hit.end;
+        tl.fromTo("#info-" + i, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.4, ease: "power3.out" }, at);
+        tl.to("#info-" + i, { autoAlpha: 0, y: 20, duration: 0.25, ease: "power1.in" }, until - 0.25);
+      });
+
+      // Carte la plus rare : vignette douce, léger zoom lent, étiquette « La plus rare du paquet »
+      if (hit) {
+        tl.fromTo("#spot-vig", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.8, ease: "sine.inOut" }, hit.start);
+        tl.fromTo("#footage", { scale: 1 }, { scale: 1.05, duration: hit.end - hit.start, ease: "sine.inOut", immediateRender: false }, hit.start);
+        tl.set("#footage", { scale: 1 }, hit.end);
+        tl.fromTo("#spot-tag", { autoAlpha: 0, y: -10 }, { autoAlpha: 1, y: 0, duration: 0.6, ease: "power2.out" }, hit.start + 0.4);
+        tl.to(["#spot-vig", "#spot-tag"], { autoAlpha: 0, duration: 0.5, ease: "sine.inOut" }, hit.end - 0.5);
+      }
+
+      // Récap : liste des cartes du paquet, puis question ouverte
+      const R = data.recapAt;
+      tl.fromTo("#recap-bg", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.6, ease: "power1.out" }, R);
+      tl.fromTo("#recap", { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" }, R + 0.1);
+      cards.forEach((_, i) => {
+        tl.fromTo("#row-" + i, { autoAlpha: 0, x: -20 }, { autoAlpha: 1, x: 0, duration: 0.25, ease: "power2.out" }, R + 0.3 + i * 0.06);
+      });
+      tl.fromTo("#cta", { autoAlpha: 0, y: 10 }, { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" }, R + 1.4);
+      tl.fromTo("#source", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.5, ease: "power1.out" }, R + 1.6);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
