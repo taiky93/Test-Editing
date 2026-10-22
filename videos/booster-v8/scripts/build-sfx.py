@@ -3,7 +3,7 @@
 Tes sons sont prioritaires : sfx/price.(wav|mp3|m4a|ogg), sfx/final.(…), sfx/bed.(…).
 Sinon : tick doux pour chaque prix, jingle « game over » (ou carillon « win »), nappe douce.
 Usage : python3 scripts/build-sfx.py   (depuis videos/booster-v7)
-Version vidéo 7 : sfx/price.* pour chaque carte, sfx/bigprice.* pour les prix ≥ bigPrice ; la carte « hit » sonne au moment de la séquence hit."""
+Paliers : sfx/swipe.* (< 2 €), sfx/smallhit.* (2 à 10 €), sfx/bigwin.* (> 10 €) ; en perte, la fin joue sfx/cry.* (mème qui pleure)."""
 import json, subprocess, pathlib
 root = pathlib.Path.cwd(); sfx = root / "sfx"; sfx.mkdir(exist_ok=True)
 d = json.loads((root / "cards.json").read_text(encoding="utf-8"))
@@ -46,11 +46,19 @@ if not bed:
     for p in sfx.glob("_*"): p.unlink()
     bed = sfx / "gen-bed.wav"
 hit = d.get("hit")
-bigp = pick("bigprice") or price                              # son des gros prix (≥ bigPrice) : sfx/bigprice.*
-bigc = round(d.get("bigPrice", 20) * 100)
+# Sons des prix par palier : swipe (< 2 €), petit hit (2 à 10 €), big win (> 10 €)
+swipe = pick("swipe") or price; small = pick("smallhit") or swipe; big = pick("bigwin") or pick("bigprice") or small
+def snd(c):
+    v = c["price"]
+    if v > 10: return big, 1.0
+    if v >= 2: return small, 1.0
+    return swipe, 0.9
 pop = lambda c: hit["start"] + 0.7 if (c.get("hit") and hit) else c["t"] + d.get("popDelay", 0.3)
-ev = [(pop(c), bigp if round(c["price"] * 100) >= bigc else price, 1.0 if round(c["price"] * 100) >= bigc else 0.9) for c in cards]
-ev.append((d["finalAt"] + 0.25, final, 1.0))
+ev = [(pop(c), *snd(c)) for c in cards]
+# Fin : en perte, son du mème qui pleure (sfx/cry.*) à la place du jingle « game over »
+cry = pick("cry")
+if not won and cry: ev.append((d["finalAt"] + 0.2, cry, 1.0))
+else: ev.append((d["finalAt"] + 0.25, final, 1.0))
 tz = d.get("teaser"); shock = pick("shock")
 if tz and shock: ev.append((tz["freeze"], shock, 1.0))                # son de choc sur l'image figée de l'accroche
 bd = int((tz["end"] if tz else 0) * 1000)
@@ -58,6 +66,6 @@ ins = ["-i", bed]; ch = [f"[0:a]aformat=sample_rates=44100:channel_layouts=stere
 for i, (t, src, vol) in enumerate(ev, 1):
     ms = int(t * 1000); ins += ["-i", src]
     ch.append(f"[{i}:a]aformat=sample_rates=44100:channel_layouts=stereo,volume={vol},adelay={ms}|{ms}[e{i}]"); lab += f"[e{i}]"
-ch.append(f"{lab}amix=inputs={len(ev)+1}:normalize=0,atrim=0:{dur}[out]")
+ch.append(f"{lab}amix=inputs={len(ev)+1}:normalize=0,atrim=0:{dur},afade=t=out:st={dur-0.5}:d=0.5[out]")
 ff(*ins, "-filter_complex", ";".join(ch), "-map", "[out]", "-c:a", "pcm_s16le", sfx / "sfx-track.wav")
-print(f"sfx-track.wav : {len(ev)} sons, fin {'win' if won else 'game over'}, sources {price.name} / {final.name} / {bed.name}")
+print(f"sfx-track.wav : {len(ev)} sons, fin {'win' if won else 'mème qui pleure'}, sources {price.name} / {final.name} / {bed.name}")

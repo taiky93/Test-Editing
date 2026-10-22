@@ -39,9 +39,8 @@
       #total { left: 70px; top: 36px; font-size: 68px; font-weight: 500; color: var(--loss); text-shadow: var(--shadow); }
       #track { position: absolute; left: 330px; top: 62px; width: 400px; height: 22px; border-radius: 11px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
       #fill { position: absolute; left: 0; top: 0; bottom: 0; width: 400px; border-radius: 11px; background: var(--bar-loss); transform-origin: 0 50%; }
-      #pct { left: 330px; width: 400px; top: 0; text-align: center; font-size: 40px; font-weight: 500; color: var(--loss); text-shadow: var(--shadow); }
       #pack { right: 70px; top: 36px; font-size: 68px; font-weight: 500; color: var(--lav); text-shadow: var(--shadow); }
-      .win #total, .win #pct { color: var(--win); }
+      .win #total { color: var(--win); }
       .win #fill { background: var(--win); }
       /* Étincelles autour d'un gros prix */
       .spark { position: absolute; width: 34px; height: 34px; background: radial-gradient(circle, #fff 0%, #ffe9a8 30%, rgba(255, 210, 80, 0) 70%); clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%); }
@@ -63,15 +62,18 @@
       .won #end-title { color: var(--win); text-shadow: 0 0 28px rgba(63, 209, 107, 0.5), 0 6px 0 #062a12; }
       .won #end-sub { color: var(--win); }
       .won #veil { background: radial-gradient(ellipse at center, rgba(0, 12, 4, 0.55) 0%, rgba(0, 4, 1, 0.85) 75%); }
+      /* Fin en perte : mème qui pleure à la place de « GAME OVER » */
+      #cry { position: absolute; left: 110px; top: 300px; width: 860px; height: 800px; object-fit: cover; border-radius: 28px; box-shadow: 0 18px 60px rgba(0,0,0,0.7); opacity: 0; visibility: hidden; }
+      .lost #end { top: 1150px; }
       /* Cachés jusqu'à leur moment */
       .price, #tease-vig, #intro, #bar, #shade-bar, #veil, #end, .spark, #flash, #glow, #rays, #hit-title, #hit-price, #hit-shade { opacity: 0; visibility: hidden; }
     </style>
   </head>
   <body>
-    <div id="root" data-composition-id="main" data-start="0" data-duration="64.55" data-width="1080" data-height="1920">
+    <div id="root" data-composition-id="main" data-start="0" data-duration="65.6" data-width="1080" data-height="1920">
       <video id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-duration="64.55" data-track-index="0"></video>
-      <audio id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="64.55" data-track-index="2"></audio>
-      <div id="overlay" class="clip" data-start="0" data-duration="64.55" data-track-index="1">
+      <audio id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="65.6" data-track-index="2"></audio>
+      <div id="overlay" class="clip" data-start="0" data-duration="65.6" data-track-index="1">
         <div id="tease-vig"></div>
         <div id="flash"></div>
         <div id="rays"></div>
@@ -85,7 +87,6 @@
         <div class="txt" id="hit-title">HIT !</div>
         <div class="txt" id="hit-price">0.00</div>
         <div id="bar">
-          <div class="txt" id="pct">0%</div>
           <div class="txt" id="total">0.00</div>
           <div id="track"><div id="fill"></div></div>
           <div class="txt" id="pack">0.00 €</div>
@@ -96,6 +97,8 @@
           <div class="txt" id="end-sub">-0.00 €</div>
         </div>
       </div>
+      <!-- data-start = finalAt de cards.json ; durée = cryDuration -->
+      <video id="cry" class="clip" src="assets/cry.mp4" playsinline muted data-start="61.0" data-duration="4.6" data-track-index="3"></video>
     </div>
     <script>
       // Tout vient de cards.json : prix, timecodes, seuil des gros prix, moment du hit.
@@ -121,7 +124,6 @@
       document.getElementById("intro").textContent = Math.round(data.boosterPrice) + "€";
       document.getElementById("pack").textContent = num(pack) + " €";
       const totalEl = document.getElementById("total");
-      const pctEl = document.getElementById("pct");
       const fillEl = document.getElementById("fill");
 
       const splitLetters = (el, word, prefix) => {
@@ -139,6 +141,7 @@
       splitLetters(document.getElementById("hit-title"), "HIT !", "hch-");
       document.getElementById("end-sub").textContent = (won ? "+" : "-") + num(Math.abs(sum - pack)) + " €";
       if (won) document.getElementById("end").classList.add("won"), root.classList.add("won");
+      else root.classList.add("lost");
 
       const pricesEl = document.getElementById("prices");
       cards.forEach((c, i) => {
@@ -200,7 +203,6 @@
         const v = Math.round(proxy.v);
         const p = Math.min(100, Math.round((v / pack) * 100));
         totalEl.textContent = num(v);
-        pctEl.textContent = p + "%";
         fillEl.style.transform = `scaleX(${Math.max(0.0001, p / 100)})`;
         root.classList.toggle("win", v >= pack);
       };
@@ -279,17 +281,17 @@
       tl.fromTo("#veil", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.8, ease: "power1.out" }, finalAt);
       tl.fromTo("#end", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.01 }, finalAt + 0.2);
       tl.set("#end-sub", { autoAlpha: 0 }, finalAt + 0.2);
-      [...endWord].forEach((_, i) => {
+      if (!won) {
+        // Perte : le mème qui pleure remplace « GAME OVER » (lettres masquées), le montant reste dessous
+        tl.set("#end-title", { autoAlpha: 0 }, 0);
+        tl.fromTo("#cry", { autoAlpha: 0, scale: 0.7, rotation: -4 }, { autoAlpha: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, finalAt + 0.15);
+      }
+      if (won) [...endWord].forEach((_, i) => {
         tl.fromTo("#ch-" + i, { autoAlpha: 0, y: -60, filter: "blur(10px)" }, { autoAlpha: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "back.out(2)" }, finalAt + 0.25 + i * 0.07);
       });
-      const afterLetters = finalAt + 0.35 + endWord.length * 0.07;
+      const afterLetters = won ? finalAt + 0.35 + endWord.length * 0.07 : finalAt + 0.6;
       tl.fromTo("#end-sub", { autoAlpha: 0, scale: 0.8 }, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, afterLetters);
-      if (!won) {
-        tl.to("#end-title", { x: -10, duration: 0.05, ease: "none" }, afterLetters + 0.45);
-        tl.to("#end-title", { x: 10, duration: 0.07, ease: "none" }, afterLetters + 0.5);
-        tl.to("#end-title", { x: -6, duration: 0.07, ease: "none" }, afterLetters + 0.57);
-        tl.to("#end-title", { x: 0, duration: 0.08, ease: "none" }, afterLetters + 0.64);
-      } else {
+      if (won) {
         tl.to("#end", { scale: 1.06, duration: 0.18, ease: "sine.out" }, afterLetters + 0.4);
         tl.to("#end", { scale: 1, duration: 0.25, ease: "sine.inOut" }, afterLetters + 0.58);
       }

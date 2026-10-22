@@ -8,7 +8,7 @@
  "bigPrice": 5.0,
  "introEnd": 2.6,
  "finalAt": 61.0,
- "duration": 64.55,
+ "duration": 65.6,
  "cards": [
   {
    "n": 1,
@@ -188,5 +188,6 @@
    "skip": true,
    "reason": "carte illustration"
   }
- ]
+ ],
+ "cryDuration": 4.6
 }
