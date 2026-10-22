@@ -34,6 +34,9 @@ if not final:
         ff("-f", "lavfi", "-i", f"aevalsrc='{e}|{e}':s=44100:d=2.6", "-af", "lowpass=f=2200", sfx / "gen-final.wav")
     final = sfx / "gen-final.wav"
 bed = pick("bed")
+if d.get("bed", True) is False:
+    # pas de musique de fond : la musique est ajoutée ensuite dans TikTok
+    ff("-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", dur, sfx / "silent-bed.wav"); bed = sfx / "silent-bed.wav"
 if not bed:
     ch = [(220.0, 261.63, 329.63), (174.61, 220.0, 261.63), (261.63, 329.63, 392.0), (196.0, 246.94, 293.66)]
     for i, (a, b, c) in enumerate(ch):

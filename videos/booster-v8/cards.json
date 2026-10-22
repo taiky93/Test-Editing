@@ -189,5 +189,6 @@
    "reason": "carte illustration"
   }
  ],
- "cryDuration": 4.6
+ "cryDuration": 4.6,
+ "bed": false
 }
