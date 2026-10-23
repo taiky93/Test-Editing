@@ -62,6 +62,8 @@
       .won #end-title { color: var(--win); text-shadow: 0 0 28px rgba(63, 209, 107, 0.5), 0 6px 0 #062a12; }
       .won #end-sub { color: var(--win); }
       .won #veil { background: radial-gradient(ellipse at center, rgba(0, 12, 4, 0.55) 0%, rgba(0, 4, 1, 0.85) 75%); }
+      /* Plus aucun prix affiché (test TikTok) : seuls les sons marquent les bonnes cartes */
+      .price, [id^="bs"] { display: none !important; }
       /* Fin en perte : mème qui pleure à la place de « GAME OVER » */
       #cry { position: absolute; left: 110px; top: 560px; width: 860px; height: 800px; object-fit: cover; border-radius: 28px; box-shadow: 0 18px 60px rgba(0,0,0,0.7); opacity: 0; visibility: hidden; }
       .lost #end { top: 1150px; }

@@ -55,9 +55,10 @@ def snd(c):
     v = c["price"]
     if v > 10: return big, 1.0
     if v >= 2: return small, 1.0
-    return swipe, 0.9
+    return None, 0  # cartes sous 2 € : aucun son
 pop = lambda c: hit["start"] + 0.7 if (c.get("hit") and hit) else c["t"] + d.get("popDelay", 0.3)
 ev = [(pop(c), *snd(c)) for c in cards]
+ev = [e for e in ev if e[1] is not None]
 # Fin : en perte, son du mème qui pleure (sfx/cry.*) à la place du jingle « game over »
 cry = pick("cry")
 if not won and cry: ev.append((d["finalAt"] + 0.2, cry, 1.0))
