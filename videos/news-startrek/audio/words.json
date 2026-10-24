@@ -2,955 +2,955 @@
  {
   "text": "Trois",
   "start": 0.12,
-  "end": 0.27,
+  "end": 0.33,
   "line": 0
  },
  {
   "text": "nouvelles",
-  "start": 0.27,
-  "end": 0.75,
+  "start": 0.33,
+  "end": 1.14,
   "line": 0
  },
  {
   "text": "cartes",
-  "start": 0.75,
-  "end": 1.2,
+  "start": 1.14,
+  "end": 1.34,
   "line": 0
  },
  {
   "text": "Star",
-  "start": 1.2,
-  "end": 1.48,
+  "start": 1.34,
+  "end": 1.61,
   "line": 0
  },
  {
   "text": "Trek",
-  "start": 1.48,
+  "start": 1.61,
   "end": 1.9,
   "line": 0
  },
  {
   "text": "viennent",
   "start": 1.9,
-  "end": 2.19,
+  "end": 2.45,
   "line": 0
  },
  {
   "text": "d'être",
-  "start": 2.19,
-  "end": 2.51,
+  "start": 2.45,
+  "end": 2.8,
   "line": 0
  },
  {
   "text": "dévoilées.",
-  "start": 2.51,
-  "end": 3.2,
+  "start": 2.8,
+  "end": 3.6,
   "line": 0
  },
  {
   "text": "On",
-  "start": 3.56,
-  "end": 3.68,
+  "start": 3.6,
+  "end": 3.77,
   "line": 0
  },
  {
   "text": "regarde",
-  "start": 3.68,
-  "end": 4.06,
+  "start": 3.77,
+  "end": 4.36,
   "line": 0
  },
  {
   "text": "ça.",
-  "start": 4.06,
-  "end": 4.56,
+  "start": 4.36,
+  "end": 4.82,
   "line": 0
  },
  {
   "text": "Le",
-  "start": 4.8,
-  "end": 4.92,
+  "start": 4.82,
+  "end": 5.01,
   "line": 1
  },
  {
   "text": "Docteur",
-  "start": 4.92,
-  "end": 5.43,
+  "start": 5.01,
+  "end": 5.97,
   "line": 1
  },
  {
   "text": "Joseph",
-  "start": 5.43,
-  "end": 5.96,
+  "start": 5.97,
+  "end": 6.3,
   "line": 1
  },
  {
   "text": "M'Benga :",
-  "start": 5.96,
-  "end": 7.64,
+  "start": 6.3,
+  "end": 7.68,
   "line": 1
  },
  {
   "text": "quatre",
-  "start": 7.64,
-  "end": 7.76,
+  "start": 7.68,
+  "end": 8.19,
   "line": 1
  },
  {
   "text": "manas,",
-  "start": 7.76,
-  "end": 8.64,
+  "start": 8.19,
+  "end": 8.88,
   "line": 1
  },
  {
   "text": "une",
-  "start": 8.8,
-  "end": 8.92,
+  "start": 8.88,
+  "end": 9.05,
   "line": 1
  },
  {
   "text": "3/3",
-  "start": 8.92,
-  "end": 9.43,
+  "start": 9.05,
+  "end": 9.41,
   "line": 1
  },
  {
   "text": "qui",
-  "start": 9.43,
-  "end": 9.54,
+  "start": 9.41,
+  "end": 9.57,
   "line": 1
  },
  {
   "text": "double",
-  "start": 9.54,
-  "end": 9.95,
+  "start": 9.57,
+  "end": 10.02,
   "line": 1
  },
  {
   "text": "les",
-  "start": 9.95,
-  "end": 10.08,
+  "start": 10.02,
+  "end": 10.205,
   "line": 1
  },
  {
   "text": "marqueurs",
-  "start": 10.08,
-  "end": 10.7,
+  "start": 10.205,
+  "end": 10.76,
   "line": 1
  },
  {
   "text": "que",
-  "start": 10.7,
-  "end": 10.844,
+  "start": 10.76,
+  "end": 10.952,
   "line": 1
  },
  {
   "text": "tu",
-  "start": 10.844,
-  "end": 10.94,
+  "start": 10.952,
+  "end": 11.08,
   "line": 1
  },
  {
   "text": "poses",
-  "start": 10.94,
-  "end": 11.18,
+  "start": 11.08,
+  "end": 11.42,
   "line": 1
  },
  {
   "text": "sur",
-  "start": 11.18,
-  "end": 11.34,
+  "start": 11.42,
+  "end": 11.68,
   "line": 1
  },
  {
   "text": "tes",
-  "start": 11.34,
-  "end": 11.5,
+  "start": 11.68,
+  "end": 12.21,
   "line": 1
  },
  {
   "text": "créatures.",
-  "start": 11.5,
-  "end": 12.2,
+  "start": 12.21,
+  "end": 13.04,
   "line": 1
  },
  {
   "text": "Pas",
-  "start": 13.0,
-  "end": 13.12,
+  "start": 13.04,
+  "end": 13.25,
   "line": 1
  },
  {
   "text": "seulement",
-  "start": 13.12,
-  "end": 13.29,
+  "start": 13.25,
+  "end": 13.93,
   "line": 1
  },
  {
   "text": "les",
-  "start": 13.29,
-  "end": 13.63,
+  "start": 13.93,
+  "end": 14.19,
   "line": 1
  },
  {
   "text": "+1/+1,",
-  "start": 13.63,
-  "end": 14.9,
+  "start": 14.19,
+  "end": 15.04,
   "line": 1
  },
  {
   "text": "comme",
-  "start": 14.9,
-  "end": 15.09,
+  "start": 15.04,
+  "end": 15.41,
   "line": 1
  },
  {
   "text": "Évolution",
-  "start": 15.09,
-  "end": 15.69,
+  "start": 15.41,
+  "end": 15.97,
   "line": 1
  },
  {
   "text": "bifurcatrice :",
-  "start": 15.69,
-  "end": 16.72,
+  "start": 15.97,
+  "end": 17.0,
   "line": 1
  },
  {
   "text": "tous",
-  "start": 16.96,
-  "end": 17.08,
+  "start": 17.0,
+  "end": 17.32,
   "line": 1
  },
  {
   "text": "les",
-  "start": 17.08,
-  "end": 17.26,
+  "start": 17.32,
+  "end": 17.63,
   "line": 1
  },
  {
   "text": "marqueurs.",
-  "start": 17.26,
-  "end": 18.1,
+  "start": 17.63,
+  "end": 18.28,
   "line": 1
  },
  {
   "text": "Et",
-  "start": 18.1,
-  "end": 18.228,
+  "start": 18.28,
+  "end": 18.49,
   "line": 1
  },
  {
   "text": "tes",
-  "start": 18.228,
-  "end": 18.42,
+  "start": 18.49,
+  "end": 18.59,
   "line": 1
  },
  {
   "text": "autres",
-  "start": 18.42,
-  "end": 18.86,
+  "start": 18.59,
+  "end": 18.97,
   "line": 1
  },
  {
   "text": "créatures",
-  "start": 18.86,
-  "end": 19.44,
+  "start": 18.97,
+  "end": 19.56,
   "line": 1
  },
  {
   "text": "avec",
-  "start": 19.52,
-  "end": 19.66,
+  "start": 19.56,
+  "end": 19.8,
   "line": 1
  },
  {
   "text": "des",
-  "start": 19.66,
-  "end": 19.83,
+  "start": 19.8,
+  "end": 19.98,
   "line": 1
  },
  {
   "text": "marqueurs",
-  "start": 19.83,
-  "end": 20.33,
+  "start": 19.98,
+  "end": 20.7,
   "line": 1
  },
  {
   "text": "gagnent",
-  "start": 20.33,
-  "end": 20.8,
+  "start": 20.7,
+  "end": 21.07,
   "line": 1
  },
  {
   "text": "la",
-  "start": 20.8,
-  "end": 20.933,
+  "start": 21.07,
+  "end": 21.163,
   "line": 1
  },
  {
   "text": "défense",
-  "start": 20.933,
-  "end": 21.4,
+  "start": 21.163,
+  "end": 21.49,
   "line": 1
  },
  {
   "text": "talismanique.",
-  "start": 21.4,
-  "end": 22.12,
+  "start": 21.49,
+  "end": 22.48,
   "line": 1
  },
  {
   "text": "Ensuite,",
-  "start": 22.44,
-  "end": 22.89,
+  "start": 22.48,
+  "end": 23.24,
   "line": 2
  },
  {
   "text": "Quark.",
-  "start": 22.89,
-  "end": 23.6,
+  "start": 23.24,
+  "end": 24.16,
   "line": 2
  },
  {
   "text": "Trois",
-  "start": 24.12,
-  "end": 24.24,
+  "start": 24.16,
+  "end": 24.56,
   "line": 2
  },
  {
   "text": "manas,",
-  "start": 24.24,
-  "end": 25.12,
+  "start": 24.56,
+  "end": 25.24,
   "line": 2
  },
  {
   "text": "une",
-  "start": 25.2,
-  "end": 25.34,
+  "start": 25.24,
+  "end": 25.49,
   "line": 2
  },
  {
   "text": "1/2",
-  "start": 25.34,
-  "end": 25.91,
+  "start": 25.49,
+  "end": 26.15,
   "line": 2
  },
  {
   "text": "qui",
-  "start": 25.91,
-  "end": 26.27,
+  "start": 26.15,
+  "end": 26.39,
   "line": 2
  },
  {
   "text": "te",
-  "start": 26.27,
-  "end": 26.413,
+  "start": 26.39,
+  "end": 26.52,
   "line": 2
  },
  {
   "text": "crée",
-  "start": 26.413,
-  "end": 26.7,
+  "start": 26.52,
+  "end": 26.8,
   "line": 2
  },
  {
   "text": "un",
-  "start": 26.7,
-  "end": 26.86,
+  "start": 26.8,
+  "end": 27.12,
   "line": 2
  },
  {
   "text": "Trésor",
-  "start": 26.86,
-  "end": 27.32,
+  "start": 27.12,
+  "end": 27.52,
   "line": 2
  },
  {
   "text": "à",
-  "start": 27.32,
-  "end": 27.425,
+  "start": 27.52,
+  "end": 27.672,
   "line": 2
  },
  {
   "text": "l'entretien",
-  "start": 27.425,
-  "end": 27.95,
+  "start": 27.672,
+  "end": 28.43,
   "line": 2
  },
  {
   "text": "de",
-  "start": 27.95,
-  "end": 28.05,
+  "start": 28.43,
+  "end": 28.83,
   "line": 2
  },
  {
   "text": "chaque",
-  "start": 28.05,
-  "end": 28.23,
+  "start": 28.83,
+  "end": 29.155,
   "line": 2
  },
  {
   "text": "joueur.",
-  "start": 28.23,
-  "end": 28.88,
+  "start": 29.155,
+  "end": 29.48,
   "line": 2
  },
  {
   "text": "Par",
-  "start": 29.31,
-  "end": 29.563,
+  "start": 29.48,
+  "end": 29.717,
   "line": 2
  },
  {
   "text": "contre,",
-  "start": 29.563,
-  "end": 30.07,
+  "start": 29.717,
+  "end": 30.19,
   "line": 2
  },
  {
   "text": "tu",
-  "start": 30.07,
-  "end": 30.197,
+  "start": 30.19,
+  "end": 30.39,
   "line": 2
  },
  {
   "text": "ne",
-  "start": 30.197,
-  "end": 30.325,
+  "start": 30.39,
+  "end": 30.63,
   "line": 2
  },
  {
   "text": "peux",
-  "start": 30.325,
-  "end": 30.58,
+  "start": 30.63,
+  "end": 30.76,
   "line": 2
  },
  {
   "text": "pas",
-  "start": 30.58,
-  "end": 30.715,
+  "start": 30.76,
+  "end": 30.96,
   "line": 2
  },
  {
   "text": "sacrifier",
-  "start": 30.715,
-  "end": 31.12,
+  "start": 30.96,
+  "end": 31.49,
   "line": 2
  },
  {
   "text": "tes",
-  "start": 31.12,
-  "end": 31.34,
+  "start": 31.49,
+  "end": 31.67,
   "line": 2
  },
  {
   "text": "Trésors.",
-  "start": 31.34,
-  "end": 31.88,
+  "start": 31.67,
+  "end": 32.4,
   "line": 2
  },
  {
   "text": "En",
-  "start": 32.36,
-  "end": 32.48,
+  "start": 32.4,
+  "end": 32.52,
   "line": 2
  },
  {
   "text": "Commander,",
-  "start": 32.48,
-  "end": 32.66,
+  "start": 32.52,
+  "end": 33.03,
   "line": 2
  },
  {
   "text": "ça",
-  "start": 32.66,
-  "end": 32.78,
+  "start": 33.03,
+  "end": 33.137,
   "line": 2
  },
  {
   "text": "fait",
-  "start": 32.78,
-  "end": 33.02,
+  "start": 33.137,
+  "end": 33.35,
   "line": 2
  },
  {
   "text": "quand",
-  "start": 33.02,
-  "end": 33.5,
+  "start": 33.35,
+  "end": 33.55,
   "line": 2
  },
  {
   "text": "même",
-  "start": 33.5,
-  "end": 33.668,
+  "start": 33.55,
+  "end": 33.73,
   "line": 2
  },
  {
   "text": "quatre",
-  "start": 33.668,
-  "end": 33.92,
+  "start": 33.73,
+  "end": 34.01,
   "line": 2
  },
  {
   "text": "artefacts",
-  "start": 33.92,
-  "end": 34.48,
+  "start": 34.01,
+  "end": 34.52,
   "line": 2
  },
  {
   "text": "par",
-  "start": 34.48,
-  "end": 34.64,
+  "start": 34.52,
+  "end": 34.8,
   "line": 2
  },
  {
   "text": "tour",
-  "start": 34.64,
-  "end": 34.86,
+  "start": 34.8,
+  "end": 35.19,
   "line": 2
  },
  {
   "text": "de",
-  "start": 34.86,
-  "end": 34.97,
+  "start": 35.19,
+  "end": 35.88,
   "line": 2
  },
  {
   "text": "table.",
-  "start": 34.97,
-  "end": 35.44,
+  "start": 35.88,
+  "end": 36.147,
   "line": 2
  },
  {
   "text": "Et",
-  "start": 35.59,
-  "end": 35.701,
+  "start": 36.147,
+  "end": 36.253,
   "line": 2
  },
  {
   "text": "si",
-  "start": 35.701,
-  "end": 35.812,
+  "start": 36.253,
+  "end": 36.36,
   "line": 2
  },
  {
   "text": "tes",
-  "start": 35.812,
-  "end": 35.979,
+  "start": 36.36,
+  "end": 36.52,
   "line": 2
  },
  {
   "text": "adversaires",
-  "start": 35.979,
-  "end": 36.59,
+  "start": 36.52,
+  "end": 37.0,
   "line": 2
  },
  {
   "text": "le",
-  "start": 36.59,
-  "end": 36.73,
+  "start": 37.0,
+  "end": 37.13,
   "line": 2
  },
  {
   "text": "détruisent,",
-  "start": 36.73,
-  "end": 37.52,
+  "start": 37.13,
+  "end": 37.78,
   "line": 2
  },
  {
   "text": "tu",
-  "start": 37.52,
-  "end": 37.74,
+  "start": 37.78,
+  "end": 37.904,
   "line": 2
  },
  {
   "text": "récupères",
-  "start": 37.74,
-  "end": 38.13,
+  "start": 37.904,
+  "end": 38.46,
   "line": 2
  },
  {
   "text": "d'un",
-  "start": 38.13,
-  "end": 38.34,
+  "start": 38.46,
+  "end": 38.7,
   "line": 2
  },
  {
   "text": "coup",
-  "start": 38.34,
-  "end": 38.57,
+  "start": 38.7,
+  "end": 38.97,
   "line": 2
  },
  {
   "text": "tout",
-  "start": 38.57,
-  "end": 38.91,
+  "start": 38.97,
+  "end": 39.25,
   "line": 2
  },
  {
   "text": "ce",
-  "start": 38.91,
-  "end": 39.14,
+  "start": 39.25,
+  "end": 39.54,
   "line": 2
  },
  {
   "text": "mana.",
-  "start": 39.14,
-  "end": 39.36,
+  "start": 39.54,
+  "end": 39.92,
   "line": 2
  },
  {
   "text": "Pour",
-  "start": 39.88,
-  "end": 40.0,
+  "start": 39.92,
+  "end": 40.31,
   "line": 3
  },
  {
   "text": "finir,",
-  "start": 40.0,
-  "end": 40.39,
+  "start": 40.31,
+  "end": 41.06,
   "line": 3
  },
  {
   "text": "Hit",
-  "start": 40.39,
-  "end": 41.075,
+  "start": 41.06,
+  "end": 41.43,
   "line": 3
  },
  {
   "text": "It!",
-  "start": 41.075,
-  "end": 41.76,
+  "start": 41.43,
+  "end": 41.8,
   "line": 3
  },
  {
   "text": "Un",
-  "start": 41.76,
-  "end": 41.85,
+  "start": 41.8,
+  "end": 41.97,
   "line": 3
  },
  {
   "text": "enchantement",
-  "start": 41.85,
-  "end": 42.39,
+  "start": 41.97,
+  "end": 42.96,
   "line": 3
  },
  {
   "text": "rouge",
-  "start": 42.39,
-  "end": 42.84,
+  "start": 42.96,
+  "end": 43.35,
   "line": 3
  },
  {
   "text": "et",
-  "start": 42.84,
-  "end": 42.947,
+  "start": 43.35,
+  "end": 43.7,
   "line": 3
  },
  {
   "text": "vert",
-  "start": 42.947,
-  "end": 43.16,
+  "start": 43.7,
+  "end": 43.84,
   "line": 3
  },
  {
   "text": "à",
-  "start": 43.16,
-  "end": 43.303,
+  "start": 43.84,
+  "end": 43.977,
   "line": 3
  },
  {
   "text": "trois",
-  "start": 43.303,
-  "end": 43.66,
+  "start": 43.977,
+  "end": 44.32,
   "line": 3
  },
  {
   "text": "manas.",
-  "start": 43.66,
-  "end": 44.24,
+  "start": 44.32,
+  "end": 45.04,
   "line": 3
  },
  {
   "text": "Tes",
-  "start": 44.75,
-  "end": 44.885,
+  "start": 45.04,
+  "end": 45.27,
   "line": 3
  },
  {
   "text": "créatures",
-  "start": 44.885,
-  "end": 45.29,
+  "start": 45.27,
+  "end": 46.18,
   "line": 3
  },
  {
   "text": "ont",
-  "start": 45.29,
-  "end": 45.55,
+  "start": 46.18,
+  "end": 46.369,
   "line": 3
  },
  {
   "text": "la",
-  "start": 45.55,
-  "end": 45.72,
+  "start": 46.369,
+  "end": 46.495,
   "line": 3
  },
  {
   "text": "célérité,",
-  "start": 45.72,
-  "end": 46.48,
+  "start": 46.495,
+  "end": 47.0,
   "line": 3
  },
  {
   "text": "et",
-  "start": 46.71,
-  "end": 46.897,
+  "start": 47.0,
+  "end": 47.13,
   "line": 3
  },
  {
   "text": "en",
-  "start": 46.897,
-  "end": 47.083,
+  "start": 47.13,
+  "end": 47.26,
   "line": 3
  },
  {
   "text": "arrivant,",
-  "start": 47.083,
-  "end": 47.83,
+  "start": 47.26,
+  "end": 48.06,
   "line": 3
  },
  {
   "text": "il",
-  "start": 47.83,
-  "end": 47.99,
+  "start": 48.06,
+  "end": 48.157,
   "line": 3
  },
  {
   "text": "te",
-  "start": 47.99,
-  "end": 48.15,
+  "start": 48.157,
+  "end": 48.254,
   "line": 3
  },
  {
   "text": "met",
-  "start": 48.15,
-  "end": 48.27,
+  "start": 48.254,
+  "end": 48.4,
   "line": 3
  },
  {
   "text": "un",
-  "start": 48.27,
-  "end": 48.44,
+  "start": 48.4,
+  "end": 48.498,
   "line": 3
  },
  {
   "text": "terrain",
-  "start": 48.44,
-  "end": 48.86,
+  "start": 48.498,
+  "end": 48.84,
   "line": 3
  },
  {
   "text": "des",
-  "start": 48.86,
-  "end": 48.997,
+  "start": 48.84,
+  "end": 48.977,
   "line": 3
  },
  {
   "text": "cinq",
-  "start": 48.997,
-  "end": 49.18,
+  "start": 48.977,
+  "end": 49.16,
   "line": 3
  },
  {
   "text": "cartes",
-  "start": 49.18,
-  "end": 49.48,
+  "start": 49.16,
+  "end": 49.52,
   "line": 3
  },
  {
   "text": "du",
-  "start": 49.48,
-  "end": 49.64,
+  "start": 49.52,
+  "end": 49.68,
   "line": 3
  },
  {
   "text": "dessus",
-  "start": 49.64,
-  "end": 49.99,
+  "start": 49.68,
+  "end": 50.03,
   "line": 3
  },
  {
   "text": "sur",
-  "start": 49.99,
-  "end": 50.25,
+  "start": 50.03,
+  "end": 50.37,
   "line": 3
  },
  {
   "text": "le",
-  "start": 50.25,
-  "end": 50.56,
+  "start": 50.37,
+  "end": 50.66,
   "line": 3
  },
  {
   "text": "champ",
-  "start": 50.56,
-  "end": 50.76,
+  "start": 50.66,
+  "end": 50.87,
   "line": 3
  },
  {
   "text": "de",
-  "start": 50.76,
-  "end": 50.84,
+  "start": 50.87,
+  "end": 51.0,
   "line": 3
  },
  {
   "text": "bataille.",
-  "start": 50.84,
-  "end": 51.16,
+  "start": 51.0,
+  "end": 51.84,
   "line": 3
  },
  {
   "text": "De",
-  "start": 51.59,
-  "end": 51.681,
+  "start": 51.84,
+  "end": 51.96,
   "line": 3
  },
  {
   "text": "quoi",
-  "start": 51.681,
-  "end": 51.862,
+  "start": 51.96,
+  "end": 52.17,
   "line": 3
  },
  {
   "text": "lancer",
-  "start": 51.862,
-  "end": 52.134,
+  "start": 52.17,
+  "end": 52.49,
   "line": 3
  },
  {
   "text": "une",
-  "start": 52.134,
-  "end": 52.27,
+  "start": 52.49,
+  "end": 52.65,
   "line": 3
  },
  {
   "text": "créature",
-  "start": 52.27,
-  "end": 52.93,
+  "start": 52.65,
+  "end": 53.12,
   "line": 3
  },
  {
   "text": "à",
-  "start": 52.93,
-  "end": 53.06,
+  "start": 53.12,
+  "end": 53.227,
   "line": 3
  },
  {
   "text": "cinq",
-  "start": 53.06,
-  "end": 53.32,
+  "start": 53.227,
+  "end": 53.44,
   "line": 3
  },
  {
   "text": "manas",
-  "start": 53.32,
+  "start": 53.44,
   "end": 53.74,
   "line": 3
  },
  {
   "text": "au",
   "start": 53.74,
-  "end": 53.847,
+  "end": 53.84,
   "line": 3
  },
  {
   "text": "tour",
-  "start": 53.847,
-  "end": 54.06,
+  "start": 53.84,
+  "end": 54.16,
   "line": 3
  },
  {
   "text": "suivant,",
-  "start": 54.06,
-  "end": 54.48,
+  "start": 54.16,
+  "end": 54.71,
   "line": 3
  },
  {
   "text": "et",
-  "start": 54.48,
-  "end": 54.6,
+  "start": 54.71,
+  "end": 55.15,
   "line": 3
  },
  {
   "text": "attaquer",
-  "start": 54.6,
-  "end": 55.44,
+  "start": 55.15,
+  "end": 55.58,
   "line": 3
  },
  {
   "text": "direct.",
-  "start": 55.44,
-  "end": 55.64,
+  "start": 55.58,
+  "end": 56.4,
   "line": 3
  },
  {
   "text": "Et",
-  "start": 56.48,
-  "end": 56.6,
+  "start": 56.4,
+  "end": 56.52,
   "line": 4
  },
  {
   "text": "toi,",
-  "start": 56.6,
-  "end": 57.11,
+  "start": 56.52,
+  "end": 56.75,
   "line": 4
  },
  {
-  "text": "laquelle",
-  "start": 57.11,
-  "end": 57.63,
+  "text": "quelle",
+  "start": 56.75,
+  "end": 57.04,
   "line": 4
  },
  {
-  "text": "tu",
-  "start": 57.63,
-  "end": 57.73,
+  "text": "carte",
+  "start": 57.04,
+  "end": 57.29,
   "line": 4
  },
  {
-  "text": "joues",
-  "start": 57.73,
-  "end": 57.98,
+  "text": "t'intéresse",
+  "start": 57.29,
+  "end": 57.88,
   "line": 4
  },
  {
-  "text": "en",
-  "start": 57.98,
-  "end": 58.38,
+  "text": "le",
+  "start": 57.88,
+  "end": 58.02,
   "line": 4
  },
  {
-  "text": "premier ?",
-  "start": 58.38,
-  "end": 58.52,
+  "text": "plus ?",
+  "start": 58.02,
+  "end": 58.3,
   "line": 4
  },
  {
   "text": "Dis-le-moi",
-  "start": 59.32,
-  "end": 59.65,
+  "start": 58.44,
+  "end": 58.74,
   "line": 4
  },
  {
   "text": "en",
-  "start": 59.65,
-  "end": 59.74,
+  "start": 58.74,
+  "end": 58.842,
   "line": 4
  },
  {
   "text": "commentaire.",
-  "start": 59.74,
-  "end": 60.44,
+  "start": 58.842,
+  "end": 59.4,
   "line": 4
  }
 ]

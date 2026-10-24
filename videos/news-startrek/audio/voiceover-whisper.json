@@ -42,1605 +42,1594 @@
 		{
 			"timestamps": {
 				"from": "00:00:00,120",
-				"to": "00:00:00,270"
+				"to": "00:00:00,330"
 			},
 			"offsets": {
 				"from": 120,
-				"to": 270
+				"to": 330
 			},
 			"text": " Trois"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:00,270",
-				"to": "00:00:00,750"
+				"from": "00:00:00,330",
+				"to": "00:00:01,140"
 			},
 			"offsets": {
-				"from": 270,
-				"to": 750
+				"from": 330,
+				"to": 1140
 			},
 			"text": " nouvelles"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:00,750",
-				"to": "00:00:01,200"
+				"from": "00:00:01,140",
+				"to": "00:00:01,340"
 			},
 			"offsets": {
-				"from": 750,
-				"to": 1200
-			},
-			"text": " cartes,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:01,200",
-				"to": "00:00:01,480"
-			},
-			"offsets": {
-				"from": 1200,
-				"to": 1480
-			},
-			"text": " Star"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:01,480",
-				"to": "00:00:01,900"
-			},
-			"offsets": {
-				"from": 1480,
-				"to": 1900
-			},
-			"text": " Trek,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:01,900",
-				"to": "00:00:02,190"
-			},
-			"offsets": {
-				"from": 1900,
-				"to": 2190
-			},
-			"text": " viennent"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:02,190",
-				"to": "00:00:02,510"
-			},
-			"offsets": {
-				"from": 2190,
-				"to": 2510
-			},
-			"text": " d'être"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:02,510",
-				"to": "00:00:03,200"
-			},
-			"offsets": {
-				"from": 2510,
-				"to": 3200
-			},
-			"text": " dévoilées."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:03,560",
-				"to": "00:00:03,680"
-			},
-			"offsets": {
-				"from": 3560,
-				"to": 3680
-			},
-			"text": " On"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:03,680",
-				"to": "00:00:04,060"
-			},
-			"offsets": {
-				"from": 3680,
-				"to": 4060
-			},
-			"text": " regarde"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:04,060",
-				"to": "00:00:04,560"
-			},
-			"offsets": {
-				"from": 4060,
-				"to": 4560
-			},
-			"text": " ça."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:04,800",
-				"to": "00:00:04,920"
-			},
-			"offsets": {
-				"from": 4800,
-				"to": 4920
-			},
-			"text": " Le"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:04,920",
-				"to": "00:00:05,430"
-			},
-			"offsets": {
-				"from": 4920,
-				"to": 5430
-			},
-			"text": " docteur"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:05,430",
-				"to": "00:00:05,960"
-			},
-			"offsets": {
-				"from": 5430,
-				"to": 5960
-			},
-			"text": " Joseph"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:05,960",
-				"to": "00:00:06,330"
-			},
-			"offsets": {
-				"from": 5960,
-				"to": 6330
-			},
-			"text": " M."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:06,330",
-				"to": "00:00:07,120"
-			},
-			"offsets": {
-				"from": 6330,
-				"to": 7120
-			},
-			"text": " Benga."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:07,640",
-				"to": "00:00:07,760"
-			},
-			"offsets": {
-				"from": 7640,
-				"to": 7760
-			},
-			"text": " Quatre"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:07,760",
-				"to": "00:00:08,640"
-			},
-			"offsets": {
-				"from": 7760,
-				"to": 8640
-			},
-			"text": " Manas."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:08,800",
-				"to": "00:00:08,920"
-			},
-			"offsets": {
-				"from": 8800,
-				"to": 8920
-			},
-			"text": " Une"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:08,920",
-				"to": "00:00:09,430"
-			},
-			"offsets": {
-				"from": 8920,
-				"to": 9430
-			},
-			"text": " trois-trois"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:09,430",
-				"to": "00:00:09,540"
-			},
-			"offsets": {
-				"from": 9430,
-				"to": 9540
-			},
-			"text": " qui"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:09,540",
-				"to": "00:00:09,950"
-			},
-			"offsets": {
-				"from": 9540,
-				"to": 9950
-			},
-			"text": " double"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:09,950",
-				"to": "00:00:10,080"
-			},
-			"offsets": {
-				"from": 9950,
-				"to": 10080
-			},
-			"text": " les"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:10,080",
-				"to": "00:00:10,700"
-			},
-			"offsets": {
-				"from": 10080,
-				"to": 10700
-			},
-			"text": " marqueurs"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:10,700",
-				"to": "00:00:10,710"
-			},
-			"offsets": {
-				"from": 10700,
-				"to": 10710
-			},
-			"text": " que"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:10,710",
-				"to": "00:00:10,810"
-			},
-			"offsets": {
-				"from": 10710,
-				"to": 10810
-			},
-			"text": " tu"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:10,810",
-				"to": "00:00:11,080"
-			},
-			"offsets": {
-				"from": 10810,
-				"to": 11080
-			},
-			"text": " poses"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:11,080",
-				"to": "00:00:11,260"
-			},
-			"offsets": {
-				"from": 11080,
-				"to": 11260
-			},
-			"text": " sur"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:11,260",
-				"to": "00:00:11,440"
-			},
-			"offsets": {
-				"from": 11260,
-				"to": 11440
-			},
-			"text": " tes"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:11,440",
-				"to": "00:00:12,200"
-			},
-			"offsets": {
-				"from": 11440,
-				"to": 12200
-			},
-			"text": " créatures."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:13,000",
-				"to": "00:00:13,120"
-			},
-			"offsets": {
-				"from": 13000,
-				"to": 13120
-			},
-			"text": " Pas"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:13,120",
-				"to": "00:00:13,290"
-			},
-			"offsets": {
-				"from": 13120,
-				"to": 13290
-			},
-			"text": " seulement"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:13,290",
-				"to": "00:00:13,630"
-			},
-			"offsets": {
-				"from": 13290,
-				"to": 13630
-			},
-			"text": " les"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:13,630",
-				"to": "00:00:14,150"
-			},
-			"offsets": {
-				"from": 13630,
-				"to": 14150
-			},
-			"text": " plus"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:14,150",
-				"to": "00:00:14,900"
-			},
-			"offsets": {
-				"from": 14150,
-				"to": 14900
-			},
-			"text": " simples,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:14,900",
-				"to": "00:00:15,090"
-			},
-			"offsets": {
-				"from": 14900,
-				"to": 15090
-			},
-			"text": " comme"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:15,090",
-				"to": "00:00:15,690"
-			},
-			"offsets": {
-				"from": 15090,
-				"to": 15690
-			},
-			"text": " évolution"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:15,690",
-				"to": "00:00:16,720"
-			},
-			"offsets": {
-				"from": 15690,
-				"to": 16720
-			},
-			"text": " bifurcatrice."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:16,960",
-				"to": "00:00:17,080"
-			},
-			"offsets": {
-				"from": 16960,
-				"to": 17080
-			},
-			"text": " Tous"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:17,080",
-				"to": "00:00:17,260"
-			},
-			"offsets": {
-				"from": 17080,
-				"to": 17260
-			},
-			"text": " les"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:17,260",
-				"to": "00:00:18,100"
-			},
-			"offsets": {
-				"from": 17260,
-				"to": 18100
-			},
-			"text": " marqueurs"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:18,100",
-				"to": "00:00:18,110"
-			},
-			"offsets": {
-				"from": 18100,
-				"to": 18110
-			},
-			"text": " et"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:18,110",
-				"to": "00:00:18,320"
-			},
-			"offsets": {
-				"from": 18110,
-				"to": 18320
-			},
-			"text": " tes"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:18,320",
-				"to": "00:00:18,860"
-			},
-			"offsets": {
-				"from": 18320,
-				"to": 18860
-			},
-			"text": " autres"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:18,860",
-				"to": "00:00:19,440"
-			},
-			"offsets": {
-				"from": 18860,
-				"to": 19440
-			},
-			"text": " créatures"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:19,520",
-				"to": "00:00:19,660"
-			},
-			"offsets": {
-				"from": 19520,
-				"to": 19660
-			},
-			"text": " avec"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:19,660",
-				"to": "00:00:19,830"
-			},
-			"offsets": {
-				"from": 19660,
-				"to": 19830
-			},
-			"text": " des"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:19,830",
-				"to": "00:00:20,330"
-			},
-			"offsets": {
-				"from": 19830,
-				"to": 20330
-			},
-			"text": " marqueurs"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:20,330",
-				"to": "00:00:20,800"
-			},
-			"offsets": {
-				"from": 20330,
-				"to": 20800
-			},
-			"text": " gagnent"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:20,800",
-				"to": "00:00:20,840"
-			},
-			"offsets": {
-				"from": 20800,
-				"to": 20840
-			},
-			"text": " la"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:20,840",
-				"to": "00:00:21,400"
-			},
-			"offsets": {
-				"from": 20840,
-				"to": 21400
-			},
-			"text": " défense"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:21,400",
-				"to": "00:00:22,120"
-			},
-			"offsets": {
-				"from": 21400,
-				"to": 22120
-			},
-			"text": " talismanique."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:22,440",
-				"to": "00:00:22,890"
-			},
-			"offsets": {
-				"from": 22440,
-				"to": 22890
-			},
-			"text": " Ensuite,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:22,890",
-				"to": "00:00:23,600"
-			},
-			"offsets": {
-				"from": 22890,
-				"to": 23600
-			},
-			"text": " Quark."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:24,120",
-				"to": "00:00:24,240"
-			},
-			"offsets": {
-				"from": 24120,
-				"to": 24240
-			},
-			"text": " Trois"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:24,240",
-				"to": "00:00:25,120"
-			},
-			"offsets": {
-				"from": 24240,
-				"to": 25120
-			},
-			"text": " Manas."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:25,200",
-				"to": "00:00:25,340"
-			},
-			"offsets": {
-				"from": 25200,
-				"to": 25340
-			},
-			"text": " Une"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:25,340",
-				"to": "00:00:25,620"
-			},
-			"offsets": {
-				"from": 25340,
-				"to": 25620
-			},
-			"text": " unes"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:25,620",
-				"to": "00:00:25,910"
-			},
-			"offsets": {
-				"from": 25620,
-				"to": 25910
-			},
-			"text": " deux"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:25,910",
-				"to": "00:00:26,270"
-			},
-			"offsets": {
-				"from": 25910,
-				"to": 26270
-			},
-			"text": " qui"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:26,270",
-				"to": "00:00:26,350"
-			},
-			"offsets": {
-				"from": 26270,
-				"to": 26350
-			},
-			"text": " te"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:26,350",
-				"to": "00:00:26,700"
-			},
-			"offsets": {
-				"from": 26350,
-				"to": 26700
-			},
-			"text": " créent"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:26,700",
-				"to": "00:00:26,860"
-			},
-			"offsets": {
-				"from": 26700,
-				"to": 26860
-			},
-			"text": " un"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:26,860",
-				"to": "00:00:27,320"
-			},
-			"offsets": {
-				"from": 26860,
-				"to": 27320
-			},
-			"text": " trésor"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:27,320",
-				"to": "00:00:27,370"
-			},
-			"offsets": {
-				"from": 27320,
-				"to": 27370
-			},
-			"text": " à"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:27,370",
-				"to": "00:00:27,950"
-			},
-			"offsets": {
-				"from": 27370,
-				"to": 27950
-			},
-			"text": " l'entretien"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:27,950",
-				"to": "00:00:28,050"
-			},
-			"offsets": {
-				"from": 27950,
-				"to": 28050
-			},
-			"text": " de"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:28,050",
-				"to": "00:00:28,230"
-			},
-			"offsets": {
-				"from": 28050,
-				"to": 28230
-			},
-			"text": " chaque"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:28,230",
-				"to": "00:00:28,880"
-			},
-			"offsets": {
-				"from": 28230,
-				"to": 28880
-			},
-			"text": " joueur."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:29,440",
-				"to": "00:00:29,560"
-			},
-			"offsets": {
-				"from": 29440,
-				"to": 29560
-			},
-			"text": ""
-		},
-		{
-			"timestamps": {
-				"from": "00:00:29,560",
-				"to": "00:00:29,600"
-			},
-			"offsets": {
-				"from": 29560,
-				"to": 29600
-			},
-			"text": " Par"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:29,600",
-				"to": "00:00:30,070"
-			},
-			"offsets": {
-				"from": 29600,
-				"to": 30070
-			},
-			"text": " contre,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:30,070",
-				"to": "00:00:30,150"
-			},
-			"offsets": {
-				"from": 30070,
-				"to": 30150
-			},
-			"text": " tu"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:30,150",
-				"to": "00:00:30,250"
-			},
-			"offsets": {
-				"from": 30150,
-				"to": 30250
-			},
-			"text": " ne"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:30,250",
-				"to": "00:00:30,580"
-			},
-			"offsets": {
-				"from": 30250,
-				"to": 30580
-			},
-			"text": " peux"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:30,580",
-				"to": "00:00:30,640"
-			},
-			"offsets": {
-				"from": 30580,
-				"to": 30640
-			},
-			"text": " pas"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:30,640",
-				"to": "00:00:31,120"
-			},
-			"offsets": {
-				"from": 30640,
-				"to": 31120
-			},
-			"text": " sacrifier"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:31,120",
-				"to": "00:00:31,340"
-			},
-			"offsets": {
-				"from": 31120,
-				"to": 31340
-			},
-			"text": " tes"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:31,340",
-				"to": "00:00:31,880"
-			},
-			"offsets": {
-				"from": 31340,
-				"to": 31880
-			},
-			"text": " trésors."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:32,360",
-				"to": "00:00:32,480"
-			},
-			"offsets": {
-				"from": 32360,
-				"to": 32480
-			},
-			"text": " En"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:32,480",
-				"to": "00:00:32,660"
-			},
-			"offsets": {
-				"from": 32480,
-				"to": 32660
-			},
-			"text": " Commander,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:32,660",
-				"to": "00:00:32,780"
-			},
-			"offsets": {
-				"from": 32660,
-				"to": 32780
-			},
-			"text": " ça"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:32,780",
-				"to": "00:00:33,020"
-			},
-			"offsets": {
-				"from": 32780,
-				"to": 33020
-			},
-			"text": " fait"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:33,020",
-				"to": "00:00:33,500"
-			},
-			"offsets": {
-				"from": 33020,
-				"to": 33500
-			},
-			"text": " quand"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:33,500",
-				"to": "00:00:33,560"
-			},
-			"offsets": {
-				"from": 33500,
-				"to": 33560
-			},
-			"text": " même"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:33,560",
-				"to": "00:00:33,920"
-			},
-			"offsets": {
-				"from": 33560,
-				"to": 33920
-			},
-			"text": " quatre"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:33,920",
-				"to": "00:00:34,480"
-			},
-			"offsets": {
-				"from": 33920,
-				"to": 34480
-			},
-			"text": " artefacts"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:34,480",
-				"to": "00:00:34,640"
-			},
-			"offsets": {
-				"from": 34480,
-				"to": 34640
-			},
-			"text": " par"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:34,640",
-				"to": "00:00:34,860"
-			},
-			"offsets": {
-				"from": 34640,
-				"to": 34860
-			},
-			"text": " tour"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:34,860",
-				"to": "00:00:34,970"
-			},
-			"offsets": {
-				"from": 34860,
-				"to": 34970
-			},
-			"text": " de"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:34,970",
-				"to": "00:00:35,440"
-			},
-			"offsets": {
-				"from": 34970,
-				"to": 35440
-			},
-			"text": " table."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:35,840",
-				"to": "00:00:35,840"
-			},
-			"offsets": {
-				"from": 35840,
-				"to": 35840
-			},
-			"text": " Et"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:35,840",
-				"to": "00:00:35,890"
-			},
-			"offsets": {
-				"from": 35840,
-				"to": 35890
-			},
-			"text": " si"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:35,890",
-				"to": "00:00:35,960"
-			},
-			"offsets": {
-				"from": 35890,
-				"to": 35960
-			},
-			"text": " tes"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:35,960",
-				"to": "00:00:36,590"
-			},
-			"offsets": {
-				"from": 35960,
-				"to": 36590
-			},
-			"text": " adversaires"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:36,590",
-				"to": "00:00:36,730"
-			},
-			"offsets": {
-				"from": 36590,
-				"to": 36730
-			},
-			"text": " le"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:36,730",
-				"to": "00:00:37,520"
-			},
-			"offsets": {
-				"from": 36730,
-				"to": 37520
-			},
-			"text": " détruisent,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:37,520",
-				"to": "00:00:37,740"
-			},
-			"offsets": {
-				"from": 37520,
-				"to": 37740
-			},
-			"text": " tu"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:37,740",
-				"to": "00:00:38,130"
-			},
-			"offsets": {
-				"from": 37740,
-				"to": 38130
-			},
-			"text": " récupères"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:38,130",
-				"to": "00:00:38,340"
-			},
-			"offsets": {
-				"from": 38130,
-				"to": 38340
-			},
-			"text": " d'un"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:38,340",
-				"to": "00:00:38,570"
-			},
-			"offsets": {
-				"from": 38340,
-				"to": 38570
-			},
-			"text": " coup"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:38,570",
-				"to": "00:00:38,910"
-			},
-			"offsets": {
-				"from": 38570,
-				"to": 38910
-			},
-			"text": " tout"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:38,910",
-				"to": "00:00:39,140"
-			},
-			"offsets": {
-				"from": 38910,
-				"to": 39140
-			},
-			"text": " ce"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:39,140",
-				"to": "00:00:39,360"
-			},
-			"offsets": {
-				"from": 39140,
-				"to": 39360
-			},
-			"text": " mana."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:39,880",
-				"to": "00:00:40,000"
-			},
-			"offsets": {
-				"from": 39880,
-				"to": 40000
-			},
-			"text": " Pour"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:40,000",
-				"to": "00:00:40,390"
-			},
-			"offsets": {
-				"from": 40000,
-				"to": 40390
-			},
-			"text": " finir,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:40,390",
-				"to": "00:00:41,280"
-			},
-			"offsets": {
-				"from": 40390,
-				"to": 41280
-			},
-			"text": " Hettit."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:41,760",
-				"to": "00:00:41,760"
-			},
-			"offsets": {
-				"from": 41760,
-				"to": 41760
-			},
-			"text": " Un"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:41,760",
-				"to": "00:00:42,390"
-			},
-			"offsets": {
-				"from": 41760,
-				"to": 42390
-			},
-			"text": " enchantement"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:42,390",
-				"to": "00:00:42,840"
-			},
-			"offsets": {
-				"from": 42390,
-				"to": 42840
-			},
-			"text": " rouge"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:42,840",
-				"to": "00:00:42,910"
-			},
-			"offsets": {
-				"from": 42840,
-				"to": 42910
-			},
-			"text": " et"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:42,910",
-				"to": "00:00:43,140"
-			},
-			"offsets": {
-				"from": 42910,
-				"to": 43140
-			},
-			"text": " vert"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:43,140",
-				"to": "00:00:43,220"
-			},
-			"offsets": {
-				"from": 43140,
-				"to": 43220
-			},
-			"text": " à"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:43,220",
-				"to": "00:00:43,660"
-			},
-			"offsets": {
-				"from": 43220,
-				"to": 43660
-			},
-			"text": " trois"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:43,660",
-				"to": "00:00:44,240"
-			},
-			"offsets": {
-				"from": 43660,
-				"to": 44240
-			},
-			"text": " Manas."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:45,000",
-				"to": "00:00:45,000"
-			},
-			"offsets": {
-				"from": 45000,
-				"to": 45000
-			},
-			"text": " Tes"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:45,000",
-				"to": "00:00:45,290"
-			},
-			"offsets": {
-				"from": 45000,
-				"to": 45290
-			},
-			"text": " créatures"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:45,290",
-				"to": "00:00:45,550"
-			},
-			"offsets": {
-				"from": 45290,
-				"to": 45550
-			},
-			"text": " ont"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:45,550",
-				"to": "00:00:45,720"
-			},
-			"offsets": {
-				"from": 45550,
-				"to": 45720
-			},
-			"text": " la"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:45,720",
-				"to": "00:00:46,480"
-			},
-			"offsets": {
-				"from": 45720,
-				"to": 46480
-			},
-			"text": " célérité."
-		},
-		{
-			"timestamps": {
-				"from": "00:00:46,960",
-				"to": "00:00:46,960"
-			},
-			"offsets": {
-				"from": 46960,
-				"to": 46960
-			},
-			"text": " Et"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:46,960",
-				"to": "00:00:47,080"
-			},
-			"offsets": {
-				"from": 46960,
-				"to": 47080
-			},
-			"text": " en"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:47,080",
-				"to": "00:00:47,890"
-			},
-			"offsets": {
-				"from": 47080,
-				"to": 47890
-			},
-			"text": " arrivant,"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:47,890",
-				"to": "00:00:47,890"
-			},
-			"offsets": {
-				"from": 47890,
-				"to": 47890
-			},
-			"text": " ils"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:47,890",
-				"to": "00:00:48,100"
-			},
-			"offsets": {
-				"from": 47890,
-				"to": 48100
-			},
-			"text": " te"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:48,100",
-				"to": "00:00:48,270"
-			},
-			"offsets": {
-				"from": 48100,
-				"to": 48270
-			},
-			"text": " mettent"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:48,270",
-				"to": "00:00:48,440"
-			},
-			"offsets": {
-				"from": 48270,
-				"to": 48440
-			},
-			"text": " un"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:48,440",
-				"to": "00:00:48,860"
-			},
-			"offsets": {
-				"from": 48440,
-				"to": 48860
-			},
-			"text": " terrain"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:48,860",
-				"to": "00:00:48,860"
-			},
-			"offsets": {
-				"from": 48860,
-				"to": 48860
-			},
-			"text": " des"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:48,860",
-				"to": "00:00:49,100"
-			},
-			"offsets": {
-				"from": 48860,
-				"to": 49100
-			},
-			"text": " cinq"
-		},
-		{
-			"timestamps": {
-				"from": "00:00:49,100",
-				"to": "00:00:49,480"
-			},
-			"offsets": {
-				"from": 49100,
-				"to": 49480
+				"from": 1140,
+				"to": 1340
 			},
 			"text": " cartes"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:49,480",
-				"to": "00:00:49,640"
+				"from": "00:00:01,340",
+				"to": "00:00:01,610"
 			},
 			"offsets": {
-				"from": 49480,
-				"to": 49640
+				"from": 1340,
+				"to": 1610
 			},
-			"text": " du"
+			"text": " Star"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:49,640",
-				"to": "00:00:49,990"
+				"from": "00:00:01,610",
+				"to": "00:00:01,900"
 			},
 			"offsets": {
-				"from": 49640,
-				"to": 49990
+				"from": 1610,
+				"to": 1900
 			},
-			"text": " dessus"
+			"text": " Trek"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:49,990",
-				"to": "00:00:50,250"
+				"from": "00:00:01,900",
+				"to": "00:00:02,450"
 			},
 			"offsets": {
-				"from": 49990,
-				"to": 50250
+				"from": 1900,
+				"to": 2450
+			},
+			"text": " viennent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,450",
+				"to": "00:00:02,800"
+			},
+			"offsets": {
+				"from": 2450,
+				"to": 2800
+			},
+			"text": " d'être"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,800",
+				"to": "00:00:03,600"
+			},
+			"offsets": {
+				"from": 2800,
+				"to": 3600
+			},
+			"text": " dévoilées."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,600",
+				"to": "00:00:03,770"
+			},
+			"offsets": {
+				"from": 3600,
+				"to": 3770
+			},
+			"text": " On"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,770",
+				"to": "00:00:04,360"
+			},
+			"offsets": {
+				"from": 3770,
+				"to": 4360
+			},
+			"text": " regarde"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,360",
+				"to": "00:00:04,820"
+			},
+			"offsets": {
+				"from": 4360,
+				"to": 4820
+			},
+			"text": " ça."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,820",
+				"to": "00:00:05,010"
+			},
+			"offsets": {
+				"from": 4820,
+				"to": 5010
+			},
+			"text": " Le"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,010",
+				"to": "00:00:05,970"
+			},
+			"offsets": {
+				"from": 5010,
+				"to": 5970
+			},
+			"text": " docteur"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,970",
+				"to": "00:00:06,300"
+			},
+			"offsets": {
+				"from": 5970,
+				"to": 6300
+			},
+			"text": " Joseph"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,300",
+				"to": "00:00:06,720"
+			},
+			"offsets": {
+				"from": 6300,
+				"to": 6720
+			},
+			"text": " M."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,720",
+				"to": "00:00:07,680"
+			},
+			"offsets": {
+				"from": 6720,
+				"to": 7680
+			},
+			"text": " Benga."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,680",
+				"to": "00:00:08,190"
+			},
+			"offsets": {
+				"from": 7680,
+				"to": 8190
+			},
+			"text": " Quatre"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,190",
+				"to": "00:00:08,880"
+			},
+			"offsets": {
+				"from": 8190,
+				"to": 8880
+			},
+			"text": " Manas."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,880",
+				"to": "00:00:09,050"
+			},
+			"offsets": {
+				"from": 8880,
+				"to": 9050
+			},
+			"text": " Une"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,050",
+				"to": "00:00:09,410"
+			},
+			"offsets": {
+				"from": 9050,
+				"to": 9410
+			},
+			"text": " 3-3"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,410",
+				"to": "00:00:09,570"
+			},
+			"offsets": {
+				"from": 9410,
+				"to": 9570
+			},
+			"text": " qui"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,570",
+				"to": "00:00:10,020"
+			},
+			"offsets": {
+				"from": 9570,
+				"to": 10020
+			},
+			"text": " double"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,020",
+				"to": "00:00:10,050"
+			},
+			"offsets": {
+				"from": 10020,
+				"to": 10050
+			},
+			"text": " les"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,050",
+				"to": "00:00:10,780"
+			},
+			"offsets": {
+				"from": 10050,
+				"to": 10780
+			},
+			"text": " marqueurs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,780",
+				"to": "00:00:10,820"
+			},
+			"offsets": {
+				"from": 10780,
+				"to": 10820
+			},
+			"text": " que"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,820",
+				"to": "00:00:10,990"
+			},
+			"offsets": {
+				"from": 10820,
+				"to": 10990
+			},
+			"text": " tu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,990",
+				"to": "00:00:11,420"
+			},
+			"offsets": {
+				"from": 10990,
+				"to": 11420
+			},
+			"text": " poses"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,420",
+				"to": "00:00:11,680"
+			},
+			"offsets": {
+				"from": 11420,
+				"to": 11680
 			},
 			"text": " sur"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:50,250",
-				"to": "00:00:50,560"
+				"from": "00:00:11,680",
+				"to": "00:00:12,210"
 			},
 			"offsets": {
-				"from": 50250,
-				"to": 50560
+				"from": 11680,
+				"to": 12210
 			},
-			"text": " le"
+			"text": " tes"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:50,560",
-				"to": "00:00:50,620"
+				"from": "00:00:12,210",
+				"to": "00:00:13,040"
 			},
 			"offsets": {
-				"from": 50560,
-				"to": 50620
+				"from": 12210,
+				"to": 13040
 			},
-			"text": " champ"
+			"text": " créatures."
 		},
 		{
 			"timestamps": {
-				"from": "00:00:50,620",
-				"to": "00:00:50,650"
+				"from": "00:00:13,040",
+				"to": "00:00:13,250"
 			},
 			"offsets": {
-				"from": 50620,
-				"to": 50650
+				"from": 13040,
+				"to": 13250
+			},
+			"text": " Pas"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,250",
+				"to": "00:00:13,930"
+			},
+			"offsets": {
+				"from": 13250,
+				"to": 13930
+			},
+			"text": " seulement"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,930",
+				"to": "00:00:14,190"
+			},
+			"offsets": {
+				"from": 13930,
+				"to": 14190
+			},
+			"text": " les"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,190",
+				"to": "00:00:14,380"
+			},
+			"offsets": {
+				"from": 14190,
+				"to": 14380
+			},
+			"text": " plus"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,380",
+				"to": "00:00:15,040"
+			},
+			"offsets": {
+				"from": 14380,
+				"to": 15040
+			},
+			"text": " simples,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,040",
+				"to": "00:00:15,410"
+			},
+			"offsets": {
+				"from": 15040,
+				"to": 15410
+			},
+			"text": " comme"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,410",
+				"to": "00:00:15,970"
+			},
+			"offsets": {
+				"from": 15410,
+				"to": 15970
+			},
+			"text": " évolution"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,970",
+				"to": "00:00:17,000"
+			},
+			"offsets": {
+				"from": 15970,
+				"to": 17000
+			},
+			"text": " bifurcatrice."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,000",
+				"to": "00:00:17,320"
+			},
+			"offsets": {
+				"from": 17000,
+				"to": 17320
+			},
+			"text": " Tous"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,320",
+				"to": "00:00:17,630"
+			},
+			"offsets": {
+				"from": 17320,
+				"to": 17630
+			},
+			"text": " les"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,630",
+				"to": "00:00:18,280"
+			},
+			"offsets": {
+				"from": 17630,
+				"to": 18280
+			},
+			"text": " marqueurs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,280",
+				"to": "00:00:18,490"
+			},
+			"offsets": {
+				"from": 18280,
+				"to": 18490
+			},
+			"text": " et"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,490",
+				"to": "00:00:18,590"
+			},
+			"offsets": {
+				"from": 18490,
+				"to": 18590
+			},
+			"text": " tes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,590",
+				"to": "00:00:18,970"
+			},
+			"offsets": {
+				"from": 18590,
+				"to": 18970
+			},
+			"text": " autres"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,970",
+				"to": "00:00:19,560"
+			},
+			"offsets": {
+				"from": 18970,
+				"to": 19560
+			},
+			"text": " créatures"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,560",
+				"to": "00:00:19,800"
+			},
+			"offsets": {
+				"from": 19560,
+				"to": 19800
+			},
+			"text": " avec"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,800",
+				"to": "00:00:19,980"
+			},
+			"offsets": {
+				"from": 19800,
+				"to": 19980
+			},
+			"text": " des"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,980",
+				"to": "00:00:20,700"
+			},
+			"offsets": {
+				"from": 19980,
+				"to": 20700
+			},
+			"text": " marqueurs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,700",
+				"to": "00:00:21,070"
+			},
+			"offsets": {
+				"from": 20700,
+				"to": 21070
+			},
+			"text": " gagnent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,070",
+				"to": "00:00:21,070"
+			},
+			"offsets": {
+				"from": 21070,
+				"to": 21070
+			},
+			"text": " la"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,070",
+				"to": "00:00:21,490"
+			},
+			"offsets": {
+				"from": 21070,
+				"to": 21490
+			},
+			"text": " défense"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,490",
+				"to": "00:00:22,480"
+			},
+			"offsets": {
+				"from": 21490,
+				"to": 22480
+			},
+			"text": " talismanique."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,480",
+				"to": "00:00:23,240"
+			},
+			"offsets": {
+				"from": 22480,
+				"to": 23240
+			},
+			"text": " Ensuite"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,240",
+				"to": "00:00:24,160"
+			},
+			"offsets": {
+				"from": 23240,
+				"to": 24160
+			},
+			"text": " Quark."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,160",
+				"to": "00:00:24,560"
+			},
+			"offsets": {
+				"from": 24160,
+				"to": 24560
+			},
+			"text": " Trois"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,560",
+				"to": "00:00:25,240"
+			},
+			"offsets": {
+				"from": 24560,
+				"to": 25240
+			},
+			"text": " Manas."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,240",
+				"to": "00:00:25,490"
+			},
+			"offsets": {
+				"from": 25240,
+				"to": 25490
+			},
+			"text": " Une"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,490",
+				"to": "00:00:26,150"
+			},
+			"offsets": {
+				"from": 25490,
+				"to": 26150
+			},
+			"text": " 1-2"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,150",
+				"to": "00:00:26,390"
+			},
+			"offsets": {
+				"from": 26150,
+				"to": 26390
+			},
+			"text": " qui"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,390",
+				"to": "00:00:26,520"
+			},
+			"offsets": {
+				"from": 26390,
+				"to": 26520
+			},
+			"text": " te"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,520",
+				"to": "00:00:26,800"
+			},
+			"offsets": {
+				"from": 26520,
+				"to": 26800
+			},
+			"text": " crée"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,800",
+				"to": "00:00:27,120"
+			},
+			"offsets": {
+				"from": 26800,
+				"to": 27120
+			},
+			"text": " un"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,120",
+				"to": "00:00:27,520"
+			},
+			"offsets": {
+				"from": 27120,
+				"to": 27520
+			},
+			"text": " trésor"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,520",
+				"to": "00:00:27,610"
+			},
+			"offsets": {
+				"from": 27520,
+				"to": 27610
+			},
+			"text": " à"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,610",
+				"to": "00:00:28,430"
+			},
+			"offsets": {
+				"from": 27610,
+				"to": 28430
+			},
+			"text": " l'entretien"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,430",
+				"to": "00:00:28,830"
+			},
+			"offsets": {
+				"from": 28430,
+				"to": 28830
 			},
 			"text": " de"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:50,650",
-				"to": "00:00:51,160"
+				"from": "00:00:28,830",
+				"to": "00:00:28,900"
 			},
 			"offsets": {
-				"from": 50650,
-				"to": 51160
+				"from": 28830,
+				"to": 28900
+			},
+			"text": " chaque"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,900",
+				"to": "00:00:29,480"
+			},
+			"offsets": {
+				"from": 28900,
+				"to": 29480
+			},
+			"text": " joueur."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,480",
+				"to": "00:00:29,600"
+			},
+			"offsets": {
+				"from": 29480,
+				"to": 29600
+			},
+			"text": ""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,600",
+				"to": "00:00:29,670"
+			},
+			"offsets": {
+				"from": 29600,
+				"to": 29670
+			},
+			"text": " Par"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,670",
+				"to": "00:00:30,190"
+			},
+			"offsets": {
+				"from": 29670,
+				"to": 30190
+			},
+			"text": " contre,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,190",
+				"to": "00:00:30,390"
+			},
+			"offsets": {
+				"from": 30190,
+				"to": 30390
+			},
+			"text": " tu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,390",
+				"to": "00:00:30,630"
+			},
+			"offsets": {
+				"from": 30390,
+				"to": 30630
+			},
+			"text": " ne"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,630",
+				"to": "00:00:30,760"
+			},
+			"offsets": {
+				"from": 30630,
+				"to": 30760
+			},
+			"text": " peux"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,760",
+				"to": "00:00:30,960"
+			},
+			"offsets": {
+				"from": 30760,
+				"to": 30960
+			},
+			"text": " pas"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,960",
+				"to": "00:00:31,490"
+			},
+			"offsets": {
+				"from": 30960,
+				"to": 31490
+			},
+			"text": " sacrifier"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,490",
+				"to": "00:00:31,670"
+			},
+			"offsets": {
+				"from": 31490,
+				"to": 31670
+			},
+			"text": " tes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,670",
+				"to": "00:00:32,400"
+			},
+			"offsets": {
+				"from": 31670,
+				"to": 32400
+			},
+			"text": " trésors."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,400",
+				"to": "00:00:32,520"
+			},
+			"offsets": {
+				"from": 32400,
+				"to": 32520
+			},
+			"text": " En"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,520",
+				"to": "00:00:33,030"
+			},
+			"offsets": {
+				"from": 32520,
+				"to": 33030
+			},
+			"text": " Commander,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,030",
+				"to": "00:00:33,110"
+			},
+			"offsets": {
+				"from": 33030,
+				"to": 33110
+			},
+			"text": " ça"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,110",
+				"to": "00:00:33,290"
+			},
+			"offsets": {
+				"from": 33110,
+				"to": 33290
+			},
+			"text": " fait"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,290",
+				"to": "00:00:33,550"
+			},
+			"offsets": {
+				"from": 33290,
+				"to": 33550
+			},
+			"text": " quand"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,550",
+				"to": "00:00:33,730"
+			},
+			"offsets": {
+				"from": 33550,
+				"to": 33730
+			},
+			"text": " même"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,730",
+				"to": "00:00:34,010"
+			},
+			"offsets": {
+				"from": 33730,
+				"to": 34010
+			},
+			"text": " quatre"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,010",
+				"to": "00:00:34,520"
+			},
+			"offsets": {
+				"from": 34010,
+				"to": 34520
+			},
+			"text": " artefacts"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,520",
+				"to": "00:00:34,800"
+			},
+			"offsets": {
+				"from": 34520,
+				"to": 34800
+			},
+			"text": " par"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,800",
+				"to": "00:00:35,190"
+			},
+			"offsets": {
+				"from": 34800,
+				"to": 35190
+			},
+			"text": " tour"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,190",
+				"to": "00:00:35,880"
+			},
+			"offsets": {
+				"from": 35190,
+				"to": 35880
+			},
+			"text": " de"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,880",
+				"to": "00:00:35,880"
+			},
+			"offsets": {
+				"from": 35880,
+				"to": 35880
+			},
+			"text": " table."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,880",
+				"to": "00:00:36,000"
+			},
+			"offsets": {
+				"from": 35880,
+				"to": 36000
+			},
+			"text": " Et"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,000",
+				"to": "00:00:36,100"
+			},
+			"offsets": {
+				"from": 36000,
+				"to": 36100
+			},
+			"text": " si"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,100",
+				"to": "00:00:36,270"
+			},
+			"offsets": {
+				"from": 36100,
+				"to": 36270
+			},
+			"text": " tes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,270",
+				"to": "00:00:37,000"
+			},
+			"offsets": {
+				"from": 36270,
+				"to": 37000
+			},
+			"text": " adversaires"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,000",
+				"to": "00:00:37,030"
+			},
+			"offsets": {
+				"from": 37000,
+				"to": 37030
+			},
+			"text": " le"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,030",
+				"to": "00:00:37,780"
+			},
+			"offsets": {
+				"from": 37030,
+				"to": 37780
+			},
+			"text": " détruisent,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,780",
+				"to": "00:00:37,850"
+			},
+			"offsets": {
+				"from": 37780,
+				"to": 37850
+			},
+			"text": " tu"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,850",
+				"to": "00:00:38,460"
+			},
+			"offsets": {
+				"from": 37850,
+				"to": 38460
+			},
+			"text": " récupères"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,460",
+				"to": "00:00:38,700"
+			},
+			"offsets": {
+				"from": 38460,
+				"to": 38700
+			},
+			"text": " d'un"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,700",
+				"to": "00:00:38,970"
+			},
+			"offsets": {
+				"from": 38700,
+				"to": 38970
+			},
+			"text": " coup"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,970",
+				"to": "00:00:39,250"
+			},
+			"offsets": {
+				"from": 38970,
+				"to": 39250
+			},
+			"text": " tout"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,250",
+				"to": "00:00:39,540"
+			},
+			"offsets": {
+				"from": 39250,
+				"to": 39540
+			},
+			"text": " ce"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,540",
+				"to": "00:00:39,920"
+			},
+			"offsets": {
+				"from": 39540,
+				"to": 39920
+			},
+			"text": " mana."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,920",
+				"to": "00:00:40,310"
+			},
+			"offsets": {
+				"from": 39920,
+				"to": 40310
+			},
+			"text": " Pour"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,310",
+				"to": "00:00:41,060"
+			},
+			"offsets": {
+				"from": 40310,
+				"to": 41060
+			},
+			"text": " finir,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,060",
+				"to": "00:00:41,800"
+			},
+			"offsets": {
+				"from": 41060,
+				"to": 41800
+			},
+			"text": " Hétit."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,800",
+				"to": "00:00:41,970"
+			},
+			"offsets": {
+				"from": 41800,
+				"to": 41970
+			},
+			"text": " Un"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,970",
+				"to": "00:00:42,960"
+			},
+			"offsets": {
+				"from": 41970,
+				"to": 42960
+			},
+			"text": " enchantement"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,960",
+				"to": "00:00:43,350"
+			},
+			"offsets": {
+				"from": 42960,
+				"to": 43350
+			},
+			"text": " rouge"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,350",
+				"to": "00:00:43,700"
+			},
+			"offsets": {
+				"from": 43350,
+				"to": 43700
+			},
+			"text": " et"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,700",
+				"to": "00:00:43,840"
+			},
+			"offsets": {
+				"from": 43700,
+				"to": 43840
+			},
+			"text": " vert"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,840",
+				"to": "00:00:43,920"
+			},
+			"offsets": {
+				"from": 43840,
+				"to": 43920
+			},
+			"text": " à"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,920",
+				"to": "00:00:44,320"
+			},
+			"offsets": {
+				"from": 43920,
+				"to": 44320
+			},
+			"text": " trois"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,320",
+				"to": "00:00:45,040"
+			},
+			"offsets": {
+				"from": 44320,
+				"to": 45040
+			},
+			"text": " Manas."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,040",
+				"to": "00:00:45,270"
+			},
+			"offsets": {
+				"from": 45040,
+				"to": 45270
+			},
+			"text": " Tes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,270",
+				"to": "00:00:46,180"
+			},
+			"offsets": {
+				"from": 45270,
+				"to": 46180
+			},
+			"text": " créatures"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,180",
+				"to": "00:00:46,200"
+			},
+			"offsets": {
+				"from": 46180,
+				"to": 46200
+			},
+			"text": " ont"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,200",
+				"to": "00:00:46,340"
+			},
+			"offsets": {
+				"from": 46200,
+				"to": 46340
+			},
+			"text": " la"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,340",
+				"to": "00:00:47,000"
+			},
+			"offsets": {
+				"from": 46340,
+				"to": 47000
+			},
+			"text": " célérité."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,000",
+				"to": "00:00:47,130"
+			},
+			"offsets": {
+				"from": 47000,
+				"to": 47130
+			},
+			"text": " Et"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,130",
+				"to": "00:00:47,260"
+			},
+			"offsets": {
+				"from": 47130,
+				"to": 47260
+			},
+			"text": " en"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,260",
+				"to": "00:00:48,060"
+			},
+			"offsets": {
+				"from": 47260,
+				"to": 48060
+			},
+			"text": " arrivant,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,060",
+				"to": "00:00:48,130"
+			},
+			"offsets": {
+				"from": 48060,
+				"to": 48130
+			},
+			"text": " ils"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,130",
+				"to": "00:00:48,160"
+			},
+			"offsets": {
+				"from": 48130,
+				"to": 48160
+			},
+			"text": " te"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,160",
+				"to": "00:00:48,370"
+			},
+			"offsets": {
+				"from": 48160,
+				"to": 48370
+			},
+			"text": " mettent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,370",
+				"to": "00:00:48,460"
+			},
+			"offsets": {
+				"from": 48370,
+				"to": 48460
+			},
+			"text": " un"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,460",
+				"to": "00:00:48,900"
+			},
+			"offsets": {
+				"from": 48460,
+				"to": 48900
+			},
+			"text": " terrain"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,900",
+				"to": "00:00:48,900"
+			},
+			"offsets": {
+				"from": 48900,
+				"to": 48900
+			},
+			"text": " des"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,900",
+				"to": "00:00:49,140"
+			},
+			"offsets": {
+				"from": 48900,
+				"to": 49140
+			},
+			"text": " cinq"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,140",
+				"to": "00:00:49,520"
+			},
+			"offsets": {
+				"from": 49140,
+				"to": 49520
+			},
+			"text": " cartes"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,520",
+				"to": "00:00:49,680"
+			},
+			"offsets": {
+				"from": 49520,
+				"to": 49680
+			},
+			"text": " du"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,680",
+				"to": "00:00:50,030"
+			},
+			"offsets": {
+				"from": 49680,
+				"to": 50030
+			},
+			"text": " dessus"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,030",
+				"to": "00:00:50,370"
+			},
+			"offsets": {
+				"from": 50030,
+				"to": 50370
+			},
+			"text": " sur"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,370",
+				"to": "00:00:50,660"
+			},
+			"offsets": {
+				"from": 50370,
+				"to": 50660
+			},
+			"text": " le"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,660",
+				"to": "00:00:50,870"
+			},
+			"offsets": {
+				"from": 50660,
+				"to": 50870
+			},
+			"text": " champ"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,870",
+				"to": "00:00:51,000"
+			},
+			"offsets": {
+				"from": 50870,
+				"to": 51000
+			},
+			"text": " de"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:51,000",
+				"to": "00:00:51,840"
+			},
+			"offsets": {
+				"from": 51000,
+				"to": 51840
 			},
 			"text": " bataille."
 		},
 		{
 			"timestamps": {
 				"from": "00:00:51,840",
-				"to": "00:00:51,840"
+				"to": "00:00:51,960"
 			},
 			"offsets": {
 				"from": 51840,
-				"to": 51840
+				"to": 51960
 			},
 			"text": " De"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:51,840",
-				"to": "00:00:51,840"
+				"from": "00:00:51,960",
+				"to": "00:00:52,170"
 			},
 			"offsets": {
-				"from": 51840,
-				"to": 51840
+				"from": 51960,
+				"to": 52170
 			},
 			"text": " quoi"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:51,840",
-				"to": "00:00:52,050"
+				"from": "00:00:52,170",
+				"to": "00:00:52,490"
 			},
 			"offsets": {
-				"from": 51840,
-				"to": 52050
+				"from": 52170,
+				"to": 52490
 			},
 			"text": " lancer"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:52,050",
-				"to": "00:00:52,270"
+				"from": "00:00:52,490",
+				"to": "00:00:52,650"
 			},
 			"offsets": {
-				"from": 52050,
-				"to": 52270
+				"from": 52490,
+				"to": 52650
 			},
 			"text": " une"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:52,270",
-				"to": "00:00:52,930"
+				"from": "00:00:52,650",
+				"to": "00:00:53,120"
 			},
 			"offsets": {
-				"from": 52270,
-				"to": 52930
+				"from": 52650,
+				"to": 53120
 			},
 			"text": " créature"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:52,930",
-				"to": "00:00:52,990"
+				"from": "00:00:53,120",
+				"to": "00:00:53,130"
 			},
 			"offsets": {
-				"from": 52930,
-				"to": 52990
+				"from": 53120,
+				"to": 53130
 			},
 			"text": " à"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:52,990",
-				"to": "00:00:53,320"
+				"from": "00:00:53,130",
+				"to": "00:00:53,340"
 			},
 			"offsets": {
-				"from": 52990,
-				"to": 53320
+				"from": 53130,
+				"to": 53340
 			},
 			"text": " cinq"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:53,320",
+				"from": "00:00:53,340",
 				"to": "00:00:53,740"
 			},
 			"offsets": {
-				"from": 53320,
+				"from": 53340,
 				"to": 53740
 			},
 			"text": " Manas"
@@ -1648,198 +1637,198 @@
 		{
 			"timestamps": {
 				"from": "00:00:53,740",
-				"to": "00:00:53,760"
+				"to": "00:00:53,840"
 			},
 			"offsets": {
 				"from": 53740,
-				"to": 53760
+				"to": 53840
 			},
 			"text": " au"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:53,760",
-				"to": "00:00:54,010"
+				"from": "00:00:53,840",
+				"to": "00:00:54,160"
 			},
 			"offsets": {
-				"from": 53760,
-				"to": 54010
+				"from": 53840,
+				"to": 54160
 			},
 			"text": " tour"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:54,010",
-				"to": "00:00:54,480"
+				"from": "00:00:54,160",
+				"to": "00:00:54,710"
 			},
 			"offsets": {
-				"from": 54010,
-				"to": 54480
+				"from": 54160,
+				"to": 54710
 			},
 			"text": " suivant"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:54,480",
-				"to": "00:00:54,600"
+				"from": "00:00:54,710",
+				"to": "00:00:55,150"
 			},
 			"offsets": {
-				"from": 54480,
-				"to": 54600
+				"from": 54710,
+				"to": 55150
 			},
 			"text": " et"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:54,600",
-				"to": "00:00:55,440"
+				"from": "00:00:55,150",
+				"to": "00:00:55,580"
 			},
 			"offsets": {
-				"from": 54600,
-				"to": 55440
+				"from": 55150,
+				"to": 55580
 			},
 			"text": " attaquer"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:55,440",
-				"to": "00:00:55,640"
+				"from": "00:00:55,580",
+				"to": "00:00:56,400"
 			},
 			"offsets": {
-				"from": 55440,
-				"to": 55640
+				"from": 55580,
+				"to": 56400
 			},
 			"text": " direct."
 		},
 		{
 			"timestamps": {
-				"from": "00:00:56,480",
-				"to": "00:00:56,600"
+				"from": "00:00:56,400",
+				"to": "00:00:56,520"
 			},
 			"offsets": {
-				"from": 56480,
-				"to": 56600
+				"from": 56400,
+				"to": 56520
 			},
 			"text": " Et"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:56,600",
-				"to": "00:00:57,110"
+				"from": "00:00:56,520",
+				"to": "00:00:56,750"
 			},
 			"offsets": {
-				"from": 56600,
-				"to": 57110
+				"from": 56520,
+				"to": 56750
 			},
 			"text": " toi,"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:57,110",
-				"to": "00:00:57,630"
+				"from": "00:00:56,750",
+				"to": "00:00:57,040"
 			},
 			"offsets": {
-				"from": 57110,
-				"to": 57630
+				"from": 56750,
+				"to": 57040
 			},
-			"text": " laquelle"
+			"text": " quelle"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:57,630",
-				"to": "00:00:57,680"
+				"from": "00:00:57,040",
+				"to": "00:00:57,290"
 			},
 			"offsets": {
-				"from": 57630,
-				"to": 57680
+				"from": 57040,
+				"to": 57290
 			},
-			"text": " tu"
+			"text": " carte"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:57,680",
-				"to": "00:00:57,980"
+				"from": "00:00:57,290",
+				"to": "00:00:57,880"
 			},
 			"offsets": {
-				"from": 57680,
-				"to": 57980
+				"from": 57290,
+				"to": 57880
 			},
-			"text": " joues"
+			"text": " t'intéresse"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:57,980",
-				"to": "00:00:58,380"
+				"from": "00:00:57,880",
+				"to": "00:00:57,950"
 			},
 			"offsets": {
-				"from": 57980,
-				"to": 58380
+				"from": 57880,
+				"to": 57950
 			},
-			"text": " en"
+			"text": " le"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:58,380",
-				"to": "00:00:58,520"
+				"from": "00:00:57,950",
+				"to": "00:00:58,300"
 			},
 			"offsets": {
-				"from": 58380,
-				"to": 58520
+				"from": 57950,
+				"to": 58300
 			},
-			"text": " premier"
+			"text": " plus"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:58,520",
-				"to": "00:00:58,720"
+				"from": "00:00:58,300",
+				"to": "00:00:58,320"
 			},
 			"offsets": {
-				"from": 58520,
-				"to": 58720
+				"from": 58300,
+				"to": 58320
 			},
 			"text": " ?"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:59,200",
-				"to": "00:00:59,320"
+				"from": "00:00:58,320",
+				"to": "00:00:58,440"
 			},
 			"offsets": {
-				"from": 59200,
-				"to": 59320
+				"from": 58320,
+				"to": 58440
 			},
 			"text": ""
 		},
 		{
 			"timestamps": {
-				"from": "00:00:59,320",
-				"to": "00:00:59,650"
+				"from": "00:00:58,440",
+				"to": "00:00:58,740"
 			},
 			"offsets": {
-				"from": 59320,
-				"to": 59650
+				"from": 58440,
+				"to": 58740
 			},
 			"text": " Dis-le-moi"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:59,650",
-				"to": "00:00:59,740"
+				"from": "00:00:58,740",
+				"to": "00:00:58,820"
 			},
 			"offsets": {
-				"from": 59650,
-				"to": 59740
+				"from": 58740,
+				"to": 58820
 			},
 			"text": " en"
 		},
 		{
 			"timestamps": {
-				"from": "00:00:59,740",
-				"to": "00:01:00,440"
+				"from": "00:00:58,820",
+				"to": "00:00:59,400"
 			},
 			"offsets": {
-				"from": 59740,
-				"to": 60440
+				"from": 58820,
+				"to": 59400
 			},
 			"text": " commentaire."
 		}

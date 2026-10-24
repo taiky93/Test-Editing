@@ -9,3 +9,6 @@
 ## Vidéos d'ouverture de booster (DA de référence)
 - Modèle validé : **`videos/booster-v7/`** (vidéo 7). Tout est décrit dans `videos/booster-v7/REFERENCE.md` : à suivre pour chaque nouvelle ouverture.
 - Style **V3** (prix verts sans devise, barre à 1 320 px, accroche suspense seulement si hit > 50 €, son cash seulement ≥ 5 €, sons pièce/cash/choc de l'utilisateur). **Ne plus utiliser le style « Gain/Perte »** (deux strikes).
+
+## Musique de fond
+- **Plus jamais de musique / son de fond** dans les vidéos : l'utilisateur ajoute la musique avec l'outil TikTok. Les petits bruitages (whoosh, sons de cartes) restent possibles.
