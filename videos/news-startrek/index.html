@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: Montserrat; font-weight: 600; font-display: block; src: url("assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 800; font-display: block; src: url("assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 900; font-display: block; src: url("assets/fonts/montserrat-latin-900-normal.woff2") format("woff2"); }
+      :root {
+        --accent: #ffd400;
+        --ink: #ffffff;
+        --red: #e8352b;
+        --space: #070b1c;
+        --glow: rgba(90, 160, 255, 0.55);
+        --outline: 3.0px 0.0px 0 #000, 2.1px 2.1px 0 #000, 0.0px 3.0px 0 #000, -2.1px 2.1px 0 #000, -3.0px 0.0px 0 #000, -2.1px -2.1px 0 #000, -0.0px -3.0px 0 #000, 2.1px -2.1px 0 #000, 6.0px 0.0px 0 #000, 5.5px 2.3px 0 #000, 4.2px 4.2px 0 #000, 2.3px 5.5px 0 #000, 0.0px 6.0px 0 #000, -2.3px 5.5px 0 #000, -4.2px 4.2px 0 #000, -5.5px 2.3px 0 #000, -6.0px 0.0px 0 #000, -5.5px -2.3px 0 #000, -4.2px -4.2px 0 #000, -2.3px -5.5px 0 #000, -0.0px -6.0px 0 #000, 2.3px -5.5px 0 #000, 4.2px -4.2px 0 #000, 5.5px -2.3px 0 #000, 0 6px 10px rgba(0,0,0,0.5);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--space); }
+      #root { position: relative; width: 1080px; height: 1920px; font-family: Montserrat, sans-serif; overflow: hidden; }
+      #stage { position: absolute; inset: 0; background: radial-gradient(ellipse 90% 60% at 50% 34%, #16224a 0%, #0b1130 45%, var(--space) 100%); }
+      #stars { position: absolute; left: -60px; top: -60px; width: 1200px; height: 2040px; }
+      .star { position: absolute; border-radius: 50%; background: #fff; }
+      #halo {
+        position: absolute; left: 140px; top: 120px; width: 800px; height: 1080px; border-radius: 50%;
+        background: radial-gradient(ellipse at center, var(--glow) 0%, rgba(90,160,255,0.12) 45%, rgba(90,160,255,0) 70%);
+      }
+      .card {
+        position: absolute; left: 190px; top: 170px; width: 700px; height: 977px;
+        border-radius: 34px; box-shadow: 0 30px 70px rgba(0,0,0,0.65), 0 0 0 3px rgba(255,255,255,0.08);
+        opacity: 0; visibility: hidden;
+      }
+      #badge {
+        position: absolute; left: 56px; top: 64px; z-index: 5;
+        padding: 14px 26px 12px;
+        background: var(--red); color: #fff;
+        font-weight: 900; font-size: 40px; letter-spacing: 0.04em;
+        border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        opacity: 0; visibility: hidden;
+      }
+      .tag {
+        position: absolute; z-index: 4; padding: 10px 22px 8px; border-radius: 12px;
+        font-weight: 900; font-size: 36px; color: #111; background: var(--accent);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.45); opacity: 0; visibility: hidden; white-space: nowrap;
+      }
+      #tag-new { left: 70px; top: 1060px; }
+      #tag-old { left: 590px; top: 1060px; background: #ffffff; }
+      #captions { position: absolute; left: 60px; right: 60px; top: 1250px; height: 330px; z-index: 6; }
+      .chunk {
+        position: absolute; left: 0; right: 0; top: 0;
+        text-align: center;
+        font-weight: 900; font-size: 84px; line-height: 1.12;
+        color: var(--ink); text-shadow: var(--outline);
+        opacity: 0; visibility: hidden;
+      }
+      .w { display: inline-block; margin: 0 0.2em; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="61.6" data-width="1080" data-height="1920">
+      <audio id="voice" src="audio/voiceover.mp3" data-start="0" data-duration="60.68" data-track-index="3"></audio>
+      <audio id="bed" src="audio/bed.wav" data-start="0" data-duration="61.6" data-volume="0.28" data-track-index="4"></audio>
+      <div id="stage" class="clip" data-start="0" data-duration="61.6" data-track-index="0">
+        <div id="stars"></div>
+        <div id="halo"></div>
+        <img class="card" id="c-mbenga" src="assets/cards/mbenga.png" alt="Dr. Joseph M'Benga">
+        <img class="card" id="c-quark" src="assets/cards/quark.png" alt="Quark, Humble Proprietor">
+        <img class="card" id="c-hitit" src="assets/cards/hitit.png" alt="Hit It!">
+        <img class="card" id="c-branching" src="assets/cards/branching-evolution.png" alt="Évolution bifurcatrice">
+        <div class="tag" id="tag-new">NOUVELLE</div>
+        <div class="tag" id="tag-old">DÉJÀ SORTIE</div>
+        <div id="badge">NEWS MAGIC</div>
+        <div id="captions"></div>
+      </div>
+    </div>
+    <script>
+      // Timings come from audio/words.json (Whisper) and scenes.json — no timing is written here.
+      const load = (p) => { const r = new XMLHttpRequest(); r.open("GET", p, false); r.send(null); return JSON.parse(r.responseText); };
+      const words = load("audio/words.json");
+      const scenes = load("scenes.json");
+      const TOTAL = scenes.duration;
+      const T = scenes.foci.map((f) => f.t); // 0 intro, 1 M'Benga, 2 comparaison, 3 retour, 4 Quark, 5 Hit It!, 6 outro
+
+      // ---- Starfield (seeded, deterministic) ----
+      let seed = 1701;
+      const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+      const starsEl = document.getElementById("stars");
+      for (let i = 0; i < 170; i++) {
+        const s = document.createElement("div");
+        s.className = "star";
+        const size = 1.5 + rnd() * 3.5;
+        Object.assign(s.style, { left: rnd() * 1200 + "px", top: rnd() * 2040 + "px", width: size + "px", height: size + "px", opacity: 0.25 + rnd() * 0.7 });
+        starsEl.appendChild(s);
+      }
+
+      // ---- Captions: group words into short TikTok-style chunks ----
+      const chunks = [];
+      let cur = [];
+      words.forEach((w, i) => {
+        cur.push(w);
+        const next = words[i + 1];
+        const strong = /[.:;!?…]$/.test(w.text);
+        const comma = /,$/.test(w.text) && w.end - cur[0].start > 0.6;
+        const chars = cur.map((x) => x.text).join(" ").length;
+        if (!next || strong || comma || cur.length >= 4 || chars > 16 || next.line !== w.line || next.start - w.end > 0.35) { chunks.push(cur); cur = []; }
+      });
+      const capEl = document.getElementById("captions");
+      chunks.forEach((c, ci) => {
+        const el = document.createElement("div");
+        el.className = "chunk";
+        el.id = "chunk-" + ci;
+        c.forEach((w, wi) => {
+          const s = document.createElement("span");
+          s.className = "w";
+          s.id = `w-${ci}-${wi}`;
+          s.textContent = w.text;
+          el.appendChild(s);
+        });
+        capEl.appendChild(el);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Slow star drift for the whole video
+      tl.fromTo("#stars", { y: 0 }, { y: 60, duration: TOTAL, ease: "none" }, 0);
+      tl.fromTo("#halo", { opacity: 0.7 }, { opacity: 1, duration: 2, ease: "sine.inOut", yoyo: true, repeat: Math.floor(TOTAL / 2) - 1 }, 0);
+      tl.fromTo("#badge", { autoAlpha: 0, x: -40 }, { autoAlpha: 1, x: 0, duration: 0.4, ease: "back.out(2)" }, 0.2);
+
+      // ---- Fan of the three cards (intro and outro) ----
+      const fan = [
+        { id: "#c-mbenga", x: -275, y: 120, rotation: -13 },
+        { id: "#c-quark", x: 0, y: 40, rotation: 0 },
+        { id: "#c-hitit", x: 275, y: 120, rotation: 13 },
+      ];
+      const showFan = (at) => fan.forEach((f, i) => {
+        tl.fromTo(f.id, { autoAlpha: 0, x: f.x, y: f.y + 500, rotation: f.rotation * 2, scale: 0.6 },
+          { autoAlpha: 1, x: f.x, y: f.y, rotation: f.rotation, scale: 0.62, duration: 0.7, ease: "back.out(1.4)", immediateRender: false }, at + i * 0.15);
+      });
+      const hideFan = (at, keep) => fan.forEach((f) => {
+        if (f.id !== keep) tl.to(f.id, { autoAlpha: 0, y: f.y + 300, duration: 0.4, ease: "power2.in" }, at);
+      });
+      gsap.set(fan.map((f) => f.id).join(","), { zIndex: 1 });
+      gsap.set("#c-quark", { zIndex: 2 });
+      showFan(0.1);
+
+      // ---- One card in focus: comes forward from the fan, slow push-in while the voice talks ----
+      const focus = (id, start, end, fromFan) => {
+        if (fromFan) {
+          tl.set(id, { zIndex: 3 }, start - 0.35);
+          tl.to(id, { x: 0, y: 0, rotation: 0, scale: 1, duration: 0.7, ease: "power3.inOut" }, start - 0.35);
+        } else {
+          tl.fromTo(id, { autoAlpha: 0, x: 700, rotation: 8, scale: 0.9 },
+            { autoAlpha: 1, x: 0, y: 0, rotation: 0, scale: 1, duration: 0.6, ease: "power3.out", immediateRender: false }, start - 0.3);
+        }
+        tl.to(id, { scale: 1.05, duration: Math.max(0.5, end - start - 0.6), ease: "none" }, start + 0.4);
+      };
+      const leave = (id, at) => tl.to(id, { autoAlpha: 0, x: -760, rotation: -8, duration: 0.5, ease: "power3.in" }, at - 0.4);
+
+      // M'Benga
+      hideFan(T[1] - 0.35, "#c-mbenga");
+      focus("#c-mbenga", T[1], T[2], true);
+      // Comparison: side by side with Évolution bifurcatrice
+      tl.to("#c-mbenga", { x: -258, y: 160, scale: 0.68, duration: 0.5, ease: "power3.inOut" }, T[2] - 0.2);
+      tl.fromTo("#c-branching", { autoAlpha: 0, x: 600, y: 160, scale: 0.68 },
+        { autoAlpha: 1, x: 258, duration: 0.5, ease: "power3.out", immediateRender: false }, T[2] - 0.1);
+      tl.fromTo("#tag-new", { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.25, ease: "back.out(2)", immediateRender: false }, T[2] + 0.3);
+      tl.fromTo("#tag-old", { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.25, ease: "back.out(2)", immediateRender: false }, T[2] + 0.4);
+      tl.to("#tag-new, #tag-old", { autoAlpha: 0, duration: 0.2 }, T[3] - 0.3);
+      tl.to("#c-branching", { autoAlpha: 0, x: 600, duration: 0.45, ease: "power3.in" }, T[3] - 0.25);
+      tl.to("#c-mbenga", { x: 0, y: 0, scale: 1, duration: 0.55, ease: "power3.inOut" }, T[3] - 0.1);
+      tl.to("#c-mbenga", { scale: 1.04, duration: T[4] - T[3] - 1, ease: "none" }, T[3] + 0.5);
+
+      // Quark, then Hit It!
+      leave("#c-mbenga", T[4]);
+      focus("#c-quark", T[4], T[5], false);
+      leave("#c-quark", T[5]);
+      focus("#c-hitit", T[5], T[6], false);
+
+      // Outro: back to the fan of the three cards
+      tl.to("#c-hitit", { autoAlpha: 0, scale: 0.8, duration: 0.35, ease: "power2.in" }, T[6] - 0.35);
+      tl.set(fan.map((f) => f.id).join(","), { zIndex: 1 }, T[6]);
+      tl.set("#c-quark", { zIndex: 2 }, T[6]);
+      showFan(T[6]);
+
+      // ---- Captions timing: one chunk at a time, spoken word in yellow ----
+      chunks.forEach((c, ci) => {
+        const start = c[0].start - 0.04;
+        const nextStart = chunks[ci + 1] ? chunks[ci + 1][0].start - 0.04 : TOTAL;
+        const lastEnd = c[c.length - 1].end;
+        const end = nextStart - lastEnd < 0.7 ? nextStart : lastEnd + 0.35;
+        const id = "#chunk-" + ci;
+        tl.fromTo(id, { autoAlpha: 0, y: 14, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.12, ease: "power2.out" }, start);
+        tl.set(id, { autoAlpha: 0 }, end);
+        c.forEach((w, wi) => {
+          const s = `#w-${ci}-${wi}`;
+          const wEnd = c[wi + 1] ? c[wi + 1].start : Math.min(end, w.end + 0.25);
+          tl.to(s, { color: "#ffd400", scale: 1.05, duration: 0.06, ease: "none" }, w.start);
+          tl.to(s, { color: "#ffffff", scale: 1, duration: 0.06, ease: "none" }, Math.max(w.start + 0.07, wEnd));
+        });
+      });
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

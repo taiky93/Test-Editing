@@ -1,0 +1,12 @@
+{
+ "duration": 61.6,
+ "foci": [
+  {"t": 0.0, "label": "intro : les 3 cartes"},
+  {"t": 4.7, "label": "Dr. Joseph M'Benga"},
+  {"t": 14.8, "label": "comparaison Évolution bifurcatrice"},
+  {"t": 17.9, "label": "retour M'Benga"},
+  {"t": 22.3, "label": "Quark"},
+  {"t": 39.75, "label": "Hit It!"},
+  {"t": 56.35, "label": "outro : laquelle ?"}
+ ]
+}
