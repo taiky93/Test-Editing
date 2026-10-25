@@ -1,0 +1,19 @@
+{
+ "duration": 74.8,
+ "foci": [
+  {"t": 0.0, "layout": "single", "cards": ["lwaxana"], "tags": ["NOUVELLE CARTE · STAR TREK"]},
+  {"t": 5.3, "layout": "pair", "cards": ["throne", "lwaxana"], "tags": ["TRÔNE ERRANT", "EN MIEUX ?"]},
+  {"t": 7.3, "layout": "single", "cards": ["lwaxana"], "tags": ["2 MANAS · 2/2"]},
+  {"t": 13.3, "layout": "single", "cards": ["lwaxana"], "tags": ["DÉCLENCHEMENTS ×2"]},
+  {"t": 24.3, "layout": "pair", "cards": ["throne", "lwaxana"], "tags": ["UN SEUL TYPE", "TOUS LES TYPES"]},
+  {"t": 29.8, "layout": "single", "cards": ["lwaxana"], "tags": ["RESTE ENGAGÉE = EFFET CONTINU"]},
+  {"t": 42.9, "layout": "single", "cards": ["vivi"], "tags": ["MARQUEURS ET DÉGÂTS ×2"]},
+  {"t": 47.5, "layout": "single", "cards": ["sauron"], "tags": ["ORQUES ×2"]},
+  {"t": 50.45, "layout": "single", "cards": ["kaalia"], "tags": ["2 CRÉATURES PAR ATTAQUE"]},
+  {"t": 55.35, "layout": "single", "cards": ["azula"], "tags": ["SORTS COPIÉS ×2"]},
+  {"t": 58.75, "layout": "single", "cards": ["house"], "tags": ["ROBOTS ×2"]},
+  {"t": 61.65, "layout": "grid", "cards": ["vivi", "lwaxana", "sauron", "kaalia", "azula", "house"], "tags": ["COMMANDANT ROUGE + DÉCLENCHEMENTS"]},
+  {"t": 67.4, "layout": "single", "cards": ["lwaxana"], "tags": ["SORTIE LE 13 NOVEMBRE"]},
+  {"t": 70.1, "layout": "fan", "cards": ["vivi", "lwaxana", "kaalia"], "tags": []}
+ ]
+}
