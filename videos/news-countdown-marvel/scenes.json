@@ -1,0 +1,20 @@
+{
+ "duration": 96.6,
+ "foci": [
+  {"t": 0.0, "layout": "fan", "cards": ["guardianship", "strange", "betaray"], "tags": ["SECRET LAIR · COUNTDOWN KIT"]},
+  {"t": 6.25, "layout": "grid", "cards": ["duplication", "guardianship", "timber", "biorhythm", "pact", "strange", "devastation", "betaray", "agent"], "tags": ["30 CARTES · 199,99 $"]},
+  {"t": 16.45, "layout": "pair", "cards": ["devastation", "duplication"], "tags": ["RÉÉDITION", "RÉÉDITION"]},
+  {"t": 25.25, "layout": "single", "cards": ["timber"], "tags": ["≈ 14 €"]},
+  {"t": 28.1, "layout": "single", "cards": ["biorhythm"], "tags": ["≈ 12 €"]},
+  {"t": 30.15, "layout": "single", "cards": ["agent"], "tags": ["≈ 24 €"]},
+  {"t": 32.95, "layout": "single", "cards": ["pact"], "tags": ["≈ 25 €"]},
+  {"t": 34.85, "layout": "single", "cards": ["guardianship"], "tags": ["LA PLUS CHÈRE · ≈ 52 €"]},
+  {"t": 38.25, "layout": "pair", "cards": ["strange", "betaray"], "tags": ["INÉDITE", "INÉDITE"]},
+  {"t": 44.55, "layout": "single", "cards": ["strange"], "tags": ["DARKHOLD DESTINY"]},
+  {"t": 53.25, "layout": "single", "cards": ["betaray"], "tags": ["DARKHOLD DESTINY"]},
+  {"t": 62.25, "layout": "pair", "cards": ["strange", "betaray"], "tags": ["LÉGALES LE 2 AVRIL 2027"]},
+  {"t": 72.75, "layout": "grid", "cards": ["duplication", "guardianship", "timber", "biorhythm", "pact", "strange", "devastation", "betaray", "agent"], "tags": ["RÉÉDITIONS ≈ 193 € · KIT 199,99 $"]},
+  {"t": 83.95, "layout": "grid", "cards": ["duplication", "guardianship", "timber", "biorhythm", "pact", "strange", "devastation", "betaray", "agent"], "tags": ["SORTIE LE 2 NOVEMBRE"]},
+  {"t": 91.55, "layout": "fan", "cards": ["guardianship", "strange", "betaray"], "tags": []}
+ ]
+}
