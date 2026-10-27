@@ -1,307 +1,307 @@
 [
  {
   "text": "Nouveau",
-  "start": 0.05,
-  "end": 0.61,
+  "start": 0.04,
+  "end": 0.52,
   "line": 0
  },
  {
   "text": "coffret",
-  "start": 0.61,
+  "start": 0.52,
   "end": 1.05,
   "line": 0
  },
  {
   "text": "Riftbound",
   "start": 1.05,
-  "end": 1.73,
+  "end": 1.8,
   "line": 0
  },
  {
   "text": "KDA,",
-  "start": 1.73,
-  "end": 2.25,
+  "start": 1.8,
+  "end": 2.2,
   "line": 0
  },
  {
   "text": "et",
-  "start": 2.25,
-  "end": 2.405,
+  "start": 2.2,
+  "end": 2.328,
   "line": 0
  },
  {
   "text": "il",
-  "start": 2.405,
-  "end": 2.56,
+  "start": 2.328,
+  "end": 2.456,
   "line": 0
  },
  {
   "text": "ne",
-  "start": 2.56,
-  "end": 2.673,
+  "start": 2.456,
+  "end": 2.584,
   "line": 0
  },
  {
   "text": "sera",
-  "start": 2.673,
-  "end": 2.9,
+  "start": 2.584,
+  "end": 2.84,
   "line": 0
  },
  {
   "text": "vendu",
-  "start": 2.9,
-  "end": 3.45,
+  "start": 2.84,
+  "end": 3.04,
   "line": 0
  },
  {
   "text": "que",
-  "start": 3.45,
-  "end": 3.63,
+  "start": 3.04,
+  "end": 3.16,
   "line": 0
  },
  {
   "text": "par",
-  "start": 3.63,
-  "end": 3.81,
+  "start": 3.16,
+  "end": 3.32,
   "line": 0
  },
  {
   "text": "tirage",
-  "start": 3.81,
-  "end": 4.11,
+  "start": 3.32,
+  "end": 3.58,
   "line": 0
  },
  {
   "text": "au",
-  "start": 4.11,
-  "end": 4.25,
+  "start": 3.58,
+  "end": 3.7,
   "line": 0
  },
  {
   "text": "sort.",
-  "start": 4.25,
-  "end": 4.66,
+  "start": 3.7,
+  "end": 4.06,
   "line": 0
  },
  {
   "text": "Le",
-  "start": 5.13,
-  "end": 5.246,
+  "start": 4.21,
+  "end": 4.372,
   "line": 1
  },
  {
   "text": "Riftbound",
-  "start": 5.246,
-  "end": 5.77,
+  "start": 4.372,
+  "end": 5.1,
   "line": 1
  },
  {
   "text": "x",
-  "start": 5.77,
-  "end": 5.86,
+  "start": 5.1,
+  "end": 5.236,
   "line": 1
  },
  {
   "text": "KDA",
-  "start": 5.86,
-  "end": 6.18,
+  "start": 5.236,
+  "end": 5.44,
   "line": 1
  },
  {
   "text": "Couture",
-  "start": 6.18,
-  "end": 6.86,
+  "start": 5.44,
+  "end": 6.69,
   "line": 1
  },
  {
   "text": "Collection,",
-  "start": 6.86,
-  "end": 8.0,
+  "start": 6.69,
+  "end": 7.2,
   "line": 1
  },
  {
   "text": "avec",
-  "start": 8.0,
-  "end": 8.19,
+  "start": 7.2,
+  "end": 7.46,
   "line": 1
  },
  {
   "text": "des",
-  "start": 8.19,
-  "end": 8.37,
+  "start": 7.46,
+  "end": 7.64,
   "line": 1
  },
  {
   "text": "illustrations",
-  "start": 8.37,
-  "end": 9.21,
+  "start": 7.64,
+  "end": 8.59,
   "line": 1
  },
  {
   "text": "inédites",
-  "start": 9.21,
-  "end": 9.67,
+  "start": 8.59,
+  "end": 9.0,
   "line": 1
  },
  {
   "text": "signées",
-  "start": 9.67,
-  "end": 10.38,
+  "start": 9.0,
+  "end": 9.38,
   "line": 1
  },
  {
   "text": "Fortiche,",
-  "start": 10.88,
-  "end": 11.28,
+  "start": 9.38,
+  "end": 9.86,
   "line": 1
  },
  {
   "text": "le",
-  "start": 11.28,
-  "end": 11.49,
+  "start": 9.86,
+  "end": 10.03,
   "line": 1
  },
  {
   "text": "studio",
-  "start": 11.49,
-  "end": 12.0,
+  "start": 10.03,
+  "end": 10.42,
   "line": 1
  },
  {
   "text": "d'Arcane.",
-  "start": 12.0,
-  "end": 13.54,
+  "start": 10.42,
+  "end": 11.78,
   "line": 1
  },
  {
   "text": "Dedans :",
-  "start": 13.54,
-  "end": 13.98,
+  "start": 11.78,
+  "end": 12.17,
   "line": 2
  },
  {
   "text": "quatre",
-  "start": 13.98,
-  "end": 14.31,
+  "start": 12.17,
+  "end": 12.84,
   "line": 2
  },
  {
   "text": "cartes",
-  "start": 14.31,
-  "end": 14.97,
+  "start": 12.84,
+  "end": 13.93,
   "line": 2
  },
  {
   "text": "Légende",
-  "start": 14.97,
-  "end": 15.85,
+  "start": 13.93,
+  "end": 14.4,
   "line": 2
  },
  {
   "text": "KDA,",
-  "start": 15.85,
-  "end": 16.4,
+  "start": 14.4,
+  "end": 15.0,
   "line": 2
  },
  {
   "text": "Evelynn,",
-  "start": 16.4,
-  "end": 17.095,
+  "start": 15.0,
+  "end": 16.01,
   "line": 2
  },
  {
   "text": "Ahri,",
-  "start": 17.095,
-  "end": 17.79,
+  "start": 16.01,
+  "end": 17.02,
   "line": 2
  },
  {
   "text": "Akali",
-  "start": 17.79,
-  "end": 18.43,
+  "start": 17.02,
+  "end": 17.6,
   "line": 2
  },
  {
   "text": "et",
-  "start": 18.43,
-  "end": 18.661,
+  "start": 17.6,
+  "end": 17.88,
   "line": 2
  },
  {
   "text": "Kai'Sa.",
-  "start": 18.661,
-  "end": 19.24,
+  "start": 17.88,
+  "end": 18.92,
   "line": 2
  },
  {
   "text": "Le",
-  "start": 19.93,
-  "end": 20.017,
+  "start": 19.53,
+  "end": 19.671,
   "line": 2
  },
  {
   "text": "champ",
-  "start": 20.017,
-  "end": 20.235,
+  "start": 19.671,
+  "end": 20.024,
   "line": 2
  },
  {
   "text": "de",
-  "start": 20.235,
-  "end": 20.322,
+  "start": 20.024,
+  "end": 20.165,
   "line": 2
  },
  {
   "text": "bataille",
-  "start": 20.322,
-  "end": 20.67,
+  "start": 20.165,
+  "end": 20.73,
   "line": 2
  },
  {
   "text": "Packed",
-  "start": 20.67,
-  "end": 21.01,
+  "start": 20.73,
+  "end": 21.435,
   "line": 2
  },
  {
   "text": "Amphitheater.",
-  "start": 21.01,
-  "end": 22.42,
+  "start": 21.435,
+  "end": 22.14,
   "line": 2
  },
  {
   "text": "Un",
-  "start": 22.42,
-  "end": 22.54,
+  "start": 22.14,
+  "end": 22.35,
   "line": 2
  },
  {
   "text": "tapis",
-  "start": 22.54,
-  "end": 22.84,
+  "start": 22.35,
+  "end": 22.83,
   "line": 2
  },
  {
   "text": "de",
-  "start": 22.84,
-  "end": 23.02,
+  "start": 22.83,
+  "end": 23.1,
   "line": 2
  },
  {
   "text": "jeu,",
-  "start": 23.02,
-  "end": 23.63,
+  "start": 23.1,
+  "end": 23.51,
   "line": 2
  },
  {
   "text": "une",
-  "start": 23.63,
-  "end": 23.825,
+  "start": 23.51,
+  "end": 23.75,
   "line": 2
  },
  {
   "text": "deckbox",
-  "start": 23.825,
+  "start": 23.75,
   "end": 24.28,
   "line": 2
  },
@@ -314,667 +314,667 @@
  {
   "text": "soixante-quinze",
   "start": 24.38,
-  "end": 25.08,
+  "end": 25.13,
   "line": 2
  },
  {
   "text": "protège-cartes",
-  "start": 25.08,
-  "end": 25.67,
+  "start": 25.13,
+  "end": 25.88,
   "line": 2
  },
  {
   "text": "en",
-  "start": 25.67,
-  "end": 25.86,
+  "start": 25.88,
+  "end": 25.967,
   "line": 2
  },
  {
   "text": "édition",
-  "start": 25.86,
-  "end": 26.59,
+  "start": 25.967,
+  "end": 26.27,
   "line": 2
  },
  {
   "text": "limitée.",
-  "start": 26.59,
-  "end": 26.98,
+  "start": 26.27,
+  "end": 26.84,
   "line": 2
  },
  {
   "text": "Quatre",
-  "start": 26.98,
-  "end": 27.45,
+  "start": 26.84,
+  "end": 27.295,
   "line": 2
  },
  {
   "text": "dés",
-  "start": 27.45,
-  "end": 27.92,
+  "start": 27.295,
+  "end": 27.75,
   "line": 2
  },
  {
   "text": "en",
-  "start": 27.92,
-  "end": 28.07,
+  "start": 27.75,
+  "end": 27.95,
   "line": 2
  },
  {
   "text": "métal",
-  "start": 28.07,
-  "end": 28.45,
+  "start": 27.95,
+  "end": 28.27,
   "line": 2
  },
  {
   "text": "à",
-  "start": 28.45,
-  "end": 28.619,
+  "start": 28.27,
+  "end": 28.38,
   "line": 2
  },
  {
   "text": "douze",
-  "start": 28.619,
-  "end": 29.04,
+  "start": 28.38,
+  "end": 28.72,
   "line": 2
  },
  {
   "text": "faces.",
-  "start": 29.04,
-  "end": 29.68,
+  "start": 28.72,
+  "end": 29.25,
   "line": 2
  },
  {
   "text": "Et",
-  "start": 29.68,
-  "end": 29.83,
+  "start": 29.25,
+  "end": 29.55,
   "line": 2
  },
  {
   "text": "un",
-  "start": 29.83,
-  "end": 29.98,
+  "start": 29.55,
+  "end": 29.67,
   "line": 2
  },
  {
   "text": "porte-clés",
-  "start": 29.98,
-  "end": 30.655,
+  "start": 29.67,
+  "end": 30.22,
   "line": 2
  },
  {
   "text": "FIRESTARTER",
-  "start": 30.655,
-  "end": 31.44,
+  "start": 30.22,
+  "end": 31.07,
   "line": 2
  },
  {
   "text": "KiT,",
-  "start": 31.44,
-  "end": 31.86,
+  "start": 31.07,
+  "end": 31.7,
   "line": 2
  },
  {
   "text": "qui",
-  "start": 32.01,
-  "end": 32.142,
+  "start": 31.7,
+  "end": 31.82,
   "line": 2
  },
  {
   "text": "se",
-  "start": 32.142,
-  "end": 32.231,
+  "start": 31.82,
+  "end": 31.94,
   "line": 2
  },
  {
   "text": "branche",
-  "start": 32.231,
-  "end": 32.54,
+  "start": 31.94,
+  "end": 32.33,
   "line": 2
  },
  {
   "text": "sur",
-  "start": 32.54,
-  "end": 32.71,
+  "start": 32.33,
+  "end": 32.42,
   "line": 2
  },
  {
   "text": "ton",
-  "start": 32.71,
-  "end": 32.89,
+  "start": 32.42,
+  "end": 32.68,
   "line": 2
  },
  {
   "text": "téléphone",
-  "start": 32.89,
-  "end": 33.46,
+  "start": 32.68,
+  "end": 33.16,
   "line": 2
  },
  {
   "text": "pour",
-  "start": 33.46,
-  "end": 33.56,
+  "start": 33.16,
+  "end": 33.4,
   "line": 2
  },
  {
   "text": "lire",
-  "start": 33.56,
-  "end": 33.68,
+  "start": 33.4,
+  "end": 33.64,
   "line": 2
  },
  {
   "text": "le",
-  "start": 33.68,
-  "end": 33.851,
+  "start": 33.64,
+  "end": 33.77,
   "line": 2
  },
  {
   "text": "nouveau",
-  "start": 33.851,
-  "end": 34.45,
+  "start": 33.77,
+  "end": 34.22,
   "line": 2
  },
  {
   "text": "single",
-  "start": 34.45,
-  "end": 34.69,
+  "start": 34.22,
+  "end": 34.73,
   "line": 2
  },
  {
   "text": "de",
-  "start": 34.69,
-  "end": 34.77,
+  "start": 34.73,
+  "end": 34.856,
   "line": 2
  },
  {
   "text": "KDA",
-  "start": 34.77,
-  "end": 35.1,
+  "start": 34.856,
+  "end": 35.044,
   "line": 2
  },
  {
   "text": "et",
-  "start": 35.1,
-  "end": 35.21,
+  "start": 35.044,
+  "end": 35.17,
   "line": 2
  },
  {
   "text": "son",
-  "start": 35.21,
-  "end": 35.37,
+  "start": 35.17,
+  "end": 35.406,
   "line": 2
  },
  {
   "text": "clip.",
-  "start": 35.37,
-  "end": 35.76,
+  "start": 35.406,
+  "end": 35.72,
   "line": 2
  },
  {
   "text": "Le",
-  "start": 36.41,
-  "end": 36.531,
+  "start": 36.15,
+  "end": 36.264,
   "line": 3
  },
  {
   "text": "prix :",
-  "start": 36.531,
-  "end": 36.773,
+  "start": 36.264,
+  "end": 36.492,
   "line": 3
  },
  {
   "text": "cent",
-  "start": 36.773,
-  "end": 37.015,
+  "start": 36.492,
+  "end": 36.72,
   "line": 3
  },
  {
   "text": "cinquante",
-  "start": 37.015,
-  "end": 37.33,
+  "start": 36.72,
+  "end": 37.0,
   "line": 3
  },
  {
   "text": "dollars,",
-  "start": 37.33,
-  "end": 38.16,
+  "start": 37.0,
+  "end": 37.68,
   "line": 3
  },
  {
   "text": "plus",
-  "start": 38.16,
-  "end": 38.81,
+  "start": 37.68,
+  "end": 37.97,
   "line": 3
  },
  {
   "text": "les",
-  "start": 38.81,
-  "end": 38.91,
+  "start": 37.97,
+  "end": 38.11,
   "line": 3
  },
  {
   "text": "frais",
-  "start": 38.91,
-  "end": 39.28,
+  "start": 38.11,
+  "end": 38.63,
   "line": 3
  },
  {
   "text": "de",
-  "start": 39.28,
-  "end": 39.45,
+  "start": 38.63,
+  "end": 38.74,
   "line": 3
  },
  {
   "text": "port.",
-  "start": 39.45,
-  "end": 40.16,
+  "start": 38.74,
+  "end": 39.32,
   "line": 3
  },
  {
   "text": "Pour",
-  "start": 40.61,
-  "end": 40.893,
+  "start": 39.75,
+  "end": 39.94,
   "line": 4
  },
  {
   "text": "l'acheter,",
-  "start": 40.893,
-  "end": 41.46,
+  "start": 39.94,
+  "end": 40.32,
   "line": 4
  },
  {
   "text": "il",
-  "start": 41.46,
-  "end": 41.58,
+  "start": 40.32,
+  "end": 40.51,
   "line": 4
  },
  {
   "text": "faut",
-  "start": 41.58,
-  "end": 41.85,
+  "start": 40.51,
+  "end": 40.72,
   "line": 4
  },
  {
   "text": "s'inscrire",
-  "start": 41.85,
-  "end": 42.39,
+  "start": 40.72,
+  "end": 41.39,
   "line": 4
  },
  {
   "text": "au",
-  "start": 42.39,
-  "end": 42.51,
+  "start": 41.39,
+  "end": 41.51,
   "line": 4
  },
  {
   "text": "tirage",
-  "start": 42.51,
-  "end": 42.86,
+  "start": 41.51,
+  "end": 41.92,
   "line": 4
  },
  {
   "text": "au",
-  "start": 42.86,
-  "end": 43.11,
+  "start": 41.92,
+  "end": 42.23,
   "line": 4
  },
  {
   "text": "sort",
-  "start": 43.11,
-  "end": 43.26,
+  "start": 42.23,
+  "end": 42.32,
   "line": 4
  },
  {
   "text": "sur",
-  "start": 43.26,
-  "end": 43.48,
+  "start": 42.32,
+  "end": 42.57,
   "line": 4
  },
  {
   "text": "le",
-  "start": 43.48,
-  "end": 43.59,
+  "start": 42.57,
+  "end": 42.687,
   "line": 4
  },
  {
   "text": "Riot",
-  "start": 43.59,
-  "end": 43.85,
+  "start": 42.687,
+  "end": 42.92,
   "line": 4
  },
  {
   "text": "Merch",
-  "start": 43.85,
-  "end": 44.31,
+  "start": 42.92,
+  "end": 43.32,
   "line": 4
  },
  {
   "text": "Store,",
-  "start": 44.31,
-  "end": 44.56,
+  "start": 43.32,
+  "end": 43.91,
   "line": 4
  },
  {
   "text": "du",
-  "start": 44.77,
-  "end": 45.01,
+  "start": 43.91,
+  "end": 44.49,
   "line": 4
  },
  {
   "text": "27",
-  "start": 45.01,
-  "end": 45.25,
+  "start": 44.49,
+  "end": 44.657,
   "line": 4
  },
  {
   "text": "octobre,",
-  "start": 45.25,
-  "end": 46.01,
+  "start": 44.657,
+  "end": 45.24,
   "line": 4
  },
  {
-  "text": "dix-sept",
-  "start": 46.01,
-  "end": 46.485,
+  "text": "dix-huit",
+  "start": 45.24,
+  "end": 45.56,
   "line": 4
  },
  {
   "text": "heures,",
-  "start": 46.485,
-  "end": 46.96,
+  "start": 45.56,
+  "end": 45.88,
   "line": 4
  },
  {
   "text": "au",
-  "start": 46.96,
-  "end": 47.27,
+  "start": 45.88,
+  "end": 46.1,
   "line": 4
  },
  {
   "text": "30",
-  "start": 47.27,
-  "end": 47.38,
+  "start": 46.1,
+  "end": 46.61,
   "line": 4
  },
  {
   "text": "octobre,",
-  "start": 47.38,
-  "end": 48.01,
+  "start": 46.61,
+  "end": 47.44,
   "line": 4
  },
  {
-  "text": "dix-sept",
-  "start": 48.01,
-  "end": 48.325,
+  "text": "dix-huit",
+  "start": 47.44,
+  "end": 47.765,
   "line": 4
  },
  {
   "text": "heures,",
-  "start": 48.325,
-  "end": 48.64,
+  "start": 47.765,
+  "end": 48.09,
   "line": 4
  },
  {
   "text": "heure",
-  "start": 48.64,
-  "end": 48.99,
+  "start": 48.09,
+  "end": 48.51,
   "line": 4
  },
  {
   "text": "française.",
-  "start": 48.99,
-  "end": 49.9,
+  "start": 48.51,
+  "end": 49.6,
   "line": 4
  },
  {
   "text": "Si",
-  "start": 50.51,
-  "end": 50.626,
+  "start": 50.11,
+  "end": 50.217,
   "line": 5
  },
  {
   "text": "ton",
-  "start": 50.626,
-  "end": 50.801,
+  "start": 50.217,
+  "end": 50.377,
   "line": 5
  },
  {
   "text": "nom",
-  "start": 50.801,
-  "end": 50.975,
+  "start": 50.377,
+  "end": 50.537,
   "line": 5
  },
  {
   "text": "est",
-  "start": 50.975,
-  "end": 51.15,
+  "start": 50.537,
+  "end": 50.697,
   "line": 5
  },
  {
   "text": "tiré,",
-  "start": 51.15,
-  "end": 51.82,
+  "start": 50.697,
+  "end": 50.91,
   "line": 5
  },
  {
   "text": "tu",
-  "start": 51.82,
-  "end": 51.95,
+  "start": 50.91,
+  "end": 51.0,
   "line": 5
  },
  {
   "text": "reçois",
-  "start": 51.95,
-  "end": 52.33,
+  "start": 51.0,
+  "end": 51.43,
   "line": 5
  },
  {
   "text": "un",
-  "start": 52.33,
-  "end": 52.46,
+  "start": 51.43,
+  "end": 51.58,
   "line": 5
  },
  {
   "text": "mail",
-  "start": 52.46,
-  "end": 52.63,
+  "start": 51.58,
+  "end": 52.08,
   "line": 5
  },
  {
   "text": "à",
-  "start": 52.63,
-  "end": 53.01,
+  "start": 52.08,
+  "end": 52.52,
   "line": 5
  },
  {
   "text": "partir",
-  "start": 53.01,
-  "end": 53.17,
+  "start": 52.52,
+  "end": 52.808,
   "line": 5
  },
  {
   "text": "du",
-  "start": 53.17,
-  "end": 53.31,
+  "start": 52.808,
+  "end": 52.904,
   "line": 5
  },
  {
   "text": "3",
-  "start": 53.31,
-  "end": 53.49,
+  "start": 52.904,
+  "end": 53.0,
   "line": 5
  },
  {
   "text": "novembre,",
-  "start": 53.49,
-  "end": 54.2,
+  "start": 53.0,
+  "end": 53.73,
   "line": 5
  },
  {
   "text": "et",
-  "start": 54.35,
-  "end": 54.437,
+  "start": 53.73,
+  "end": 53.85,
   "line": 5
  },
  {
   "text": "tu",
-  "start": 54.437,
-  "end": 54.524,
+  "start": 53.85,
+  "end": 53.98,
   "line": 5
  },
  {
   "text": "as",
-  "start": 54.524,
-  "end": 54.611,
+  "start": 53.98,
+  "end": 54.11,
   "line": 5
  },
  {
   "text": "vingt-quatre",
-  "start": 54.611,
-  "end": 55.09,
+  "start": 54.11,
+  "end": 54.85,
   "line": 5
  },
  {
   "text": "heures",
-  "start": 55.09,
-  "end": 55.59,
+  "start": 54.85,
+  "end": 55.066,
   "line": 5
  },
  {
   "text": "pour",
-  "start": 55.59,
-  "end": 55.85,
+  "start": 55.066,
+  "end": 55.21,
   "line": 5
  },
  {
   "text": "l'acheter.",
-  "start": 55.85,
-  "end": 56.8,
+  "start": 55.21,
+  "end": 55.96,
   "line": 5
  },
  {
   "text": "Sinon,",
-  "start": 57.45,
-  "end": 57.65,
+  "start": 56.52,
+  "end": 56.83,
   "line": 5
  },
  {
   "text": "ta",
-  "start": 57.65,
-  "end": 57.73,
+  "start": 56.83,
+  "end": 56.99,
   "line": 5
  },
  {
   "text": "place",
-  "start": 57.73,
-  "end": 57.93,
+  "start": 56.99,
+  "end": 57.18,
   "line": 5
  },
  {
   "text": "passe",
-  "start": 57.93,
-  "end": 58.13,
+  "start": 57.18,
+  "end": 57.43,
   "line": 5
  },
  {
   "text": "à",
-  "start": 58.13,
-  "end": 58.272,
+  "start": 57.43,
+  "end": 57.53,
   "line": 5
  },
  {
   "text": "quelqu'un",
-  "start": 58.272,
-  "end": 58.84,
+  "start": 57.53,
+  "end": 57.93,
   "line": 5
  },
  {
   "text": "d'autre.",
-  "start": 58.84,
-  "end": 59.6,
+  "start": 57.93,
+  "end": 58.44,
   "line": 5
  },
  {
   "text": "Pense",
-  "start": 59.65,
-  "end": 59.96,
+  "start": 58.91,
+  "end": 59.163,
   "line": 5
  },
  {
   "text": "à",
-  "start": 59.96,
-  "end": 60.084,
+  "start": 59.163,
+  "end": 59.265,
   "line": 5
  },
  {
   "text": "vérifier",
-  "start": 60.084,
-  "end": 60.58,
+  "start": 59.265,
+  "end": 59.67,
   "line": 5
  },
  {
   "text": "tes",
-  "start": 60.58,
-  "end": 60.79,
+  "start": 59.67,
+  "end": 59.89,
   "line": 5
  },
  {
   "text": "spams.",
-  "start": 60.79,
-  "end": 61.4,
+  "start": 59.89,
+  "end": 60.44,
   "line": 5
  },
  {
   "text": "Et",
-  "start": 61.65,
-  "end": 61.796,
+  "start": 60.44,
+  "end": 60.58,
   "line": 6
  },
  {
   "text": "toi,",
-  "start": 61.796,
-  "end": 62.015,
+  "start": 60.58,
+  "end": 60.94,
   "line": 6
  },
  {
   "text": "tu",
-  "start": 62.015,
-  "end": 62.162,
+  "start": 60.94,
+  "end": 61.08,
   "line": 6
  },
  {
   "text": "tentes",
-  "start": 62.162,
-  "end": 62.6,
+  "start": 61.08,
+  "end": 61.65,
   "line": 6
  },
  {
   "text": "ta",
-  "start": 62.6,
-  "end": 62.76,
+  "start": 61.65,
+  "end": 61.78,
   "line": 6
  },
  {
   "text": "chance ?",
-  "start": 62.76,
-  "end": 63.32,
+  "start": 61.78,
+  "end": 62.22,
   "line": 6
  },
  {
   "text": "Dis-le-moi",
-  "start": 64.0,
-  "end": 64.25,
+  "start": 62.22,
+  "end": 62.97,
   "line": 6
  },
  {
   "text": "en",
-  "start": 64.25,
-  "end": 64.4,
+  "start": 62.97,
+  "end": 63.07,
   "line": 6
  },
  {
   "text": "commentaire.",
-  "start": 64.4,
-  "end": 65.5,
+  "start": 63.07,
+  "end": 63.84,
   "line": 6
  }
 ]
