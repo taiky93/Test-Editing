@@ -1,0 +1,172 @@
+{
+ "duration": 65.3,
+ "foci": [
+  {
+   "t": 0.0,
+   "img": "bundle-logo.png",
+   "r": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "tags": [
+    "RIFTBOUND × K/DA"
+   ]
+  },
+  {
+   "t": 4.7,
+   "img": "bundle-logo.png",
+   "r": [
+    500,
+    760,
+    920,
+    290
+   ],
+   "tags": [
+    "COUTURE COLLECTION"
+   ]
+  },
+  {
+   "t": 9.3,
+   "img": "bundle-red.jpg",
+   "r": [
+    0,
+    0,
+    1920,
+    1079
+   ],
+   "tags": [
+    "ILLUSTRATIONS FORTICHE"
+   ]
+  },
+  {
+   "t": 13.9,
+   "img": "bundle-logo.png",
+   "r": [
+    165,
+    565,
+    630,
+    260
+   ],
+   "tags": [
+    "4 LÉGENDES K/DA"
+   ]
+  },
+  {
+   "t": 20.85,
+   "img": "bundle-logo.png",
+   "r": [
+    1200,
+    630,
+    260,
+    190
+   ],
+   "tags": [
+    "PACKED AMPHITHEATER"
+   ]
+  },
+  {
+   "t": 23.1,
+   "img": "bundle-logo.png",
+   "r": [
+    265,
+    145,
+    730,
+    440
+   ],
+   "tags": [
+    "TAPIS DE JEU"
+   ]
+  },
+  {
+   "t": 24.5,
+   "img": "bundle-logo.png",
+   "r": [
+    910,
+    420,
+    400,
+    320
+   ],
+   "tags": [
+    "DECKBOX · 75 PROTÈGE-CARTES"
+   ]
+  },
+  {
+   "t": 28.0,
+   "img": "bundle-logo.png",
+   "r": [
+    740,
+    580,
+    380,
+    190
+   ],
+   "tags": [
+    "4 DÉS D12 EN MÉTAL"
+   ]
+  },
+  {
+   "t": 30.6,
+   "img": "bundle-logo.png",
+   "r": [
+    690,
+    470,
+    360,
+    300
+   ],
+   "tags": [
+    "PORTE-CLÉS FIRESTARTER KiT"
+   ]
+  },
+  {
+   "t": 37.05,
+   "img": "bundle-red.jpg",
+   "r": [
+    0,
+    0,
+    1920,
+    1079
+   ],
+   "tags": [
+    "150 $ + FRAIS DE PORT"
+   ]
+  },
+  {
+   "t": 40.7,
+   "img": "bundle-logo.png",
+   "r": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "tags": [
+    "INSCRIPTIONS : 27 AU 30 OCT. · 17 H"
+   ]
+  },
+  {
+   "t": 50.55,
+   "img": "bundle-logo.png",
+   "r": [
+    1360,
+    520,
+    420,
+    320
+   ],
+   "tags": [
+    "MAIL DÈS LE 3 NOV. · 24 H POUR ACHETER"
+   ]
+  },
+  {
+   "t": 60.7,
+   "img": "bundle-logo.png",
+   "r": [
+    0,
+    0,
+    1920,
+    1080
+   ],
+   "tags": []
+  }
+ ]
+}
