@@ -5,6 +5,7 @@
 - Réglages et description : `videos/news-tcg/voice.json` ; mode d'emploi : `videos/news-tcg/VOICE.md`.
 - Générer une voix off : `python3 videos/news-tcg/scripts/tts.py <texte.txt> <sortie.mp3>`.
 - Prononciation : dans les scripts, écrire **« mana » sans S**, même au pluriel (« trois mana ») : la voix prononce « manase » sinon.
+- Écrire « KDA » et non « K/DA » (sinon la voix dit « K barre DA »).
 - La clé API ElevenLabs n'est jamais versionnée : la demander à l'utilisateur et la mettre dans un `.env` ignoré par git.
 
 ## Vidéos d'ouverture de booster (DA de référence)
