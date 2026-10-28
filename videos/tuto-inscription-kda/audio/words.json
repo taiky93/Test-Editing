@@ -1,0 +1,890 @@
+[
+ {
+  "text": "Tu",
+  "start": 0.0,
+  "end": 0.13,
+  "line": 0
+ },
+ {
+  "text": "veux",
+  "start": 0.13,
+  "end": 0.39,
+  "line": 0
+ },
+ {
+  "text": "le",
+  "start": 0.39,
+  "end": 0.52,
+  "line": 0
+ },
+ {
+  "text": "coffret",
+  "start": 0.52,
+  "end": 0.97,
+  "line": 0
+ },
+ {
+  "text": "Riftbound",
+  "start": 0.97,
+  "end": 1.58,
+  "line": 0
+ },
+ {
+  "text": "KDA ?",
+  "start": 1.58,
+  "end": 1.74,
+  "line": 0
+ },
+ {
+  "text": "Voici",
+  "start": 2.39,
+  "end": 2.582,
+  "line": 0
+ },
+ {
+  "text": "comment",
+  "start": 2.582,
+  "end": 2.85,
+  "line": 0
+ },
+ {
+  "text": "t'inscrire",
+  "start": 2.85,
+  "end": 3.56,
+  "line": 0
+ },
+ {
+  "text": "au",
+  "start": 3.56,
+  "end": 3.7,
+  "line": 0
+ },
+ {
+  "text": "tirage",
+  "start": 3.7,
+  "end": 4.12,
+  "line": 0
+ },
+ {
+  "text": "au",
+  "start": 4.12,
+  "end": 4.26,
+  "line": 0
+ },
+ {
+  "text": "sort,",
+  "start": 4.26,
+  "end": 4.69,
+  "line": 0
+ },
+ {
+  "text": "en",
+  "start": 4.69,
+  "end": 4.781,
+  "line": 0
+ },
+ {
+  "text": "moins",
+  "start": 4.781,
+  "end": 5.01,
+  "line": 0
+ },
+ {
+  "text": "d'une",
+  "start": 5.01,
+  "end": 5.32,
+  "line": 0
+ },
+ {
+  "text": "minute.",
+  "start": 5.32,
+  "end": 5.6,
+  "line": 0
+ },
+ {
+  "text": "Étape",
+  "start": 6.64,
+  "end": 6.73,
+  "line": 1
+ },
+ {
+  "text": "un :",
+  "start": 6.73,
+  "end": 7.58,
+  "line": 1
+ },
+ {
+  "text": "ouvre",
+  "start": 7.58,
+  "end": 7.84,
+  "line": 1
+ },
+ {
+  "text": "la",
+  "start": 7.84,
+  "end": 7.94,
+  "line": 1
+ },
+ {
+  "text": "page",
+  "start": 7.94,
+  "end": 8.15,
+  "line": 1
+ },
+ {
+  "text": "d'inscription.",
+  "start": 8.15,
+  "end": 8.88,
+  "line": 1
+ },
+ {
+  "text": "Le",
+  "start": 9.07,
+  "end": 9.196,
+  "line": 1
+ },
+ {
+  "text": "lien",
+  "start": 9.196,
+  "end": 9.449,
+  "line": 1
+ },
+ {
+  "text": "est",
+  "start": 9.449,
+  "end": 9.638,
+  "line": 1
+ },
+ {
+  "text": "affiché",
+  "start": 9.638,
+  "end": 10.08,
+  "line": 1
+ },
+ {
+  "text": "à",
+  "start": 10.08,
+  "end": 10.248,
+  "line": 1
+ },
+ {
+  "text": "l'écran,",
+  "start": 10.248,
+  "end": 10.75,
+  "line": 1
+ },
+ {
+  "text": "et",
+  "start": 10.75,
+  "end": 10.863,
+  "line": 1
+ },
+ {
+  "text": "je",
+  "start": 10.863,
+  "end": 10.977,
+  "line": 1
+ },
+ {
+  "text": "te",
+  "start": 10.977,
+  "end": 11.09,
+  "line": 1
+ },
+ {
+  "text": "le",
+  "start": 11.09,
+  "end": 11.203,
+  "line": 1
+ },
+ {
+  "text": "mets",
+  "start": 11.203,
+  "end": 11.43,
+  "line": 1
+ },
+ {
+  "text": "aussi",
+  "start": 11.43,
+  "end": 11.766,
+  "line": 1
+ },
+ {
+  "text": "en",
+  "start": 11.766,
+  "end": 11.9,
+  "line": 1
+ },
+ {
+  "text": "commentaire.",
+  "start": 11.9,
+  "end": 12.24,
+  "line": 1
+ },
+ {
+  "text": "Étape",
+  "start": 12.63,
+  "end": 13.169,
+  "line": 2
+ },
+ {
+  "text": "deux :",
+  "start": 13.169,
+  "end": 13.6,
+  "line": 2
+ },
+ {
+  "text": "appuie",
+  "start": 13.6,
+  "end": 13.99,
+  "line": 2
+ },
+ {
+  "text": "sur «",
+  "start": 13.99,
+  "end": 14.19,
+  "line": 2
+ },
+ {
+  "text": "Connectez-vous",
+  "start": 14.31,
+  "end": 15.45,
+  "line": 2
+ },
+ {
+  "text": "pour",
+  "start": 15.45,
+  "end": 15.56,
+  "line": 2
+ },
+ {
+  "text": "vous",
+  "start": 15.56,
+  "end": 15.72,
+  "line": 2
+ },
+ {
+  "text": "inscrire »,",
+  "start": 15.72,
+  "end": 16.26,
+  "line": 2
+ },
+ {
+  "text": "et",
+  "start": 16.55,
+  "end": 16.688,
+  "line": 2
+ },
+ {
+  "text": "connecte-toi",
+  "start": 16.688,
+  "end": 17.45,
+  "line": 2
+ },
+ {
+  "text": "avec",
+  "start": 17.45,
+  "end": 17.73,
+  "line": 2
+ },
+ {
+  "text": "ton",
+  "start": 17.73,
+  "end": 17.94,
+  "line": 2
+ },
+ {
+  "text": "compte",
+  "start": 17.94,
+  "end": 18.73,
+  "line": 2
+ },
+ {
+  "text": "Riot.",
+  "start": 18.73,
+  "end": 19.52,
+  "line": 2
+ },
+ {
+  "text": "Si",
+  "start": 19.52,
+  "end": 19.623,
+  "line": 2
+ },
+ {
+  "text": "tu",
+  "start": 19.623,
+  "end": 19.727,
+  "line": 2
+ },
+ {
+  "text": "n'en",
+  "start": 19.727,
+  "end": 19.882,
+  "line": 2
+ },
+ {
+  "text": "as",
+  "start": 19.882,
+  "end": 19.985,
+  "line": 2
+ },
+ {
+  "text": "pas,",
+  "start": 19.985,
+  "end": 20.14,
+  "line": 2
+ },
+ {
+  "text": "tu",
+  "start": 20.14,
+  "end": 20.257,
+  "line": 2
+ },
+ {
+  "text": "peux",
+  "start": 20.257,
+  "end": 20.49,
+  "line": 2
+ },
+ {
+  "text": "en",
+  "start": 20.49,
+  "end": 20.63,
+  "line": 2
+ },
+ {
+  "text": "créer",
+  "start": 20.63,
+  "end": 20.99,
+  "line": 2
+ },
+ {
+  "text": "un",
+  "start": 20.99,
+  "end": 21.13,
+  "line": 2
+ },
+ {
+  "text": "gratuitement.",
+  "start": 21.13,
+  "end": 22.32,
+  "line": 2
+ },
+ {
+  "text": "Étape",
+  "start": 22.79,
+  "end": 23.295,
+  "line": 3
+ },
+ {
+  "text": "trois :",
+  "start": 23.295,
+  "end": 23.8,
+  "line": 3
+ },
+ {
+  "text": "juste",
+  "start": 23.8,
+  "end": 24.23,
+  "line": 3
+ },
+ {
+  "text": "en",
+  "start": 24.23,
+  "end": 24.47,
+  "line": 3
+ },
+ {
+  "text": "dessous,",
+  "start": 24.47,
+  "end": 25.2,
+  "line": 3
+ },
+ {
+  "text": "sélectionne",
+  "start": 25.2,
+  "end": 25.93,
+  "line": 3
+ },
+ {
+  "text": "le",
+  "start": 25.93,
+  "end": 26.06,
+  "line": 3
+ },
+ {
+  "text": "coffret",
+  "start": 26.06,
+  "end": 26.56,
+  "line": 3
+ },
+ {
+  "text": "Riftbound",
+  "start": 26.56,
+  "end": 28.16,
+  "line": 3
+ },
+ {
+  "text": "KDA",
+  "start": 28.16,
+  "end": 28.79,
+  "line": 3
+ },
+ {
+  "text": "Couture",
+  "start": 28.79,
+  "end": 29.76,
+  "line": 3
+ },
+ {
+  "text": "Collection.",
+  "start": 29.76,
+  "end": 29.96,
+  "line": 3
+ },
+ {
+  "text": "Étape",
+  "start": 30.51,
+  "end": 30.71,
+  "line": 4
+ },
+ {
+  "text": "quatre :",
+  "start": 30.71,
+  "end": 30.95,
+  "line": 4
+ },
+ {
+  "text": "coche",
+  "start": 30.95,
+  "end": 31.41,
+  "line": 4
+ },
+ {
+  "text": "la",
+  "start": 31.41,
+  "end": 31.58,
+  "line": 4
+ },
+ {
+  "text": "case «",
+  "start": 31.58,
+  "end": 32.19,
+  "line": 4
+ },
+ {
+  "text": "J'accepte",
+  "start": 32.19,
+  "end": 32.93,
+  "line": 4
+ },
+ {
+  "text": "le",
+  "start": 32.93,
+  "end": 33.38,
+  "line": 4
+ },
+ {
+  "text": "règlement",
+  "start": 33.38,
+  "end": 33.92,
+  "line": 4
+ },
+ {
+  "text": "du",
+  "start": 33.92,
+  "end": 34.1,
+  "line": 4
+ },
+ {
+  "text": "tirage »,",
+  "start": 34.1,
+  "end": 34.88,
+  "line": 4
+ },
+ {
+  "text": "puis",
+  "start": 34.95,
+  "end": 35.17,
+  "line": 4
+ },
+ {
+  "text": "appuie",
+  "start": 35.17,
+  "end": 35.5,
+  "line": 4
+ },
+ {
+  "text": "sur «",
+  "start": 35.5,
+  "end": 35.69,
+  "line": 4
+ },
+ {
+  "text": "Enregistrer",
+  "start": 35.69,
+  "end": 36.44,
+  "line": 4
+ },
+ {
+  "text": "la",
+  "start": 36.44,
+  "end": 36.63,
+  "line": 4
+ },
+ {
+  "text": "sélection ».",
+  "start": 36.63,
+  "end": 37.44,
+  "line": 4
+ },
+ {
+  "text": "Si",
+  "start": 37.63,
+  "end": 37.763,
+  "line": 5
+ },
+ {
+  "text": "tout",
+  "start": 37.763,
+  "end": 38.03,
+  "line": 5
+ },
+ {
+  "text": "est",
+  "start": 38.03,
+  "end": 38.23,
+  "line": 5
+ },
+ {
+  "text": "bon,",
+  "start": 38.23,
+  "end": 38.43,
+  "line": 5
+ },
+ {
+  "text": "tu",
+  "start": 38.43,
+  "end": 38.55,
+  "line": 5
+ },
+ {
+  "text": "vois «",
+  "start": 38.55,
+  "end": 38.97,
+  "line": 5
+ },
+ {
+  "text": "Inscription",
+  "start": 38.97,
+  "end": 39.61,
+  "line": 5
+ },
+ {
+  "text": "réussie ».",
+  "start": 39.61,
+  "end": 40.96,
+  "line": 5
+ },
+ {
+  "text": "Attention,",
+  "start": 40.96,
+  "end": 41.17,
+  "line": 5
+ },
+ {
+  "text": "tu",
+  "start": 41.17,
+  "end": 41.32,
+  "line": 5
+ },
+ {
+  "text": "ne",
+  "start": 41.32,
+  "end": 41.47,
+  "line": 5
+ },
+ {
+  "text": "pourras",
+  "start": 41.47,
+  "end": 41.99,
+  "line": 5
+ },
+ {
+  "text": "plus",
+  "start": 41.99,
+  "end": 42.27,
+  "line": 5
+ },
+ {
+  "text": "la",
+  "start": 42.27,
+  "end": 42.42,
+  "line": 5
+ },
+ {
+  "text": "modifier.",
+  "start": 42.42,
+  "end": 43.28,
+  "line": 5
+ },
+ {
+  "text": "Tu",
+  "start": 43.51,
+  "end": 43.637,
+  "line": 6
+ },
+ {
+  "text": "as",
+  "start": 43.637,
+  "end": 43.765,
+  "line": 6
+ },
+ {
+  "text": "jusqu'au",
+  "start": 43.765,
+  "end": 44.21,
+  "line": 6
+ },
+ {
+  "text": "30",
+  "start": 44.21,
+  "end": 44.62,
+  "line": 6
+ },
+ {
+  "text": "octobre,",
+  "start": 44.62,
+  "end": 45.19,
+  "line": 6
+ },
+ {
+  "text": "dix-sept",
+  "start": 45.19,
+  "end": 45.875,
+  "line": 6
+ },
+ {
+  "text": "heures.",
+  "start": 45.875,
+  "end": 46.56,
+  "line": 6
+ },
+ {
+  "text": "Si",
+  "start": 46.56,
+  "end": 46.661,
+  "line": 6
+ },
+ {
+  "text": "tu",
+  "start": 46.661,
+  "end": 46.763,
+  "line": 6
+ },
+ {
+  "text": "es",
+  "start": 46.763,
+  "end": 46.864,
+  "line": 6
+ },
+ {
+  "text": "tiré",
+  "start": 46.864,
+  "end": 47.066,
+  "line": 6
+ },
+ {
+  "text": "au",
+  "start": 47.066,
+  "end": 47.168,
+  "line": 6
+ },
+ {
+  "text": "sort,",
+  "start": 47.168,
+  "end": 47.37,
+  "line": 6
+ },
+ {
+  "text": "tu",
+  "start": 47.37,
+  "end": 47.495,
+  "line": 6
+ },
+ {
+  "text": "reçois",
+  "start": 47.495,
+  "end": 47.87,
+  "line": 6
+ },
+ {
+  "text": "un",
+  "start": 47.87,
+  "end": 48.03,
+  "line": 6
+ },
+ {
+  "text": "mail",
+  "start": 48.03,
+  "end": 48.34,
+  "line": 6
+ },
+ {
+  "text": "à",
+  "start": 48.34,
+  "end": 48.512,
+  "line": 6
+ },
+ {
+  "text": "partir",
+  "start": 48.512,
+  "end": 49.028,
+  "line": 6
+ },
+ {
+  "text": "du",
+  "start": 49.028,
+  "end": 49.2,
+  "line": 6
+ },
+ {
+  "text": "3",
+  "start": 49.2,
+  "end": 49.36,
+  "line": 6
+ },
+ {
+  "text": "novembre,",
+  "start": 49.36,
+  "end": 50.0,
+  "line": 6
+ },
+ {
+  "text": "et",
+  "start": 50.03,
+  "end": 50.131,
+  "line": 6
+ },
+ {
+  "text": "tu",
+  "start": 50.131,
+  "end": 50.232,
+  "line": 6
+ },
+ {
+  "text": "as",
+  "start": 50.232,
+  "end": 50.334,
+  "line": 6
+ },
+ {
+  "text": "vingt-quatre",
+  "start": 50.334,
+  "end": 50.89,
+  "line": 6
+ },
+ {
+  "text": "heures",
+  "start": 50.89,
+  "end": 51.31,
+  "line": 6
+ },
+ {
+  "text": "pour",
+  "start": 51.31,
+  "end": 51.57,
+  "line": 6
+ },
+ {
+  "text": "payer.",
+  "start": 51.57,
+  "end": 52.2,
+  "line": 6
+ },
+ {
+  "text": "Pense",
+  "start": 52.75,
+  "end": 52.963,
+  "line": 6
+ },
+ {
+  "text": "à",
+  "start": 52.963,
+  "end": 53.049,
+  "line": 6
+ },
+ {
+  "text": "vérifier",
+  "start": 53.049,
+  "end": 53.39,
+  "line": 6
+ },
+ {
+  "text": "tes",
+  "start": 53.39,
+  "end": 53.65,
+  "line": 6
+ },
+ {
+  "text": "spams.",
+  "start": 53.65,
+  "end": 55.16,
+  "line": 6
+ },
+ {
+  "text": "Bonne",
+  "start": 55.16,
+  "end": 55.25,
+  "line": 7
+ },
+ {
+  "text": "chance !",
+  "start": 55.25,
+  "end": 55.49,
+  "line": 7
+ },
+ {
+  "text": "Dis-moi",
+  "start": 56.35,
+  "end": 56.593,
+  "line": 7
+ },
+ {
+  "text": "en",
+  "start": 56.593,
+  "end": 56.674,
+  "line": 7
+ },
+ {
+  "text": "commentaire",
+  "start": 56.674,
+  "end": 57.12,
+  "line": 7
+ },
+ {
+  "text": "si",
+  "start": 57.12,
+  "end": 57.26,
+  "line": 7
+ },
+ {
+  "text": "tu",
+  "start": 57.26,
+  "end": 57.39,
+  "line": 7
+ },
+ {
+  "text": "t'es",
+  "start": 57.39,
+  "end": 57.64,
+  "line": 7
+ },
+ {
+  "text": "inscrit.",
+  "start": 57.64,
+  "end": 58.36,
+  "line": 7
+ }
+]

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: Montserrat; font-weight: 600; font-display: block; src: url("assets/fonts/montserrat-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 800; font-display: block; src: url("assets/fonts/montserrat-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: Montserrat; font-weight: 900; font-display: block; src: url("assets/fonts/montserrat-latin-900-normal.woff2") format("woff2"); }
+      :root {
+        --accent: #ffd400;
+        --ink: #ffffff;
+        --red: #e8352b;
+        --bg: #12060e;
+        --pink: #ff2d8a;
+        --orange: #ef7d00;
+        --green: #2fbf71;
+        --outline: 3.0px 0.0px 0 #000, 2.1px 2.1px 0 #000, 0.0px 3.0px 0 #000, -2.1px 2.1px 0 #000, -3.0px 0.0px 0 #000, -2.1px -2.1px 0 #000, -0.0px -3.0px 0 #000, 2.1px -2.1px 0 #000, 6.0px 0.0px 0 #000, 5.5px 2.3px 0 #000, 4.2px 4.2px 0 #000, 2.3px 5.5px 0 #000, 0.0px 6.0px 0 #000, -2.3px 5.5px 0 #000, -4.2px 4.2px 0 #000, -5.5px 2.3px 0 #000, -6.0px 0.0px 0 #000, -5.5px -2.3px 0 #000, -4.2px -4.2px 0 #000, -2.3px -5.5px 0 #000, -0.0px -6.0px 0 #000, 2.3px -5.5px 0 #000, 4.2px -4.2px 0 #000, 5.5px -2.3px 0 #000, 0 6px 10px rgba(0,0,0,0.5);
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: var(--bg); }
+      #root { position: relative; width: 1080px; height: 1920px; font-family: Montserrat, sans-serif; overflow: hidden; }
+      #stage { position: absolute; inset: 0; background: radial-gradient(ellipse 95% 60% at 50% 34%, #4a0a2c 0%, #220818 50%, var(--bg) 100%); }
+      #dots {
+        position: absolute; left: -40px; top: -40px; width: 1160px; height: 2000px; opacity: 0.14;
+        background-image: radial-gradient(circle, #ff5fa8 2.6px, transparent 3px); background-size: 34px 34px;
+      }
+      .layer { position: absolute; inset: 0; opacity: 0; visibility: hidden; }
+      #badge, #stepchip > div {
+        position: absolute; top: 64px; z-index: 8;
+        padding: 14px 26px 12px; color: #fff;
+        font-weight: 900; font-size: 40px; letter-spacing: 0.04em;
+        border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        opacity: 0; visibility: hidden;
+      }
+      #badge { left: 56px; background: var(--red); }
+      #stepchip > div { right: 56px; background: var(--pink); }
+
+      /* Intro / outro */
+      .title { position: absolute; left: 60px; right: 60px; top: 190px; text-align: center; font-weight: 900; color: #fff; text-shadow: var(--outline); }
+      .title .big { font-size: 104px; line-height: 1.02; color: var(--accent); }
+      .title .small { font-size: 56px; line-height: 1.15; margin-top: 18px; }
+      .product { position: absolute; left: 40px; top: 420px; width: 1000px; height: 1000px; object-fit: contain; }
+
+      /* Phone */
+      #phone {
+        position: absolute; left: 318px; top: 150px; width: 444px; height: 962px; border-radius: 58px;
+        background: #0b0b0f; box-shadow: 0 0 0 4px rgba(255,45,138,0.6), 0 0 70px rgba(255,45,138,0.35), 0 40px 80px rgba(0,0,0,0.7);
+        opacity: 0; visibility: hidden; z-index: 3;
+      }
+      #screen { position: absolute; left: 12px; top: 12px; width: 420px; height: 938px; border-radius: 46px; overflow: hidden; background: #003a51; }
+      #scroller { position: absolute; left: 0; top: 0; width: 1075px; transform-origin: 0 0; }
+      #scroller img { display: block; width: 1075px; }
+      .ring { position: absolute; border: 14px solid var(--accent); border-radius: 26px; box-shadow: 0 0 0 10px rgba(255,212,0,0.25); opacity: 0; visibility: hidden; }
+      .tap { position: absolute; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; background: rgba(255,255,255,0.55); border: 8px solid #fff; opacity: 0; visibility: hidden; }
+      #selbtn {
+        position: absolute; left: 110px; top: 1840px; width: 367px; height: 96px; border-radius: 10px;
+        background: var(--orange); color: #1c2b39; font: 600 38px Montserrat, sans-serif; display: flex; align-items: center; justify-content: center;
+        opacity: 0; visibility: hidden;
+      }
+      #selbtn .on { position: absolute; inset: 0; border-radius: 10px; background: var(--green); color: #fff; display: flex; align-items: center; justify-content: center; opacity: 0; }
+
+      /* Overlays drawn inside the phone screen (step 4 and success) */
+      .sheet { position: absolute; left: 0; right: 0; bottom: 0; padding: 40px 30px 50px; background: #f3efe7; border-radius: 34px 34px 0 0; opacity: 0; visibility: hidden; }
+      .check { display: flex; gap: 18px; align-items: center; font: 600 24px/1.3 Montserrat, sans-serif; color: #1c2b39; }
+      .box { position: relative; flex: none; width: 52px; height: 52px; border: 5px solid var(--orange); border-radius: 8px; background: #fff; }
+      .box i { position: absolute; left: 13px; top: 3px; width: 16px; height: 30px; border: solid var(--orange); border-width: 0 7px 7px 0; transform: rotate(45deg); opacity: 0; }
+      .regbtn { position: relative; margin-top: 30px; height: 84px; border-radius: 10px; background: var(--orange); color: #1c2b39; font: 800 25px Montserrat, sans-serif; display: flex; align-items: center; justify-content: center; }
+      #success { position: absolute; inset: 0; background: #003a51; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; opacity: 0; visibility: hidden; }
+      .okcircle { position: relative; width: 170px; height: 170px; border-radius: 50%; background: var(--green); }
+      .okcircle i { position: absolute; left: 60px; top: 30px; width: 44px; height: 86px; border: solid #fff; border-width: 0 16px 16px 0; transform: rotate(45deg); }
+      #success .t { font: 900 46px/1.1 Montserrat, sans-serif; color: #fff; text-align: center; }
+
+      /* Bottom label under the phone */
+      .tag {
+        position: absolute; left: 50%; top: 1140px; transform: translateX(-50%); z-index: 6;
+        padding: 12px 26px 10px; border-radius: 14px; white-space: nowrap;
+        font-weight: 900; font-size: 42px; color: #111; background: var(--accent);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5); opacity: 0; visibility: hidden;
+      }
+      .url {
+        position: absolute; left: 60px; right: 60px; top: 1010px; z-index: 7; padding: 22px 20px 20px; text-align: center;
+        background: #fff; border-radius: 22px; box-shadow: 0 0 0 6px var(--pink), 0 20px 50px rgba(0,0,0,0.6);
+        opacity: 0; visibility: hidden;
+      }
+      .url .d { font: 900 58px/1.05 Montserrat, sans-serif; color: #111; }
+      .url .p { font: 800 40px/1.2 Montserrat, sans-serif; color: var(--pink); }
+
+      /* Recap */
+      .row {
+        position: absolute; left: 80px; right: 80px; height: 170px; padding: 0 40px; border-radius: 26px;
+        background: rgba(255,255,255,0.08); border: 4px solid rgba(255,45,138,0.7);
+        display: flex; align-items: center; gap: 30px; opacity: 0; visibility: hidden;
+      }
+      .row .n { flex: none; width: 96px; height: 96px; border-radius: 50%; background: var(--accent); color: #111; font: 900 52px Montserrat, sans-serif; display: flex; align-items: center; justify-content: center; }
+      .row .x { font: 900 50px/1.1 Montserrat, sans-serif; color: #fff; }
+
+      #captions { position: absolute; left: 60px; right: 60px; top: 1250px; height: 330px; z-index: 9; }
+      .chunk {
+        position: absolute; left: 0; right: 0; top: 0;
+        text-align: center;
+        font-weight: 900; font-size: 84px; line-height: 1.12;
+        color: var(--ink); text-shadow: var(--outline);
+        opacity: 0; visibility: hidden;
+      }
+      .w { display: inline-block; margin: 0 0.2em; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="59.6" data-width="1080" data-height="1920">
+      <audio id="voice" src="audio/voiceover.mp3" data-start="0" data-duration="58.64" data-track-index="3"></audio>
+      <audio id="bed" src="audio/bed.wav" data-start="0" data-duration="59.6" data-volume="0.28" data-track-index="4"></audio>
+      <div id="stage" class="clip" data-start="0" data-duration="59.6" data-track-index="0">
+        <div id="dots"></div>
+        <div id="badge">TUTO RIFTBOUND</div>
+        <div id="stepchip"><div id="st1">ÉTAPE 1</div><div id="st2">ÉTAPE 2</div><div id="st3">ÉTAPE 3</div><div id="st4">ÉTAPE 4</div></div>
+
+        <div class="layer" id="intro">
+          <div class="title"><div class="big">COMMENT S'INSCRIRE ?</div><div class="small">Tirage au sort coffret KDA</div></div>
+          <img class="product" src="assets/images/product.png" alt="Coffret Riftbound x KDA Couture Collection">
+        </div>
+
+        <div id="phone">
+          <div id="screen">
+            <div id="scroller" data-layout-allow-overflow>
+              <img src="assets/images/page-fr.png" alt="Page d'inscription Riftbound (fr-fr)">
+              <div class="ring" id="ring-btn" style="left:44px;top:1149px;width:987px;height:177px"></div>
+              <div class="tap" id="tap-btn" style="left:537px;top:1237px"></div>
+              <div class="ring" id="ring-card" style="left:44px;top:1374px;width:499px;height:630px"></div>
+              <div id="selbtn" data-layout-allow-overlap>SÉLECTIONNER<div class="on" data-layout-allow-overlap>SÉLECTIONNÉ</div></div>
+              <div class="tap" id="tap-sel" style="left:293px;top:1888px"></div>
+            </div>
+            <div class="sheet" id="sheet" data-layout-allow-occlusion>
+              <div class="check"><div class="box"><i id="tick"></i></div><div>Obligatoire : J'accepte le règlement du tirage</div></div>
+              <div class="regbtn">ENREGISTRER LA SÉLECTION<div class="tap" id="tap-reg" style="left:50%;top:50%"></div></div>
+            </div>
+            <div id="success"><div class="okcircle"><i></i></div><div class="t">Inscription<br>réussie</div></div>
+          </div>
+        </div>
+
+        <div class="url" id="url"><div class="d">playriftbound.com</div><div class="p">/fr-fr/preorder/registration</div></div>
+        <div class="tag" id="tag-riot">COMPTE RIOT GRATUIT</div>
+        <div class="tag" id="tag-lock">MODIFICATION IMPOSSIBLE APRÈS</div>
+
+        <div class="layer" id="recap">
+          <div class="row" id="r1" style="top:200px"><div class="n">1</div><div class="x">Jusqu'au 30 oct. · 17 h</div></div>
+          <div class="row" id="r2" style="top:420px"><div class="n">2</div><div class="x">Mail dès le 3 novembre</div></div>
+          <div class="row" id="r3" style="top:640px"><div class="n">3</div><div class="x">24 h pour payer</div></div>
+          <div class="row" id="r4" style="top:860px"><div class="n">4</div><div class="x">Vérifie tes spams</div></div>
+        </div>
+
+        <div class="layer" id="outro">
+          <img class="product" src="assets/images/product.png" alt="Coffret Riftbound x KDA Couture Collection" style="top:240px">
+          <div class="url" id="url2" style="opacity:1;visibility:inherit"><div class="d">playriftbound.com</div><div class="p">/fr-fr/preorder/registration</div></div>
+        </div>
+
+        <div id="captions"></div>
+      </div>
+    </div>
+    <script>
+      // Timings come from audio/words.json (Whisper) and scenes.json — no timing is written here.
+      const load = (p) => { const r = new XMLHttpRequest(); r.open("GET", p, false); r.send(null); return JSON.parse(r.responseText); };
+      const words = load("audio/words.json");
+      const sc = load("scenes.json");
+      const TOTAL = sc.duration;
+      const T = sc.cues;
+      const K = 420 / 1075; // page screenshot -> phone screen scale
+
+      // ---- Captions: group words into short TikTok-style chunks ----
+      const chunks = [];
+      let cur = [];
+      words.forEach((w, i) => {
+        cur.push(w);
+        const next = words[i + 1];
+        const strong = /[.:;!?…»]$/.test(w.text);
+        const comma = /,$/.test(w.text) && w.end - cur[0].start > 0.6;
+        const chars = cur.map((x) => x.text).join(" ").length;
+        if (!next || strong || comma || cur.length >= 4 || chars > 16 || next.line !== w.line || next.start - w.end > 0.35) { chunks.push(cur); cur = []; }
+      });
+      const capEl = document.getElementById("captions");
+      chunks.forEach((c, ci) => {
+        const el = document.createElement("div");
+        el.className = "chunk";
+        el.id = "chunk-" + ci;
+        c.forEach((w, wi) => {
+          const s = document.createElement("span");
+          s.className = "w";
+          s.id = `w-${ci}-${wi}`;
+          s.textContent = w.text;
+          el.appendChild(s);
+        });
+        capEl.appendChild(el);
+      });
+
+      const tl = gsap.timeline({ paused: true });
+      const show = (sel, at, d = 0.4) => tl.fromTo(sel, { autoAlpha: 0, y: 40, scale: 0.95 }, { autoAlpha: 1, y: 0, scale: 1, duration: d, ease: "back.out(1.6)", immediateRender: false }, at);
+      const hide = (sel, at) => tl.to(sel, { autoAlpha: 0, duration: 0.25, ease: "power2.in" }, at - 0.25);
+      const tap = (sel, at) => tl.fromTo(sel, { autoAlpha: 0.9, scale: 0.4 }, { autoAlpha: 0, scale: 1.5, duration: 0.6, ease: "power2.out", immediateRender: false }, at);
+      const ringOn = (sel, at, until) => {
+        tl.fromTo(sel, { autoAlpha: 0, scale: 1.15 }, { autoAlpha: 1, scale: 1, duration: 0.35, ease: "back.out(2)", immediateRender: false }, at);
+        tl.to(sel, { scale: 1.04, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: Math.max(1, Math.floor((until - at - 0.6) / 0.5)) }, at + 0.4);
+        hide(sel, until);
+      };
+
+      tl.fromTo("#dots", { y: 0 }, { y: 68, duration: TOTAL, ease: "none" }, 0);
+      tl.fromTo("#badge", { autoAlpha: 0, x: -40 }, { autoAlpha: 1, x: 0, duration: 0.4, ease: "back.out(2)" }, 0.2);
+      gsap.set("#scroller", { scale: K, y: 0 });
+
+      // Intro
+      show("#intro", 0);
+      tl.fromTo("#intro .product", { scale: 1 }, { scale: 1.06, duration: T.step1, ease: "none" }, 0);
+      hide("#intro", T.step1);
+
+      // Step chips
+      ["step1", "step2", "step3", "step4"].forEach((k, i) => {
+        const next = [T.step2, T.step3, T.step4, T.success][i];
+        tl.fromTo("#st" + (i + 1), { autoAlpha: 0, x: 40 }, { autoAlpha: 1, x: 0, duration: 0.35, ease: "back.out(2)", immediateRender: false }, T[k]);
+        tl.to("#st" + (i + 1), { autoAlpha: 0, duration: 0.2 }, next - 0.2);
+      });
+
+      // Phone stays from step 1 to the success screen
+      tl.fromTo("#phone", { autoAlpha: 0, y: 120, scale: 0.9 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.6, ease: "power3.out", immediateRender: false }, T.step1 - 0.2);
+      hide("#phone", T.recap);
+
+      // Step 1: the link
+      show("#url", T.link);
+      hide("#url", T.step2);
+
+      // Step 2: sign-in button
+      ringOn("#ring-btn", T.step2 + 0.9, T.riot);
+      tap("#tap-btn", T.tapLogin);
+      show("#tag-riot", T.riot);
+      hide("#tag-riot", T.step3);
+
+      // Step 3: scroll to the product card and select it
+      tl.to("#scroller", { y: -(1690 * K - 470), duration: 0.8, ease: "power2.inOut" }, T.step3);
+      ringOn("#ring-card", T.step3 + 0.8, T.step4);
+      tl.fromTo("#selbtn", { autoAlpha: 0, scale: 0.8 }, { autoAlpha: 1, scale: 1, duration: 0.3, ease: "back.out(2)", immediateRender: false }, T.step3 + 1.2);
+      tap("#tap-sel", T.select);
+      tl.to("#selbtn .on", { opacity: 1, duration: 0.15 }, T.select + 0.1);
+
+      // Step 4: accept the rules, then register
+      tl.fromTo("#sheet", { autoAlpha: 0, y: 300 }, { autoAlpha: 1, y: 0, duration: 0.5, ease: "power3.out", immediateRender: false }, T.step4);
+      tl.fromTo("#tick", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(3)", immediateRender: false }, T.tick);
+      tap("#tap-reg", T.tapReg);
+
+      // Success (the page underneath is hidden once the success screen is up)
+      tl.set("#selbtn, #sheet", { autoAlpha: 0 }, T.success + 0.35);
+      tl.fromTo("#success", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3, immediateRender: false }, T.success);
+      tl.fromTo("#success .okcircle", { scale: 0.2 }, { scale: 1, duration: 0.5, ease: "back.out(2.5)", immediateRender: false }, T.success + 0.1);
+      show("#tag-lock", T.lock);
+      hide("#tag-lock", T.recap);
+
+      // Recap
+      tl.set("#recap", { autoAlpha: 1 }, T.recap);
+      ["r1", "r2", "r3", "r4"].forEach((r, i) => {
+        tl.fromTo("#" + r, { autoAlpha: 0, x: -120 }, { autoAlpha: 1, x: 0, duration: 0.45, ease: "power3.out", immediateRender: false }, T.rows[i]);
+      });
+      hide("#recap", T.outro);
+
+      // Outro: product + link again
+      show("#outro", T.outro, 0.5);
+
+      // ---- Captions timing: one chunk at a time, spoken word in yellow ----
+      chunks.forEach((c, ci) => {
+        const start = c[0].start - 0.04;
+        const nextStart = chunks[ci + 1] ? chunks[ci + 1][0].start - 0.04 : TOTAL;
+        const lastEnd = c[c.length - 1].end;
+        const end = nextStart - lastEnd < 0.7 ? nextStart : lastEnd + 0.35;
+        const id = "#chunk-" + ci;
+        tl.fromTo(id, { autoAlpha: 0, y: 14, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.12, ease: "power2.out" }, start);
+        tl.set(id, { autoAlpha: 0 }, end);
+        c.forEach((w, wi) => {
+          const s = `#w-${ci}-${wi}`;
+          const wEnd = c[wi + 1] ? c[wi + 1].start : Math.min(end, w.end + 0.25);
+          tl.to(s, { color: "#ffd400", scale: 1.05, duration: 0.06, ease: "none" }, w.start);
+          tl.to(s, { color: "#ffffff", scale: 1, duration: 0.06, ease: "none" }, Math.max(w.start + 0.07, wEnd));
+        });
+      });
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
