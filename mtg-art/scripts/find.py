@@ -40,7 +40,14 @@ m = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((W, H), Image.
 if m.sum() < 20:
     raise SystemExit("Trop peu de pixels visibles pour comparer.")
 
-idx = np.load(data / "index.npy", mmap_mode="r")
+if m.sum() < 300 and (data / "index128.npy").exists():
+    # Peu de pixels visibles : on compare directement en 128x96
+    W, H = 128, 96
+    q = np.asarray(im.resize((W, H), Image.LANCZOS), dtype=np.float32)
+    m = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((W, H), Image.BILINEAR)) > 250
+    idx = np.load(data / "index128.npy", mmap_mode="r")
+else:
+    idx = np.load(data / "index.npy", mmap_mode="r")
 meta = json.loads((data / "index_meta.json").read_text())
 qv = q[m]                                   # (n,3)
 qv = (qv - qv.mean(0)) / (qv.std(0) + 1e-3)
