@@ -36,7 +36,7 @@ if a.mask_color:
     vis &= np.abs(full - np.array(v[:3])).max(axis=2) > tol
 
 q = np.asarray(im.resize((W, H), Image.LANCZOS), dtype=np.float32)
-m = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((W, H), Image.BILINEAR)) > 250
+m = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((W, H), Image.BOX)) > 160
 if m.sum() < 20:
     raise SystemExit("Trop peu de pixels visibles pour comparer.")
 
@@ -44,7 +44,7 @@ if m.sum() < 300 and (data / "index128.npy").exists():
     # Peu de pixels visibles : on compare directement en 128x96
     W, H = 128, 96
     q = np.asarray(im.resize((W, H), Image.LANCZOS), dtype=np.float32)
-    m = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((W, H), Image.BILINEAR)) > 250
+    m = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((W, H), Image.BOX)) > 160
     idx = np.load(data / "index128.npy", mmap_mode="r")
 else:
     idx = np.load(data / "index.npy", mmap_mode="r")
@@ -61,7 +61,7 @@ order = np.argsort(scores)[:a.refine]
 # Second passage plus fin : petits détails visibles (un oeil, un objet) mal rendus à 64x48
 RW, RH = 256, 192
 q2 = np.asarray(im.resize((RW, RH), Image.LANCZOS), dtype=np.float32)
-m2 = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((RW, RH), Image.BILINEAR)) > 250
+m2 = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((RW, RH), Image.BOX)) > 160
 qv2 = q2[m2]; qv2 = (qv2 - qv2.mean(0)) / (qv2.std(0) + 1e-3)
 fine = {}
 for i in order:
