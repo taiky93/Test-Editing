@@ -14,3 +14,8 @@
 
 ## Musique de fond
 - **Plus jamais de musique / son de fond** dans les vidéos : l'utilisateur ajoute la musique avec l'outil TikTok. Les petits bruitages (whoosh, sons de cartes) restent possibles.
+
+## Vidéos filmées en HDR (iPhone, HLG 10 bits)
+- Vérifier avec `ffprobe` (`color_transfer=arib-std-b67`) : sinon l'image paraît délavée.
+- Convertir en SDR Rec.709 (ce que TikTok affiche) puis étalonner : voir `videos/booster-v13/scripts/build-video.sh`
+  (tonemap hable, `format=yuv420p` juste après la conversion, courbe en S douce + vibrance 0.35).
