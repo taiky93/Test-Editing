@@ -6,8 +6,11 @@
 set -euo pipefail
 MAIN="../Video 13.mp4"
 TONEMAP="zscale=tin=arib-std-b67:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv"
-GRADE="eq=saturation=1.05:contrast=1.04,unsharp=5:5:0.35"
-FMT="${TONEMAP},scale=1080:1920:flags=lanczos,fps=30,${GRADE},format=yuv420p"
+# Étalonnage en Rec.709 (SDR, ce que TikTok affiche) : courbe en S douce (contraste) + vibrance
+# (sature surtout les couleurs ternes, ménage les peaux et les cartes déjà vives) + netteté légère.
+GRADE="curves=master='0/0 0.25/0.21 0.5/0.5 0.75/0.8 1/1',vibrance=intensity=0.35,eq=saturation=1.05,unsharp=5:5:0.35"
+# format=yuv420p juste après la conversion HDR : sinon le redimensionnement délave l'image
+FMT="${TONEMAP},format=yuv420p,scale=1080:1920:flags=lanczos,fps=30,${GRADE},format=yuv420p"
 ffmpeg -v error -stats -y -i "$MAIN" -filter_complex "
 [0:v]${FMT},split=3[m1][m2][m3];
 [m1]trim=0:3,setpts=PTS-STARTPTS[a];
