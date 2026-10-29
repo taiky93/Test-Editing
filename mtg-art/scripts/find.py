@@ -18,6 +18,7 @@ ap.add_argument("--box")
 ap.add_argument("--hide", action="append", default=[])
 ap.add_argument("--mask-color")
 ap.add_argument("--top", type=int, default=10)
+ap.add_argument("--refine", type=int, default=400, help="nombre de candidats recomparés en 256x192")
 a = ap.parse_args()
 
 im = Image.open(a.image).convert("RGB")
@@ -49,7 +50,19 @@ for s in range(0, len(idx), step):
     blk = np.asarray(idx[s:s + step], dtype=np.float32)[:, m]   # (b,n,3)
     blk = (blk - blk.mean(1, keepdims=True)) / (blk.std(1, keepdims=True) + 1e-3)
     scores[s:s + step] = np.abs(blk - qv).mean(axis=(1, 2))
-order = np.argsort(scores)[:a.top]
+order = np.argsort(scores)[:a.refine]
+# Second passage plus fin : petits détails visibles (un oeil, un objet) mal rendus à 64x48
+RW, RH = 256, 192
+q2 = np.asarray(im.resize((RW, RH), Image.LANCZOS), dtype=np.float32)
+m2 = np.asarray(Image.fromarray(vis.astype(np.uint8) * 255).resize((RW, RH), Image.BILINEAR)) > 250
+qv2 = q2[m2]; qv2 = (qv2 - qv2.mean(0)) / (qv2.std(0) + 1e-3)
+fine = {}
+for i in order:
+    c = Image.open(data / "art" / (meta[i]["id"] + ".jpg")).convert("RGB").resize((RW, RH), Image.LANCZOS)
+    v = np.asarray(c, dtype=np.float32)[m2]; v = (v - v.mean(0)) / (v.std(0) + 1e-3)
+    fine[i] = float(np.abs(v - qv2).mean())
+order = sorted(fine, key=fine.get)[:a.top]
+scores = np.array([fine.get(i, 9) for i in range(len(meta))], dtype=np.float32)
 print(f"{int(m.sum())}/{W*H} pixels visibles comparés")
 for r, i in enumerate(order, 1):
     c = meta[i]
