@@ -1,0 +1,179 @@
+{
+ "set": "FRA (Reality Fracture, booster collector, EN)",
+ "currency": "€",
+ "boosterPrice": 33.0,
+ "video": "source/edited.mp4",
+ "edit": "conversion HDR → SDR ; 0–3 s normal ; 3–15 ×3 ; 15–67,2 normal ; timecodes relevés image par image",
+ "popDelay": 0.3,
+ "bigPrice": 5.0,
+ "introEnd": 2.6,
+ "finalAt": 59.0,
+ "duration": 63.6,
+ "bed": false,
+ "showLoss": false,
+ "cards": [
+  {
+   "t": 7.9,
+   "name": "Charge the Sanctum",
+   "collector": "C 0125",
+   "foil": true,
+   "price": 0.04,
+   "cardmarketId": 907280,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 1
+  },
+  {
+   "t": 9.9,
+   "name": "Keeper of the Quiet Hour",
+   "collector": "C 0171",
+   "foil": true,
+   "price": 0.04,
+   "cardmarketId": 907319,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 2
+  },
+  {
+   "t": 12.4,
+   "name": "Emergency Phytomedic",
+   "collector": "C 0130",
+   "foil": true,
+   "price": 0.07,
+   "cardmarketId": 908429,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 3
+  },
+  {
+   "t": 16.9,
+   "name": "Apex Witchstalker",
+   "collector": "C 0048",
+   "foil": true,
+   "price": 0.05,
+   "cardmarketId": 909891,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 4
+  },
+  {
+   "t": 21.9,
+   "name": "Bloombrute",
+   "collector": "U 0124",
+   "foil": true,
+   "price": 0.17,
+   "cardmarketId": 909960,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 5
+  },
+  {
+   "t": 24.4,
+   "name": "Flourishing Grapple (sans bordure)",
+   "collector": "U 0372",
+   "foil": true,
+   "price": 0.07,
+   "cardmarketId": 909582,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 6
+  },
+  {
+   "t": 27.9,
+   "name": "Marwyn, the Clearcutter (sans bordure)",
+   "collector": "U 0310",
+   "foil": true,
+   "price": 0.12,
+   "cardmarketId": 909989,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 7
+  },
+  {
+   "t": 30.9,
+   "name": "Marwyn, the Preserver (sans bordure)",
+   "collector": "U 0315",
+   "foil": true,
+   "price": 0.83,
+   "cardmarketId": 909995,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 8
+  },
+  {
+   "t": 33.4,
+   "name": "Yuriko, Hope from the Shadows",
+   "collector": "U 0226",
+   "foil": true,
+   "price": 0.3,
+   "cardmarketId": 908831,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 9
+  },
+  {
+   "t": 35.9,
+   "name": "Forêt (sans bordure)",
+   "collector": "L",
+   "foil": true,
+   "price": null,
+   "cardmarketId": null,
+   "skip": true,
+   "reason": "terrain de base",
+   "n": 10
+  },
+  {
+   "t": 41.4,
+   "name": "Bloodline Recollector",
+   "collector": "M 0049",
+   "foil": true,
+   "price": 5.39,
+   "cardmarketId": 905779,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 11
+  },
+  {
+   "t": 45.9,
+   "name": "Ob Nixilis, the Ascended (FRC, extended)",
+   "collector": "R 0090",
+   "foil": false,
+   "price": 1.04,
+   "cardmarketId": 911565,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend »",
+   "n": 12
+  },
+  {
+   "t": 48.4,
+   "name": "Theorist's Proxy (showcase)",
+   "collector": "R 0339",
+   "foil": false,
+   "price": 0.25,
+   "cardmarketId": 907333,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend »",
+   "n": 13
+  },
+  {
+   "t": 51.4,
+   "name": "Simulacrum Shaper (sans bordure)",
+   "collector": "R 0332",
+   "foil": false,
+   "price": 2.23,
+   "cardmarketId": 909573,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend »",
+   "n": 14
+  },
+  {
+   "t": 54.9,
+   "name": "Hungering Puppetbeast (showcase)",
+   "collector": "R 0346",
+   "foil": true,
+   "price": 0.17,
+   "cardmarketId": 908865,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 15
+  },
+  {
+   "t": 57.9,
+   "name": "Jeton Léviathan",
+   "collector": "T",
+   "foil": true,
+   "price": null,
+   "cardmarketId": null,
+   "skip": true,
+   "reason": "jeton",
+   "n": 16
+  }
+ ],
+ "cryDuration": 4.6
+}

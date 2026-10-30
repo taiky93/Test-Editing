@@ -1,0 +1,6 @@
+source/*.mp4
+renders/
+snapshots/
+.hyperframes/
+build.log
+render.log

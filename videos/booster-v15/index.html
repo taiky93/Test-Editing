@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: Cinzel; font-weight: 500; font-display: block; src: url("assets/fonts/cinzel-latin-500-normal.woff2") format("woff2"); }
+      @font-face { font-family: Cinzel; font-weight: 700; font-display: block; src: url("assets/fonts/cinzel-latin-700-normal.woff2") format("woff2"); }
+      :root {
+        --white: #ffffff;
+        --gold: #f2c94c;
+        --green: #4be37a;
+        --loss: #ff7d9b;
+        --bar-loss: #d9b862;
+        --win: #3fd16b;
+        --lav: #ab9ee8;
+        --over: #e5384d;
+        --shadow: 0 0 4px rgba(0, 0, 0, 0.9), 0 0 16px rgba(0, 0, 0, 0.75), 0 3px 10px rgba(0, 0, 0, 0.6);
+        --bar-top: 1320px; /* barre un peu sous les 2/3 de l'écran */
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+      #root { position: relative; width: 1080px; height: 1920px; font-family: Cinzel, serif; overflow: hidden; }
+      #footage { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #overlay { position: absolute; inset: 0; }
+      /* Ombres douces pour la lisibilité : en haut (prix) et en bande derrière la barre */
+      #shade-top { position: absolute; left: 0; top: 0; width: 1080px; height: 620px; background: linear-gradient(to bottom, rgba(0,0,0,0.42), rgba(0,0,0,0)); }
+      #shade-bar { position: absolute; left: 0; top: calc(var(--bar-top) - 140px); width: 1080px; height: 400px; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.58) 38%, rgba(0,0,0,0.58) 62%, rgba(0,0,0,0) 100%); }
+      .txt { position: absolute; white-space: nowrap; line-height: 1; }
+      /* Prix de chaque carte : serif, en haut à gauche, sans devise, en vert */
+      .price { left: 150px; top: 330px; font-size: 84px; font-weight: 500; color: var(--green); text-shadow: var(--shadow); letter-spacing: 0.02em; }
+      /* Gros prix (≥ bigPrice) : plus grand, gras, halo doré */
+      .price.big { left: 120px; top: 300px; font-size: 140px; font-weight: 700; color: var(--green); text-shadow: 0 0 6px rgba(0,0,0,0.9), 0 0 30px rgba(242, 201, 76, 0.85), 0 0 60px rgba(242, 201, 76, 0.5), 0 4px 12px rgba(0,0,0,0.7); }
+      /* Ouverture : prix du booster en or */
+      #intro { left: 120px; top: 130px; font-size: 150px; font-weight: 700; color: var(--gold); text-shadow: 0 6px 0 #1a1206, 0 10px 24px rgba(0, 0, 0, 0.55); }
+      /* Barre : total | progression | prix du booster (seul € à l'écran) */
+      #bar { position: absolute; left: 0; right: 0; top: var(--bar-top); height: 120px; }
+      #total { left: 70px; top: 36px; font-size: 68px; font-weight: 500; color: var(--loss); text-shadow: var(--shadow); }
+      #track { position: absolute; left: 330px; top: 62px; width: 400px; height: 22px; border-radius: 11px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
+      #fill { position: absolute; left: 0; top: 0; bottom: 0; width: 400px; border-radius: 11px; background: var(--bar-loss); transform-origin: 0 50%; }
+      #pack { right: 70px; top: 36px; font-size: 68px; font-weight: 500; color: var(--lav); text-shadow: var(--shadow); }
+      .win #total { color: var(--win); }
+      .win #fill { background: var(--win); }
+      /* Étincelles autour d'un gros prix */
+      .spark { position: absolute; width: 34px; height: 34px; background: radial-gradient(circle, #fff 0%, #ffe9a8 30%, rgba(255, 210, 80, 0) 70%); clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%); }
+      /* Séquence HIT */
+      #flash { position: absolute; inset: 0; background: #fff; }
+      #glow { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 42%, rgba(255, 214, 90, 0.42) 0%, rgba(255, 170, 30, 0.16) 38%, rgba(0, 0, 0, 0) 70%); mix-blend-mode: screen; }
+      #rays { position: absolute; left: -420px; top: -100px; width: 1920px; height: 1920px; background: repeating-conic-gradient(from 0deg, rgba(255, 220, 120, 0.13) 0deg 6deg, rgba(255, 220, 120, 0) 6deg 18deg); mix-blend-mode: screen; -webkit-mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,0.6) 35%, transparent 62%); mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,0.6) 35%, transparent 62%); }
+      #hit-title { left: 0; right: 0; top: 120px; text-align: center; font-size: 170px; font-weight: 700; color: var(--gold); text-shadow: 0 6px 0 #1a1206, 0 0 40px rgba(242, 201, 76, 0.8), 0 10px 24px rgba(0, 0, 0, 0.55); }
+      #hit-title .ch, #end-title .ch { display: inline-block; }
+      #hit-price { left: 0; right: 0; top: calc(var(--bar-top) + 170px); text-align: center; font-size: 190px; font-weight: 700; color: var(--green); text-shadow: 0 0 6px rgba(0,0,0,0.9), 0 0 36px rgba(242, 201, 76, 0.9), 0 0 80px rgba(242, 201, 76, 0.5), 0 6px 14px rgba(0,0,0,0.7); }
+      #hit-shade { position: absolute; left: 0; top: calc(var(--bar-top) + 120px); width: 1080px; height: 360px; background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.55) 70%, rgba(0,0,0,0) 100%); }
+      /* Accroche de début : vignette sombre pendant l'image figée */
+      #tease-vig { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 58%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.75) 100%); }
+      /* Fin */
+      #veil { position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(20, 0, 4, 0.62) 0%, rgba(8, 0, 2, 0.88) 75%); }
+      #end { position: absolute; left: 0; right: 0; top: 760px; height: 360px; text-align: center; }
+      #end-title { left: 0; right: 0; top: 0; text-align: center; font-size: 150px; font-weight: 700; color: var(--over); text-shadow: 0 0 28px rgba(229, 56, 77, 0.55), 0 6px 0 #2a0408; }
+      #end-sub { left: 0; right: 0; top: 200px; text-align: center; font-size: 96px; font-weight: 500; color: var(--over); text-shadow: var(--shadow); }
+      .won #end-title { color: var(--win); text-shadow: 0 0 28px rgba(63, 209, 107, 0.5), 0 6px 0 #062a12; }
+      .won #end-sub { color: var(--win); }
+      .won #veil { background: radial-gradient(ellipse at center, rgba(0, 12, 4, 0.55) 0%, rgba(0, 4, 1, 0.85) 75%); }
+      /* Fin en perte : mème qui pleure à la place de « GAME OVER » */
+      #cry { position: absolute; left: 110px; top: 300px; width: 860px; height: 800px; object-fit: cover; border-radius: 28px; box-shadow: 0 18px 60px rgba(0,0,0,0.7); opacity: 0; visibility: hidden; }
+      .lost #end { top: 1150px; }
+      /* Cachés jusqu'à leur moment */
+      .price, #tease-vig, #intro, #bar, #shade-bar, #veil, #end, .spark, #flash, #glow, #rays, #hit-title, #hit-price, #hit-shade { opacity: 0; visibility: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="59.8" data-width="1080" data-height="1920">
+      <video id="footage" class="clip" src="source/edited.mp4" playsinline muted data-start="0" data-duration="55.57" data-track-index="0"></video>
+      <audio id="sfx" src="sfx/sfx-track.wav" data-start="0" data-duration="59.8" data-track-index="2"></audio>
+      <div id="overlay" class="clip" data-start="0" data-duration="59.8" data-track-index="1">
+        <div id="tease-vig"></div>
+        <div id="flash"></div>
+        <div id="rays"></div>
+        <div id="glow"></div>
+        <div id="shade-top"></div>
+        <div id="shade-bar"></div>
+        <div id="hit-shade"></div>
+        <div id="sparks"></div>
+        <div id="prices"></div>
+        <div class="txt" id="intro">0€</div>
+        <div class="txt" id="hit-title">HIT !</div>
+        <div class="txt" id="hit-price">0.00</div>
+        <div id="bar">
+          <div class="txt" id="total">0.00</div>
+          <div id="track"><div id="fill"></div></div>
+          <div class="txt" id="pack">0.00 €</div>
+        </div>
+        <div id="veil"></div>
+        <div id="end">
+          <div class="txt" id="end-title">GAME OVER</div>
+          <div class="txt" id="end-sub">-0.00 €</div>
+        </div>
+      </div>
+      <!-- data-start = finalAt de cards.json ; durée = cryDuration -->
+      <video id="cry" class="clip" src="assets/cry.mp4" playsinline muted data-start="55.2" data-duration="4.6" data-track-index="3"></video>
+    </div>
+    <script>
+      // Tout vient de cards.json : prix, timecodes, seuil des gros prix, moment du hit.
+      const req = new XMLHttpRequest();
+      req.open("GET", "cards.json", false);
+      req.send(null);
+      const data = JSON.parse(req.responseText);
+
+      const cents = (v) => Math.round(v * 100);
+      const num = (c) => (c / 100).toFixed(2); // prix des cartes et total : sans devise
+      const delay = data.popDelay ?? 0.3;
+      const hit = data.hit;
+      const big = cents(data.bigPrice ?? 20);
+      const cards = data.cards.filter((c) => !c.skip && c.price != null).sort((a, b) => a.t - b.t);
+      const pack = cents(data.boosterPrice);
+      const sum = cards.reduce((s, c) => s + cents(c.price), 0);
+      const won = sum >= pack;
+      const finalAt = data.finalAt;
+      // La carte « hit » ne montre son prix qu'au moment de la séquence hit
+      const popAt = (c) => (c.hit && hit ? hit.start + 0.7 : c.t + delay);
+
+      const root = document.getElementById("root");
+      document.getElementById("intro").textContent = Math.round(data.boosterPrice) + "€";
+      document.getElementById("pack").textContent = num(pack) + " €";
+      const totalEl = document.getElementById("total");
+      const fillEl = document.getElementById("fill");
+
+      const splitLetters = (el, word, prefix) => {
+        el.innerHTML = "";
+        [...word].forEach((ch, i) => {
+          const s = document.createElement("span");
+          s.className = "ch";
+          s.id = prefix + i;
+          s.textContent = ch === " " ? " " : ch;
+          el.appendChild(s);
+        });
+      };
+      const endWord = won ? "WIN !" : "GAME OVER";
+      splitLetters(document.getElementById("end-title"), endWord, "ch-");
+      splitLetters(document.getElementById("hit-title"), "HIT !", "hch-");
+      document.getElementById("end-sub").textContent = (won ? "+" : "-") + num(Math.abs(sum - pack)) + " €";
+      if (won) document.getElementById("end").classList.add("won"), root.classList.add("won");
+      else root.classList.add("lost");
+
+      const pricesEl = document.getElementById("prices");
+      cards.forEach((c, i) => {
+        if (c.hit) return;
+        const el = document.createElement("div");
+        el.className = "txt price" + (cents(c.price) >= big ? " big" : "");
+        el.id = "price-" + i;
+        el.textContent = num(cents(c.price));
+        pricesEl.appendChild(el);
+      });
+
+      // Étincelles (positions déterministes) : un groupe autour de chaque gros prix, un groupe pour le hit
+      const sparksEl = document.getElementById("sparks");
+      let seed = 7;
+      const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
+      const makeSparks = (prefix, count, x0, y0, w, h) => {
+        for (let i = 0; i < count; i++) {
+          const s = document.createElement("div");
+          s.className = "spark";
+          s.id = prefix + i;
+          s.style.left = Math.round(x0 + rnd() * w) + "px";
+          s.style.top = Math.round(y0 + rnd() * h) + "px";
+          sparksEl.appendChild(s);
+        }
+      };
+      const bigCards = cards.filter((c) => !c.hit && cents(c.price) >= big);
+      bigCards.forEach((c, k) => makeSparks("bs" + k + "-", 12, 90, 250, 620, 260));
+      const HIT_SPARKS = 26;
+      if (hit) makeSparks("hs-", HIT_SPARKS, 60, 180, 920, 1300);
+
+      const tl = gsap.timeline({ paused: true });
+
+      // Accroche : ralenti puis image figée sur le bas du hit — flash, zoom, secousse, vignette (son de choc)
+      const tz = data.teaser;
+      if (tz) {
+        const f = tz.freeze;
+        tl.fromTo("#footage", { scale: 1.0 }, { scale: 1.06, duration: f, ease: "none", transformOrigin: "50% 62%", immediateRender: false }, 0);
+        tl.fromTo("#flash", { autoAlpha: 0.9 }, { autoAlpha: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, f);
+        tl.to("#footage", { scale: 1.22, duration: 0.18, ease: "power3.out", transformOrigin: "50% 62%" }, f);
+        const shake = [[-18, 10], [16, -12], [-12, -8], [10, 12], [-6, 4], [4, -3], [0, 0]];
+        shake.forEach(([x, y], k) => tl.to("#footage", { x, y, duration: 0.05, ease: "none" }, f + 0.05 + k * 0.05));
+        tl.to("#footage", { scale: 1.28, duration: tz.end - f - 0.4, ease: "sine.out", transformOrigin: "50% 62%" }, f + 0.4);
+        tl.fromTo("#tease-vig", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3, ease: "power1.out" }, f);
+        tl.to("#tease-vig", { autoAlpha: 0, duration: 0.15, ease: "power1.in" }, tz.end - 0.15);
+        tl.fromTo("#flash", { autoAlpha: 0.7 }, { autoAlpha: 0, duration: 0.3, ease: "power2.out", immediateRender: false }, tz.end);
+        tl.set("#footage", { scale: 1, x: 0, y: 0 }, tz.end);
+      }
+
+      // Ouverture : prix du booster en or
+      tl.fromTo("#intro", { autoAlpha: 0, y: -16 }, { autoAlpha: 1, y: 0, duration: 0.35, ease: "power2.out" }, (tz ? tz.end : 0) + 0.3);
+      tl.to("#intro", { autoAlpha: 0, duration: 0.35, ease: "power1.in" }, data.introEnd);
+
+      // La barre apparaît avec la première carte
+      tl.fromTo(["#bar", "#shade-bar"], { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.4, ease: "power1.out" }, Math.max(0.5, cards[0].t - 0.4));
+
+      // Total, % et remplissage, comptés à chaque carte
+      const proxy = { v: 0 };
+      const draw = () => {
+        const v = Math.round(proxy.v);
+        const p = Math.min(100, Math.round((v / pack) * 100));
+        totalEl.textContent = num(v);
+        fillEl.style.transform = `scaleX(${Math.max(0.0001, p / 100)})`;
+        root.classList.toggle("win", v >= pack);
+      };
+      tl.set(proxy, { v: 0, onUpdate: draw }, 0);
+
+      const plain = cards.filter((c) => !c.hit);
+      let running = 0;
+      cards.forEach((c, i) => {
+        const at = popAt(c);
+        running += cents(c.price);
+        if (c.hit) {
+          tl.to(proxy, { v: running, duration: 1.8, ease: "power2.out", onUpdate: draw }, at);
+          return;
+        }
+        const next = plain[plain.indexOf(c) + 1];
+        let until = next ? next.t + delay : finalAt;
+        // Une carte sans prix (terrain, jeton) qui arrive avant la suivante fait aussi disparaître le prix
+        const nextAny = data.cards.filter((x) => x.t > c.t).sort((a, b) => a.t - b.t)[0];
+        if (nextAny && nextAny.t + delay < until) until = nextAny.t + delay;
+        if (hit && at < hit.start && until > hit.start) until = hit.start;
+        const isBig = cents(c.price) >= big;
+        if (isBig) {
+          // Gros prix : arrive en grand avec un rebond, pulse, étincelles
+          tl.fromTo("#price-" + i, { autoAlpha: 0, scale: 1.8 }, { autoAlpha: 1, scale: 1, duration: 0.45, ease: "back.out(2.2)", transformOrigin: "0% 50%" }, at);
+          tl.to("#price-" + i, { scale: 1.07, duration: 0.45, ease: "sine.inOut", yoyo: true, repeat: 5, transformOrigin: "0% 50%" }, at + 0.5);
+          const k = bigCards.indexOf(c);
+          for (let j = 0; j < 12; j++) {
+            const t0 = at + 0.1 + rnd() * 2.2;
+            tl.fromTo("#bs" + k + "-" + j, { autoAlpha: 0, scale: 0.2, rotation: 0 }, { autoAlpha: 1, scale: 0.8 + rnd(), rotation: 90, duration: 0.3, ease: "power2.out" }, t0);
+            tl.to("#bs" + k + "-" + j, { autoAlpha: 0, scale: 0.3, rotation: 180, duration: 0.4, ease: "power2.in" }, t0 + 0.3);
+          }
+        } else {
+          tl.fromTo("#price-" + i, { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3, ease: "power1.out" }, at);
+        }
+        tl.to("#price-" + i, { autoAlpha: 0, duration: 0.15, ease: "power1.in" }, until - 0.15);
+        tl.to(proxy, { v: running, duration: 0.5, ease: "power1.out", onUpdate: draw }, at);
+      });
+
+      // Séquence HIT : flash, zoom, halo, rayons, « HIT ! », prix géant qui monte, étincelles
+      if (hit) {
+        const h0 = hit.start;
+        const h1 = hit.end;
+        const hc = cards.find((c) => c.hit);
+        const hp = { v: 0 };
+        const hpEl = document.getElementById("hit-price");
+        const drawHp = () => (hpEl.textContent = num(Math.round(hp.v)));
+        tl.set(hp, { v: 0, onUpdate: drawHp }, 0);
+        tl.fromTo("#flash", { autoAlpha: 0.95 }, { autoAlpha: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, h0);
+        tl.fromTo("#footage", { scale: 1.12 }, { scale: 1.0, duration: 0.6, ease: "power3.out", immediateRender: false }, h0);
+        tl.to("#footage", { scale: 1.06, duration: h1 - h0 - 0.6, ease: "sine.inOut" }, h0 + 0.6);
+        tl.set("#footage", { scale: 1 }, h1);
+        tl.fromTo("#glow", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.4, ease: "power1.out" }, h0);
+        for (let k = 0; k < 6; k++) {
+          tl.to("#glow", { autoAlpha: 0.55, duration: 0.5, ease: "sine.inOut" }, h0 + 0.5 + k * 1.0);
+          tl.to("#glow", { autoAlpha: 1, duration: 0.5, ease: "sine.inOut" }, h0 + 1.0 + k * 1.0);
+        }
+        tl.fromTo("#rays", { autoAlpha: 0, rotation: 0 }, { autoAlpha: 1, rotation: 25, duration: 1.2, ease: "power1.out" }, h0);
+        tl.to("#rays", { rotation: 25 + (h1 - h0) * 6, duration: h1 - h0 - 1.2, ease: "none" }, h0 + 1.2);
+        tl.fromTo("#hit-title", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.01 }, h0 + 0.1);
+        [..."HIT !"].forEach((_, i) => {
+          tl.fromTo("#hch-" + i, { autoAlpha: 0, y: -90, scale: 1.6 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.3, ease: "back.out(2.5)" }, h0 + 0.1 + i * 0.06);
+        });
+        tl.fromTo("#hit-shade", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3, ease: "power1.out" }, h0 + 0.5);
+        tl.fromTo("#hit-price", { autoAlpha: 0, scale: 0.6 }, { autoAlpha: 1, scale: 1, duration: 0.35, ease: "back.out(2)" }, h0 + 0.6);
+        tl.to(hp, { v: cents(hc.price), duration: 1.8, ease: "power2.out", onUpdate: drawHp }, h0 + 0.7);
+        tl.to("#hit-price", { scale: 1.12, duration: 0.15, ease: "sine.out" }, h0 + 2.5);
+        tl.to("#hit-price", { scale: 1, duration: 0.25, ease: "sine.inOut" }, h0 + 2.65);
+        tl.to("#hit-price", { scale: 1.05, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 7 }, h0 + 2.9);
+        for (let i = 0; i < HIT_SPARKS; i++) {
+          const t0 = h0 + 0.3 + rnd() * (h1 - h0 - 1.6);
+          tl.fromTo("#hs-" + i, { autoAlpha: 0, scale: 0.2, rotation: 0 }, { autoAlpha: 1, scale: 1 + rnd() * 1.2, rotation: 90, duration: 0.35, ease: "power2.out" }, t0);
+          tl.to("#hs-" + i, { autoAlpha: 0, scale: 0.3, rotation: 180, duration: 0.45, ease: "power2.in" }, t0 + 0.35);
+        }
+        tl.to(["#hit-title", "#hit-price", "#hit-shade", "#glow", "#rays"], { autoAlpha: 0, duration: 0.35, ease: "power1.in" }, h1 - 0.35);
+      }
+
+      // Fin : voile, lettres une à une, montant dessous
+      tl.to(["#bar", "#shade-bar"], { autoAlpha: 0, duration: 0.4, ease: "power1.in" }, finalAt);
+      tl.fromTo("#veil", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.8, ease: "power1.out" }, finalAt);
+      tl.fromTo("#end", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.01 }, finalAt + 0.2);
+      tl.set("#end-sub", { autoAlpha: 0 }, finalAt + 0.2);
+      if (!won) {
+        // Perte : le mème qui pleure remplace « GAME OVER » (lettres masquées), le montant reste dessous
+        tl.set("#end-title", { autoAlpha: 0 }, 0);
+        tl.fromTo("#cry", { autoAlpha: 0, scale: 0.7, rotation: -4 }, { autoAlpha: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, finalAt + 0.15);
+      }
+      if (won) [...endWord].forEach((_, i) => {
+        tl.fromTo("#ch-" + i, { autoAlpha: 0, y: -60, filter: "blur(10px)" }, { autoAlpha: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "back.out(2)" }, finalAt + 0.25 + i * 0.07);
+      });
+      // showLoss: false → en perte, seulement le mème qui pleure (pas de « -X € »)
+      const showSub = won || data.showLoss !== false;
+      const afterLetters = won ? finalAt + 0.35 + endWord.length * 0.07 : finalAt + 0.6;
+      if (showSub) tl.fromTo("#end-sub", { autoAlpha: 0, scale: 0.8 }, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, afterLetters);
+      if (won) {
+        tl.to("#end", { scale: 1.06, duration: 0.18, ease: "sine.out" }, afterLetters + 0.4);
+        tl.to("#end", { scale: 1, duration: 0.25, ease: "sine.inOut" }, afterLetters + 0.58);
+      }
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

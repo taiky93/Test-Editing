@@ -1,0 +1,179 @@
+{
+ "set": "FRA (Reality Fracture, booster collector, EN)",
+ "currency": "€",
+ "boosterPrice": 33.0,
+ "video": "source/edited.mp4",
+ "edit": "conversion HDR → SDR ; 0–3 s normal ; 3–11,5 ×3 ; 11,5–61,2 normal ; timecodes relevés image par image",
+ "popDelay": 0.3,
+ "bigPrice": 5.0,
+ "introEnd": 2.6,
+ "finalAt": 55.2,
+ "duration": 59.8,
+ "bed": false,
+ "showLoss": false,
+ "cards": [
+  {
+   "t": 5.9,
+   "name": "Divining Duelist",
+   "collector": "C 0029",
+   "foil": true,
+   "price": 0.09,
+   "cardmarketId": 909885,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 1
+  },
+  {
+   "t": 8.4,
+   "name": "Theorix Metamage",
+   "collector": "C 0156",
+   "foil": true,
+   "price": 0.07,
+   "cardmarketId": 909910,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 2
+  },
+  {
+   "t": 11.4,
+   "name": "Fateshaper Aspirant",
+   "collector": "C 0006",
+   "foil": true,
+   "price": 0.04,
+   "cardmarketId": 909880,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 3
+  },
+  {
+   "t": 13.9,
+   "name": "Extended Absence",
+   "collector": "C 0054",
+   "foil": true,
+   "price": 0.03,
+   "cardmarketId": 909892,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 4
+  },
+  {
+   "t": 16.4,
+   "name": "Clash of Elements",
+   "collector": "U 0126",
+   "foil": true,
+   "price": 0.1,
+   "cardmarketId": 907312,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 5
+  },
+  {
+   "t": 18.9,
+   "name": "Your Fate Ends Here",
+   "collector": "U 0024",
+   "foil": true,
+   "price": 0.03,
+   "cardmarketId": 910175,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 6
+  },
+  {
+   "t": 21.9,
+   "name": "Yuriko, Hope from the Shadows",
+   "collector": "U 0226",
+   "foil": true,
+   "price": 0.3,
+   "cardmarketId": 908831,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 7
+  },
+  {
+   "t": 24.4,
+   "name": "Winter, Team Player (sans bordure)",
+   "collector": "U 0312",
+   "foil": true,
+   "price": 0.15,
+   "cardmarketId": 908468,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 8
+  },
+  {
+   "t": 27.4,
+   "name": "Winter, Tormented Loner (sans bordure)",
+   "collector": "U 0307",
+   "foil": true,
+   "price": 0.28,
+   "cardmarketId": 908467,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 9
+  },
+  {
+   "t": 30.4,
+   "name": "Forêt (sans bordure)",
+   "collector": "L 0394",
+   "foil": true,
+   "price": null,
+   "cardmarketId": null,
+   "skip": true,
+   "reason": "terrain de base",
+   "n": 10
+  },
+  {
+   "t": 33.9,
+   "name": "Draconic Visitor",
+   "collector": "R 0080",
+   "foil": true,
+   "price": 4.59,
+   "cardmarketId": 909546,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 11
+  },
+  {
+   "t": 36.4,
+   "name": "Turbulent Crater (FRC, extended)",
+   "collector": "R 0101",
+   "foil": false,
+   "price": 3.46,
+   "cardmarketId": 911591,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend »",
+   "n": 12
+  },
+  {
+   "t": 40.4,
+   "name": "Vraska's Final Mercy (showcase)",
+   "collector": "R 0343",
+   "foil": false,
+   "price": 0.2,
+   "cardmarketId": 908863,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend »",
+   "n": 13
+  },
+  {
+   "t": 45.9,
+   "name": "Diviner of Victory (extended)",
+   "collector": "R 0425",
+   "foil": false,
+   "price": 0.03,
+   "cardmarketId": 907437,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend »",
+   "n": 14
+  },
+  {
+   "t": 48.9,
+   "name": "The Echoverse Fulcrum (sans bordure)",
+   "collector": "M 0378",
+   "foil": true,
+   "price": 7.78,
+   "cardmarketId": 908871,
+   "priceSource": "Cardmarket price guide 30/10/2026, « trend-foil »",
+   "n": 15
+  },
+  {
+   "t": 53.4,
+   "name": "Jeton Dragon",
+   "collector": "T",
+   "foil": true,
+   "price": null,
+   "cardmarketId": null,
+   "skip": true,
+   "reason": "jeton",
+   "n": 16
+  }
+ ],
+ "cryDuration": 4.6
+}
